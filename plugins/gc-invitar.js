@@ -5,13 +5,8 @@ if (isNaN(text)) return conn.reply(m.chat, `🍟 Ingrese sólo números más su 
 let group = m.chat
 let link = 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group)
 
-const groupInvite = generateWAMessageFromContent(m.chat, proto.Message.fromObject({groupInviteMessage: {groupJid: m.chat, inviteCode: invite_code, inviteExpiration: invite_code_exp, groupName: await conn.getName(m.chat), caption: captionn, jpegThumbnail: jpegThumbnail}}), {userJid: jid});
-
-const message = `🚩 *INVITACIÓN A GRUPO*\n\nUn usuario te invitó a unirte a este grupo \n\n${link}`
-
-await conn.relayMessage(jid, groupInvite.message, {messageId: groupInvite.key.id});
  
-//await conn.reply(m.chat, '@s.whatsapp.net', `🚩 *INVITACIÓN A GRUPO*\n\nUn usuario te invitó a unirte a este grupo \n\n${link}`, m, {mentions: [m.sender]})
+await conn.reply(m.chat, '@s.whatsapp.net', `🚩 *INVITACIÓN A GRUPO*\n\nUn usuario te invitó a unirte a este grupo \n\n${link}`, m, {mentions: [m.sender]})
 m.reply(`🍟 Se envió un enlace de invitación al usuario.`) 
 
 }
