@@ -5,9 +5,8 @@ if (isNaN(text)) return conn.reply(m.chat, `🍟 Ingrese sólo números más su 
 let group = m.chat
 let link = 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group)
 
-      await conn.reply(text+'@s.whatsapp.net', `🚩 *INVITACIÓN A GRUPO*\n\nUn usuario te invitó a unirte a este grupo\n\n${link}`, m, {mentions: [m.sender]})
-
-m.reply(`🍟 Se envió un enlace de invitación al usuario.`) 
+      await conn.reply(text+'@s.whatsapp.net', `🍟 *INVITACIÓN A GRUPO*\n\nUn usuario te invitó a unirte a este grupo \n\n${link}`, m, {mentions: [m.sender]})
+        m.reply(`🍟 Se envió un enlace de invitación al usuario.`) 
 
 }
 handler.help = ['invite *<numero>*']
