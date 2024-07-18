@@ -1,4 +1,4 @@
-let handler = async (m, { conn, args, participants }) => {
+/*let handler = async (m, { conn, args, participants }) => {
 let users = Object.entries(global.db.data.users).map(([key, value]) => {
 return {...value, jid: key}})
 let sortedExp = users.map(toNumber('exp')).sort(sort('exp'))
@@ -53,4 +53,4 @@ else return a => a === undefined ? _default : a
 }
 function enumGetKey(a) {
 return a.jid
-}
+}*/
