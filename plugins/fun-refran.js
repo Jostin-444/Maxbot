@@ -7,11 +7,7 @@ body: wm,
 previewType: 0, thumbnail: icons,
 sourceUrl: channel }}})
 
-let hasil = Math.floor(Math.random() * 5000)
-
 conn.reply(m.chat, `*┏━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡_͜͡━┓*\n\n❥ *"${pickRandom(global.refran)}"*\n\n*┗━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡_͜͡━┛*`, m, rcanal)
-}
-
 
 }
 handler.help = ['refran']
@@ -35,7 +31,7 @@ seconds = (seconds < 10) ? "0" + seconds : seconds
 return minutes + " m " + seconds + " s " 
 }
 
-
+let hasil = Math.floor(Math.random() * 5000)
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
