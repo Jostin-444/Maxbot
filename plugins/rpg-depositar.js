@@ -21,6 +21,6 @@ await m.reply(`Depositaste *${count} ⭐ Estrellas* al Banco.`)}
 
 handler.help = ['depositar']
 handler.tags = ['rpg']
-handler.command = ['deposit', 'depositar', 'dep', 'd']
+handler.command = ['deposit', 'depositar', 'dep', 'aguardar']
 handler.register = true 
 export default handler 
