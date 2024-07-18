@@ -1,10 +1,17 @@
 var handler = async (m, { conn, text}) => {
 
+conn.reply(m.chat, '🚩 Buscando un refran...', m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+title: packname,
+body: wm,
+previewType: 0, thumbnail: icons,
+sourceUrl: channel }}})
+
 let hasil = Math.floor(Math.random() * 5000)
 
-conn.reply(m.chat, `*┏━☯︎☯︎☯︎☘︎☯︎☯︎☯︎☘︎☯︎☯︎☯︎━┓*\n
-➪ _*${pickRandom(global.refran)}*_
-\n*┗━☯︎☯︎☯︎☘︎☯︎☯︎☯︎☘︎☯︎☯︎☯︎━┛*`, fkontak, { contextInfo:{ externalAdReply: {title: '𝐑𝐄𝐅𝐑𝐀𝐍', body: packname, sourceUrl: redes, thumbnail: icons}}})
+conn.reply(m.chat, `*┏━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡_͜͡━┓*\n\n❥ *"${pickRandom(global.refran)}"*\n\n*┗━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡_͜͡━┛*`, m, rcanal)
+}
+
 
 }
 handler.help = ['refran']
