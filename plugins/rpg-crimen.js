@@ -1,4 +1,4 @@
-let cooldowns = {}
+/*let cooldowns = {}
 
 let handler = async (m, { conn, text, command, usedPrefix }) => {
 let users = global.db.data.users
@@ -62,4 +62,4 @@ let horas = Math.floor(segundos / 3600)
 let minutos = Math.floor((segundos % 3600) / 60)
 let segundosRestantes = segundos % 60
 return `${minutos} minutos y ${segundosRestantes} segundos`
-}
+}*/
