@@ -13,7 +13,7 @@ let text = `
 ╭───═[ *Top ${len} Estrellas ⭐* ]═────⋆
 │╭───────────────···
 ││ Tú eres el *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length}*
-││ ${sortedLim.slice(0, len).map(({ jid, limit }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${estrellas} ⭐*`).join`\n││ `}
+││ ${sortedLim.slice(0, len).map(({ jid, estrellas }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${estrellas} ⭐*`).join`\n││ `}
 │╰────────────────···
 ╰───────────═┅═──────────
 
