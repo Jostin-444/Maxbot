@@ -4,7 +4,7 @@ let gps = `*◜💙 GRUPOS OFICIALES 💙◞*
 🚩 ${packname} 
 ${gp1}
 
-🚩 ${packname} 2
+🚩 Soporte LuffyBot
 ${gp2}
 
  *◜🤍 COLABORACIONES 🤍◞*
