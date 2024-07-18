@@ -4,7 +4,7 @@ let gps = `*◜💙 GRUPOS OFICIALES 💙◞*
 🚩 ${packname} 
 ${gp1}
 
-🚩 ${groupsoport}
+🚩 ${groupsuport}
 ${gp2}
 
  *◜🤍 COLABORACIONES 🤍◞*
