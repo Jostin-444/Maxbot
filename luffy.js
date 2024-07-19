@@ -80,11 +80,11 @@ global.db.chain = chain(global.db.data);
 loadDatabase();
 
 // Inicialización de conexiones globales
-/*if (global.conns instanceof Array) {
-console.log('Conexiones ya inicializadas...');
+if (global.conns instanceof Array) {
+console.log('🚩 Conexiones ya inicializadas...');
 } else {
 global.conns = [];
-}*/
+}
 
 /* ------------------------------------------------*/
 
@@ -278,10 +278,10 @@ process.on('uncaughtException', console.error)
 /* Código reconexión de sub-bots fases beta */
 /* Echo por: https://github.com/elrebelde21 */
 
-/*async function connectSubBots() {
+async function connectSubBots() {
 const subBotDirectory = './LuffyJadiBot';
 if (!existsSync(subBotDirectory)) {
-console.log('No se encontraron ningun sub-bots.');
+console.log('🚩 LuffyBot no tiene sub-bot vinculados.');
 return;
 }
 
@@ -298,7 +298,7 @@ return await connectionUpdate(authFile);
 
 const bots = await Promise.all(botPromises);
 global.conns = bots.filter(Boolean);
-console.log(chalk.bold.greenBright(`✅ TODOS LOS SUB-BOTS SE HAN INICIADO CORRECTAMENTE`))
+console.log(chalk.bold.greenBright(`🍟 Sub-Bots de LuffyBot conectados con éxito.`))
 }
 
 (async () => {
@@ -308,13 +308,13 @@ const mainBotAuthFile = 'LuffySession';
 try {
 const mainBot = await connectionUpdate(mainBotAuthFile);
 global.conns.push(mainBot);
-console.log(chalk.bold.greenBright(`✅ BOT PRINCIPAL INICIANDO CORRECTAMENTE`))
+console.log(chalk.bold.greenBright(`🚩 LuffyBot conectado correctamente.`))
 
 await connectSubBots();
 } catch (error) {
-console.error(chalk.bold.cyanBright(`❌ OCURRIÓ UN ERROR AL INICIAR EL BOT PRINCIPAL: `, error))
+console.error(chalk.bold.cyanBright(`🍭 Error al iniciar LuffyBot: `, error))
 }
-})();*/
+})();
 
 /* ------------------------------------------------*/
 
