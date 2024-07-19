@@ -10,15 +10,15 @@ export async function before(m, {conn, participants, groupMetadata}) {
   if (chat.welcome && m.messageStubType == 27) {
     let bienvenida = `┌─★ *Luffy Bot - MD* \n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Bienvenido a\n   │✑  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
 
-await conn.sendLuffy(m.chat, botname, textbot, bienvenida, img, img, canal)
+await conn.sendLuffy(m.chat, botname, textbot, bienvenida, img, img, redes)
   }
 
   if (chat.welcome && m.messageStubType == 28) {
     let bye = `┌─★ *Luffy Bot - MD* \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
-await conn.sendLuffy(m.chat, botname, textbot, bye, img, img, canal)
+await conn.sendLuffy(m.chat, botname, textbot, bye, img, img, redes)
   }
 
   if (chat.welcome && m.messageStubType == 32) {
     let kick = `┌─★ *Luffy Bot -MD* \n│「 ADIOS 👋 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Se fue\n   │✑ Jamás te quisimos aquí\n   └───────────────┈ ⳹`
-await conn.sendLuffy(m.chat, botname, textbot, kick, img, img, canal)
+await conn.sendLuffy(m.chat, botname, textbot, kick, img, img, redes)
 }}
