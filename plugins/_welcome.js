@@ -3,8 +3,8 @@ import fetch from 'node-fetch'
 
 export async function before(m, {conn, participants, groupMetadata}) {
   if (!m.messageStubType || !m.isGroup) return !0;
-  let img = 'https://telegra.ph/file/84277ae1a1c26633a77fe.jpg'
-  let img2 = 'https://telegra.ph/file/1d2acb9cb238b47b8313f.jpg'
+  let img = imagen1
+  let img2 = imagen2
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
