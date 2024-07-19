@@ -281,7 +281,7 @@ process.on('uncaughtException', console.error)
 async function connectSubBots() {
 const subBotDirectory = './LuffyJadiBot';
 if (!existsSync(subBotDirectory)) {
-console.log('🚩 LuffyBot no tiene sub-bot vinculados.');
+console.log('🚩 LuffyBot no tiene Sub-Bots vinculados.');
 return;
 }
 
@@ -298,7 +298,7 @@ return await connectionUpdate(authFile);
 
 const bots = await Promise.all(botPromises);
 global.conns = bots.filter(Boolean);
-console.log(chalk.bold.greenBright(`🍟 Sub-Bots de LuffyBot conectados con éxito.`))
+console.log(chalk.bold.greenBright(`🍟 Todos los Sub-Bots se conectaron con éxito.`))
 }
 
 (async () => {
