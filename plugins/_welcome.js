@@ -3,16 +3,8 @@ import fetch from 'node-fetch'
 
 export async function before(m, {conn, participants, groupMetadata}) {
   if (!m.messageStubType || !m.isGroup) return !0;
-  let category = "welcome"
-  const db = './media/database/db.json'
-  const db_ = JSON.parse(fs.readFileSync(db))
-  const random = Math.floor(Math.random() * db_.links[category].length)
-  const randomlink = db_.links[category][random]
-  const response = await fetch(randomlink)
-  const rimg = await response.buffer()
-  let imgwelcome = rimg
 
- // let img = imagen1
+  let img = imagen1
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
