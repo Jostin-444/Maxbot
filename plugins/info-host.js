@@ -1,4 +1,4 @@
-let handler = async (m, { conn, command }) => {
+/*let handler = async (m, { conn, command }) => {
 if (command === 'infinity') {
 let txt = `*INFINITY HOST* 🍟
 
@@ -81,4 +81,4 @@ handler.tags =['main']
 handler.help = ['flarex', 'infinity'] 
 handler.command = ['infinity', 'flarex']
 handler.register = true
-export default handler
+export default handler*/
