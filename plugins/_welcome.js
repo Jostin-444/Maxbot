@@ -7,7 +7,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
-   let welcome = `╔═.✵.════ ✰ ════════╗\n{groupMetadata.subject}\n╚═══════ ✰ ═════.✵.═╝\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙\n┃ 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 (𝙰)!!\n┃ @${m.messageStubParameters[0].split`@`[0]}\n┃ 𝙻𝙴𝙰 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 💥\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙`
+    let welcome = `╔═.✵.════ ✰ ════════╗\n{groupMetadata.subject}\n╚═══════ ✰ ═════.✵.═╝\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙\n┃ 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 (𝙰)!!\n┃ @${m.messageStubParameters[0].split`@`[0]}\n┃ 𝙻𝙴𝙰 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 💥\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙`
 await conn.sendLuffy(m.chat, packname, wm, welcome, img, img, redes, fkontak)
   }
 
