@@ -80,11 +80,11 @@ global.db.chain = chain(global.db.data);
 loadDatabase();
 
 // Inicialización de conexiones globales
-if (global.conns instanceof Array) {
+/*if (global.conns instanceof Array) {
 console.log('🚩 Conexiones ya inicializadas...');
 } else {
 global.conns = [];
-}
+}*/
 
 /* ------------------------------------------------*/
 
@@ -278,7 +278,7 @@ process.on('uncaughtException', console.error)
 /* Código reconexión de sub-bots fases beta */
 /* Echo por: https://github.com/elrebelde21 */
 
-async function connectSubBots() {
+/*async function connectSubBots() {
 const subBotDirectory = './LuffyJadiBot';
 if (!existsSync(subBotDirectory)) {
 console.log('🚩 LuffyBot no tiene Sub-Bots vinculados.');
@@ -314,7 +314,7 @@ await connectSubBots();
 } catch (error) {
 console.error(chalk.bold.cyanBright(`🍭 Error al iniciar LuffyBot: `, error))
 }
-})();
+})();*/
 
 /* ------------------------------------------------*/
 
