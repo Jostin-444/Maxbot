@@ -3,8 +3,8 @@ import fetch from 'node-fetch'
 
 export async function before(m, {conn, participants, groupMetadata}) {
   if (!m.messageStubType || !m.isGroup) return !0;  
-  let img = fs.readFileSync('./media/database/Welcome.js')
-  let img2 = fs.readFileSync('./media/database/Bye.js')
+  let img = fs.readFileSync('./media/Welcome.js')
+  let img2 = fs.readFileSync('./media//Bye.js')
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
