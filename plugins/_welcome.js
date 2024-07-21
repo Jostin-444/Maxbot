@@ -3,8 +3,8 @@ import fetch from 'node-fetch'
 
 export async function before(m, {conn, participants, groupMetadata}) {
   if (!m.messageStubType || !m.isGroup) return !0;  
-  let img = fs.readFileSync('./media/Welcome.js')
-  let img2 = fs.readFileSync('./media/Bye.js')
+  let imgwelcome = fs.readFileSync('./media/Welcome.js')
+  let imgbye = fs.readFileSync('./media/Bye.js')
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
@@ -14,10 +14,10 @@ await conn.sendLuffy(m.chat, packname, wm, welcome, imgwelcome, imgwelcome, rede
 
   if (chat.welcome && m.messageStubType == 28) {
     let bye = `╔═.✵.════ ✰ ════════╗\n- 𝗟𝘂𝗳𝗳𝘆 𝗕𝗼𝘁 - 𝗠𝗗\n╚═══════ ✰ ═════.✵.═╝\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙\n┃ @${m.messageStubParameters[0].split`@`[0]}\n┃ 𝙽𝙾 𝙵𝚄𝙴 𝙳𝙸𝙶𝙽𝙾(𝙰) 𝙳𝙴 𝙴𝚂𝚃𝙰𝚁 𝙰𝚀𝚄𝙸 👋🏻\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙`
-await conn.sendLuffy(m.chat, packname, wm, bye, img2, img2, redes, fkontak)
+await conn.sendLuffy(m.chat, packname, wm, bye, imgbye, imgbye, redes, fkontak)
   }
 
   if (chat.welcome && m.messageStubType == 32) {
     let kick = `╔═.✵.════ ✰ ════════╗\n- 𝗟𝘂𝗳𝗳𝘆 𝗕𝗼𝘁 - 𝗠𝗗\n╚═══════ ✰ ═════.✵.═╝\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙\n┃ @${m.messageStubParameters[0].split`@`[0]}\n┃ 𝙽𝙾 𝙵𝚄𝙴 𝙳𝙸𝙶𝙽𝙾(𝙰) 𝙳𝙴 𝙴𝚂𝚃𝙰𝚁 𝙰𝚀𝚄𝙸 👋🏻\n✧⃝━━━━━━━━━━━━━━━━✦͙͙͙`
-await conn.sendLuffy(m.chat, packname, wm, kick, img2, img2, redes, fkontak)
+await conn.sendLuffy(m.chat, packname, wm, kick, imgbye, imgbye, redes, fkontak)
 }}
