@@ -1,105 +1,71 @@
-import _0x453b96 from 'axios';
-const {
-  proto,
-  generateWAMessageFromContent,
-  prepareWAMessageMedia,
-  generateWAMessageContent,
-  getDevice
-} = (await import("@whiskeysockets/baileys"))["default"];
-let handler = async (_0x3585f0, {
-  conn: _0x1a6b0c,
-  text: _0x2f2134,
-  usedPrefix: _0x4aa81f,
-  command: _0x3f9b74
-}) => {
-  if (!_0x2f2134) {
-    return _0x1a6b0c.reply(_0x3585f0.chat, "🍟 *¿Que quieres buscar en tiktok?*", _0x3585f0, rcanal);
+import axios from 'axios';
+const {proto, generateWAMessageFromContent, prepareWAMessageMedia, generateWAMessageContent, getDevice} = (await import("@whiskeysockets/baileys")).default;
+
+let handler = async (message, { conn, text, usedPrefix, command }) => {
+
+  if (!text) return conn.reply(message.chat, "🍟 *¿Que quieres buscar en tiktok?*", message, rcanal);
+
+  async function createVideoMessage(url) {
+    const { videoMessage } = await generateWAMessageContent({ video: { url } }, { upload: conn.waUploadToServer });
+    return videoMessage;
   }
-  async function _0x438e4e(_0x2effca) {
-    const {
-      videoMessage: _0x46952c
-    } = await generateWAMessageContent({
-      'video': {
-        'url': _0x2effca
-      }
-    }, {
-      'upload': _0x1a6b0c.waUploadToServer
-    });
-    return _0x46952c;
-  }
-  function _0x1cb89b(_0x551ce5) {
-    for (let _0xe08334 = _0x551ce5.length - 1; _0xe08334 > 0; _0xe08334--) {
-      const _0x3db8fc = Math.floor(Math.random() * (_0xe08334 + 1));
-      [_0x551ce5[_0xe08334], _0x551ce5[_0x3db8fc]] = [_0x551ce5[_0x3db8fc], _0x551ce5[_0xe08334]];
+
+  async function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
   }
+
   try {
-  await _0x3585f0.react(rwait);
-   _0x1a6b0c.reply(_0x3585f0.chat, '🚩 *Descargando Su Video...*', _0x3585f0, {
+  conn.reply(message.chat, '🚩 *Descargando Su Video...*', message, {
    contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
    title: packname,
    body: wm,
    previewType: 0, thumbnail: icons,
    sourceUrl: channel }}});
-    let _0x26b601 = [];
-    let {
-      data: _0xda4544
-    } = await _0x453b96.get("https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=" + _0x2f2134);
-    let _0x40a9cd = _0xda4544.data;
-    _0x1cb89b(_0x40a9cd);
-    let _0x2d5b59 = _0x40a9cd.splice(0, 7);
-    for (let _0x29b70b of _0x2d5b59) {
-      _0x26b601.push({
-        'body': proto.Message.InteractiveMessage.Body.fromObject({
-          'text': null
+    let results = [];
+    let { data: response } = await axios.get("https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=" + text);
+    let searchResults = response.data;
+    shuffleArray(searchResults);
+    let selectedResults = searchResults.splice(0, 7);
+
+    for (let result of selectedResults) {
+      results.push({
+        body: proto.Message.InteractiveMessage.Body.fromObject({ text: null }),
+        footer: proto.Message.InteractiveMessage.Footer.fromObject({ text: textbot }),
+        header: proto.Message.InteractiveMessage.Header.fromObject({
+          title: '' + result.title,
+          hasMediaAttachment: true,
+          videoMessage: await createVideoMessage(result.nowm)
         }),
-        'footer': proto.Message.InteractiveMessage.Footer.fromObject({
-          'text': textbot
-        }),
-        'header': proto.Message.InteractiveMessage.Header.fromObject({
-          'title': '' + _0x29b70b.title,
-          'hasMediaAttachment': true,
-          'videoMessage': await _0x438e4e(_0x29b70b.nowm)
-        }),
-        'nativeFlowMessage': proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
-          'buttons': []
-        })
+        nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({ buttons: [] })
       });
     }
-    const _0x33ffca = generateWAMessageFromContent(_0x3585f0.chat, {
-      'viewOnceMessage': {
-        'message': {
-          'messageContextInfo': {
-            'deviceListMetadata': {},
-            'deviceListMetadataVersion': 0x2
+
+    const responseMessage = generateWAMessageFromContent(message.chat, {
+      viewOnceMessage: {
+        message: {
+          messageContextInfo: {
+            deviceListMetadata: {},
+            deviceListMetadataVersion: 2
           },
-          'interactiveMessage': proto.Message.InteractiveMessage.fromObject({
-            'body': proto.Message.InteractiveMessage.Body.create({
-              'text': "🚩 Resultado de : " + _0x2f2134
-            }),
-            'footer': proto.Message.InteractiveMessage.Footer.create({
-              'text': "🔎 Tiktok - Busquedas"
-            }),
-            'header': proto.Message.InteractiveMessage.Header.create({
-              'hasMediaAttachment': false
-            }),
-            'carouselMessage': proto.Message.InteractiveMessage.CarouselMessage.fromObject({
-              'cards': [..._0x26b601]
-            })
+          interactiveMessage: proto.Message.InteractiveMessage.fromObject({
+            body: proto.Message.InteractiveMessage.Body.create({ text: "🚩 Resultado de : " + text }),
+            footer: proto.Message.InteractiveMessage.Footer.create({ text: "🔎 Tiktok - Busquedas" }),
+            header: proto.Message.InteractiveMessage.Header.create({ hasMediaAttachment: false }),
+            carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({ cards: [...results] })
           })
         }
       }
-    }, {
-      'quoted': _0x3585f0
-    });
-   await _0x3585f0.react(done);
-    await _0x1a6b0c.relayMessage(_0x3585f0.chat, _0x33ffca.message, {
-      'messageId': _0x33ffca.key.id
-    });
-  } catch {
-    await _0x3585f0.react(error);
+    }, { quoted: message });
+
+    await conn.relayMessage(message.chat, responseMessage.message, { messageId: responseMessage.key.id });
+  } catch (error) {
+    await conn.reply(message.chat, error.toString(), message);
   }
 };
+
 handler.help = ["tiktoksearch <txt>"];
 handler.estrellas = 1;
 handler.register = true;
