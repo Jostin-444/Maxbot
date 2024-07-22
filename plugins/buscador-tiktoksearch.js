@@ -14,7 +14,7 @@ const j = Math.floor(Math.random() * (i + 1))
 }}
 try {
 await message.react(rwait)
-conn.reply(m.chat, '🚩 Descargando Su Video...', m, {
+conn.reply(message.chat, '🚩 Descargando Su Video...', message, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
