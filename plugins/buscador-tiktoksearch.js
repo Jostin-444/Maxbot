@@ -18,6 +18,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
   }
 
   try {
+  await message.react(rwait);
   conn.reply(message.chat, '🚩 *Descargando Su Video...*', message, {
    contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
    title: packname,
@@ -59,6 +60,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
         }
       }
     }, { quoted: message });
+    await message.react(done);
 
     await conn.relayMessage(message.chat, responseMessage.message, { messageId: responseMessage.key.id });
   } catch (error) {
