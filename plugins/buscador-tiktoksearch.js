@@ -53,7 +53,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
           },
           interactiveMessage: proto.Message.InteractiveMessage.fromObject({
             body: proto.Message.InteractiveMessage.Body.create({ text: "🚩 Resultado de : " + text }),
-            footer: proto.Message.InteractiveMessage.Footer.create({ text: "🔎 `T I K T O K - S E A R C H`" }),
+            footer: proto.Message.InteractiveMessage.Footer.create({ text: "🔎 Tiktok - Busquedas" }),
             header: proto.Message.InteractiveMessage.Header.create({ hasMediaAttachment: false }),
             carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({ cards: [...results] })
           })
