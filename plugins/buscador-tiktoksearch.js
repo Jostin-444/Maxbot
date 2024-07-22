@@ -3,7 +3,7 @@ const {proto, generateWAMessageFromContent, prepareWAMessageMedia, generateWAMes
 
 let handler = async (message, { conn, text, usedPrefix, command }) => {
 
-  if (!text) return conn.reply(message.chat, "🍟 *¿Que quieres buscar en tiktok?*", message, rcanal);
+  if (!text) return conn.reply(message.chat, '🍟 *¿Que quieres buscar en tiktok?*', message, rcanal);
 
   async function createVideoMessage(url) {
     const { videoMessage } = await generateWAMessageContent({ video: { url } }, { upload: conn.waUploadToServer });
@@ -26,7 +26,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
    previewType: 0, thumbnail: icons,
    sourceUrl: channel }}});
     let results = [];
-    let { data: response } = await axios.get("https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=" + text);
+    let { data: response } = await axios.get('https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=' + text);
     let searchResults = response.data;
     shuffleArray(searchResults);
     let selectedResults = searchResults.splice(0, 7);
@@ -52,8 +52,8 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
             deviceListMetadataVersion: 2
           },
           interactiveMessage: proto.Message.InteractiveMessage.fromObject({
-            body: proto.Message.InteractiveMessage.Body.create({ text: "🚩 Resultado de : " + text }),
-            footer: proto.Message.InteractiveMessage.Footer.create({ text: "🔎 Tiktok - Busquedas" }),
+            body: proto.Message.InteractiveMessage.Body.create({ text: '🚩 Resultado de: ' + text }),
+            footer: proto.Message.InteractiveMessage.Footer.create({ text: '🔎 Tiktok - Busquedas' }),
             header: proto.Message.InteractiveMessage.Header.create({ hasMediaAttachment: false }),
             carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({ cards: [...results] })
           })
