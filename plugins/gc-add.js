@@ -13,7 +13,7 @@ let group = m.chat
 let link = 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group)
 
 await conn.reply(text+'@s.whatsapp.net', `*🍟 Hola! soy LuffyBot-MD, Una persona te a invitado a su grupo.*\n\n*Link*\n${link}`, m, {mentions: [m.sender]})
-m.reply(`🍟 *ᥱᥒ᥎іᥲᥒძ᥆ іᥒ᥎і𝗍ᥲᥴі᥆́ᥒ ᥲᥣ ⍴rі᥎ᥲძ᥆ ძᥱ {text}*\n\n*📅 ${fecha}*\n⏰ *${tiempo}*`) 
+m.reply(`🍟 *Enviando la invitación al privado de ${nom}*\n\n*📅 ${fecha}*\n⏰ *${tiempo}*`) 
 
 }
 handler.help = ['add']
