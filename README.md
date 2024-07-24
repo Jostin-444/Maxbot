@@ -75,16 +75,20 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-### 🍟 ACTIVAR EN CAFIREXOS
-<a href="https://cafirexos.com"><img src="https://cdn.cafirexos.com/logos%2Flogo_cfros_2000x2000.png" height="125px"></a>
-- Sitio web: [cafirexos.com](https://cafirexos.com)
-- Área de clientes: [clientes.cafirexos.com](https://clientes.cafirexos.com)
-- Panel: [panel.cafirexos.com](https://panel.cafirexos.com)
-- Documentación: [docs.cafirexos.com](https://docs.cafirexos.com)
-- Canal de WhatsApp: [clic aquí](https://cafirexos.com/whatsapp)
-- Comunidad: [clic aquí](https://cafirexos.com/comunidad)
+### 🔵 CAFIREXOS 
+<a href="https://www.cafirexos.com"><img src="https://cdn.cafirexos.com/logos%2Flogo_cfros_2000x2000.png" height="125px"></a>
+### Información del Host
 
-[![Click Aquí](https://img.shields.io/badge/Soporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/50497150165)
+- **Página:** [`Aquí`](https://www.cafirexos.com)
+- **Área de clientes:** [`Aquí`](https://clientes.cafirexos.com)
+- **Dashboard:** [`Aquí`](https://dashboard.cafirexos.com)
+- **Panel:** [`Aquí`](https://panel.cafirexos.com/)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q)
+- **Grupo de WhatsApp:** [`Aquí`](https://chat.whatsapp.com/LrzOqVlP75A2h65v8kfLAR)
+- **Correo:** [`Aquí`](mailto:contacto@cafirexos.com)
+- **Contacto:** [`Diego Flores`](https://wa.me/50497150165)
+
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - LuffyBot-MD**</summary><img src="https://i.imgur.com/VPvoE5k.jpeg"></details>
 
 #### 🟢 ACTIVAR EN CODES SPACES 
 [`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/LuffyBot-MD&ref=main&geo=UsEast)
