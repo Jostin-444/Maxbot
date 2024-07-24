@@ -51,7 +51,7 @@ conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/c24470edcbe5e250
 }
 
 }
-handler.help = ['instalarluffy', 'cafirexos', 'comandos']
+handler.help = ['instalarluffy']
 handler.tags = ['main']
 handler.command = /^(instalarluffy|instalarbot)/i
 
