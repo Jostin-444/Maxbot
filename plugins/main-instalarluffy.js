@@ -21,7 +21,7 @@ npm start
 
 _Utilice "comandos" para enviarle los comandos uno por uno 🚩_
 
-_Utilice "cafi" para enviarle la instalación por el host *Cafirexos* 🚩_`
+_Utilice "cafirexos" para enviarle la instalación por el host *Cafirexos* 🚩_`
 
 conn.reply(m.chat, texto, m, rcanal )
 
@@ -41,7 +41,7 @@ await delay(1000 * 1)
 m.reply('npm start')
 }
 
-if (/^cafi$/i.test(m.text) ) {
+if (/^cafirexos$/i.test(m.text) ) {
 conn.reply(m.chat, '✏️ *Instalación por Cafirexos*\n(nosotros no tenemos tutorial pero eso les puede ayudar)\n\n• Área de clientes:\nhttps://clientes.cafirexos.com\n\n• Panel:\nhttps://panel.cafirexos.com', m, rcanal)
 await delay(2000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/975c007a1f3f2757ee123.png'}, caption: ''}, {quoted: fkontak})
