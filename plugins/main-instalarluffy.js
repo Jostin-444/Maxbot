@@ -39,17 +39,17 @@ await delay(1000 * 1)
 m.reply('npm start')
 }
 
-/*if (/^infinity$/i.test(m.text) ) {
-conn.reply(m.chat, '✏️ *Instalación por infinityhost*\n(nosotros no tenemos tutorial pero eso les puede ayudar)\n\n• Dashboard:\nhttps://dashboard.infinitywa.xyz\n\n• Panel:\nhttps://live.panel-infinitywa.store/', m, )
+if (/^cafirexos$/i.test(m.text) ) {
+conn.reply(m.chat, '✏️ *Instalación por Cafirexos*\n(nosotros no tenemos tutorial pero eso les puede ayudar)\n\n• Pagina:\nhttps://cafirexos.com\n\n• Área de clientes:\nhttps://clientes.cafirexos.com\n\n• Panel:\nhttps://panel.cafirexos.com', m, rcanal)
 await delay(2000 * 1)
-conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/64529e19d6c95e97ceab6.jpg'}, caption: ''}, {quoted: fkontak})
+conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/fdeefe56c9454c09e9db6.jpg'}, caption: ''}, {quoted: fkontak})
 await delay(1000 * 1)
-conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/35384f70f429a9c49468d.jpg'}, caption: ''}, {quoted: fkontak})
+conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/1c87ab54c2b22dcb555a9.jpg'}, caption: ''}, {quoted: fkontak})
 }*/
 }
 
 }
-handler.help = ['instalarluffy']
+handler.help = ['instalarluffy', 'cafirexos', 'comandos']
 handler.tags = ['main']
 handler.command = /^(instalarluffy|instalarbot)/i
 
