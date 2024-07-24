@@ -44,7 +44,7 @@ m.reply('npm start')
 if (/^cafi$/i.test(m.text) ) {
 conn.reply(m.chat, '✏️ *Instalación por Cafirexos*\n(nosotros no tenemos tutorial pero eso les puede ayudar)\n\n• Área de clientes:\nhttps://clientes.cafirexos.com\n\n• Panel:\nhttps://panel.cafirexos.com', m, rcanal)
 await delay(2000 * 1)
-conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/fdeefe56c9454c09e9db6.jpg'}, caption: ''}, {quoted: fkontak})
+conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/975c007a1f3f2757ee123.png'}, caption: ''}, {quoted: fkontak})
 await delay(1000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/1c87ab54c2b22dcb555a9.jpg'}, caption: ''}, {quoted: fkontak})
 }
