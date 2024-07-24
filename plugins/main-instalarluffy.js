@@ -47,7 +47,7 @@ await delay(2000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/fdeefe56c9454c09e9db6.jpg'}, caption: ''}, {quoted: fkontak})
 await delay(1000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/1c87ab54c2b22dcb555a9.jpg'}, caption: ''}, {quoted: fkontak})
-}*/
+}
 }
 
 }
