@@ -48,6 +48,7 @@ conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/fdeefe56c9454c09
 await delay(1000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/1c87ab54c2b22dcb555a9.jpg'}, caption: ''}, {quoted: fkontak})
 }
+}
 
 }
 handler.help = ['instalarluffy', 'cafirexos', 'comandos']
