@@ -46,7 +46,7 @@ conn.reply(m.chat, '✏️ *Instalación por Cafirexos*\n(nosotros no tenemos tu
 await delay(2000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/975c007a1f3f2757ee123.png'}, caption: ''}, {quoted: fkontak})
 await delay(1000 * 1)
-conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/1c87ab54c2b22dcb555a9.jpg'}, caption: ''}, {quoted: fkontak})
+conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/c24470edcbe5e250b5089.png'}, caption: ''}, {quoted: fkontak})
 }
 }
 
