@@ -75,8 +75,6 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 | **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-
-
 ### 🔵 CAFIREXOS 
 <a href="https://www.cafirexos.com"><img src="https://cdn.cafirexos.com/logos%2Flogo_cfros_2000x2000.png" height="125px"></a>
 ### Información del Host
@@ -90,22 +88,14 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 
 - [x] **Configuración** <details><summary>**Ajustes del Servidor - LuffyBot-MD**</summary><img src="https://telegra.ph/file/530fc69bd5c105e96642e.jpg"></details>
 
-
-
 #### 🟢 ACTIVAR EN CODES SPACES 
 [`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/LuffyBot-MD&ref=main&geo=UsEast)
-
-
 
 #### ⚡ ACRIVAR EN REPLIT
 [![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/OfcDiego/LuffyBot-MD)](https://repl.it/github/OfcDiego/LuffyBot-MD)
 
-
-
 #### 🤍 ACTIVAR EN RENDER
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2OfcDiego%LuffyBot-MD) 
-
-
 
 ## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
 
