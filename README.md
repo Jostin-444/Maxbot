@@ -84,11 +84,9 @@ Para que no pierda su progreso en Luffy, estos comandos realizarán un respaldo 
 - **Dashboard:** [`Aquí`](https://dashboard.cafirexos.com)
 - **Panel:** [`Aquí`](https://panel.cafirexos.com/)
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q)
-- **Grupo de WhatsApp:** [`Aquí`](https://chat.whatsapp.com/LrzOqVlP75A2h65v8kfLAR)
 - **Correo:** [`Aquí`](mailto:contacto@cafirexos.com)
-- **Contacto:** [`Diego Flores`](https://wa.me/50497150165)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - LuffyBot-MD**</summary><img src="https://i.imgur.com/VPvoE5k.jpeg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - LuffyBot-MD**</summary><img src="https://telegra.ph/file/530fc69bd5c105e96642e.jpg"></details>
 
 #### 🟢 ACTIVAR EN CODES SPACES 
 [`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/LuffyBot-MD&ref=main&geo=UsEast)
