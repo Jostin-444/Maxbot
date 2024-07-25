@@ -2,15 +2,15 @@ import fg from 'api-dylux';
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
 if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal);
- await m.react(rwait);
+ m.react(rwait);
 
   try {
     let result = await fg.fbdl(args[0]);
     let tex = '🍟 *Aquí está su video de facebook¡!*';
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
-   awair m.react(done);
+    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, fkontak);
+   m.react(done);
   } catch (error) {
-    await m.react('✖️');
+    m.react('✖️');
     conn.reply(m.chat, '❌️ Error inesperado', m, fake)
   }
 };
