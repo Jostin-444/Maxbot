@@ -1,7 +1,7 @@
 import fg from 'api-dylux';
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
-if (!args[0]) throw `📌 ${mssg.example} :\n*${usedPrefix + command}* https://fb.watch/d7nB8-L-gR/`
+if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal);
  await m.react(rwait);
 
   try {
