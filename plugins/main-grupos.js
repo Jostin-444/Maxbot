@@ -4,19 +4,16 @@ let gps = `*◜💙 GRUPOS OFICIALES 💙◞*
 🚩 ${packname} 
 ${gp1}
 
-🚩 ${groupsuport}
-${gp2}
-
  *◜🤍 COLABORACIONES 🤍◞*
 
 🍟 ${colab1}
-${gp3}
+${gp2}
 
 🍟 ${colab2}
-${gp4}
+${gp3}
 
 🍟 ${colab3}
-${gp5}
+${gp4}
 
 🍟 ${namecomu}
 ${comunidad1}
