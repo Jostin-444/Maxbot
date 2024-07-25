@@ -15,8 +15,8 @@ let { title, SD, HD } = await Scraper.fbdl(args[0])
 await conn.sendMessage(m.chat, { video: { url: SD || HD }, caption: `🍟 *Aquí está tu video*` }, { quoted: fkontak})
 await m.react(done)
 } catch {
-await m.react(error)
-conn.reply(m.chat, '❌️ Ocurrió un error', m, fake)
+/*await m.react(error)
+conn.reply(m.chat, '❌️ Ocurrió un error', m, fake)*/
 }}
 handler.help = ['facebook <url fb>']
 handler.tags = ['descargas']
