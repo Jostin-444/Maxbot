@@ -1,4 +1,3 @@
-import fetch from 'node-fetch'
 import fg from 'api-dylux'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
