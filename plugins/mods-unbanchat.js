@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
 if (!(m.chat in global.db.data.chats)) return m.reply('🍭 *¡ESTE CHAT NO ESTÁ REGISTRADO!*')
 let chat = global.db.data.chats[m.chat]
-if (!chat.isBanned) return m.reply('🍟 *¡LA BOT NO ESTÁ BANEADA EN ESTE CHAT!*')
+if (!chat.isBanned) return conn.reply(m.chat, '🍟 *¡LA BOT NO ESTÁ BANEADA EN ESTE CHAT!*', m, fake)
 chat.isBanned = false
 await conn.reply(m.chat, '🚩 *¡LA BOT YA FUÉ DESBANEADA EN ESTE CHAT!*', m, fake)
 }
