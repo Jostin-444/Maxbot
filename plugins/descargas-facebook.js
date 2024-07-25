@@ -11,7 +11,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttributio
 title: packname,
 body: wm,
 previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})https://www.facebook.com/official.trash.gang/videos/873759786348039/?mibextid=rS40aB7S9Ucbxw6v
+sourceUrl: channel }}})
 let { title, SD, HD } = await Scraper.fbdl(args[0])
 await conn.sendMessage(m.chat, { video: { url: SD || HD }, caption: `🍟 *Titulo ∙* ${title}` }, { quoted: estilo})
 await m.react(done)
