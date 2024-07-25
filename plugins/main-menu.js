@@ -4,29 +4,29 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
-  'main': 'INFO 📚',
-  'buscador': 'BUSQUEDAS 🔎',
-  'fun': 'JUEGOS 🎮',
-  'jadibot': 'SUB BOTS 🤖',
+  'main': 'Info 📚',
+  'buscador': 'Busquedas 🔎',
+  'fun': 'Juegos 🎮',
+  'jadibot': 'Sub Bots 🤖',
   'rpg': 'RPG 🌠',
-  'rg': 'REGISTRO 📁',
-  'xp': 'EXP 🏷',
-  'sticker': 'STICKERS 🏞',
-  'anime': 'ANIMEA 🍧',
-  'database': 'DATABASE ✨️',
-  'fix': 'FIXMSGESPERA 💭',
-  'grupo': 'GRUPOS 👥',
-  'nable': 'ON / OFF 📴', 
-  'descargas': 'DESCARGAS 📥',
-  'youtube': 'YOUTUBE PLAY 📥',
-  'tools': 'HERRAMIENTAS 🔧',
-  'info': 'INFORMACIÓN 🐢',
-  'nsfw': 'NSFW 🔞', 
-  'owner': 'CREADOR 👑', 
-  'mods': 'STAFF LUFFY 🍟',
-  'audio': 'AUDIOS 🔉', 
-  'ai': 'AI 🌹',
-  'transformador': 'CONVERTIDORES 🚩',
+  'rg': 'Registro 📁',
+  'xp': 'Exp 🏷',
+  'sticker': 'Stickers 🏞',
+  'anime': 'Animes 🍧',
+  'database': 'Database ✨️',
+  'fix': 'Fixmsgespera 💭',
+  'grupo': 'Grupos 👥',
+  'nable': 'On / Off 📴', 
+  'descargas': 'Descargas 📥',
+  'youtube': 'Youtube Play 📥',
+  'tools': 'Herramientas 🔧',
+  'info': 'Información 🐢',
+  'nsfw': 'Nsfw 🔞', 
+  'owner': 'Creador 👑', 
+  'mods': 'Staff Luffy 🍟',
+  'audio': 'Audios 🔉', 
+  'ai': 'Ai 🌹',
+  'transformador': 'Convertidores 🚩',
 }
 
 const defaultMenu = {
@@ -34,7 +34,7 @@ const defaultMenu = {
 
 “ Hola *%name* soy *Luffy*, %greeting ”
 
-╭────═[ *INFO - BOT* ]═─────⋆
+╭────═[ *Info - Bot* ]═─────⋆
 │╭───────────────···
 ┴│✯ 💌 *Cliente:* %name
 ││✯ ⚡️ *Exp:* %exp
@@ -44,7 +44,7 @@ const defaultMenu = {
 │╰────────────────···
 ╰────────═┅═─────────
 %readmore
-╭────═[ *INFO - USER* ]═─────⋆
+╭────═[ *Info - User* ]═─────⋆
 │╭───────────────···
 ┴│✯ 🍟 *Bot:* Luffy Bot - MD 
 ││✯ 🚩 *Modo* Público
