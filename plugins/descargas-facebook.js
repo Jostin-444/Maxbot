@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-import { facebook } from '@xct007/frieren-scraper'
+// import { facebook } from '@xct007/frieren-scraper'
 //import fg from 'api-dylux'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
