@@ -12,7 +12,7 @@ body: wm,
 previewType: 0, thumbnail: icons,
 sourceUrl: channel }}})
 let { title, SD, HD } = await Scraper.fbdl(args[0])
-await conn.sendMessage(m.chat, { video: { url: SD || HD }, caption: `🍟 *Aquí está tu video*` }, { quoted: fkontak})
+await conn.sendMessage(m.chat, { video: { url: SD || HD }, caption: '🍟 *Aquí está tu video*' }, { quoted: fkontak})
 await m.react(done)
 } catch {
 await m.react(error)
