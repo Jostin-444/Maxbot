@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
-// import { facebook } from '@xct007/frieren-scraper'
-import { savefrom, facebookdl, facebookdlv2 } = require('@bochilteam/scraper') 
+import { facebookdl, facebookdlv2 } from '@bochilteam/scraper'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal)
