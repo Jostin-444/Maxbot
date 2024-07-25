@@ -1,25 +1,24 @@
 import fg from 'api-dylux';
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
-if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal);
- m.react(rwait);
+if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal)
+m.react(rwait)
+try {
+let result = await fg.fbdl(args[0])
+let tex = '🍟 *Aquí está su video de facebook¡!*'
+conn.sendFile(m.chat, result.videoUrl, 'facebook.mp4', tex, fkontak)
+m.react(done)
+} catch (error) {
+m.react('✖️');
+conn.reply(m.chat, '❌️ Error inesperado', m, fake)
+}}
 
-  try {
-    let result = await fg.fbdl(args[0]);
-    let tex = '🍟 *Aquí está su video de facebook¡!*';
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, fkontak);
-   m.react(done);
-  } catch (error) {
-    m.react('✖️');
-    conn.reply(m.chat, '❌️ Error inesperado', m, fake)
-  }
-};
-handler.help = ['facebook'].map(v => v + ' <url>');
-handler.tags = ['dl'];
-handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
-handler.diamond = true;
+handler.help = ['facebook']
+handler.tags = ['descargas']
+handler.command = /^((facebook|fb)(downloder|dl)?)$/i
+handler.diamond = true
 
-export default handler;
+export default handler
 
 /*import fetch from 'node-fetch'
 import { facebook } from '@xct007/frieren-scraper'
