@@ -179,7 +179,7 @@ await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 
 
 m.react(emoji2) 
 
-await conn.sendFile(m.chat, imagen1, 'luffy.jpg', text.trim(), estilo)
+await conn.sendFile(m.chat, imagen1, 'luffy.jpg', text.trim(), estilo2)
 
   } catch (e) {
     conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, rcanal, )
