@@ -7,7 +7,7 @@ if (!args[0]) throw `✳️ ${mssg.noLink('Facebook')}\n\n📌 ${mssg.example} :
   try {
     let result = await fg.fbdl(args[0]);
     let tex = '🍟 *Aquí está su video de facebook¡!*';
-    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m, null, rcanal);
+    conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
    awair m.react(done);
   } catch (error) {
     await m.react('✖️');
