@@ -24,7 +24,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 const document = doc[Math.floor(Math.random() * doc.length)];
  const text = `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-“ Hola *${nombre}* soy *Luffy*, ${saludos} ”
+“ Hola *${nombre}* soy *Luffy*, ${saludo} ”
 
 ╭────═[ *INFO - BOT* ]═─────⋆
 │╭───────────────···
