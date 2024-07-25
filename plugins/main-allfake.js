@@ -64,17 +64,14 @@ global.waittt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼 ...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A' 
-var canal2 = 'https://whatsapp.com/channel/0029VaXaCa66xCSHugaf773M'  
+var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'  
 var git = 'https://github.com/OfcDiego' 
 var youtube = 'https://www.youtube.com/@OfcDiego' 
 var github = 'https://github.com/OfcDiego/LuffyBot-MD' 
 var facebook = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' 
 let tiktok = 'https://tiktok.com/@theluffybot'
 
-global.redes = [canal, canal2, git, youtube, github, facebook, tiktok].getRandom()
-
-global.canales = [canal, canal2].getRandom()
+global.redes = [canal, git, youtube, github, facebook, tiktok].getRandom()
 
 //Imagen
 let category = "imagen"
