@@ -518,10 +518,10 @@ await plugin.after.call(this, m, extra)
 console.error(e)
 }}
 if (m.estrellas)
-conn.reply(m.chat, `Utilizaste *${+m.estrellas}* 🌟`, m, rcanal)
+conn.reply(m.chat, `Utilizaste *${+m.estrellas}* 🌟`, m, fake)
 }
 if (m.money)
-conn.reply(m.chat, `Utilizaste *${+m.money}* 💰`, m, rcanal)
+conn.reply(m.chat, `Utilizaste *${+m.money}* 💰`, m, fake)
 break
 }}} catch (e) {
 console.error(e)
