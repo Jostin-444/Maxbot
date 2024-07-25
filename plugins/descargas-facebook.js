@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
-// import { facebook } from '@xct007/frieren-scraper'
-//import fg from 'api-dylux'
+import fg from 'api-dylux'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
 if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal)
