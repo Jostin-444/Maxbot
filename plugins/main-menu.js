@@ -37,8 +37,8 @@ const defaultMenu = {
 ╭────═[ *INFO - BOT* ]═─────⋆
 │╭───────────────···
 ┴│✯ 🍟 *Bot:* Luffy Bot - MD 
-✩│✯ 🚩 *Modo* Público
-✩│✯ 🍂 *Baileys:* Multi Device
+✩│✯ 🍂 *Modo* Público
+✩│✯ ✨️ *Baileys:* Multi Device
 ✩│✯ ⌛️ *Tiempo Activo:* %muptime
 ┬│✯ 🫂 *Usuarios:* %totalreg
 │╰────────────────···
@@ -46,7 +46,7 @@ const defaultMenu = {
 %readmore
 ╭────═[ *INFO - USER* ]═─────⋆
 │╭───────────────···
-┴│✯ ✨️ *Cliente:* %name
+┴│✯ 🚩 *Cliente:* %name
 ✩│✯ 💥 *Exp:* %exp
 ✩│✯ 🌟 *Estrellas:* %estrellas
 ✩│✯ 🐢 *Nivel:* %level
