@@ -59,7 +59,7 @@ const defaultMenu = {
 \t*L I S T A  -  D E  -  C O M A N D O S* 
 `.trimStart(),
       header: '╭───═[ %category ]═────⋆\n│╭───────────────···',
-  body: '✩│ %cmd\n',
+  body: '││ %cmd\n',
   footer: '│╰────────────────···\n╰────────═┅═─────────\n',
   after: `• ${textbot}`,
 }
@@ -196,11 +196,10 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
 function clockString(ms) {
-  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 
   var ase = new Date();
