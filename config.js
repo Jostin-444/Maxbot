@@ -32,7 +32,7 @@ global.titulowm = 'LuffyBot-MD 🍟'
 global.titulowm2 = 'Ofc.Diego'
 global.igfg = '𝙾𝙵𝙲.𝙳𝙸𝙴𝙶𝙾'
 global.botname = 'Lᴜғғʏ Bᴏᴛ - MD 🚩'
-global.dev = '👑 Developed By • ✨ Ofc.Diego'
+global.dev = '🚩 Powered By あ S_ᴅɪᴇɢᴏ あ'
 global.textbot = '𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁 : 𝗢𝗳𝗰𝗗𝗶𝗲𝗴𝗼 🚩'
 global.vs = '2.0.2'
 
