@@ -35,7 +35,7 @@ Canal :
 *✰* ${channel}
 
 > ${dev}`
-await conn.sendFile(m.chat, icons, "Thumbnail.jpg", txt, m, null, rcanal)
+await conn.sendFile(m.chat, imagen2, "Thumbnail.jpg", txt, m, null, rcanal)
 await m.react(emojis)
 }
 handler.help = ['grupos']
