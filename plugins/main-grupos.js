@@ -34,6 +34,7 @@ Canal :
 *✰* ${channel}
 
 > ${dev}`
+
 await conn.sendFile(m.chat, imagen2, "luffy.jpg", grupos, m, null, rcanal)
 
 await m.react(emojis)
