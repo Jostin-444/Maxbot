@@ -8,9 +8,9 @@ let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para con
 1- 【 ✯ Luffy Bot - MD ✰ 】
 *✰* ${gp1}
 
-*─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
+*─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
 
-➠ Grupo En Colaboración!
+➠ Grupos En Colaboración!
 
 1- ${colab1}
 *✰* ${gp2}
@@ -26,6 +26,8 @@ let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para con
 
 5- ${namecomu2}
 *✰* ${comunidad2}
+
+*─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
 
 ➠ Enlace anulado? entre aquí! 
 
