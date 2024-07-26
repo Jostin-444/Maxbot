@@ -1,7 +1,6 @@
 import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
-let img = await (await fetch(`https://i.ibb.co/3N4StyG/file.jpg`)).buffer()
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D* 🍂
@@ -34,8 +33,8 @@ Canal :
 *✰* ${channel}
 
 > ${dev}`
-await conn.sendFile(m.chat, img, "Thumbnail.jpg", txt, m, null, rcanal)
-await m.react('🍂')
+await conn.sendFile(m.chat, icons, "Thumbnail.jpg", txt, m, null, rcanal)
+await m.react(emojis)
 }
 handler.help = ['grupos']
 handler.tags = ['main']
