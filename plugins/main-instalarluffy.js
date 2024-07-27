@@ -1,6 +1,6 @@
 var handler  = async (m, { conn }) => {
 
-let texto = `🚩 *Instalación de LuffyBot*
+let texto = `🚩 *Instalación de Ai Yaemori*
 
 ⬡ Dudas: ${creador}
 ⬡ Tutoríal: *¡Pronto!*
@@ -13,7 +13,7 @@ apt-get update -y && apt-get upgrade -y
 
 pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 
-git clone https://github.com/OfcDiego/LuffyBot-MD && cd LuffyBot-MD && yarn install && npm install 
+git clone https://github.com/OfcDiego/Ai-Yaemori && cd Ai-Yaemori && yarn install && npm install 
 
 ls
 
@@ -34,7 +34,7 @@ m.reply('apt-get update -y && apt-get upgrade -y')
 await delay(1000 * 1)
 m.reply('pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn')
 await delay(1000 * 1)
-m.reply('git clone https://github.com/OfcDiego/LuffyBot-MD && cd LuffyBot-MD && yarn install && npm install ')
+m.reply('git clone https://github.com/OfcDiego/Ai-Yaemori && cd Ai-Yaemori && yarn install && npm install ')
 await delay(1000 * 1)
 m.reply('ls')
 await delay(1000 * 1)
@@ -51,9 +51,9 @@ conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/c24470edcbe5e250
 }
 
 }
-handler.help = ['instalarluffy']
+handler.help = ['instalaryaemori']
 handler.tags = ['main']
-handler.command = /^(instalarluffy|instalarbot)/i
+handler.command = /^(instalarai|instalarbot|instalaryaemori)/i
 
 export default handler
 
