@@ -7,13 +7,13 @@ import cfonts from 'cfonts';
 import { createInterface } from 'readline';
 import yargs from 'yargs';
 import chalk from 'chalk';
-console.log('\n✰ Iniciando LuffyBot ✰');
+console.log('\n✰ Iniciando Yaemori ✰');
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const require = createRequire(__dirname);
 const { name, description, author, version } = require(join(__dirname, './package.json'));
 const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
-say('Luffy\nBot-MD', {
+say('Yaemoeri\nMini-MD', {
 font: 'block',
 align: 'center',
 colors: ['white']
@@ -77,4 +77,4 @@ console.warn('🚩 Se excedió el límite de Listeners en:');
 console.warn(warning.stack);
 }
 });
-start('luffy.js');
+start('mini.js');
