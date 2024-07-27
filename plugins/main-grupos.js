@@ -7,17 +7,17 @@ let grupos = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para 
 1- 【 ✰ Luffy Bot - MD ✰ 】
 *✰* ${gp1}
 
+2 - ${namegrupo}
+*✰* ${gp2}
+
 *─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
 
 ➠ Grupos En Colaboración!
 
 1- ${colab1}
-*✰* ${gp2}
-
-2- ${colab2}
 *✰* ${gp3}
 
-3- ${colab3}
+2- ${colab2}
 *✰* ${gp4}
 
 4- ${namecomu}
