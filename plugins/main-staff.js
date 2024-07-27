@@ -1,7 +1,7 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
 let staff = `🚩 *EQUIPO DE AYUDANTES*
 🍟 *Bot:* ${global.botname}
-✨️  *Versión:* ${global.vs}
+✨️ *Versión:* ${global.vs}
 
 👑 *Propietario:*
 
@@ -10,7 +10,7 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 🚩 *Número:* ${creador}
 ✨️ *GitHub:* https://github.com/OfcDiego
 
-⁖❤️꙰  *Colaboradores:*
+🌸  *Colaboradores:*
 
 • ArizzVal
 🍟 *Rol:* Developer
@@ -25,18 +25,8 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 • AzamiJs
 🍟 *Rol:* Developer
 🚩 *Número:* Wa.me/5214434703586
-✨️ *GitHub:* https://github.com/AzamiJs
-
-• Alba070503
-🍟 *Rol:* Developer
-🚩 *Número:* Wa.me/59169082575
-✨️ *GitHub:* https://github.com/Alba070503
-
-• Shrkbadboy
-🍟 *Rol:* Developer
-🚩 *Número:* Wa.me/573218138672
-✨️ *GitHub:* https://github.com/shrkbadboy`
-await conn.sendFile(m.chat, icons, 'luffy.jpg', staff.trim(), fkontak, true, {
+✨️ *GitHub:* https://github.com/AzamiJs`
+await conn.sendFile(m.chat, icons, 'yaemori.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
 'isForwarded': false,
