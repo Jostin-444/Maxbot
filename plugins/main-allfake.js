@@ -35,21 +35,22 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 global.creador = 'Wa.me/573012482597'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/51939041500'
-global.namechannel = '『✯ Team Comunity Luffy ✯』'
+global.namechannel = '『✯ Team Channel Ai Yaemori ✯』'
 global.namechannel2 = '𝗠𝗼𝗼𝗻𝗹𝗶𝗴𝗵𝘁 - 𝗧𝗲𝗮𝗺'
+global.namegrupo = '𝗚𝗿𝗼𝘂𝗽 𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶'
 global.namecomu = '𝗖𝗼𝗺𝘂𝗻𝗶𝗱𝗮𝗱 𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁'
 global.namecomu2 = '𝗖𝗼𝗺𝘂𝗻𝗶𝗱𝗮𝗱 𝗠𝗼𝗼𝗻𝗹𝗶𝗴𝗵𝘁'
 global.groupsuport = '𝗦𝗼𝗽𝗼𝗿𝘁𝗲 𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁'
 global.colab1 = '𝗚𝗮𝘁𝗮𝗕𝗼𝘁 & 𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁'
 global.colab2 = '𝗠𝗼𝗼𝗻𝗟𝗶𝗴𝗵𝘁 - 𝗕𝗼𝘁𝘀'
-global.colab3 = '𝗦𝘂𝗺𝗶𝗦𝗮𝗸𝘂𝗿𝗮𝘀𝗮𝘄𝗮 & 𝗟𝘂𝗳𝗳𝘆𝗕𝗼𝘁'
+global.colab3 = '𝗚𝗿𝗼𝘂𝗽 𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶'
 
 //Reacciones De Comandos.!
 global.rwait = '🕒'
 global.done = '✅'
 global.error = '✖️'
 
-//Emojis determinado de LuffyBot
+//Emojis determinado de Ai Yaemori
 global.emoji = '🚩'
 global.emoji2 = '🍟'
 global.emoji3 = '✨️'
@@ -67,7 +68,7 @@ global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'  
 var git = 'https://github.com/OfcDiego' 
 var youtube = 'https://www.youtube.com/@OfcDiego' 
-var github = 'https://github.com/OfcDiego/LuffyBot-MD' 
+var github = 'https://github.com/OfcDiego/Ai-Yaemori' 
 var facebook = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' 
 let tiktok = 'https://tiktok.com/@theluffybot'
 
@@ -98,17 +99,15 @@ global.fkontak = { key: { participants:"0@s.whatsapp.net", "remoteJid": "status@
 
 // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
 
-global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363192435027853@newsletter', newsletterName: "『✯ Team Comunity Luffy ✯』", serverMessageId: -1 }
+global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363192435027853@newsletter', newsletterName: "『✯ Team Channel Ai Yaemori ✯』", serverMessageId: -1 }
 }}, { quoted: m }
 
 global.icono = [ 
-'https://qu.ax/vQmu.jpg',
-'https://qu.ax/Ptmh.jpg',
-'https://qu.ax/awYR.jpg',
-'https://qu.ax/ljre.jpg',
-'https://qu.ax/YkHj.jpg'
+'',
+'',
+''
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363263466636910@newsletter", serverMessageId: 100, newsletterName: '『✯ Team Comunity Luffy ✯』', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🍟 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363263466636910@newsletter", serverMessageId: 100, newsletterName: '『✯ Team Channel Ai Yaemori ✯』', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🍟 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
