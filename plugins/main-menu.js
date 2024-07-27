@@ -178,7 +178,32 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
 
 await m.react('⭐️') 
 
-await conn.sendFile(m.chat, imagen1, 'luffy.jpg', text.trim(), fkontak, null, rcanal)
+//await conn.sendFile(m.chat, imagen1, 'luffy.jpg', text.trim(), fkontak, null, rcanal)
+
+await conn.sendMessage(
+  m.chat,
+  { video: { url: 'https://telegra.ph/file/de13fdc3f5e500a7691fe.mp4' }, caption: infoText.trim(),
+  contextInfo: {
+    mentionedJid: [m.sender],
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363263466636910@newsletter',
+      newsletterName: '『✯ Team Channel Ai Yaemori ✯』',
+      serverMessageId: -1,
+    },
+    forwardingScore: 999,
+    externalAdReply: {
+      title: '🍟 Ai Yaemori - MD 🚩',
+      body: dev,
+      thumbnailUrl: icono,
+      sourceUrl: redes,
+      mediaType: 1,
+      renderLargerThumbnail: false,
+    },
+  },
+
+  gifPlayback: true, gifAttribution: 0 },
+  { quoted: fkontak })
 
   } catch (e) {
     conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, rcanal, )
