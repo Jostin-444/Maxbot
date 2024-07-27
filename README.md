@@ -1,6 +1,6 @@
 > 🚩 Versión Actual: 2.0.2
 
-## **`🍟 Yaemori Mini - MD`**
+## **`🍟 Ai Yaemori - MD`**
 
 ![Yaemori](https://telegra.ph/file/a342be45ef1a7243da9b2.jpg)
 
@@ -25,7 +25,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/OfcDiego/YaemoriMini-MD && cd YaemoriMini-MD
+git clone https://github.com/OfcDiego/Ai-Yaemori && cd Ai-Yaemori
 ```
 ```bash
 yarn install && npm install
@@ -38,14 +38,14 @@ npm start
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd YaemoriMini-MD
+> cd Ai-Yaemori
 > npm start
 ```
 
 🚩 **`OBTENER OTRO CODIGO QR`**
 ```bash
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd YaemoriMini-MD
+> cd Ai-Yaemori
 > rm -rf MiniSession
 > npm start
 ```
@@ -56,9 +56,9 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 
 🚩 **`ACTUALIZAR YAEMORI`**
-> Note Comandos para actualizar Yaemori - MD de forma automática
+> Note Comandos para actualizar Ai Yaemori  de forma automática
 ```bash
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/YaemoriMini-MD/master/update.sh | bash
+grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/Ai-Yaemori/master/update.sh | bash
 ```
 Para que no pierda su progreso en Yaemori, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
 
@@ -67,7 +67,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 ---
 
 #### ☂️ ACTIVA EN HEROKU ☂️
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfcDiego/YaemoriMini-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfcDiego/Ai-Yaemori)
 
 #### Heroku Buildpack
 | BuildPack | LINK |
@@ -86,16 +86,16 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q)
 - **Correo:** [`Aquí`](mailto:contacto@cafirexos.com)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - YaemoriMini-MD**</summary><img src="https://telegra.ph/file/530fc69bd5c105e96642e.jpg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - Ai-Yaemori**</summary><img src="https://telegra.ph/file/530fc69bd5c105e96642e.jpg"></details>
 
 #### 🟢 ACTIVAR EN CODES SPACES 
-[`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/YaemoriMini-MD&ref=main&geo=UsEast)
+[`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/Ai-Yaemori&ref=main&geo=UsEast)
 
 #### ⚡ ACRIVAR EN REPLIT
-[![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/OfcDiego/YaemoriMini-MD)](https://repl.it/github/OfcDiego/YaemoriMini-MD)
+[![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/OfcDiego/Ai-Yaemori)](https://repl.it/github/OfcDiego/Ai-Yaemori)
 
 #### 🤍 ACTIVAR EN RENDER
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2OfcDiego%YaemoriMini-MD) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2OfcDiego%Ai-Yaemori) 
 
 ## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
 
@@ -127,8 +127,8 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 --- 
 
 ### `🚩 DESARROLLADORES`
-<a href="https://github.com/OfcDiego/YaemoriMini-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=OfcDiego/YaemoriMini-MD" /> 
+<a href="https://github.com/OfcDiego/Ai-Yaemori/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=OfcDiego/Ai-Yaemori" /> 
 </a>
 
 ### `✨️ AGRADECIMIENTOS`
@@ -139,6 +139,6 @@ href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino
 <a
 href="https://github.com/OfcDiego"><img src="https://github.com/OfcDiego.png" width="130" height="130" alt="Diego"/></a>
 
-> Copyright (c) 2024 **[OfcDiego](https://github.com/OfcDiego/YaemoriMini-MD)**.
+> Copyright (c) 2024 **[OfcDiego](https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A)**.
 
 **`¡GRACIAS POR PREFERIRNOS!` 🍟**
