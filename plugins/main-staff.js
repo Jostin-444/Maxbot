@@ -26,7 +26,6 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 🍟 *Rol:* Developer
 🚩 *Número:* Wa.me/5214434703586
 ✨️ *GitHub:* https://github.com/AzamiJs`
-await conn.sendFile(m.chat, icons, 'yaemori.jpg
 
 • Eder
 🍟 *Rol:* Developer
