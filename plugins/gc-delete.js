@@ -6,6 +6,8 @@ let delet = m.message.extendedTextMessage.contextInfo.participant
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId
 return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
  } catch {
+await m.react(error)
+conn.reply(m.chat, '🚩 No Soy Admin Para Eliminar El Mensaje.', m, fake)
 return conn.sendMessage(m.chat, { delete: m.quoted.vM.key })
 }
 }
