@@ -182,7 +182,7 @@ await m.react('⭐️')
 
 await conn.sendMessage(
   m.chat,
-  { video: { url: gif }, caption: text.trim(),
+  { video: { url: vid }, caption: text.trim(),
   contextInfo: {
     mentionedJid: [m.sender],
     isForwarded: true,
