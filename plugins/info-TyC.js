@@ -1,6 +1,6 @@
 const handler = async (m, {conn}) => {
 
-conn.reply(m.chat, `*MENSAJE DEL DESARROLLADOR* 😊
+conn.reply(m.chat, `MENSAJE DEL DESARROLLADOR 😊
 
 ⚠️ ADVERTENCIA DEL CREADOR (DIEGO) ⚠️
 
@@ -10,7 +10,7 @@ El bot es simple pero con comandos divertidos, para ver los comandos utiliza: !m
 
 Bot uso publico para todas las personas que le guste usarlo, gracias por preferir nuestro servicio. 🌟
 
-💥 Contactanos 💥
+💥 ¡Contactanos! 💥
 
 👑 Creador:
 • ${global.creador}
