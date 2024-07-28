@@ -23,7 +23,7 @@ let tags = {
   'info': 'INFORMACIÓN 🐢',
   'nsfw': 'NSFW 🔞', 
   'owner': 'CREADOR 👑', 
-  'mods': 'STAFF LUFFY 🍟',
+  'mods': 'STAFF YAEMORI 🍟',
   'audio': 'AUDIOS 🔉', 
   'ai': 'AI 🌹',
   'transformador': 'CONVERTIDORES 🚩',
@@ -32,11 +32,11 @@ let tags = {
 const defaultMenu = {
   before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-“ Hola *%name* soy *LuffyBot*, %greeting ”
+“ Hola *%name* soy *Ai-Yaemori*, %greeting ”
 
 ╭────═[ *INFO - BOT* ]═─────⋆
 │╭───────────────···
-┴│✯ 🍟 *Bot:* Luffy Bot - MD 
+┴│✯ 🍟 *Bot:* Ai Yaemori - MD 
 ✩│✯ 🍂 *Modo* Público
 ✩│✯ ✨️ *Baileys:* Multi Device
 ✩│✯ ⌛️ *Tiempo Activo:* %muptime
