@@ -28,6 +28,7 @@ await conn.sendMini(m.chat, '🍟 G I T H U B - S E A R C H 🍟', dev, str, img
 } catch {
 conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, fake)
 }
+
 }
 handler.help = ['githubsearch']
 handler.tags = ['buscador']
