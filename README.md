@@ -8,7 +8,7 @@
 
 > **AVISO**: Yo "OfcDiego", me he retirado de todo lo relacionado con el bot o temas similares, por lo que en algún momento quedará obsoleto y/o algunos comandos dejarán de funcionar. Agradezco su preferencia durante el recorrido por este mundo de los bots.
 
-> **`Ai Yaemori - MD`** pasa a quedar en manos de colaboradores, y como principal representante Aiden_NotLogic.
+> **`Ai Yaemori - MD`** pasa a quedar en manos de colaboradores, y como principal representante DarkesJs.
 ---
 
 ### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba La Bot Aqui" width="42" height="42"> Prueba La Bot Aqui
