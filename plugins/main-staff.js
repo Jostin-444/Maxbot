@@ -26,6 +26,17 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 🍟 *Rol:* Developer
 🚩 *Número:* Wa.me/5214434703586
 ✨️ *GitHub:* https://github.com/AzamiJs`
+await conn.sendFile(m.chat, icons, 'yaemori.jpg
+
+• Eder
+🍟 *Rol:* Developer
+🚩 *Número:* Wa.me/573027866596
+✨️ *GitHub:* https://github.com/WOTCHITO
+
+• DarkesJs
+🍟 *Rol:* Developer
+🚩 *Número:* Wa.me/573218138672
+✨️ *GitHub:* https://github.com/WOTCHITA`
 await conn.sendFile(m.chat, icons, 'yaemori.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
