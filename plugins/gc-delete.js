@@ -1,7 +1,6 @@
-let handler = async (m, { conn, usedPrefix, command, isBotAdmin, isAdmin }) => {
+let handler = async (m, { conn, usedPrefix, command }) => {
 
 if (!m.quoted) return conn.reply(m.chat, `🚩 Responde al mensaje que deseas eliminar.`, m, rcanal)
-if (isAdmin) return conn.reply(m.chat, `🌼 *No puedo eliminar los mensajes a los administradores*`, m, rcanal, )
 try {
 let delet = m.message.extendedTextMessage.contextInfo.participant
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId
@@ -13,8 +12,8 @@ return conn.sendMessage(m.chat, { delete: m.quoted.vM.key })
 handler.help = ['delete']
 handler.tags = ['grupo']
 handler.command = /^del(ete)?$/i
-//handler.group = false
-//handler.admin = true
-//handler.botAdmin = true
+handler.group = false
+handler.admin = true
+handler.botAdmin = true
 
 export default handler
