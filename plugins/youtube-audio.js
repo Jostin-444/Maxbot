@@ -12,16 +12,16 @@ if (urls.length < text) return conn.reply(m.chat, '🚩 *No se encontraron resul
 let q = '128kbps'
 try {
 await m.react(rwait)
-const yt = await fg.yta(urls[0], q)
-let { title, dl_url, size } = yt 
-
-if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `🚩 El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal) 
 conn.reply(m.chat, `🕒 *Descargando El Audio*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
 previewType: 0, thumbnail: icons,
-sourceUrl: channel }}});
+sourceUrl: channel }}})
+const yt = await fg.yta(urls[0], q)
+let { title, dl_url, size } = yt 
+
+if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `🚩 El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal) 
 
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: title + '.mp3', mimetype: 'audio/mp4' }, { quoted: fkontak })
 await m.react(done)
