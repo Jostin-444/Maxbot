@@ -1,8 +1,9 @@
 let handler = async (m, { conn, usedPrefix, command, isBotAdmin, isAdmin }) => {
 
 if (!m.quoted) return conn.reply(m.chat, `🚩 Responde al mensaje que deseas eliminar.`, m, rcanal)
-if (!isBotAdmin) return conn.reply(m.chat, `🌼 *No soy admin, no puedo eliminar mensajes de otro miembro*`, m, rcanal, )
+//if (!isBotAdmin) return conn.reply(m.chat, `🌼 *No soy admin, no puedo eliminar mensajes de otro miembro*`, m, rcanal, )
 try {
+if (!isBotAdmin) return conn.reply(m.chat, `🌼 *No soy admin, no puedo eliminar mensajes de otro miembro*`, m, rcanal, )
 let delet = m.message.extendedTextMessage.contextInfo.participant
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId
 //return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
