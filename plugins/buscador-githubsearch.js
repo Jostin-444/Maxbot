@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 var handler = async (m, { conn, text, usedPrefix, command }) => {
 
-if (!text) return conn.reply(m.chat, `🚩 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, !${command} Ai-Yaemori`, m, rcanal)
+if (!text) return conn.reply(m.chat, `🚩 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, ${usedPrefix + command} Ai-Yaemori`, m, rcanal)
 
 try {
 
