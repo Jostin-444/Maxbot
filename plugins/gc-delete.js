@@ -1,4 +1,4 @@
-let handler = async (m, { conn, usedPrefix, command }) => {
+let handler = async (m, { conn, usedPrefix, command, isBotAdmin }) => {
 
 if (!m.quoted) return conn.reply(m.chat, `🚩 Responde al mensaje que deseas eliminar.`, m, rcanal)
 if (!isBotAdmin) return conn.reply(m.chat, `🌼 *No soy admin, no puedo eliminar mensajes de otro miembro*`, m, rcanal, )
