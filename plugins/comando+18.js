@@ -14,7 +14,7 @@ sourceUrl: channel }}})
       break;
     case 'pack2':
       const url2 = await packgirl[Math.floor(Math.random() * packgirl.length)];
-      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 2 🥵_`}, {quoted: m});
       break;
     case 'pack3':
       const url3 = await packmen[Math.floor(Math.random() * packmen.length)];
