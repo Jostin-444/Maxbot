@@ -19,7 +19,8 @@ ${repo.description ? `📝 *Descripción:*\n${repo.description}` : ''}
 `.trim()}).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n');
  // conn.sendMessage(m.chat, {text: str.trim()}, {quoted: m})
 
-conn.sendMessage(m.chat, {text: str.trim(), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [m.sender], "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.titulowm2, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen2, "mediaUrl": redes, "sourceUrl": redes}}}, {quoted: fkontak});  
+conn.reply(m.chat, str.trim(), m, rcanal)
+
 };
 handler.help = ['githubsearch <txt>'];
 handler.estrellas = 1;
