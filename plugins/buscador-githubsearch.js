@@ -24,7 +24,7 @@ return `
 `.trim()}).join('\n\n─────────────────\n\n')
  // conn.sendMessage(m.chat, {text: str.trim()}, {quoted: m})  
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
-await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: img, thumbnailUrl: img, title: 'Resultados Encontrados 🔎',
+await conn.sendMessage(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: img, thumbnailUrl: img, title: 'Resultados Encontrados 🔎',
 }
 })
 }
