@@ -12,12 +12,12 @@ await conn.sendMini(m.chat, packname, dev, welcome, img, img, redes, fkontak)
   }
 
   if (chat.welcome && m.messageStubType == 28) {
-    let bye = `Adios @${m.messageStubParameters[0].split`@`[0]}`
+    let bye = `Adiós @${m.messageStubParameters[0].split`@`[0]}`
 await conn.sendMini(m.chat, packname, dev, bye, img, img, redes, fkontak)
   }
 
   if (chat.welcome && m.messageStubType == 32) {
-    let kick = `Adios @${m.messageStubParameters[0].split`@`[0]}`
+    let kick = `Adiós @${m.messageStubParameters[0].split`@`[0]}`
 await conn.sendMini(m.chat, packname, dev, kick, img, img, redes, fkontak)
 }}
 
