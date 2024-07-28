@@ -14,9 +14,9 @@ global.confirmCode = ''
 
 //• ↳𝑺𝑶𝑳𝑶 𝑫𝑬𝑺𝑨𝑹𝑹𝑶𝑳𝑳𝑨𝑫𝑶𝑹𝑬𝑺 𝑨𝑷𝑹𝑶𝑩𝑨𝑫𝑶𝑺
 global.owner = [
-['573012482597', '👑 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 👑', true],
-['573218138672', '𝗢𝘄𝗻𝗲𝗿 👑', true],
-['573106909511']]
+['573106909511', '🚩 𝙰𝙸 𝚈𝙰𝙴𝙼𝙾𝚁𝙸 - 𝙼𝙳', true],
+['573012482597', '👑 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 👑', true],
+['573218138672', '𝙾𝚆𝙽𝙴𝚁 👑', true]]
 
 //• ↳𝑺𝑶𝑳𝑶 𝑴𝑶𝑫𝑬𝑹𝑨𝑫𝑶𝑹𝑬𝑺!
 global.mods = ['59169082575', '5492355505090', '51939041500', '51929972576', '5493794297363', '59168106005', '525610314499']
@@ -25,15 +25,15 @@ global.suittag = ['573012482597']
 global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packname = '⪛✰ 𝐘𝐚𝐞𝐦𝐨𝐫𝐢 𝐌𝐢𝐧𝐢 - 𝐌𝐃 ✰⪜'
+global.packname = '⪛✰ 𝐀𝐢 𝐘𝐚𝐞𝐦𝐨𝐫𝐢 - 𝐌𝐃 ✰⪜'
 global.author = 'Oғᴄ.Dɪᴇɢᴏ 👑'
-global.wm = '✨◌*̥₊ YᴀᴇᴍᴏʀɪMɪɴɪ-MD ◌❐⚡༉'
-global.titulowm = 'YaemoriMini-MD 🍟'
+global.wm = '✨◌*̥₊ Aɪ Yᴀᴇᴍᴏʀɪ - MD ◌❐⚡༉'
+global.titulowm = 'Ai Yaemori - MD 🍟'
 global.titulowm2 = 'Ofc.Diego'
 global.igfg = '𝙾𝙵𝙲.𝙳𝙸𝙴𝙶𝙾'
-global.botname = 'Yᴀᴇᴍᴏʀɪ Mɪɴɪ - MD 🚩'
+global.botname = 'Aɪ Yᴀᴇᴍᴏʀɪ - MD 🚩'
 global.dev = '🚩 Powered By あ S_ᴅɪᴇɢᴏ あ'
-global.textbot = '𝗬𝗮𝗲𝗺𝗼𝗿𝗶 : 𝗢𝗳𝗰𝗗𝗶𝗲𝗴𝗼 🚩'
+global.textbot = '𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶 : 𝗢𝗳𝗰𝗗𝗶𝗲𝗴𝗼 🚩'
 global.vs = '2.0.2'
 
 
