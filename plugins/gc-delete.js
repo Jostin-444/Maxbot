@@ -3,6 +3,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 if (!m.quoted) return conn.reply(m.chat, `🚩 Responde al mensaje que deseas eliminar.`, m, rcanal)
 try {
 let delet = m.message.extendedTextMessage.contextInfo.participant
+if (!isBotAdmin) return conn.reply(m.chat, `🌼 *No soy admin, no puedo eliminar mensajes de otro miembro*`, m, rcanal, )
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId
 return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
  } catch {
