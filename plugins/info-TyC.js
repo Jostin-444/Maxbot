@@ -1,11 +1,6 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.terminos);
-};
-handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i;
-handler.command = new RegExp;
-export default handler;
 
-global.terminos = `𝑺𝑴𝑺 𝑫𝑬𝑳 𝑪𝑹𝑬𝑨𝑫𝑶𝑹✨
+conn.reply(m.chat, `𝑺𝑴𝑺 𝑫𝑬𝑳 𝑪𝑹𝑬𝑨𝑫𝑶𝑹✨
 
 ⚠️𝐀𝐃𝐕𝐄𝐑𝐓𝐄𝐍𝐂𝐈𝐀 𝐃𝐄𝐋 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 (𝐃𝐈𝐄𝐆𝐎)⚠️
 
@@ -22,4 +17,9 @@ global.terminos = `𝑺𝑴𝑺 𝑫𝑬𝑳 𝑪𝑹𝑬𝑨𝑫𝑶𝑹✨
 ✫ Correo electronico: 
 ${global.correo}
 
-✰ ${global.packname}`;
+✰ ${global.packname}`, m, rcanal)
+
+}
+handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i;
+handler.command = new RegExp;
+export default handler;
