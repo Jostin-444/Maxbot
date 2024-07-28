@@ -10,7 +10,7 @@
 
 > Si Deseas Probar El Bot Antes De Instalarlo, Click Abajo. 🍟
 
-[![Click Aquí](https://img.shields.io/badge/Grupo-Yaemori-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS)
+[![Click Aquí](https://img.shields.io/badge/Grupo-Ai-Yaemori-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS)
 
 🍟 **`INSTALACION MANUAL POR TERMUX`**
 
@@ -25,7 +25,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/OfcDiego/Ai-Yaemori && cd Ai-Yaemori
+git clone https://github.com/OfcDiego/YaemoriBot-MD && cd YaemoriBot-MD
 ```
 ```bash
 yarn install && npm install
@@ -38,14 +38,14 @@ npm start
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd Ai-Yaemori
+> cd YaemoriBot-MD
 > npm start
 ```
 
 🚩 **`OBTENER OTRO CODIGO QR`**
 ```bash
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd Ai-Yaemori
+> cd YaemoriBot-MD
 > rm -rf MiniSession
 > npm start
 ```
@@ -58,7 +58,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 🚩 **`ACTUALIZAR YAEMORI`**
 > Note Comandos para actualizar Ai Yaemori  de forma automática
 ```bash
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/Ai-Yaemori/master/update.sh | bash
+grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/YaemoriBot-MD/master/update.sh | bash
 ```
 Para que no pierda su progreso en Yaemori, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
 
@@ -67,7 +67,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 ---
 
 #### ☂️ ACTIVA EN HEROKU ☂️
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfcDiego/Ai-Yaemori)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfcDiego/YaemoriBot-MD)
 
 #### Heroku Buildpack
 | BuildPack | LINK |
@@ -89,13 +89,13 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 - [x] **Configuración** <details><summary>**Ajustes del Servidor - Ai-Yaemori**</summary><img src="https://telegra.ph/file/530fc69bd5c105e96642e.jpg"></details>
 
 #### 🟢 ACTIVAR EN CODES SPACES 
-[`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/Ai-Yaemori&ref=main&geo=UsEast)
+[`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/YaemoriBot-MD&ref=main&geo=UsEast)
 
 #### ⚡ ACRIVAR EN REPLIT
-[![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/OfcDiego/Ai-Yaemori)](https://repl.it/github/OfcDiego/Ai-Yaemori)
+[![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/OfcDiego/YaemoriBot-MD)](https://repl.it/github/OfcDiego/YaemoriBot-MD)
 
 #### 🤍 ACTIVAR EN RENDER
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2OfcDiego%Ai-Yaemori) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2OfcDiego%YaemoriBot-MD) 
 
 ## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
 
@@ -127,8 +127,8 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 --- 
 
 ### `🚩 DESARROLLADORES`
-<a href="https://github.com/OfcDiego/Ai-Yaemori/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=OfcDiego/Ai-Yaemori" /> 
+<a href="https://github.com/OfcDiego/YaemoriBot-MD/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=OfcDiego/YaemoriBot-MD" /> 
 </a>
 
 ### `✨️ AGRADECIMIENTOS`
