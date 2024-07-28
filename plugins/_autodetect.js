@@ -11,10 +11,7 @@ let usuario = `@${m.sender.split`@`[0]}`
 const groupName = (await conn.groupMetadata(m.chat)).subject
 const groupAdmins = participants.filter((p) => p.admin)
 
-const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => imagen1)
-//let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => imagen2)
+let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => imagen1)
 const img = await (await fetch(pp)).buffer()
 const chat = global.db.data.chats[m.chat]
 const mentionsString = [m.sender, m.messageStubParameters[0], ...groupAdmins.map((v) => v.id)]
