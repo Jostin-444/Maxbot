@@ -35,6 +35,7 @@ if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `🚩 El archivo pes
 await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `🚩 *Aquí está tu video de Youtube*\n${wm}`, mimetype: 'video/mp4', fileName: `${title}` + `.mp4`}, {quoted: fkontak })
 await m.react(done)
 } catch {
+await m.react(error)
 await m.reply(`✘ *Ocurrío un error*`)
 }}}
 handler.help = ['Video']
