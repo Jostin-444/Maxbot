@@ -25,7 +25,7 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 • AzamiJs
 🍟 *Rol:* Developer
 🚩 *Número:* Wa.me/5214434703586
-✨️ *GitHub:* https://github.com/AzamiJs`
+✨️ *GitHub:* https://github.com/AzamiJs
 
 • Eder
 🍟 *Rol:* Developer
