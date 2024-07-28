@@ -1,6 +1,8 @@
-import fg from 'api-dylux'
+/*import fg from 'api-dylux'
 import yts from 'yt-search'
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'*/
+import fetch from "node-fetch"
+import yts from "yt-search"
 let limit = 350
 let handler = async (m, { conn, text, isPrems, isOwner, usedPrefix, command }) => {
 if (!m.quoted) return conn.reply(m.chat, '🚩 *Etiqueta el mensaje que contenga el resultado de Play*', m, rcanal)
