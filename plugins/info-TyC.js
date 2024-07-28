@@ -1,6 +1,6 @@
 const handler = async (m, {conn}) => {
 
-conn.reply(m.chat, `MENSAJE DEL DESARROLLADOR 😊
+conn.reply(m.chat, `*MENSAJE DEL DESARROLLADOR* 😊
 
 ⚠️ ADVERTENCIA DEL CREADOR (DIEGO) ⚠️
 
