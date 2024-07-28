@@ -3,6 +3,7 @@ import yts from "yt-search"
 import ytdl from 'ytdl-core'
 import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
+let n = wm
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
 if (!text) throw `que musica?`
@@ -87,10 +88,10 @@ renderLargerThumbnail: true
 try {
 let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkeysapi}&url=${yt_play[0].url}`)    
 let lolh = await lolhuman.json()
-let n = lolh.result.title || 'error'
+// let n = lolh.result.title || 'error'
 await conn.sendMessage(m.chat, { audio: { url: lolh.result.link}, mimetype: 'audio/mpeg', contextInfo: {
 externalAdReply: {
-title: n,
+title: m,
 body: "",
 thumbnailUrl: yt_play[0].thumbnail, 
 mediaType: 1,
