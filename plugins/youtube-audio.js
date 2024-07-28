@@ -2,7 +2,12 @@
 import yts from 'yt-search'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'*/
 import fetch from 'node-fetch';
-import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from '@whiskeysockets/baileys';
+import axios from 'axios';
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
+import fs from "fs";
+import yts from 'yt-search';
+import ytmp33 from '../lib/ytmp33.js';
+import ytmp44 from '../lib/ytmp44.js';
 let limit = 350
 let handler = async (m, { conn, text, isPrems, isOwner, usedPrefix, command }) => {
 if (!m.quoted) return conn.reply(m.chat, '🚩 *Etiqueta el mensaje que contenga el resultado de Play*', m, rcanal)
