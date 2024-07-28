@@ -34,7 +34,7 @@ text: captionvid,
 contextInfo: {
 externalAdReply: {
 title: `𝐄𝐧 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐞𝐧𝐯𝐢𝐨 𝐬𝐮: ${additionalText}`,
-body: fantasy,
+body: dev,
 thumbnailUrl: `${yt_play[0].url}`, 
 mediaType: 1,
 showAdAttribution: false,
