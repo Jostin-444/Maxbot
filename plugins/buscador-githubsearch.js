@@ -1,4 +1,7 @@
+import MessageType from '@whiskeysockets/baileys'
 import fetch from 'node-fetch'
+import fs from 'fs'
+
 var handler = async (m, { conn, text, usedPrefix, command }) => {
 
 if (!text) return conn.reply(m.chat, `🚩 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, ${usedPrefix + command} Ai-Yaemori`, m, rcanal)
