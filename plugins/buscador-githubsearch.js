@@ -25,7 +25,7 @@ return `
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
 await conn.sendMini(m.chat, '🍟 G I T H U B - S E A R C H 🍟', dev, str, img, img, redes, estilo)
 } catch {
-conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, fake)}}
+conn.reply(m.chat, '🚩 No se encontró resultados de: ' + text, m, fake)}}
 handler.help = ['githubsearch']
 handler.tags = ['buscador']
 handler.command = /^(githubsearch)$/i
