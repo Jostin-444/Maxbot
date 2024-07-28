@@ -1,5 +1,10 @@
-import fg from 'api-dylux'
+/*import fg from 'api-dylux'
 import yts from 'yt-search'
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'*/
+import fetch from "node-fetch"
+import yts from "yt-search"
+import ytdl from 'ytdl-core'
+import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let limit = 350
 let handler = async (m, { conn, text, isPrems, isOwner, usedPrefix, command }) => {
