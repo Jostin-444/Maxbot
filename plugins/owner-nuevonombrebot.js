@@ -8,9 +8,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     throw `🚩 Ocurrió Un Error¡!`
   }
 }
-handler.help = ['nuevonombre <teks>']
+handler.help = ['nuevonombrebot <teks>']
 handler.tags = ['owner']
-handler.command = /^(nuevonombre|nuevonombrebot|cambianombre)$/i
+handler.command = /^(nuevonombrebot|nuevonombre|cambianombre)$/i
 
 handler.owner = true
 export default handler
