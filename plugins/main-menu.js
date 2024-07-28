@@ -178,7 +178,7 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
 
 await m.react('⭐️') 
 
-//await conn.sendFile(m.chat, imagen1, 'luffy.jpg', text.trim(), fkontak, null, rcanal)
+//await conn.sendFile(m.chat, imagen1, 'yaemori.jpg', text.trim(), fkontak, null, rcanal)
 
 await conn.sendMessage(
   m.chat,
