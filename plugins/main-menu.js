@@ -182,7 +182,7 @@ await m.react('⭐️')
 
 await conn.sendMessage(
   m.chat,
-  { video: { url: 'https://telegra.ph/file/de13fdc3f5e500a7691fe.mp4' }, caption: infoText.trim(),
+  { video: { url: 'https://telegra.ph/file/de13fdc3f5e500a7691fe.mp4' }, caption: text.trim(),
   contextInfo: {
     mentionedJid: [m.sender],
     isForwarded: true,
