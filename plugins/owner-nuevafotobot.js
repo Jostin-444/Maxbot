@@ -69,8 +69,8 @@ let handler = async (_0x55976e, {
         return m.reply('🚩 Responde a una *Imagen.*')
     }
 };
-handler.tag = ['owner']
-handler.help = ['nuevafotobot']
+handler.tags = ['owner']
+handler.help = ['nuevafotobot *<imagen>*']
 handler.command = ['nuevafotobot']
 handler.owner = true 
 export default handler;
