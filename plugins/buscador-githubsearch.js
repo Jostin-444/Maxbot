@@ -24,7 +24,7 @@ return `
 `.trim()}).join('\n\n─────────────────\n\n')
  // conn.sendMessage(m.chat, {text: str.trim()}, {quoted: m})  
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
-await conn.sendMini(m.chat, packname, wm, txt, img, img, redes, fkontak)
+await conn.sendMini(m.chat, packname, wm, str, img, img, redes, fkontak)
 }
 handler.help = ['githubsearch']
 handler.tags = ['buscador']
