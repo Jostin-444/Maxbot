@@ -55,33 +55,33 @@ setTimeout(resolve, 1000)
 }
 let timestamp = speed()
 let latensi = speed() - timestamp
-let luffy = `╭─⬣「 *Info De Luffy* 」⬣\n`
-luffy += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
-luffy += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
-luffy += `│ 📦 *Total Plugins* : ${totalf}\n`
-luffy += `│ 💫 *Plataforma* : ${platform()}\n`
-luffy += `│ 🧿 *Servidor* : ${hostname()}\n`
-luffy += `│ 🚀 *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}\n`
-luffy += `│ 🌟 *FreeRAM* : ${format(freemem())}\n`
-luffy += `│ ✨️ *Speed* : ${latensi.toFixed(4)} ms\n`
-luffy += `│ 🕗 *Uptime* : ${uptime}\n`
-luffy += `│ 🍟 *Modo* : ${bot.public ? 'Privado' : 'Publico'}\n`
-luffy += `│ 🚩 *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )\n`
-luffy += `│ 🐢 *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )\n`
-luffy += `│ 🍧 *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios\n`
-luffy += `╰─⬣\n\n`
-luffy += `╭─⬣「 *Chats De Luffy* 」⬣\n`
-luffy += `│ 🧃 *${groupsIn.length}* Chats en Grupos\n`
-luffy += `│ 🌸 *${groupsIn.length}* Grupos Unidos\n`
-luffy += `│ 🍁 *${groupsIn.length - groupsIn.length}* Grupos Salidos\n`
-luffy += `│ 💬 *${chats.length - groupsIn.length}* Chats Privados\n`
-luffy += `│ 💭 *${chats.length}* Chats Totales\n`
-luffy += `╰─⬣\n\n`
-luffy += `╭─⬣「 *NodeJS Uso de memoria* 」⬣\n`
-luffy += `${'```' + Object.keys(used).map((key, _, arr) => `│ ${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}\n`
+let yaemori = `╭─⬣「 *Info De Ai Yaemori* 」⬣\n`
+yaemori += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
+yaemori += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
+yaemori += `│ 📦 *Total Plugins* : ${totalf}\n`
+yaemori += `│ 💫 *Plataforma* : ${platform()}\n`
+yaemori += `│ 🧿 *Servidor* : ${hostname()}\n`
+yaemori += `│ 🚀 *RAM* : ${format(totalmem() - freemem())} / ${format(totalmem())}\n`
+yaemori += `│ 🌟 *FreeRAM* : ${format(freemem())}\n`
+yaemori += `│ ✨️ *Speed* : ${latensi.toFixed(4)} ms\n`
+yaemori += `│ 🕗 *Uptime* : ${uptime}\n`
+yaemori += `│ 🍟 *Modo* : ${bot.public ? 'Privado' : 'Publico'}\n`
+yaemori += `│ 🚩 *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )\n`
+yaemori += `│ 🐢 *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )\n`
+yaemori += `│ 🍧 *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios\n`
+yaemori += `╰─⬣\n\n`
+yaemori += `╭─⬣「 *Chats De Ai Yaemori* 」⬣\n`
+yaemori += `│ 🧃 *${groupsIn.length}* Chats en Grupos\n`
+yaemori += `│ 🌸 *${groupsIn.length}* Grupos Unidos\n`
+yaemori += `│ 🍁 *${groupsIn.length - groupsIn.length}* Grupos Salidos\n`
+yaemori += `│ 💬 *${chats.length - groupsIn.length}* Chats Privados\n`
+yaemori += `│ 💭 *${chats.length}* Chats Totales\n`
+yaemori += `╰─⬣\n\n`
+yaemori += `╭─⬣「 *NodeJS Uso de memoria* 」⬣\n`
+yaemori += `${'```' + Object.keys(used).map((key, _, arr) => `│ ${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}\n`
 luffy += `╰─⬣`
 
-await conn.reply(m.chat, luffy, fkontak, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎🚩˖ ⸙',body: packname, previewType: 0, thumbnail: icons, sourceUrl: redes}}})
+await conn.reply(m.chat, yaemori, fkontak, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎🚩˖ ⸙',body: packname, previewType: 0, thumbnail: icons, sourceUrl: redes}}})
 // await conn.sendFile(m.chat, imagen1, 'luffy.jpg', luffy, fkontak, null, rcanal)
 }
 handler.help = ['infobot']
