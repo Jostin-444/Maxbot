@@ -12,8 +12,8 @@ conn.reply(m.chat, `𝑺𝑴𝑺 𝑫𝑬𝑳 𝑪𝑹𝑬𝑨𝑫𝑶𝑹✨
 
 𝑪𝒐𝒏𝒕𝒂𝒄𝒕𝒂𝒏𝒐𝒔🚀
 
-✫ ${global.creador}
-᯽ OfcDiego
+✫ Creador:
+᯽ ${global.creador}
 ✫ Correo electronico: 
 ${global.correo}
 
