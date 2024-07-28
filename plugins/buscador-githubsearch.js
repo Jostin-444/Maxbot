@@ -7,17 +7,26 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
   const json = await res.json();
   if (res.status !== 200) throw json;
   //const imagen = await conn.getFile(json.items[0].owner.avatar_url).data
-  const str = json.items.map((repo, index) => {
-  return `
-*${1 + index}. ${repo.full_name}${repo.fork ? ' (fork)' : ''}*
-🔗 *Url:* ${repo.html_url}
-📅 *Creado el:* ${formatDate(repo.created_at)}
-🔄 *Actualizado el:* ${formatDate(repo.updated_at)}
-📥 *Clone:* $ git clone ${repo.clone_url}
-👁 ${repo.watchers} ◉ 🍴 ${repo.forks} ◉ ⭐ ${repo.stargazers_count} ◉ ❓ 
-${repo.description ? `📝 *Descripción:*\n${repo.description}` : ''}
-`.trim()}).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n')
-  conn.sendMessage(m.chat, {text: str.trim()}, {quoted: m})  
+  let str = json.items.map((repo, index) => {
+return `
+🍟 *Resultado:* ${1 + index}
+🔗 *Enlace:* ${repo.html_url}
+👑 *Creador:* ${repo.owner.login}
+🍟 *Nombre:* ${repo.name}
+🫂 *Creado:* ${formatDate(repo.created_at)}
+💥 *Actualizado:* ${formatDate(repo.updated_at)}
+👀 *Visitas:* ${repo.watchers}
+✨️ *Bifurcado:* ${repo.forks}
+🌟 *Estrellas:* ${repo.stargazers_count}
+🍂 *Issues:* ${repo.open_issues}
+🍭 *Descripción:* ${repo.description ? `${repo.description}` : 'Sin Descripción'}
+⭐️ *Clone:* ${repo.clone_url}
+`.trim()}).join('\n\n─────────────────\n\n')
+ // conn.sendMessage(m.chat, {text: str.trim()}, {quoted: m})  
+let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
+await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: img, thumbnailUrl: img, title: 'Resultados Encontrados 🔎',
+}
+})
 }
 handler.help = ['githubsearch']
 handler.tags = ['buscador']
