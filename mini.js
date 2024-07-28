@@ -282,7 +282,7 @@ process.on('uncaughtException', console.error)
 /*async function connectSubBots() {
 const subBotDirectory = './MiniJadiBot';
 if (!existsSync(subBotDirectory)) {
-console.log('🚩 LuffyBot no tiene Sub-Bots vinculados.');
+console.log('🚩 Ai Yaemori no tiene Sub-Bots vinculados.');
 return;
 }
 
@@ -309,11 +309,11 @@ const mainBotAuthFile = 'MiniSession';
 try {
 const mainBot = await connectionUpdate(mainBotAuthFile);
 global.conns.push(mainBot);
-console.log(chalk.bold.greenBright(`🚩 LuffyBot conectado correctamente.`))
+console.log(chalk.bold.greenBright(`🚩 Ai Yaemori conectado correctamente.`))
 
 await connectSubBots();
 } catch (error) {
-console.error(chalk.bold.cyanBright(`🍭 Error al iniciar LuffyBot: `, error))
+console.error(chalk.bold.cyanBright(`🍭 Error al iniciar Ai Yaemori: `, error))
 }
 })();*/
 
