@@ -69,8 +69,9 @@ var youtube = 'https://www.youtube.com/@OfcDiego'
 var github = 'https://github.com/OfcDiego/Ai-Yaemori' 
 var facebook = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' 
 let tiktok = 'https://tiktok.com/@theluffybot'
+let correo = 'theyaemoribot@gmail.com'
 
-global.redes = [canal, git, youtube, github, facebook, tiktok].getRandom()
+global.redes = [canal, git, youtube, github, facebook, tiktok, correo].getRandom()
 
 //Imagen
 let category = "imagen"
