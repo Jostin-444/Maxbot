@@ -4,7 +4,7 @@ let handler  = async (m, { conn, usedPrefix, command }) => {
 
 let grupos = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D* 🍂
 
-1- 【 ✰ Luffy Bot - MD ✰ 】
+1- 【 ✰ Ai Yaemori - MD ✰ 】
 *✰* ${gp1}
 
 2 - ${namegrupo}
@@ -35,7 +35,7 @@ Canal :
 
 > ${dev}`
 
-await conn.sendFile(m.chat, imagen2, "luffy.jpg", grupos, m, null, rcanal)
+await conn.sendFile(m.chat, imagen2, "yaemori.jpg", grupos, m, null, rcanal)
 
 await m.react(emojis)
 
