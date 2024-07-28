@@ -23,9 +23,10 @@ return `
 🍭 *Descripción:* ${repo.description ? `${repo.description}` : 'Sin Descripción'}
 ⭐️ *Clone:* ${repo.clone_url}
 `.trim()}).join('\n\n─────────────────\n\n') 
-await m.react(done)
+// await m.react(done)
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
 await conn.sendMini(m.chat, '🍟 G I T H U B - S E A R C H 🍟', dev, str, img, img, redes, estilo)
+await m.react(done)
 } catch {
 await m.react(error)
 conn.reply(m.chat, '🚩 *No se encontró resultados de:* ' + text, m, fake)}}
