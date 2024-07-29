@@ -1,6 +1,6 @@
-// *`Instagram Downloader 🐢`*
+// Instagram Downloader 🐢
 
-import { igdl } from "ruhend-scraper";
+import { igdl } from "ruhend-scraper"
 
 let handler = async (m, { args, conn }) => { 
 if (!args[0]) {
