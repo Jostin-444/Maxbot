@@ -9,7 +9,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
 
   if (chat.welcome && m.messageStubType == 27) {
     let welcome = `┌─★ *Ai Yaemori - MD* \n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Bienvenido a\n   │✑  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
-this.sendMessage(m.chat, { audio: { url: vn }, contextInfo:{ mentionedJid:[nombre], "externalAdReply": { "thumbnail": img, "title": `乂 Ｗ Ｅ Ｌ Ｃ Ｏ Ｍ Ｅ 乂`, "body": `@${m.messageStubParameters[0].split`@`[0]}`, "previewType": "PHOTO", "thumbnailUrl": null, "showAdAttribution": true,  sourceUrl: [tiktok, yt, md, channel].getRandom()}},  ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: fkontak })
+this.sendMessage(m.chat, { audio: { url: vn }, contextInfo:{ mentionedJid:[nombre], "externalAdReply": { "thumbnail": img, "title": `${groupMetadata.subject}`, "body": `${m.messageStubParameters[0].split`@`[0]}`, "previewType": "PHOTO", "thumbnailUrl": null, "showAdAttribution": true,  sourceUrl: [tiktok, yt, md, channel].getRandom()}},  ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: fkontak })
   }
 
   if (chat.welcome && m.messageStubType == 28) {
