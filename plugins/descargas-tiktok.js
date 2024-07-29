@@ -7,7 +7,7 @@ await m.react(rwait)
 let {
 title,
 author,
-username,
+wm,
 published,
 like,
 comment,
