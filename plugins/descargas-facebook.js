@@ -43,8 +43,7 @@ handler.command = /^(facebook|fb)$/i;
 
 export default handler;       
 
-                                                                                                                                                                                                                                                      *_`package  :`_*
-   "ruhend-scraper": "^*",
+                                                                                                                                                                                                                                                     
 
 /*import fetch from 'node-fetch'
 import { facebookdl, facebookdlv2 } from '@bochilteam/scraper'
