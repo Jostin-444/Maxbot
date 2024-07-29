@@ -21,12 +21,12 @@ if (!result || result.length === 0) {
 return conn.reply(m.chat, '🚩 *No se encontraron resultados.*', m)}
 let data
 try {
-conn.reply(m.chat, `🕒 *Descargando su video de facebook.*`, m, {
+/*conn.reply(m.chat, `🕒 *Descargando su video de facebook.*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
 previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
+sourceUrl: channel }}})*/
 await m.react(rwait)
 data = result.find(i => i.resolution === "720p (HD)") || result.find(i => i.resolution === "360p (SD)")
 } catch {
@@ -36,12 +36,12 @@ if (!data) {
 return conn.reply(m.chat, '🚩 *No se encontró una resolución adecuada.*', m, rcanal)}
 let video = data.url
 try {
-conn.reply(m.chat, `🕒 *Descargando su video de facebook.*`, m, {
+/*conn.reply(m.chat, `🕒 *Descargando su video de facebook.*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
 previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
+sourceUrl: channel }}})*/
 await m.react(rwait)
 await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*', fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: fkontak })
 await m.react(done)
