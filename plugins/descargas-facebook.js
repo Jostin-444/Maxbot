@@ -18,7 +18,7 @@ try {
 await m.react(rwait)
 data = result.find(i => i.resolution === "720p (HD)") || result.find(i => i.resolution === "360p (SD)")
 let video = data.url
-await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*', fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: estilo })
+await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*', fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: fkontak })
 await m.react(done)
 } catch {
 await m.react(error)
