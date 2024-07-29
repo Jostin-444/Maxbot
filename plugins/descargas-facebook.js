@@ -1,4 +1,4 @@
-import { igdl } from 'ruhend-scraper';
+import { igdl } from 'ruhend-scraper'
 
 const handler = async (m, { text, conn, args, usedPrefix, command }) => {
 if (!args[0]) {
@@ -10,7 +10,7 @@ res = await igdl(args[0])
 } catch {
 await m.react(error)
 return conn.reply(m.chat, '🚩 *Error al obtener datos. Verifica el enlace.*', m)}
-let result = res.data;
+let result = res.data
 if (!result || result.length === 0) {
 return conn.reply(m.chat, '🚩 *No se encontraron resultados.*', m)}
 let data
@@ -25,7 +25,7 @@ return conn.reply(m.chat, '🚩 *No se encontró una resolución adecuada.*', m,
 let video = data.url
 try {
 await m.react(rwait)
-await conn.sendMessage(m.chat, { video: { url: video }, caption: null, fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*', fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: fkontak })
 await m.react(done)
 } catch {
 await m.react(error)
