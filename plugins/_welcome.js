@@ -3,12 +3,14 @@ import fetch from 'node-fetch'
 
 export async function before(m, {conn, participants, groupMetadata}) {
   if (!m.messageStubType || !m.isGroup) return !0;
+  let apii = await this.getFile(img)
+  let vn = 'https://qu.ax/cUYg.mp3'
   let img = imagen1
   let chat = global.db.data.chats[m.chat]
 
   if (chat.welcome && m.messageStubType == 27) {
     let welcome = `┌─★ *Ai Yaemori - MD* \n│「 Bienvenido 」\n└┬★ 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │✑  Bienvenido a\n   │✑  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
-await conn.sendMini(m.chat, packname, dev, welcome, img, img, redes, fkontak)
+this.sendMessage(id, { audio: { url: vn }, contextInfo:{ mentionedJid:[user], "externalAdReply": { "thumbnail": apii.data, "title": `乂 Ｗ Ｅ Ｌ Ｃ Ｏ Ｍ Ｅ 乂`, "body": dev, "previewType": "PHOTO", "thumbnailUrl": null, "showAdAttribution": true,  sourceUrl: [tiktok, yt, md, channel].getRandom()}},  ptt: true, mimetype: 'audio/mpeg', fileName: `error.mp3` }, { quoted: fkontak })
   }
 
   if (chat.welcome && m.messageStubType == 28) {
