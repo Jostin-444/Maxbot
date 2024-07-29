@@ -2,7 +2,7 @@ import { igdl } from 'ruhend-scraper'
 
 const handler = async (m, { text, conn, args, usedPrefix, command }) => {
 if (!args[0]) {
-return conn.reply(m.chat, '🍟 *Ingresa Un Link De Facebook*', m, rcanal)}
+return conn.reply(m.chat, '🍟 *`Ingresa Un Link De Facebook*`', m, rcanal)}
 let res
 try {
 conn.reply(m.chat, `🕒 *Descargando su video de facebook.*`, m, {
@@ -18,7 +18,7 @@ try {
 await m.react(rwait)
 data = result.find(i => i.resolution === "720p (HD)") || result.find(i => i.resolution === "360p (SD)")
 let video = data.url
-await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*', fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: fkontak })
+await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*' + textbot, fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: fkontak })
 await m.react(done)
 } catch {
 await m.react(error)
