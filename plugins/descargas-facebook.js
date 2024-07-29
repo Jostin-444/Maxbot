@@ -1,6 +1,6 @@
 
 
- import { igdl } from 'ruhend-scraper';
+/* import { igdl } from 'ruhend-scraper';
 
 const handler = async (m, { text, conn, args, usedPrefix, command }) => {
   if (!args[0]) {
@@ -41,12 +41,11 @@ const handler = async (m, { text, conn, args, usedPrefix, command }) => {
 
 handler.command = /^(facebook|fb)$/i;
 
-export default handler;       
+export default handler;       */
 
                                                                                                                                                                                                                                                      
 
-/*import fetch from 'node-fetch'
-import { facebookdl, facebookdlv2 } from '@bochilteam/scraper'
+import { igdl } from 'ruhend-scraper';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Facebook junto al comando.\n\nEjemplo:\n> *${usedPrefix + command}* https://www.facebook.com/share/v/Mqwsfxs8agAHsx4m/?mibextid=xfxF2i`, m, rcanal)
@@ -70,4 +69,4 @@ handler.tags = ['descargas']
 handler.command = ['fb', 'fbdl', 'facebookdl', 'facebook']
 handler.register = true 
 //handler.estrellas = 1
-export default handler*/
+export default handler
