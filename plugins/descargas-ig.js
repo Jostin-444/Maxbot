@@ -2,7 +2,7 @@ import { igdl } from "ruhend-scraper"
 
 let handler = async (m, { args, conn }) => { 
 if (!args[0]) {
-return conn.reply(m.chat, '*`Ingresa un link de Instagram`*', m, rcanal)}
+return conn.reply(m.chat, '🍟 *Ingresa un link de Instagram*', m, rcanal)}
 try {
 await m.react(rwait)
 conn.reply(m.chat, `🕒 *Enviando El Video...*`, m, {
