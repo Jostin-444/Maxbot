@@ -23,9 +23,9 @@ let handler = async (m, { args, conn }) => {
     }
 }
 
-handler.command = ['instagram'];
+handler.command = ['instagram', 'ig'];
 handler.tags = ['descargas'];
-handler.help = ['instagram'];
+handler.help = ['instagram', 'ig'];
 
 export default handler;
 
