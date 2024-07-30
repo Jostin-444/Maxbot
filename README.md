@@ -1,6 +1,6 @@
 > 🚩 Versión Actual: 2.0.2
 
-## 🍟 **`GENESIS - BOT`**
+## 🍟 **`G E N E S I S - B O T`**
 
 ![Genesis](https://telegra.ph/file/43ef4c5e5e34627622296.jpg)
 
