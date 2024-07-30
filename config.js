@@ -25,17 +25,16 @@ global.suittag = ['573012482597']
 global.prems = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packname = '⪛✰ 𝐀𝐢 𝐘𝐚𝐞𝐦𝐨𝐫𝐢 - 𝐌𝐃 ✰⪜'
-global.author = 'Oғᴄ.Dɪᴇɢᴏ 👑'
-global.wm = '✨◌*̥₊ Aɪ Yᴀᴇᴍᴏʀɪ - MD ◌❐⚡༉'
-global.titulowm = 'Ai Yaemori - MD 🍟'
-global.titulowm2 = 'Ofc.Diego'
-global.igfg = '𝙾𝙵𝙲.𝙳𝙸𝙴𝙶𝙾'
-global.botname = 'Aɪ Yᴀᴇᴍᴏʀɪ - MD 🚩'
-global.dev = '🚩 Powered By あ S_ᴅɪᴇɢᴏ あ'
-global.textbot = '𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶 : 𝗢𝗳𝗰𝗗𝗶𝗲𝗴𝗼 🚩'
-global.vs = '2.0.2'
-
+global.packname = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀 𝗕𝗼𝘁 𝗣𝗿𝗼'
+global.author = '@usxr_angelito0'
+global.wm = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀 𝗣𝗿𝗼'
+global.titulowm = 'GenesisBot-Pro 🐈‍⬛'
+global.titulowm2 = 'Angelito-OFC'
+global.igfg = '@usxr_angelito0'
+global.botname = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀𝗕𝗼𝘁 🐈‍⬛'
+global.dev = '`𝗚𝗲𝗻𝗲𝘀𝗶𝘀𝗕𝗼𝘁 🐈‍⬛`\n*By • Titanium Team 💥*'
+global.textbot = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀𝗕𝗼𝘁 : 𝗔𝗻𝗴𝗲𝗹𝗶𝘁𝗼 🐈‍⬛'
+global.vs = '1.4.0'
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
 global.imagen1 = fs.readFileSync('./Menu.jpg')
