@@ -29,7 +29,7 @@
 
 ---
 
-🌗 **`INSTALACION MANUAL POR TERMUX`**
+#### ☂️ INSTALACION MANUAL POR TERMUX ☂️
 
 [`✨ Instalar Termux Clic Aqui`](https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file)
 
@@ -83,36 +83,9 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ---
 
-#### ☂️ ACTIVA EN HEROKU ☂️
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OfcDiego/YaemoriBot-MD)
-
-#### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
-
-### 🔵 CAFIREXOS 
-<a href="https://www.cafirexos.com"><img src="https://cdn.cafirexos.com/logos%2Flogo_cfros_2000x2000.png" height="125px"></a>
-### Información del Host
-
-- **Página:** [`Aquí`](https://www.cafirexos.com)
-- **Área de clientes:** [`Aquí`](https://clientes.cafirexos.com)
-- **Dashboard:** [`Aquí`](https://dashboard.cafirexos.com)
-- **Panel:** [`Aquí`](https://panel.cafirexos.com/)
-- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q)
-- **Correo:** [`Aquí`](mailto:contacto@cafirexos.com)
-
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - Ai-Yaemori**</summary><img src="https://telegra.ph/file/530fc69bd5c105e96642e.jpg"></details>
-
 #### 🟢 ACTIVAR EN CODES SPACES 
 [`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcDiego/YaemoriBot-MD&ref=main&geo=UsEast)
 
-#### ⚡ ACRIVAR EN REPLIT
-[![`CREAR SERVIDOR REPLIT`](https://repl.it/badge/github/OfcDiego/YaemoriBot-MD)](https://repl.it/github/OfcDiego/YaemoriBot-MD)
-
-#### 🤍 ACTIVAR EN RENDER
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2OfcDiego%YaemoriBot-MD) 
 
 ## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
 
