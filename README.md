@@ -2,7 +2,7 @@
 
 ## 🍟 **`Ai Yaemori - MD`**
 
-![Yaemori](https://telegra.ph/file/731e8ba1d2a4a506903cf.jpg)
+![Genesis](https://telegra.ph/file/43ef4c5e5e34627622296.jpg)
 
 ---
 
