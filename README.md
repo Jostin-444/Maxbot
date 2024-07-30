@@ -151,6 +151,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 <a href="https://github.com/ferhacks"><img src="https://github.com/ferhacks.png" width="100" height="100" alt="ferhacks"/></a>
 <a href="https://github.com/G4tito"><img src="https://github.com/G4tito.png" width="100" height="100" alt="G4tito"/></a>
 <a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
+<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
 
 ### ✨ CREADOR 
 <a
