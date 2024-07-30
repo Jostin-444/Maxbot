@@ -20,17 +20,6 @@
 <a href="https://www.threads.net/@usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Threads-30302f?style=flat&logo=threads" /></a>
 <a href="https://x.com/usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Twitter-30302f?style=flat&logo=x" /></a>
 
-
-### CONTÁCTAME 🐈‍⬛
-
-<p align='center'>
-<a href="https://www.instagram.com/usxr_angelito0"><img height="40" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png"></a> <a href="https://wa.me/message/MEKOUFBEOG5ED1"><img height="40" src="https://cdn.icon-icons.com/icons2/3132/PNG/512/whatsapp_social_network_communication_message_interaction_icon_192287.png"></a>
-<a href="https://www.threads.net/@gata_dios"><img height="48" src="https://telegra.ph/file/176133bbdbc8f8a9eb2c5.png"></a>
-<a href="https://www.tiktok.com/@gata_dios"><img height="40" src="https://cdn.icon-icons.com/icons2/2972/PNG/512/tiktok_logo_icon_186896.png"></a>
-<a href="https://t.me/globalgb"><img height="40" src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png"></a>
-</p>
-
-
 > [!NOTE]
 > **Este Bot recibe soporte 24/7 diariamente si presenta fallos solo repórtelo para que lo solucionemos**
 > **Se rediseño el Menu.**
