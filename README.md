@@ -128,8 +128,6 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 <a href="https://github.com/Maxz-on"><img src="https://github.com/Maxz-on.png" width="100" height="100" alt="Maxz-on"/></a>
 <a href="https://github.com/sebas-mod"><img src="https://github.com/sebas-mod.png" width="100" height="100" alt="sebas-mod"/></a>
 <a href="https://github.com/AkiraaX2"><img src="https://github.com/AkiraaX2.png" width="100" height="100" alt="AkiraaX2"/></a>
-<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
-<a href="https://github.com/GataNina-Li"><img src="https://github.com/GataNina-Li.png" width="100" height="100" alt="GataNina-Li"/></a>
 
 ### ✨ CREADOR 
 <a
