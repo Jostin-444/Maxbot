@@ -165,11 +165,6 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 --- 
 
-### `🚩 DESARROLLADORES`
-<a href="https://github.com/Angelito-OFC/Genesis-OFC/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Angelito-OFC/Genesis-OFC" /> 
-</a>
-
 ### `🌼 COLABORADORES DEL BOT` 
 
 <a href="https://github.com/unptoadrih15"><img src="https://github.com/unptoadrih15.png" width="100" height="100" alt="unptoadrih15"/></a>
