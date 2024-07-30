@@ -42,7 +42,7 @@
 
 🌗 **`INSTALACION MANUAL POR TERMUX`**
 
-[`🚩 Instalar Termux Clic Aqui`](https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file)
+[`✨ Instalar Termux Clic Aqui`](https://www.mediafire.com/file/3hsvi3xkpq3a64o/termux_118.apk/file)
 
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
@@ -53,7 +53,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/OfcDiego/YaemoriBot-MD && cd YaemoriBot-MD
+git clone https://github.com/Angelito-OFC/Genesis-OFC && cd Genesis-OFC
 ```
 ```bash
 yarn install && npm install
@@ -62,7 +62,7 @@ yarn install && npm install
 npm start
 ```
 
-🍟 **`ACTIVAR EN TERMUX EN CASO DE DETENERSE`**
+🍀 **`ACTIVAR EN TERMUX EN CASO DE DETENERSE`**
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
@@ -70,7 +70,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm start
 ```
 
-🚩 **`OBTENER OTRO CODIGO QR`**
+🍄 **`OBTENER OTRO CODIGO QR`**
 ```bash
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd YaemoriBot-MD
@@ -78,12 +78,12 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > npm start
 ```
 
-🍟 **`YAEMORI 24/7 (TERMUX)`**
+🍁 **`YAEMORI 24/7 (TERMUX)`**
 ```bash
 > termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ```
 
-🚩 **`ACTUALIZAR YAEMORI`**
+🌻 **`ACTUALIZAR YAEMORI`**
 > Note Comandos para actualizar Ai Yaemori  de forma automática
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/YaemoriBot-MD/master/update.sh | bash
