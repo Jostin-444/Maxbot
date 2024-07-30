@@ -21,8 +21,8 @@
 ### CONTÁCTAME 🐈‍⬛
 
 <p align='center'>
-<a href="https://www.atom.bio/gatabot"><img height="40" src="https://cdn.icon-icons.com/icons2/566/PNG/128/link_icon-icons.com_54349.png"></a>
-<a href="mailto:centergatabot@gmail.com"><img height="40" src="https://cdn.icon-icons.com/icons2/730/PNG/512/gmail_icon-icons.com_62758.png"></a>
+<a href="https://atom.bio/genesisbotasistencia"><img height="30" src="https://cdn.icon-icons.com/icons2/566/PNG/128/link_icon-icons.com_54349.png"></a>
+<a href="mailto:agasistencia2@gmail.com"><img height="40" src="https://cdn.icon-icons.com/icons2/730/PNG/512/gmail_icon-icons.com_62758.png"></a>
 <a href="https://paypal.me/OficialGD"><img height="40" src="https://cdn.icon-icons.com/icons2/730/PNG/512/paypal_icon-icons.com_62759.png"></a>
 <a href="https://www.instagram.com/gata_dios"><img height="40" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png"></a>
 <a href="https://youtube.com/@gatadios"><img height="40" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580651-yumminkysocialmedia28_83061.png"></a>
