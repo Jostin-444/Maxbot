@@ -23,9 +23,7 @@
 <p align='center'>
 <a href="https://atom.bio/genesisbotasistencia"><img height="30" src="https://cdn.icon-icons.com/icons2/566/PNG/128/link_icon-icons.com_54349.png"></a>
 <a href="mailto:agasistencia2@gmail.com"><img height="40"  
-<a href="https://www.instagram.com/usxr_angelito0"><img height="40" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png"></a>
-<a href="https://www.facebook.com/gatadios"><img height="40" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/facebook_logo_icon_147291.png"></a>
-<a href="https://wa.me/message/MEKOUFBEOG5ED1"><img height="40" src="https://cdn.icon-icons.com/icons2/3132/PNG/512/whatsapp_social_network_communication_message_interaction_icon_192287.png"></a>
+<a href="https://www.instagram.com/usxr_angelito0"><img height="40" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png"></a> <a href="https://wa.me/message/MEKOUFBEOG5ED1"><img height="40" src="https://cdn.icon-icons.com/icons2/3132/PNG/512/whatsapp_social_network_communication_message_interaction_icon_192287.png"></a>
 <a href="https://www.threads.net/@gata_dios"><img height="45" src="https://telegra.ph/file/176133bbdbc8f8a9eb2c5.png"></a>
 <a href="https://www.tiktok.com/@gata_dios"><img height="40" src="https://cdn.icon-icons.com/icons2/2972/PNG/512/tiktok_logo_icon_186896.png"></a>
 <a href="https://t.me/globalgb"><img height="40" src="https://cdn.icon-icons.com/icons2/923/PNG/256/telegram_icon-icons.com_72055.png"></a>
