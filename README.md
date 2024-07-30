@@ -5,7 +5,7 @@
 ![Genesis](https://telegra.ph/file/43ef4c5e5e34627622296.jpg)
 
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=300&size=37&duration=3000&pause=100&color=000000&background=601D6E00&center=true&vCenter=true&repeat=true&random=FALSO&width=660&height=90&lines=Angel-OFC+lanzó;Nuevo+versión+|+Genesis Bot-1.4.0;Un+bot+con+tem%C3%A1tica+de+Mini+Yaemori." alt="Typing SVG"/></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=300&size=37&duration=3000&pause=100&color=000000&background=601D6E00&center=true&vCenter=true&repeat=true&random=FALSO&width=660&height=90&lines=Angel-OFC+lanzó;Nuevo+versión+|+Genesis Bot-1.4.0;Un+bot+con+comandos%C3%A1tica+de+Mini+Yaemori." alt="Typing SVG"/></a>
 </div>
 
 ---
