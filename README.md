@@ -1,6 +1,6 @@
 > 🚩 Versión Actual: 2.0.2
 
-## 🍟 **`Ai Yaemori - MD`**
+## 🍟 **`GENESIS - BOT`**
 
 ![Genesis](https://telegra.ph/file/43ef4c5e5e34627622296.jpg)
 
