@@ -166,8 +166,8 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 --- 
 
 ### `🚩 DESARROLLADORES`
-<a href="https://github.com/OfcDiego/YaemoriBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=OfcDiego/YaemoriBot-MD" /> 
+<a href="https://github.com/Angelito-OFC/Genesis-OFC/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Angelito-OFC/Genesis-OFC" /> 
 </a>
 
 ### `✨️ AGRADECIMIENTOS`
