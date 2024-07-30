@@ -144,7 +144,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ---
 
-### `🌼 COLABORADORES` 
+### 🌼 COLABORADORES
 
 <a href="https://github.com/unptoadrih15"><img src="https://github.com/unptoadrih15.png" width="100" height="100" alt="unptoadrih15"/></a>
 <a href="https://github.com/ALBERTO9883"><img src="https://github.com/ALBERTO9883.png" width="100" height="100" alt="ALBERTO9883"/></a>
