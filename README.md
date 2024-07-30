@@ -144,8 +144,8 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ### ✨ CREADOR 
 <a
-href="https://github.com/Angelito-OFC"><img src="https://github.com/Angelito-OFC.png" width="130" height="130" alt="Diego"/></a>
+href="https://github.com/Angelito-OFC"><img src="https://github.com/Angelito-OFC.png" width="130" height="130" alt="Angelito"/></a>
 
-> Copyright (c) 2024 **[OfcDiego](https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A)**.
+> Copyright (c) 2024 **[Angelito-OFC](https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A)**.
 
 **`¡GRACIAS POR PREFERIRNOS!` 🍟**
