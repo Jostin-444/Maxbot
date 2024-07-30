@@ -55,7 +55,7 @@ global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6' //GRUPO DE AVISO
 global.bgp2 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a' //GRUPO GLOBAL 1
 global.bgp3 = 'https://chat.whatsapp.com/DVt1mhZ6H7EIpt4lmjURwq' //GRUPO GLOBAL 2
 global.bgp4 = 'https://chat.whatsapp.com/Fn5Ipyxu6mE6qEQlwWZTwU' //GRUPO NSFW
-global.md = 'https://github.com/Angelito-OFC/GenesisBot-OFC' //Github Oficial
+global.md = 'https://github.com/Angelito-OFC/Genesis-OFC' //Github Oficial
 global.ig = 'https://www.instagram.com/usxr_angelito0' //Ig Oficial
 
 //• ↳ ◜𝑻𝑰𝑬𝑴𝑷𝑶◞ • 🕒
