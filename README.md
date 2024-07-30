@@ -165,7 +165,6 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 <a href="https://github.com/Fabri115"><img src="https://github.com/Fabri115.png" width="100" height="100" alt="Fabri115"/> </a>
 <a href="https://github.com/Alba070503"><img src="https://github.com/Alba070503.png" width="100" height="100" alt="Alba070503"/> </a>
 
-### `
 ### ✨ CREADOR 
 <a
 href="https://github.com/Angelito-OFC"><img src="https://github.com/Angelito-OFC.png" width="130" height="130" alt="Diego"/></a>
