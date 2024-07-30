@@ -4,6 +4,10 @@
 
 ![Genesis](https://telegra.ph/file/43ef4c5e5e34627622296.jpg)
 
+<div align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=300&size=37&duration=3000&pause=100&color=AD46FF&background=601D6E00&center=true&vCenter=true&repeat=true&random=FALSO&width=660&height=90&lines=KatashiFukushima+lanzó;Nuevo+Bot+|+YaemoriBot-MD;Un+bot+con+tem%C3%A1tica+de+Mini+Yaemori." alt="Typing SVG"/></a>
+</div>
+
 ---
 
 > **AVISO**: Yo "OfcDiego", me he retirado de todo lo relacionado con el bot o temas similares, por lo que en algún momento quedará obsoleto y/o algunos comandos dejarán de funcionar. Agradezco su preferencia durante el recorrido por este mundo de los bots.
