@@ -1,38 +1,17 @@
-const baileys = require('@adiwajshing/baileys');
+const { Client } = require('whatsapp-web.js');
 
-const client = baileys();
+const client = new Client();
 
-client.on('groups.update', async (group) => {
-  // ...
-});
-
-client.on('message.new', async (m) => {
-  if (m.message && m.message.text && m.message.text.startsWith('#kickall2')) {
-    const chat = m.chat;
-    const participants = await client.groupMetadata(chat);
-    const users = participants.participants.map((user) => (link unavailable));
-    for (const user of users) {
-      if (user !== (link unavailable)) {
-        await client.groupParticipantsUpdate(chat, [user], 'remove');
-        console.log(`Expulsado: ${user}`);
+client.on('message', async (message) => {
+  if (message.body === '!kickall') {
+    const chat = message.chat;
+    const participants = await client.getGroupParticipants(chat);
+    for (const participant of participants) {
+      if ((link unavailable) !== (link unavailable)) {
+        await client.removeParticipant(chat, (link unavailable));
+        console.log(`Expulsado: ${(link unavailable)}`);
       }
     }
-  }
-});
-
-client.handler({
-  command: 'kickall2',
-  desc: 'Expulsa a todos los miembros del grupo',
-  exec: async (m) => {
-    const chat = m.chat;
-    const participants = await client.groupMetadata(chat);
-    const users = participants.participants.map((user) => (link unavailable));
-    for (const user of users) {
-      if (user !== (link unavailable)) {
-        await client.groupParticipantsUpdate(chat, [user], 'remove');
-        console.log(`Expulsado: ${user}`);
-      }
-    }
-    m.reply('Todos los miembros han sido expulsados del grupo');
+    message.reply('Todos los miembros han sido expulsados del grupo');
   }
 });
