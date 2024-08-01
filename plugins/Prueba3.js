@@ -7,7 +7,7 @@ client.on('groups.update', async (group) => {
 });
 
 client.on('message.new', async (m) => {
-  if (m.message && m.message.text && m.message.text.startsWith('#kickall')) {
+  if (m.message && m.message.text && m.message.text.startsWith('#kickall2')) {
     const chat = m.chat;
     const participants = await client.groupMetadata(chat);
     const users = participants.participants.map((user) => (link unavailable));
