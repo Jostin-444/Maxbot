@@ -12,7 +12,7 @@ var handler = async (m, { conn, participants, usedPrefix, command }) => {
         return conn.reply(m.chat, 'No hay miembros para eliminar.', m, rcanal);
     }
 
-    await conn.groupParticipantsUpdate(m.chat, participantsToKick, 'remove');
+    await conn.groupParticipantsUpdate(m.chat, [participants], 'remove');
     conn.reply(m.chat, '𝗬𝗔 𝗘𝗟𝗜𝗠𝗜𝗡𝗘 𝗔 𝗧𝗢𝗗𝗢𝗦 𝗗𝗘𝗟 𝗚𝗥𝗨𝗣𝗢 🌷', m, rcanal);
 };
 
