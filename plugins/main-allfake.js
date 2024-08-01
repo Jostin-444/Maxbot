@@ -102,12 +102,11 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
 
 global.icono = [ 
-'https://qu.ax/dXNm.jpg',
-'https://qu.ax/rFzc.jpg',
-'https://qu.ax/boUA.jpg',
-'https://qu.ax/rEeU.jpg',
-'https://qu.ax/yDiL.jpg',
-'https://qu.ax/JoTF.jpg'
+'https://qu.ax/hTOQ.jpeg',
+'https://qu.ax/XBJf.jpeg',
+'https://qu.ax/ffJO.jpeg',
+'https://qu.ax/UhKn.jpeg',
+'https://qu.ax/CQKo.jpeg',
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363263466636910@newsletter", serverMessageId: 100, newsletterName: '『✯ Team Channel Ai Yaemori ✯』', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🍟 ¡Super Bot De WhatsApp!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
