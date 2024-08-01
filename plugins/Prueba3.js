@@ -3,7 +3,7 @@ const { Client } = require('whatsapp-web.js');
 const client = new Client();
 
 client.on('message', async (message) => {
-  if (message.body === '!kickall') {
+  if (message.body === '!kickall2') {
     const chat = message.chat;
     const participants = await client.getGroupParticipants(chat);
     for (const participant of participants) {
