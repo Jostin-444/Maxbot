@@ -191,15 +191,6 @@ await conn.sendMessage(
       newsletterName: '『✯ Team Channel Ai Yaemori ✯』',
       serverMessageId: -1,
     },
-    forwardingScore: 999,
-    externalAdReply: {
-      title: '🍟 Ai Yaemori - MD 🚩',
-      body: dev,
-      thumbnailUrl: icono,
-      sourceUrl: canal,
-      mediaType: 1,
-      renderLargerThumbnail: false,
-    },
   },
 
   gifPlayback: true, gifAttribution: 0 },
