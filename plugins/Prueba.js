@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
 if (!args[0]) return m.reply(`𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
 if (isNaN(args[0])) return m.reply(`𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
 let lol = args[0].replace(/[+]/g, '')
-let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol)) 
+let ps = participants.map(u => (link unavailable)).filter(v => v !== conn.user.jid)
 let bot = global.db.data.settings[conn.user.jid] || {}
 if (ps == '') return m.reply(`𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙉𝙊 𝙃𝘼𝙔 𝙉𝙄𝙉𝙂𝙐𝙉 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝘼𝙍𝙀𝘼/𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}*`)
 let numeros = ps.map(v=> '➥ @' + v.replace(/@.+/, ''))
