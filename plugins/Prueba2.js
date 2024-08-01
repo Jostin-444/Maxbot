@@ -3,12 +3,12 @@
 */
 
 let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
-if (!args[0]) return m.reply(`${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
-if (isNaN(args[0])) return m.reply(`${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
+if (!args[0]) return m.reply(`𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
+if (isNaN(args[0])) return m.reply(`𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 𝘿𝙀 𝙐𝙉 𝙋𝘼𝙄𝙎 𝙋𝘼𝙍𝘼 𝘽𝙐𝙎𝘾𝘼𝙍 𝙉𝙐𝙈𝙀𝙍𝙊𝙎 𝙀𝙉 𝙀𝙇 𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙀𝙎𝙀 𝙋𝘼𝙄𝙎, 𝙀𝙅𝙀𝙈𝙋𝙇𝙊: ${usedPrefix + command} 593*`) 
 let lol = args[0].replace(/[+]/g, '')
 let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol)) 
 let bot = global.db.data.settings[conn.user.jid] || {}
-if (ps == '') return m.reply(`${lenguajeGB['smsAvisoAG']()}𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙉𝙊 𝙃𝘼𝙔 𝙉𝙄𝙉𝙂𝙐𝙉 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝘼𝙍𝙀𝘼/𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}*`)
+if (ps == '') return m.reply(`𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙉𝙊 𝙃𝘼𝙔 𝙉𝙄𝙉𝙂𝙐𝙉 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝘼𝙍𝙀𝘼/𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}*`)
 let numeros = ps.map(v=> '➥ @' + v.replace(/@.+/, ''))
 const delay = time => new Promise(res=>setTimeout(res,time));
 switch (command) {
@@ -18,7 +18,7 @@ break
 case "kicknum":  
 if (!bot.restrict) return m.reply(`${lenguajeGB['smsAvisoAG']()} ${lenguajeGB['smsSoloOwner']()}`) 
 if (!isBotAdmin) return m.reply(`${lenguajeGB['smsAvisoAG']()} ${lenguajeGB['smsAllAdmin']()}`)          
-conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊́𝙉 𝘿𝙀 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}, 𝘾𝘼𝘿𝘼 10 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎 𝙎𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝘼 𝙐𝙉 𝙐𝙎𝙐𝘼𝙍𝙄𝙊`, m)            
+conn.reply(m.chat, `𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊́𝙉 𝘿𝙀 𝙉𝙐́𝙈𝙀𝙍𝙊 𝘾𝙊𝙉 𝙀𝙇 𝙋𝙍𝙀𝙁𝙄𝙅𝙊 +${lol}, 𝘾𝘼𝘿𝘼 10 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎 𝙎𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝘼 𝙐𝙉 𝙐𝙎𝙐𝘼𝙍𝙄𝙊`, m)            
 let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
 let users = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol))
 for (let user of users) {
