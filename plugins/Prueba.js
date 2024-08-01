@@ -31,7 +31,7 @@ await delay(10000)
 } else return m.reply(`${lenguajeGB['smsAvisoFG']()}`)}
 break            
 }}
-handler.command = /^(listanum|kicknum)$/i
+handler.command = /^(kickall|allkick)$/i
 handler.group = handler.botAdmin = handler.admin = true
 handler.fail = null
 export default handler
