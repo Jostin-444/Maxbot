@@ -187,8 +187,8 @@ await conn.sendMessage(
     mentionedJid: [m.sender],
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363263466636910@newsletter',
-      newsletterName: '『✯ Team Channel Ai Yaemori ✯』',
+      newsletterJid: '120363220939514640@newsletter',
+      newsletterName: '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯',
       serverMessageId: -1,
     },
   },
