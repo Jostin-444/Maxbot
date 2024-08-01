@@ -32,7 +32,7 @@ let tags = {
 const defaultMenu = {
   before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-“ Hola *%name* soy *Ai-Yaemori*, %greeting ”
+“ Hola *%name* soy *GenesisBot*, %greeting ”
 
 ╭────═[ *INFO - BOT* ]═─────⋆
 │╭───────────────···
