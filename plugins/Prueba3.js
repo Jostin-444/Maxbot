@@ -148,17 +148,17 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img2 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img3 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img4 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img5 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img6 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img8 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img9 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img10 = "https://i.ibb.co/WFX3GhG/file.jpg";
-    let img11 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let vid = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img2 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img3 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img4 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img5 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img6 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img8 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img9 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img10 = "https://i.ibb.co/n67xQbC/file.jpg";
+    let img11 = "https://i.ibb.co/n67xQbC/file.jpg";
 
     await conn.sendListB(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, estilo);
 };
