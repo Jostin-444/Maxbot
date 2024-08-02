@@ -59,7 +59,7 @@ const defaultMenu = {
 \t*L I S T A  -  D E  -  C O M A N D O S* 
 `.trimStart(),
       header: '╭───═[ %category ]═────⋆\n│╭───────────────···',
-  body: '││ %cmd\n',
+  body: '││ %cmd %isdiamond %isPremium\n',
   footer: '│╰────────────────···\n╰────────═┅═─────────\n',
   after: `> ${dev}`,
 }
