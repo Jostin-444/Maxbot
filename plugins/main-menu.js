@@ -63,6 +63,7 @@ const defaultMenu = {
   footer: '│╰────────────────···\n╰────────═┅═─────────\n',
   after: `> ${dev}`,
 }
+let ppp = 'https://i.ibb.co/xFZzGjp/file.jpg'
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -178,23 +179,7 @@ await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 
 
 await m.react('⭐️') 
 
-//await conn.sendFile(m.chat, imagen1, 'yaemori.jpg', text.trim(), fkontak, null, rcanal)
-
-//*await conn.sendMessage(
-  m.chat,
-  { video: { url: "https://telegra.ph/file/cd3ba69cb65c8de25ec58.mp4"}, caption: text.trim(),
-  contextInfo: {
-    mentionedJid: [m.sender],
-    isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363220939514640@newsletter',
-      newsletterName: '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯',
-      serverMessageId: -1,
-    },
-  },
-
-  gifPlayback: true, gifAttribution: 0 },
-  { quoted: fkontak })*//
+await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), m, null, fake)
 
   } catch (e) {
     conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, rcanal, )
