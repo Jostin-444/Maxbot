@@ -26,7 +26,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '╭  ┄ 𝅄  ۪꒰ ׅ  `%category`  ׅ ꒱  ۟  𝅄 ┄',
   body: '┊✧ %cmd %isPremium %islimit',
-  footer: ''╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭🌟୧ ׅ ꒱  ┄  ─ ┄ ⸼\n\n',
+  footer: '╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭🌟୧ ׅ ꒱  ┄  ─ ┄ ⸼\n\n',
   after: global.dev,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
