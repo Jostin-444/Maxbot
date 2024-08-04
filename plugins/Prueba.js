@@ -65,7 +65,7 @@ let handler = async (m, { conn, text, usedPrefix, command, __dirname }) => {
 
 handler.menudownload = ['spotify <txt>','spotifydl <url>']
 handler.tagsdownload = ['downloader']
-handler.command = /^(spotify)?(mp3|audio)?(dl|search)?)$/i
+handler.command = /^(spotifydl)?(mp3|audio)?(dl|search)?)$/i
 
 handler.premium = true
 handler.limit = true
