@@ -9,16 +9,20 @@ const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/b
 
 const defaultMenu = {
   before: `
-⌬〡 *Nombre del bot:* GenesisBot
-⌬〡 *Nombre:*  %name 
-⌬〡︎ *Premium:* %prems Ⓟ
-⌬〡︎ *Rol:* %role
-⌬〡︎︎ *Nivel:* %level
-⌬〡︎︎ *Xp:* %exp / %maxexp
-⌬〡︎︎ *Total Xp:* %totalexp
+*▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬*
 
-╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
-Las siguientes son las características de juego.
+. .╭── ︿︿︿︿︿ .   .   .   .   .
+. .┊✯ 𝗖𝗹𝗶𝗲𝗻𝘁𝗲: %name
+. .┊✯ 𝗕𝗼𝘁: Génesis Bot
+. .┊✯ 𝗠𝗼𝗱𝗼: Público
+. .┊✯ 𝗙𝗲𝗰𝗵𝗮: ${fecha}
+. .┊✯ 𝗧𝗶𝗲𝗺𝗽𝗼 𝗔𝗰𝘁: %muptime
+. .┊✯ 𝗨𝘀𝘂𝗮𝗿𝗶𝗼𝘀: %totalreg
+. .┊✯ 𝗘𝘀𝘁𝗿𝗲𝗹𝗹𝗮𝘀: %estrellas
+. .┊✯ 𝗡𝗶𝘃𝗲𝗹: %level
+. .╰─── ︶︶︶︶ .   .   .   .   .
+
+*▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬*
 %readmore
 `.trimStart(),
   header: '╭─────≼ %category ≽',
