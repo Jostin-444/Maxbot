@@ -24,7 +24,7 @@ Las siguientes son las características de juego.
   header: '╭─────≼ %category ≽',
   body: '╎❖ %cmd %isPremium %islimit',
   footer: '╰┄┄┄┄┄┄┄┄┄┄┄┄┄〢',
-  after: global.wm,
+  after: global.dev,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
