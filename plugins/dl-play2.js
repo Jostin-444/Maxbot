@@ -62,9 +62,9 @@ try {
 	  if(!isLimit) conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /2$/.test(command)), `
  ≡  *FG YTDL 2*
   
-*📌${mssg.title}* : ${title}
-*🎞️${mssg.quality}* : ${quality}
-*⚖️${mssg.size}* : ${size}
+*📌Título* : ${title}
+*🎞️Calidad* : ${quality}
+*⚖️Peso* : ${size}
 `.trim(), m, false, { mimetype: isVideo ? '' : 'audio/mpeg', asDocument: chat.useDocument })
 		m.react(done) 
 		
