@@ -15,13 +15,13 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
             title: `${index}┃ ${v.title}`,
             rows: [
                 {
-                    header: '💿 MUSICA',
+                    header: '💿 𝗠 𝗨 𝗦 𝗜 𝗖 𝗔',
                     title: "",
                     description: `💿 𝗧𝗶𝘁𝘂𝗹𝗼 : ${v.title}\n`, 
                     id: `${usedPrefix}fgmp3 ${v.url}`
                 },
                 {
-                    header: "📀 VIDEO",
+                    header: "📀 𝗩 𝗜 𝗗 𝗘 𝗢",
                     title: "" ,
                     description: `📀 𝗧𝗶𝘁𝘂𝗹𝗼 : ${v.title}`, 
                     id: `${usedPrefix}fgmp4 ${v.url}`
