@@ -180,7 +180,7 @@ await m.react('⭐️')
 
 //await conn.sendFile(m.chat, imagen1, 'yaemori.jpg', text.trim(), fkontak, null, rcanal)
 
-//await conn.sendMessage(
+//*await conn.sendMessage(
   m.chat,
   { video: { url: "https://telegra.ph/file/cd3ba69cb65c8de25ec58.mp4"}, caption: text.trim(),
   contextInfo: {
@@ -194,7 +194,7 @@ await m.react('⭐️')
   },
 
   gifPlayback: true, gifAttribution: 0 },
-  { quoted: fkontak })//
+  { quoted: fkontak })*//
 
   } catch (e) {
     conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, rcanal, )
