@@ -16,7 +16,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
  await conn.sendButton(m.chat, play, packname, thumbnail, [
     ['💿 𝗠 𝗨 𝗦 𝗜 𝗖 𝗔', `${usedPrefix}fgmp3 ${url}`],
     ['📀 𝗩 𝗜 𝗗 𝗘 𝗢 ', `${usedPrefix}fgmp4 ${url}`],
-['📁 𝗩 𝗜 𝗗 𝗘 𝗢  𝗗 𝗢 𝗖', `${usedPrefix}fgmp4 ${url}`],
+['📁 𝗠 𝗨 𝗦 𝗜 𝗖 𝗔  𝗗 𝗢 𝗖', `${usedPrefix}ytmp3doc ${url}`],
 ['📁 𝗩 𝗜 𝗗 𝗘 𝗢  𝗗 𝗢 𝗖', `${usedPrefix}fgmp4 ${url}`]
   ], null, [['🐈‍⬛ 𝗖 𝗔 𝗡 𝗔 𝗟', `${canal}`]], m)
 }
