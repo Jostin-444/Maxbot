@@ -9,10 +9,9 @@ const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/b
 
 const defaultMenu = {
   before: `
-⌬〡 *Nombre del bot:* %me
+⌬〡 *Nombre del bot:* GenesisBot
 ⌬〡 *Nombre:*  %name 
 ⌬〡︎ *Premium:* %prems Ⓟ
-⌬〡︎ *Limites:* %limit Ⓛ
 ⌬〡︎ *Rol:* %role
 ⌬〡︎︎ *Nivel:* %level
 ⌬〡︎︎ *Xp:* %exp / %maxexp
