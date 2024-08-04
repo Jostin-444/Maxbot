@@ -1,46 +1,43 @@
-import fetch from 'node-fetch'
 
-let handler  = async (m, { conn, usedPrefix, command }) => {
+let handler = async (m, { conn, command, usedPrefix }) => {
+let pp = 'https://i.ibb.co/4Z7LndQ/file.jpg'
+m.react('✅')
+let name = await conn.getName(m.sender)
+let _uptime = process.uptime() * 1000
+let _muptime
+if (process.send) { process.send('uptime')
+_muptime = await new Promise(resolve => { process.once('message', resolve) 
+setTimeout(resolve, 1000) }) * 1000}
+let uptime = clockString(_uptime)
+let estado = `᥀·࣭࣪̇˖🐈‍⬛◗ 𝘊𝘈𝘕𝘈𝘓:
+• ${canal}
 
-let grupos = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D* 🍂
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘛𝘐𝘛𝘈𝘕𝘐𝘜𝘔 𝘛𝘌𝘈𝘔:
+• ${canal2}
 
-1- 【 ✰ Ai Yaemori - MD ✰ 】
-*✰* ${gp1}
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘈𝘝𝘐𝘚𝘖𝘚 🛎️:
+• ${bgp} 
 
-2 - ${namegrupo}
-*✰* ${gp2}
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘎𝘓𝘖𝘉𝘈𝘓 1️⃣:
+• ${bgp2}
 
-*─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘎𝘓𝘖𝘉𝘈𝘓 2️⃣:
+• ${bgp3}
 
-➠ Grupos En Colaboración!
-
-1- ${colab1}
-*✰* ${gp3}
-
-2- ${colab2}
-*✰* ${gp4}
-
-4- ${namecomu}
-*✰* ${comunidad1}
-
-5- ${namecomu2}
-*✰* ${comunidad2}
-
-*─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
-
-➠ Enlace anulado? entre aquí! 
-
-Canal :
-*✰* ${channel}
-
-> ${dev}`
-
-await conn.sendFile(m.chat, imagen2, "yaemori.jpg", grupos, m, null, rcanal)
-
-await m.react(emojis)
-
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘕𝘚𝘍𝘞 +18:
+• ${bgp4}
+`
+await conn.sendButton(m.chat, estado, '@usxr_angelito0', pp, [
+['DUEÑO 🐈‍⬛', '.owner'], ['DONAR 🫧', '.donate']], null, [['CANAL 🐈‍⬛', `${canal}`]], m)
 }
 handler.help = ['grupos']
-handler.tags = ['main']
-handler.command = /^(grupos|gruposluffy|gpluffy|linkluffy|luffylink|luffygrupos)$/i
+handler.tags = ['info']
+handler.command = /^(grupos|groups|support?)$/i
+
 export default handler
+
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
