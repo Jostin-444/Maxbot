@@ -20,16 +20,6 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '⚠ 𝙇𝙊𝙎 𝘾�
     for (const v of json) {
       const linkXXX = v.link;
       vids_.urls.push(linkXXX);
-      cap += `*[${count}]*\n• *🎬 Titulo:* ${v.title}\n• *🔗 Link:* ${v.link}\n• *❗ Info:* ${v.info}`;
-      cap += '\n\n' + '••••••••••••••••••••••••••••••••' + '\n\n';
-      count++;
-    }
-    m.reply(cap);
-    global.videoListXXX.push(vids_);
-  } catch {
-    throw e;
-  }
-};
     let listSections = [];
     for (let index in ytres) {
         let v = ytres[index];
@@ -37,22 +27,16 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '⚠ 𝙇𝙊𝙎 𝘾�
             title: `${index}┃ ${v.title}`,
             rows: [
                 {
-                    header: '💿 𝗠 𝗨 𝗦 𝗜 𝗖 𝗔',
-                    title: "",
-                    description: `💿 𝗧𝗶𝘁𝘂𝗹𝗼 : ${v.title}\n`, 
-                    id: `${usedPrefix}fgmp3 ${v.url}`
-                },
-                {
-                    header: "📀 𝗩 𝗜 𝗗 𝗘 𝗢",
+                    header: "${v.title}",
                     title: "" ,
-                    description: `📀 𝗧𝗶𝘁𝘂𝗹𝗼 : ${v.title}`, 
-                    id: `${usedPrefix}fgmp4 ${v.url}`
+                    description: ``, 
+                    id: `${usedPrefix}xnxxdl ${v.link}`
                 }
             ]
         });
     }
 
-    await conn.sendListB(m.chat, '*GENESIS BOT*🔎', `\n 📀 Resultados de:\n *${text}*`, `OPCIONES`, ytres[0].image, listSections, m);
+    await conn.sendList(m.chat, '*🔍 RESULTADOS DE LA BUSQUEDA:*\n', `\n ${text.toUpperCase()}\n`, `RESULTADOS`, listSections, m);
 };
 handler.help = ['xnxxsearch'].map((v) => v + ' <query>');
 handler.tags = ['downloader', 'premium'];
