@@ -99,7 +99,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 header: ". .┊☁️ MENU GAME",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘫𝘶𝘦𝘨𝘰𝘴`,
-                id: `${usedPrefix}menujuegos`,
+                id: `${usedPrefix}gamemenu`,
             },
             {
                 header: ". .┊☁️ MENU RANDOM",
