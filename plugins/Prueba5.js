@@ -186,7 +186,7 @@ let tags = {
         text: text,
         contextInfo: {
         externalAdReply: {
-        title: global.namebot,
+        title: global.packname,
         body: global.author,
         thumbnailUrl: global.canal,
         sourceUrl: global.canal,
