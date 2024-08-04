@@ -63,7 +63,7 @@ _Tiene ${(o % 6e4) / 1e3} segundos para decir sus \xfaltimas palabras_
                   inviteCode: "m",
                   groupName: "P",
                   caption: `Nos vemos en otra vida XD`,
-                  jpegThumbnail: e.readFileSync("./thumbnail.jpg"),
+                  jpegThumbnail: e.readFileSync("./Menu.jpg"),
                 },
               },
             },
