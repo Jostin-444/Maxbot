@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!rki.ok) throw await rki.text()
    let jkis = await rki.json()
    let { url } = jkis
-   let stiker = await sticker(null, url, `(${name2}) ${mssg.slapmsg}`, `${name}`)
+   let stiker = await sticker(null, url, `(${name2}) golpeó a`, `${name}`)
    conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
    m.react('👊🏻') 
 
