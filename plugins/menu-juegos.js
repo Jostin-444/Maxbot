@@ -24,9 +24,9 @@ const defaultMenu = {
 *▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬*
 %readmore
 `.trimStart(),
-  header: '╭─────≼ %category ≽',
-  body: '╎❖ %cmd %isPremium %islimit',
-  footer: '╰┄┄┄┄┄┄┄┄┄┄┄┄┄〢',
+  header: '╭  ┄ 𝅄  ۪꒰ ׅ  `%category`  ׅ ꒱  ۟  𝅄 ┄',
+  body: '┊✧ %cmd %isPremium %islimit',
+  footer: ''╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭🌟୧ ׅ ꒱  ┄  ─ ┄ ⸼\n\n',
   after: global.dev,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
