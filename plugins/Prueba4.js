@@ -40,7 +40,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '⚠ 𝙇𝙊𝙎 𝘾�
 };
 handler.help = ['xnxxsearch'].map((v) => v + ' <query>');
 handler.tags = ['downloader', 'premium'];
-handler.command = /^xnxxsearch|xnxxs$/i;
+handler.command = /^xnxxsearch2|xnxxs$/i;
 export default handler;
 handler.register = false
 handler.group = true
