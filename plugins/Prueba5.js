@@ -29,7 +29,7 @@ Las siguientes son las características de juego.
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'game': 'Menu Juegos',
+'fun': 'Menu Juegos',
 }
 
   try {
