@@ -193,6 +193,7 @@ let tags = {
         mediaType: 1,
         renderLargerThumbnail: true
         }}})
+await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fkontak, null, fake)
 
   } catch (e) {
     conn.reply(m.chat, 'Lo siento, el menú tiene un error.', m)
