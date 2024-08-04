@@ -46,9 +46,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let totalreg = Object.keys(global.db.data.users).length;
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
 
-    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
-
-    m.react("🐈‍⬛");
+    m.react("💫");
     let menu = ``;
 
     let txt = ""
