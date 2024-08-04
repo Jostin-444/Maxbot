@@ -12,7 +12,7 @@ if (!args || !args[0]) conn.reply(m.chat, `*🚩 Escribe la URL de un video de Y
 if (!args[0].match(/youtu/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de YouTube`, m).then(_ => m.react('✖️'))
 let q = '128kbps'
 
-await m.react('💿')
+await m.react('🕒')
 try {
 const yt = await fg.yta(args[0])
 let { title, dl_url, size } = yt
@@ -21,10 +21,7 @@ let { thumbnail, url } = vid
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
-await conn.sendMessage(m.chat, {
-        text: `💿 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
-        contextInfo: { 
-          mentionedJid: [m.sender],
+  await m.react('✅')
         }
       }, { quoted: fkontak })
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: title + '.mp3', quoted: m, contextInfo: {
@@ -37,7 +34,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-await m.react('✅')
 } catch {
 try {
 let yt = await fg.ytmp3(args[0])
