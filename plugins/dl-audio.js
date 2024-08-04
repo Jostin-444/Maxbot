@@ -18,12 +18,6 @@ let { thumbnail, url } = vid
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
-await conn.sendMessage(m.chat, {
-        text: `  🌷 *𝘛𝘪́𝘵𝘶𝘭𝘰 :* ${title}\n\n💿 *𝘛𝘢𝘮𝘢𝘯̃𝘰 :* ${size}\n\n*↻ 𝘌𝘴𝘱𝘦𝘳𝘢 @${m.sender.split`@`[0]},* .`,
-        contextInfo: { 
-          mentionedJid: [m.sender],
-        }
-      }, { quoted: m })
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
 'isForwarded': true,
@@ -44,12 +38,6 @@ let { thumbnail, url } = vid
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`,  m, fake,).then(_ => m.react('✖️'))
 
-await conn.sendMessage(m.chat, {
-        text: `  🍭 *𝘛𝘪́𝘵𝘶𝘭𝘰 ∙* ${title}\n\n⚖️ *𝘛𝘢𝘮𝘢𝘯̃𝘰 ∙* ${size}\n\n*↻ 𝘌𝘴𝘱𝘦𝘳𝘢 @${m.sender.split`@`[0]}, 𝘴𝘰𝘺 𝘭𝘦𝘯𝘵𝘢. . .* .`,
-        contextInfo: { 
-          mentionedJid: [m.sender],
-        }
-      }, { quoted: m })
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
 'isForwarded': true,
