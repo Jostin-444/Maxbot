@@ -10,7 +10,7 @@ m.react('✅')
 const oi = `*» INFO :* ${pesan}`;
   let teks = `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭┈┈✣ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤 ✣\n`;
   for (const mem of participants) {
-    teks += `┊» 🐈‍⬛ @${mem.id.split('@')[0]}\n`;
+    teks += `┊✧ @${mem.id.split('@')[0]}\n`;
   }
   teks += `╰┈✣ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
