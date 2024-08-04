@@ -1,44 +1,30 @@
-import axios from 'axios';
 
-let handler = async (m, { text, command, usedPrefix, conn }) => {
-    if (!text) {
-        throw `Fitur pendeteksi Tulisan yang dibuat oleh AI\nContoh:\n${usedPrefix + command} TextGenerateFromAI`;
-    }
+import fetch from 'node-fetch'
+import { sticker } from '../lib/sticker.js'
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-    var options = {
-        method: 'POST',
-        url: 'https://tr.deployers.repl.co/zerogpt',
-        headers: {
-            Accept: '*/*',
-            'User-Agent': 'Thunder Client (https://www.thunderclient.com)',
-            'content-type': 'multipart/form-data; boundary=---011000010111000001101001'
-        },
-        data: `-----011000010111000001101001\r\nContent-Disposition: form-data; name="text"\r\n\r\n${text}\r\n-----011000010111000001101001--\r\n`
-    };
+         let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
+    else who = m.chat
+     if (!who) throw `✳️ Menciona a un Usuario\n\n📌 Ejemplo : .slap @tag`
 
-    try {
-        const response = await axios.request(options);
-        const aiWords = response.data.data.aiWords;
-        const detectedLanguage = response.data.data.detected_language;
-        const h = response.data.data.h;
+    let name = conn.getName(who) 
+   let name2 = conn.getName(m.sender) 
+   m.react(rwait)
 
-        const replyMessage = `
-AI Words: ${aiWords}
-Detected Language: ${detectedLanguage}
-Perkataan AI: ${h}
+  let rki = await fetch(`https://api.waifu.pics/sfw/slap`)
+    if (!rki.ok) throw await rki.text()
+   let jkis = await rki.json()
+   let { url } = jkis
+   let stiker = await sticker(null, url, `(${name2}) ${mssg.slapmsg}`, `${name}`)
+   conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
+   m.react('👊🏻') 
 
-Support me on https://tr.deployers.repl.co/images
-`;
+}
+handler.help = ['slap @tag']
+handler.tags = ['rnime']
+handler.command = /^(slap|bofetada)$/i
+handler.diamond = true
+handler.group = true
 
-        conn.reply(m.chat, replyMessage, m);
-    } catch (error) {
-        console.error(error);
-        conn.reply(m.chat, 'An error occurred while processing the request', m);
-    }
-};
-
-handler.command = /^zerogpt/i;
-handler.help = ['zerogpt <text>'];
-handler.tags = ['tools'];
-
-export default handler;
+export default handler
