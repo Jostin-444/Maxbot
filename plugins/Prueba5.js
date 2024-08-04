@@ -188,8 +188,8 @@ let tags = {
         externalAdReply: {
         title: global.namebot,
         body: global.author,
-        thumbnailUrl: global.thumb,
-        sourceUrl: global.myweb,
+        thumbnailUrl: global.canal,
+        sourceUrl: global.canal,
         mediaType: 1,
         renderLargerThumbnail: true
         }}})
