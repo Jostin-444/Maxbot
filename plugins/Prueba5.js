@@ -31,6 +31,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'fun': 'Menu Juegos',
 }
+let ppp = 'https://i.ibb.co/7ks6JT4/file.jpg'
 
   try {
           // DEFAULT MENU
@@ -182,17 +183,6 @@ let tags = {
 
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 
- conn.sendMessage(m.chat, {
-        text: text,
-        contextInfo: {
-        externalAdReply: {
-        title: global.packname,
-        body: global.author,
-        thumbnailUrl: global.canal,
-        sourceUrl: global.canal,
-        mediaType: 1,
-        renderLargerThumbnail: true
-        }}})
 await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fkontak, null, fake)
 
   } catch (e) {
