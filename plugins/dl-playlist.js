@@ -1,7 +1,7 @@
 
 import yts from 'yt-search';
 let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-    if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`;
+    if (!text) throw `✳️ ejemplo *${usedPrefix + command}* Lil Peep hate my life`;
     m.react('📀');
 
     let result = await yts(text);
@@ -17,13 +17,13 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 {
                     header: '💿 MP3',
                     title: "",
-                    description: `▢ ⌚ *${mssg.duration}:* ${v.timestamp}\n▢ 👀 *${mssg.views}:* ${v.views}\n▢ 📌 *${mssg.title}* : ${v.title}\n▢ 📆 *${mssg.aploud}:* ${v.ago}\n`, 
+                    description: `▢ ⌚ *duración:* ${v.timestamp}\n▢ 👀 *vistas:* ${v.views}\n▢ 📌 *titulo* : ${v.title}\n▢ 📆 *subido:* ${v.ago}\n`, 
                     id: `${usedPrefix}fgmp3 ${v.url}`
                 },
                 {
                     header: "📀 MP4",
                     title: "" ,
-                    description: `▢ ⌚ *${mssg.duration}:* ${v.timestamp}\n▢ 👀 *${mssg.views}:* ${v.views}\n▢ 📌 *${mssg.title}* : ${v.title}\n▢ 📆 *${mssg.aploud}:* ${v.ago}\n`, 
+                    description: `▢ ⌚ *duración:* ${v.timestamp}\n▢ 👀 *vistas:* ${v.views}\n▢ 📌 *titulo* : ${v.title}\n▢ 📆 *subido:* ${v.ago}\n`, 
                     id: `${usedPrefix}fgmp4 ${v.url}`
                 }
             ]
