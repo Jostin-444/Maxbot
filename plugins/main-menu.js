@@ -5,6 +5,7 @@ import { xpRange } from '../lib/levelling.js'
 
 let tags = {
   'main': '𝐈𝐍𝐅𝐎 𝐁𝐎𝐓',
+  'search': '𝐒𝐄𝐀𝐑𝐂𝐇',
   'buscador': '𝐁𝐔𝐒𝐐𝐔𝐄𝐃𝐀𝐒',
   'fun': '𝐉𝐔𝐄𝐆𝐎𝐒',
   'jadibot': '𝐒𝐔𝐁 𝐁𝐎𝐓𝐒',
