@@ -6,5 +6,5 @@ await conn.sendButton(m.chat, `᥀·࣭࣪̇˖🪐◗ ¿𝘾𝙊𝙈𝙊 𝘿�
 ['𝗤𝗥 🤖', '.serbotqr'],
 ['𝗖𝗢𝗗𝗘 🤖', '.serbotcode']], null, [
 ['Creador', `https://wa.me/5493873232212`]], fkontak)}
-handler.command = /^serbot2|serbotcode|jadibot|jadibotcode$/i
+handler.command = /^serbot|jadibot$/i
 export default handler
