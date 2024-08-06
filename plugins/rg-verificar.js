@@ -22,15 +22,11 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)        
   let img = await (await fetch(`https://tinyurl.com/27xwmksn`)).buffer()
-  let txt = '`R E G I S T R O - U S E R`\n\n'
-      txt += `*╭⪽⫘⫘⫘⫘⫘⫘⫘⫘⫘⪾*\n`
-      txt += `*│ ＧＥＮＥＳＩＳ*\n`
-      txt += `*│ .・゜゜・・゜゜・．*\n`
-      txt += `*│* 🐈‍⬛ *Nombre:* ${name}\n`
-      txt += `*│* 🐈‍⬛ *Edad:* ${age} años\n`
-      txt += `*│* 🐈‍⬛ *fecha:* ${fecha}\n`
-      txt += `*│* 🐈‍⬛ *codigo verificado:* \`${sn}\`\n`
-      txt += `*╰⪽⫘⫘⫘⫘⫘⫘⫘⫘⫘⪾*`
+  let txt = '`V E R I F I C A C I O N` ✅\n\n'
+      txt += `🐈‍⬛ *Nombre:* ${name}\n`
+      txt += `🐈‍⬛ *Edad:* ${age} años\n`
+      txt += `🐈‍⬛ *fecha:* ${fecha}\n`
+      txt += `🐈‍⬛ *codigo verificado:* \`${sn}\`\n`
 await conn.sendLuffy(m.chat, botname, textbot, txt, img, img, canal, m)
 await m.react('✅')
 }
