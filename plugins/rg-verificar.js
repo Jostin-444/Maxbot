@@ -28,6 +28,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       txt += `*│ .・゜゜・・゜゜・．*\n`
       txt += `*│* 🐈‍⬛ *Nombre* ${name}\n`
       txt += `*│* 🐈‍⬛ *Edad* ${age} años\n`
+      txt += `*│* 🐈‍⬛ *fecha* ${regTime} años\n`
       txt += `*│* 🐈‍⬛ *Número de serie* \`${sn}\`\n`
       txt += `*╰⪽⫘⫘⫘⫘⫘⫘⫘⫘⫘⪾*`
 await conn.sendLuffy(m.chat, botname, textbot, txt, img, img, canal, m)
