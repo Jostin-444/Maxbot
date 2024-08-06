@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, command, usedPrefix }) => {
-let frep = { contextInfo: { externalAdReply: {title: packname, body: packname, sourceUrl: canal, thumbnail: await(await fetch(img16)).buffer() }}}
+let frep = { contextInfo: { externalAdReply: {title: packname, body: packname, sourceUrl: canal, thumbnail: await(await fetch(icons)).buffer() }}}
 let user = global.db.data.users[m.sender]
 let enlace = await pornovid[Math.floor(Math.random() * pornovid.length)] 
 let enlace1 = await pornovid2[Math.floor(Math.random() * pornovid2.length)] 
