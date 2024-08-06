@@ -1,15 +1,44 @@
-let handler = async (m, { conn, command }) => {
-let media = 'https://telegra.ph/file/0d72104de407765d25117.jpg'
-let str = `
-• 𝗕𝗢𝗧:
-• 𝘎𝘢𝘵𝘢𝘉𝘰𝘵𝘓𝘪𝘵𝘦-𝘔𝘋
-•┄┄┄┄┄┄┄┄┄•
-¿ 𝘾𝙊𝙈𝙊 𝘿𝙀𝙎𝙀𝘼 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙀𝙇 𝘽𝙊𝙏 ?
-`
-await conn.sendButton(m.chat, str, `𝆭  𝆺𝅥 🪐𖡹⃢⃟ᗒᵉ𝙀ִ𝙭𝆭𝙤ִ𝙩𝙞𝙘𝆭𝙤ִ ִ𝘽ִ𝆭𝙤𝙩 ִ𝙈ִ𝆭𝘿ᵥᗕ⃢⃟𖡹̤🪐 𝆹𝅥 𝆭`, media,
-[['𝙋𝙤𝙧 𝙏𝙚𝙧𝙢𝙪𝙭', '.txgatabotlite'], ['𝙋𝙤𝙧 𝘾𝙡𝙤𝙪𝙙 𝙎𝙝𝙚𝙡𝙡', '/csgatabotlite']], null, [['𝘎𝘢𝘵𝘢𝘉𝘰𝘵𝘓𝘪𝘵𝘦-𝘔𝘋', `https://github.com/GataNina-Li/GataBotLite-MD`]], fkontak)}
-handler.help = ['stallgatabotlite']
-handler.tags = ['Bots']
-handler.command = /^stallgatabotlite$/i
-handler.exp = 33
-export default handler
+import fetch from 'node-fetch'
+
+var handler = async (m, { conn, isOwner, usedPrefix, command, args }) => {
+
+let text
+if (args.length >= 1) {
+text = args.slice(0).join(' ')
+} else if (m.quoted && m.quoted.text) {
+text = m.quoted.text
+} else return conn.reply(m.chat, `『✦』Ingresa un texto para crear una imagen con dall-e.`, m, fpay, )
+
+try {
+
+conn.reply(m.chat, '『✦』Creando imagen, espere un momento...', m, fpay, )
+await Draw(text).then((img) => {
+conn.sendFile(m.chat, img, text, `『✦』 ${text}\n\n¡¡¡Realizado!!!`, m, fpay, )
+})
+} catch (e) {
+return conn.reply(m.chat, `『✦』 *Ocurrio un error inesperado en el comando.*`, m, fpay, )
+}
+
+}
+handler.help = ['dalle']
+handler.tags = ['ai']
+handler.command = /^(dalle|openiamage|aiimage|aiimg|aimage|iaimagen|openaimage|openaiimage)/i
+
+export default handler 
+
+async function Draw(propmt) {
+const Blobs = await fetch(
+'https://api-inference.huggingface.co/models/prompthero/openjourney-v2',
+{
+method: 'POST',
+headers: {
+'content-type': 'application/json',
+Authorization: 'Bearer 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',
+},
+body: JSON.stringify({ inputs: propmt }),
+})
+.then((res) => res.blob())
+const arrayBuffer = await Blobs.arrayBuffer()
+const buffer = Buffer.from(arrayBuffer)
+return buffer
+}
