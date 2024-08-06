@@ -13,15 +13,10 @@ const require = createRequire(__dirname);
 const { name, description, author, version } = require(join(__dirname, './package.json'));
 const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
-say('Ai Yaemori', {
-font: 'block',
+say('Genesis Bot\nPro', {
+font: 'pallet',
 align: 'center',
-colors: ['white']
-});
-say(`Multi Device`, {
-font: 'chrome',
-align: 'center',
-colors: ['red']
+colors: ['red', 'magenta']
 });
 say(`By • Angel-OFC y Titanium Team`, {
 font: 'console',
