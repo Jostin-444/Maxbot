@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import Spotify from "spotifydl-x"
 import fs from 'fs'
 let handler = async(m, { conn, usedPrefix, command, text }) => {
-let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: canal, thumbnail: await(await fetch(gataMenu)).buffer() }}}
+let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: canal, thumbnail: await(await fetch(imagen 1)).buffer() }}}
 if (!text) return await conn.reply(m.chat, `᥀·࣭࣪̇˖☁️◗ 𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚 𝙙𝙚 𝙡𝙖 𝙘𝙖𝙣𝙘𝙞𝙤𝙣 𝙦𝙪𝙚 𝙗𝙪𝙨𝙘𝙖.\n• 𝙋𝙤𝙧 𝙚𝙟𝙚𝙢𝙥𝙡𝙤: *${usedPrefix + command} Erika Lundmoen - Yad*`, fkontak, m) 
 try {
 const { key } = await conn.sendMessage(m.chat, {text: wait}, {quoted: fkontak});
