@@ -1,16 +1,12 @@
-let handler = async (m, { conn, text }) => {
-if (!text) return m.reply('᥀·࣭࣪̇˖🪐◗ 𝙀𝙨𝙘𝙧𝙞𝙗𝙖 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚 𝙙𝙚𝙡 𝙜𝙧𝙪𝙥𝙤 𝙥𝙖𝙧𝙖 𝙘𝙧𝙚𝙖𝙧𝙡𝙤.')
-try{
-m.reply('᥀·࣭࣪̇˖✅◗ 𝘾𝙧𝙚𝙖𝙣𝙙𝙤 𝙜𝙧𝙪𝙥𝙤 𝙖𝙡𝙚𝙖𝙩𝙤𝙧𝙞𝙤, 𝙚𝙨𝙥𝙚𝙧𝙚 𝙪𝙣 𝙢𝙤𝙢𝙚𝙣𝙩𝙤...')
-let group = await conn.groupCreate(text, [m.sender])
-let link = await conn.groupInviteCode(group.gid)
-m.reply(`᥀·࣭࣪̇˖👑◗ 𝙂𝙧𝙪𝙥𝙤 𝙘𝙧𝙚𝙖𝙙𝙤 𝙘𝙤𝙣 𝙀𝙭𝙤𝙩𝙞𝙘𝙤𝘽𝙤𝙩-𝙈𝘿\n\n• https://chat.whatsapp.com/` + url)
-} catch (e) {
-m.reply(`᥀·࣭࣪̇˖⛔◗ 𝙊𝙘𝙪𝙧𝙧𝙞𝙤 𝙪𝙣 𝙚𝙧𝙧𝙤𝙧 𝙞𝙣𝙚𝙨𝙥𝙚𝙧𝙖𝙙𝙤, 𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙡𝙤 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤.`)
-}}
-handler.help = ['exoticgroup']
-handler.tags = ['owner']
-handler.command = /^(creargrupo2|creargroup|creargc|gccreate)$/
-handler.owner = false
-handler.limit = 5
+let media = './Multi_Imagen/Menu1.jpg'
+let handler = async (m, { conn, command }) => {
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let str = `${wm}`
+await conn.sendButton(m.chat, `᥀·࣭࣪̇˖🪐◗ ¿𝘾𝙊𝙈𝙊 𝘿𝙀𝙎𝙀𝘼 𝙑𝙄𝙉𝘾𝙐𝙇𝘼𝙍?\n\n• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤𝙣𝙚 𝙨𝙤𝙡𝙤 𝙪𝙣𝙖 𝙤𝙥𝙘𝙞𝙤𝙣.\n`, str, media, [
+['𝗤𝗥 🤖', '.esubbot'],
+['𝗖𝗢𝗗𝗘 🤖', '#premcode']], null, [
+['Creador', `https://wa.me/5493873232212`]], fkontak)}
+handler.command = /^serbot2|serbotcode|jadibot|jadibotcode$/i
+handler.exp = 35
+handler.private = true
 export default handler
