@@ -8,6 +8,5 @@ conn.sendButton(m.chat, `🍷🔥 *_Horny_* 🔥🍷`.trim(), wm, haha, [['𝙎�
 }
 handler.command = handler.help = ['xporn1', 'xporn2', 'xporn3', 'xporn4', 'xporn5', 'xporn6', 'xporn7', 'xporn8', 'xporn9', 'xporn10', 'xporn11', 'xporn13', 'xporn14', 'xporn15', 'xporn17', 'xporn18', 'xporn19', 'xporn20', 'xporn21', 'xporn22', 'xporn23']
 handler.tags = ['hots']
-handler.private = true
 handler.register = true
 export default handler
