@@ -10,7 +10,7 @@ m.reply(`᥀·࣭࣪̇˖⛔◗ 𝙊𝙘𝙪𝙧𝙧𝙞𝙤 𝙪𝙣 𝙚𝙧�
 }}
 handler.help = ['exoticgroup']
 handler.tags = ['owner']
-handler.command = /^(creargrupo|creargroup|creargc|gccreate)$/
+handler.command = /^(creargrupo2|creargroup|creargc|gccreate)$/
 handler.owner = false
 handler.limit = 5
 export default handler
