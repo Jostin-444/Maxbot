@@ -136,9 +136,9 @@ creloadHandler(false);
 }
 serbot();
 };
-handler.help = ['code'];
+handler.help = ['serbotcode'];
 handler.tags = ['jadibot'];
-handler.command = ['code'];
+handler.command = ['serbotcode'];
 // handler.register = true;
 export default handler;
 function sleep(ms) {
