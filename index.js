@@ -23,7 +23,7 @@ font: 'chrome',
 align: 'center',
 colors: ['red']
 });
-say(`Developed By • OfcDiego`, {
+say(`By • Angel-OFC y Titanium Team`, {
 font: 'console',
 align: 'center',
 colors: ['yellow']
