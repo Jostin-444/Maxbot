@@ -7,6 +7,4 @@ await conn.sendButton(m.chat, `᥀·࣭࣪̇˖🪐◗ ¿𝘾𝙊𝙈𝙊 𝘿�
 ['𝗖𝗢𝗗𝗘 🤖', '#premcode']], null, [
 ['Creador', `https://wa.me/5493873232212`]], fkontak)}
 handler.command = /^serbot2|serbotcode|jadibot|jadibotcode$/i
-handler.exp = 35
-handler.private = true
 export default handler
