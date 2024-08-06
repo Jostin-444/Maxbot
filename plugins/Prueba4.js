@@ -37,7 +37,6 @@ console.log(`${errorBB}`)
 console.log(e)}
 }
 handler.command = ['vxxxporno', 'vxxxporno2', 'vxxxlesbiana', 'vxxxgay', 'vxxxbisexual', 'vxxxrandom']
-handler.private = true
 handler.register = true
 export default handler
 
