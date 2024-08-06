@@ -69,8 +69,14 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let listSections = [];
 
     listSections.push({
-        title: `🔖 LISTA MENUS`, highlight_label: `Popular Genesis`,
+        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular Genesis`,
         rows: [
+            {
+                header: "𝘼𝙐𝙏𝙊 𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 ✅",
+                title: "",
+                description: `Verificacion Automáticamente`,
+                id: `#reg ${username}.18`,
+            },
             {
                 header: ". .┊☁️ MENU COMPLETO",
                 title: "",
