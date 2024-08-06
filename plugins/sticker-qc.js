@@ -20,7 +20,7 @@ const obj = {"type": "quote", "format": "png", "backgroundColor": "#000000", "wi
 const json = await axios.post('https://bot.lyo.su/quote/generate', obj, {headers: {'Content-Type': 'application/json'}});
 const buffer = Buffer.from(json.data.result.image, 'base64');
 let stiker = await sticker(buffer, false, global.packname, global.author);
-if (stiker) return conn.sendFile(m.chat, stiker, 'error.webp', '', m);
+if (stiker) return conn.sendFile(m.chat, stiker, 'error.webp', '', m, estilo);
 }
 handler.help = ['qc'];
 handler.tags = ['sticker'];
