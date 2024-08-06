@@ -75,7 +75,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 header: "𝘼𝙐𝙏𝙊 𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 ✅",
                 title: "",
                 description: `Verificacion Automáticamente`,
-                id: `#reg ${username}.18`,
+                id: `#reg 食𝐕̲͟ⳤ͢⃝̵̵🧧᭄̯⳱.18`,
             },
             {
                 header: ". .┊☁️ MENU COMPLETO",
