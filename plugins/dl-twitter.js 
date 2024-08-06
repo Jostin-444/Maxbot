@@ -1,7 +1,7 @@
 import axios from 'axios';
 let enviando = false;
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) throw `${mssg.avisoGene4}\n\n*INGRESA EL ENLACE*\n_.x <link>_`;
+if (!text) throw `*INGRESA EL ENLACE*\n_.x <link>_`;
 if (enviando) return;
     enviando = true;
 try {
