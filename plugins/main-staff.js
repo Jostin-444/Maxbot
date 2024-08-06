@@ -5,7 +5,7 @@ let staff = `🚩 *EQUIPO DE AYUDANTES*
 
 👑 *Propietario:*
 
-• OfcDiego
+• Angel-OFC
 🍟 *Rol:* Propietario
 🚩 *Número:* ${creador}
 ✨️ *GitHub:* https://github.com/OfcDiego
