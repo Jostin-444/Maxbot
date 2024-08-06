@@ -5,8 +5,8 @@ const handler = async (m, {command, conn}) => {
 
   if (command == 'nsfwloli') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/nsfwloli.json`)).data;
-    const url1 = await res[Math.floor(res.length * Math.random())];
-    conn.sendButton(m.chat, '_${command}_', packname, url1, [['🥵 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄 🥵', `.nsfwloli`]], null, null, m)
+    const haha = await res[Math.floor(res.length * Math.random())];
+    conn.sendButton(m.chat, '_${command}_', packname, haha, [['🥵 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄 🥵', `.nsfwloli`]], null, null, m)
 
   if (command == 'nsfwfoot') {
     const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/nsfwfoot.json`)).data;
