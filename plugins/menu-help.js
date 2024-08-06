@@ -15,7 +15,6 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let totalusr = Object.keys(global.db.data.users).length;
     let _uptime = process.uptime() * 1000;
     let uptime = clockString(_uptime);
-    let user = global.db.data.users[m.sender]
     let username = conn.getName(m.sender);
     let locale = 'es';
     let d = new Date(new Date + 3600000);
@@ -76,7 +75,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 header: "𝘼𝙐𝙏𝙊 𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 ✅",
                 title: "",
                 description: `Verificacion Automáticamente`,
-                id: `#reg ${user}.18`,
+                id: `#reg ${username}.18`,
             },
             {
                 header: ". .┊☁️ MENU COMPLETO",
