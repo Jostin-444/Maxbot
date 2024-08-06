@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 var handler = async (m, {conn, text, usedPrefix, command}) => {
 
-if (!text) return conn.reply(m.chat, `『✦』Ingrese un texto para crear una imagen con dall-e 2.`, m, fpay, )
+if (!text) return conn.reply(m.chat, `『✦』Ingrese un texto para crear una imagen con dall-e 2.`, m, fake, )
 
 conn.reply(m.chat, '『✦』Creando imagen...', m)
 
