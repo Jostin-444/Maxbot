@@ -16,7 +16,7 @@ const rl = createInterface(process.stdin, process.stdout);
 say('Genesis Bot\nPro', {
 font: 'pallet',
 align: 'center',
-colors: ['red', 'magenta']
+colors: ['yellow']
 });
 say(`By • Angel-OFC y Titanium Team`, {
 font: 'console',
