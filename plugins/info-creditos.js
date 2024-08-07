@@ -1,7 +1,7 @@
 var handler = async (m) => {
 
 let tqto = `👑 *Creador*
-⬡ *GataNina*
+⬡ *Angel-OFC*
 https://github.com/Angelito-OFC
 
 💫 *Colaboradores*
