@@ -16,7 +16,7 @@ const palabras = [
     "pingüino",
     "delfín",
     "serpiente",
-    "hámster",
+    "ballena",
     "mosquito",
     "abeja",
 ]
