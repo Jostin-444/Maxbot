@@ -6,4 +6,6 @@ let random = anu[Math.floor(Math.random() * anu.length)]
 sock.sendMessage(from, { image: { url: random.male }, caption: `*_Foto masculina:_*` }, { quoted: info })
 sock.sendMessage(from, { image: { url: random.female }, caption: `*_Foto feminina:_*` }, { quoted: info })
 }
-break
+handler.command = handler.help = ['fotocompartida2']
+handler.tags = ['nsfw']
+export default handler
