@@ -1,3 +1,6 @@
+import axios from "axios"
+let handler = async (m, {command, conn, usedPrefix}) => {
+        m.react('✅')
 case 'fotocompartida2': {
 sock.sendMessage(from, { react: { text: `💕`, key: info.key }})
 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
