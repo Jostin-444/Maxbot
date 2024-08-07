@@ -16,9 +16,9 @@ let descripcion3 = 'Sticker'
 let descripcion4 = 'Multi Funciones m'  
 
 
-let stiker = await sticker(null, llorar[Math.floor(Math.random() * llorar.length)], nombreAll, descripAll)
+let stiker = await sticker(null, llorar[Math.floor(Math.random() * llorar.length)], nombre1, descripcion1)
 await delay(3 * 3000)
-if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `${botDesc}`, mediaType: 2, sourceUrl: exoticoAll, thumbnail: menusRB }}}, { quoted: m })
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `${packname}`, mediaType: 2, sourceUrl: canal, thumbnail: icons }}}, { quoted: m })
 
 let stiker2 = await sticker(null, okey[Math.floor(Math.random() * okey.length)], nombreAll, descripAll)
 await delay(3 * 3000)
