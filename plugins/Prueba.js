@@ -12,8 +12,10 @@ let handler = async (m, {command, conn, usedPrefix}) => {
         m.react('✅')
 let anu = (await axios.get(`https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json`)).data  
 let random = anu[Math.floor(Math.random() * anu.length)] 
-conn.sendButton(m.chat, `🔥🐻🍃 _${command}_ 🍃🐻🔥`.trim(), packname, haha, [['🥃 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 🥃', `${usedPrefix + command}`]], null, null, m)    
-}
+conn.sendFile(m.chat, haha, 'error.jpg', `🍟 *${command}*`, m, null, rcanal);
+};  
+conn.sendFile(m.chat, haha, 'error.jpg', `🍟 *${command}*`, m, null, rcanal);
+};
 handler.command = handler.help = ['takeda', 'asuma', 'endeavor']
 handler.tags = ['nsfw']
 export default handler
