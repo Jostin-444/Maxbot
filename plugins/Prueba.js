@@ -20,11 +20,11 @@ let ress = await axios.get(`https://www.api-nightmares.my.id/api/tiktok-stalk?q=
 let res = ress.data
 let teks = `乂  *STALKER TIKTOK*
 
-◦  USUARIO : ${res.result.username}
-◦  NOMBRE : ${res.result.name}
-◦  SEGUIDORES : ${res.result.followers}
-◦  SIGUIENDO: ${res.result.following}
-◦  DESCRIPCIÓN : ${res.result.description}`
+*◦ NOMBRE :* ${res.result.username}
+*◦ USUARIO :* ${res.result.name}
+*◦ SEGUIDORES :* ${res.result.followers}
+*◦ SIGUIENDO:* ${res.result.following}
+*◦ DESCRIPCIÓN :* ${res.result.description}`
 await conn.sendMessage(m.chat, {image: {url : res.result.pp_user}, caption: teks}, {quoted: m})
 } catch (err) {
 m.reply('Error Username tidak ditemukan\nSilahkan kirim Username yang valid!')
