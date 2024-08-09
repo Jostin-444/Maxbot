@@ -1,15 +1,27 @@
-let handler = async (m, { conn, command }) => {
-let media = 'https://telegra.ph/file/36ecc1fe421e2f6e59987.jpg'
-let str = `
-• 𝗕𝗢𝗧:
-• 𝘎𝘢𝘵𝘢𝘉𝘰𝘵-𝘔𝘋
-•┄┄┄┄┄┄┄┄┄•
-¿ 𝘾𝙊𝙈𝙊 𝘿𝙀𝙎𝙀𝘼 𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝙍 𝙀𝙇 𝘽𝙊𝙏 ?
-`
-await conn.sendButton(m.chat, str, `𝆭  𝆺𝅥 🪐𖡹⃢⃟ᗒᵉ𝙀ִ𝙭𝆭𝙤ִ𝙩𝙞𝙘𝆭𝙤ִ ִ𝘽ִ𝆭𝙤𝙩 ִ𝙈ִ𝆭𝘿ᵥᗕ⃢⃟𖡹̤🪐 𝆹𝅥 𝆭`, media,
-[['𝙋𝙤𝙧 𝙏𝙚𝙧𝙢𝙪𝙭', '.txgatabot'], ['𝙋𝙤𝙧 𝘾𝙡𝙤𝙪𝙙 𝙎𝙝𝙚𝙡𝙡', '/csgatabot']], null, [['𝘎𝘢𝘵𝘢𝘉𝘰𝘵-𝘔𝘋', `https://github.com/GataNina-Li/GataBot-MD`]], fkontak)}
-handler.help = ['stallgatabot']
-handler.tags = ['Bots']
-handler.command = /^stallgatabot$/i
-handler.exp = 33
+import axios from 'axios'
+
+let handler = async (m, {usedPrefix, command, conn, text }) => {
+
+if (!text) throw `Error!\nMasukan username, *Ex: ${usedPrefix + command} mrbeast`
+try {
+m.reply(wait)
+let ress = await axios.get(`https://www.api-nightmares.my.id/api/instagram-stalk?q=${text}&apikey=Tio`)
+let res = ress.data
+let teks = `乂  *STALKER IG*
+
+*◦ NOMBRE :* ${res.result.username}
+*◦ USUARIO :* ${res.result.name}
+*◦ SEGUIDORES :* ${res.result.followers}
+*◦ SIGUIENDO:* ${res.result.following}
+*◦ DESCRIPCIÓN :* ${res.result.description}`
+await conn.sendMessage(m.chat, {image: {url : res.result.pp_user}, caption: teks}, {quoted: m})
+} catch (err) {
+m.reply('Error Username tidak ditemukan\nSilahkan kirim Username yang valid!')
+}
+
+}
+handler.help = ['stalktiktok <username>']
+handler.tags = ['stalker']
+handler.command = /^(igstalk2|stalkig|igstalk)$/i
+handler.limit = true
 export default handler
