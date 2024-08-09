@@ -1,6 +1,37 @@
-/*═════════•°•⚠️•°•═════════•
-[❗] Ingin Full Code No Enc??
-📲 Hub: https://t.me/kyzoffc (𝗞𝘆𝘇𝗥𝘆𝘇𝘇) 
-🌐 Maker: https://whatsapp.com/channel/0029VaRI1OB2P59cTdJKZh3q
-•═══════════════════════*/
-function _0x28e2(_0x4d07ce,_0x582fcd){const _0xd34c88=_0xd34c();return _0x28e2=function(_0x28e212,_0x5d29ee){_0x28e212=_0x28e212-0x1d8;let _0xfdc967=_0xd34c88[_0x28e212];return _0xfdc967;},_0x28e2(_0x4d07ce,_0x582fcd);}const _0x5e9ed6=_0x28e2;(function(_0x21f41d,_0x1df74a){const _0x262bc9=_0x28e2,_0x3adf3d=_0x21f41d();while(!![]){try{const _0x46c7b3=-parseInt(_0x262bc9(0x1df))/0x1*(-parseInt(_0x262bc9(0x1f4))/0x2)+-parseInt(_0x262bc9(0x1d8))/0x3+parseInt(_0x262bc9(0x1e9))/0x4*(-parseInt(_0x262bc9(0x1ec))/0x5)+-parseInt(_0x262bc9(0x1e2))/0x6*(-parseInt(_0x262bc9(0x1de))/0x7)+-parseInt(_0x262bc9(0x1e8))/0x8+-parseInt(_0x262bc9(0x1f3))/0x9*(parseInt(_0x262bc9(0x1f8))/0xa)+parseInt(_0x262bc9(0x1e0))/0xb;if(_0x46c7b3===_0x1df74a)break;else _0x3adf3d['push'](_0x3adf3d['shift']());}catch(_0x9309e7){_0x3adf3d['push'](_0x3adf3d['shift']());}}}(_0xd34c,0x4c891));import _0x27bc60 from'fs';function _0xd34c(){const _0xc94b1f=['*\x0a\x0a*[\x20BERIKUT\x20OWNER\x20SAYA\x20]*\x0a','819ufUnFq','654iYBkoy','8587183YJYOPi','info','28002BTjTnc','tags','cta_url','owner\x20*[my\x20owner]*','\x22,\x22merchant_url\x22:\x22https://wa.me/','parseMention','1282720NpPXAw','28UcQhhp','*Halo\x20Kak\x20@','message','209895iWBzvc','\x20]*\x0a\x20-\x20Jangan\x20Spam\x20Bot\x0a\x20-\x20Jangan\x20Telpon/Call\x20Bot\x20\x0a\x20-\x20Gausah\x20Chat\x20Yg\x20Aneh\x20Aneh\x0a\x20-\x20Sewa\x20bot\x20Dll\x20Chat\x20Owner\x0a','remoteJid','command','waUploadToServer','{\x22display_text\x22:\x22Cʜᴀᴛ\x20ʙᴏᴛ\x22,\x22url\x22:\x22https://wa.me/','help','9OzOwLy','58DGkEQd','120363247149539361@newsletter','split','chat','2916850LXGhpn','relayMessage','\x20[\x20','858873wmAJuE','{\x22display_text\x22:\x22Cʜᴀᴛ\x20ᴏᴡɴᴇʀ\x20\x22,\x22url\x22:\x22https://wa.me/','\x20||\x20Powered\x20By\x20','key','\x20]*\x0a\x20-\x20Jangan\x20Chat\x20Yang\x20Aneh\x20Aneh\x0a\x20-\x20Jangan\x20Telpon/Call\x20Owner\x20\x0a\x20-\x20Chat\x20Langsung\x20ke\x20intinya\x20aja\x0a\x20-\x20Ada\x20Fitur\x20Error?\x20Laporin\x20Kesini\x0a'];_0xd34c=function(){return _0xc94b1f;};return _0xd34c();}import{proto,generateWAMessageFromContent,generateWAMessageContent,prepareWAMessageMedia}from'@whiskeysockets/baileys';let handler=async(_0x486178,{conn:_0x3101e3})=>{const _0x3e9ea=_0x28e2;let _0x2aa1dd=global['nomorown'],_0x49dbad=global['nomorbot'],_0x831c7c=[],_0x10114b=nameown,_0x42f4a2=_0x3e9ea(0x1ea)+_0x486178['sender'][_0x3e9ea(0x1f6)]`@`[0x0]+_0x3e9ea(0x1dd)+_0x2aa1dd+_0x3e9ea(0x1fa)+_0x10114b+'\x20]\x0a';const _0x42e9b0=''+global['thumb'];async function _0x4fb118(_0x108e21){const _0x4481e9=_0x3e9ea,{imageMessage:_0x8e7f60}=await generateWAMessageContent({'image':{'url':_0x108e21}},{'upload':_0x3101e3[_0x4481e9(0x1f0)]});return _0x8e7f60;}let _0x69841b=generateWAMessageFromContent(_0x486178[_0x3e9ea(0x1f7)],{'viewOnceMessage':{'message':{'interactiveMessage':{'body':{'text':_0x42f4a2},'contextInfo':{'mentionedJid':_0x3101e3[_0x3e9ea(0x1e7)](_0x42f4a2),'quoted':[_0x486178],'isForwarded':!![],'forwardingScore':0x1869f,'forwardedNewsletterMessageInfo':{'newsletterJid':_0x3e9ea(0x1f5),'newsletterName':namebot+_0x3e9ea(0x1da)+nameown,'serverMessageId':0xcb}},'carouselMessage':{'cards':[{'header':{'imageMessage':await _0x4fb118(_0x42e9b0),'hasMediaAttachment':!![]},'body':{'text':'\x0a\x20\x20\x20\x20\x20「\x20```[\x20OWNER\x20FURINA\x20]```\x20」\x0a\x20\x20\x20\x20\x20\x0a*[\x20'+nameown+_0x3e9ea(0x1dc)},'nativeFlowMessage':{'buttons':[{'name':_0x3e9ea(0x1e4),'buttonParamsJson':_0x3e9ea(0x1d9)+_0x2aa1dd+_0x3e9ea(0x1e6)+_0x2aa1dd+'\x22}'}]}},{'header':{'imageMessage':await _0x4fb118(_0x42e9b0),'hasMediaAttachment':!![]},'body':{'text':'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20「\x20```[\x20NOMOR\x20FURINA\x20]```\x20」\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a*[\x20'+namebot+_0x3e9ea(0x1ed)},'nativeFlowMessage':{'buttons':[{'name':_0x3e9ea(0x1e4),'buttonParamsJson':_0x3e9ea(0x1f1)+_0x49dbad+_0x3e9ea(0x1e6)+_0x49dbad+'\x22}'}]}}],'messageVersion':0x1}}}}},{'quoted':_0x486178});await _0x3101e3[_0x3e9ea(0x1f9)](_0x69841b[_0x3e9ea(0x1db)][_0x3e9ea(0x1ee)],_0x69841b[_0x3e9ea(0x1eb)],{'messageId':_0x69841b[_0x3e9ea(0x1db)]['id']});};handler[_0x5e9ed6(0x1f2)]=[_0x5e9ed6(0x1e5)],handler[_0x5e9ed6(0x1e3)]=[_0x5e9ed6(0x1e1)],handler[_0x5e9ed6(0x1ef)]=/^(owner2)$/i;export default handler;
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, command, args }) => {
+  if (!args[0]) {
+    return conn.reply(m.chat, '*Example*: .roboguru 1+1', m)
+  }
+  let apikey = `${global.lolkey}`
+  let query = encodeURIComponent(args.join(' '))
+  let grade = 'sma'
+  let subject = 'sejarah'
+  let url = `https://api.lolhuman.xyz/api/roboguru?apikey=${apikey}&query=${query}&grade=${grade}&subject=${subject}`	
+	conn.sendMessage(m.chat, {
+		react: {
+			text: '',
+			key: m.key,
+		}
+	})
+  let res = await fetch(url)
+  let json = await res.json()
+  if (json.status !== 200) {
+    return conn.reply(m.chat, 'Maaf, terjadi kesalahan saat mengambil data dari server', m)
+  }
+  let result = json.result
+  if (result.length === 0) {
+    return conn.reply(m.chat, 'Maaf, tidak dapat menemukan jawaban untuk pertanyaan itu', m)
+  }
+  let answer = result[0].answer
+  let message = `*Pertanyaan:* ${result[0].question}\n\n*Jawaban:* ${answer}`
+  conn.reply(m.chat, message, m)
+}
+
+handler.help = ['roboguru <teks>']
+handler.tags = ['tools']
+handler.command = /^(roboguru)$/i
+handler.limit = true
+
+export default handler 
