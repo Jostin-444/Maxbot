@@ -1,10 +1,11 @@
 import fetch from "node-fetch";
 
 let handler = async (m, { conn, usedPrefix, text }) => {
+await m.react("🕒");
   if (!text) return conn.reply(m.chat,"*💚 𝙸𝚗𝚐𝚛𝚎𝚜𝚊 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚜 𝚋𝚞𝚜𝚌𝚊𝚛 𝚎𝚗 𝚂𝚙𝚘𝚝𝚒𝚏𝚢.*", m);
-  await m.react("💚");
   let results;
   try {
+await m.react("✅");
     results = await fetch(`https://thepapusteamspotify.koyeb.app/api/spotify/search?q=${encodeURIComponent(text)}`).then(res => res.json());
   } catch (error) {
     console.error(error);
