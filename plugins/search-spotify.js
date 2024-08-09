@@ -1,112 +1,36 @@
-import axios from 'axios'
-import fetch from 'node-fetch'
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
-import search from 'yt-search'
-async function spotifyxv(query) {
-let token = await tokens();
-let response = await axios({
-method: 'get',
-url: 'https://api.spotify.com/v1/search?q=' + encodeURIComponent(query) + '&type=track',
-headers: {
-Authorization: 'Bearer ' + token,
-},
-})
-const tracks = response.data.tracks.items
-const results = tracks.map((track) => ({
-name: track.name,
-artista: track.artists.map((artist) => artist.name),
-album: track.album.name,
-duracion: timestamp(track.duration_ms),
-url: track.external_urls.spotify,
-imagen: track.album.images.length ? track.album.images[0].url : '',
-}))
-return results
-}
-async function tokens() {
-const response = await axios({
-method: 'post',
-url:
-'https://accounts.spotify.com/api/token',
-headers: {
-'Content-Type': 'application/x-www-form-urlencoded',
-Authorization: 'Basic ' + Buffer.from('acc6302297e040aeb6e4ac1fbdfd62c3:0e8439a1280a43aba9a5bc0a16f3f009').toString('base64'),
-},
-data: 'grant_type=client_credentials',
-})
-return response.data.access_token
-}
-function timestamp(time) {
-const minutes = Math.floor(time / 60000);
-const seconds = Math.floor((time % 60000) / 1000);
-return minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-}
-async function getBuffer(url, options) {
-try {
-options = options || {};
-const res = await axios({
-method: 'get',
-url,
-headers: {
-DNT: 1,
-'Upgrade-Insecure-Request': 1,
-},
-...options,
-responseType: 'arraybuffer',
-});
-return res.data;
-} catch (err) {
-return err;
-}}
-async function getTinyURL(text) {
-try {
-let response = await axios.get(`https://tinyurl.com/api-create.php?url=${text}`);
-return response.data;
-} catch (error) {
-return text;
-}}
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `╰⊱❗️⊱ *ACCIÓN MAL USADA* ⊱❗️⊱╮\n\n🍟 *DEBE DE USAR EL COMANDO COMO EN ESTE EJEMPLO:*\n${usedPrefix + command} *tu foto*`
-try {
-conn.reply(m.chat, '🚩 *Enviando su música de Spotify*', m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-title: packname,
-body: wm,
-previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
-m.react(rwait)
-let songInfo = await spotifyxv(text)
-if (!songInfo.length) throw `*No se encontró la canción*`
-let res = songInfo[0]
-let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
-let shortURL = await getTinyURL(res.url)
-const info = `🍟 *TITULO:*
-_${res.name}_
+import fetch from "node-fetch";
 
-🚩 *ARTISTA:*
-» ${res.artista.join(', ')}
+let handler = async (m, { conn, usedPrefix, text }) => {
+await m.react("🕒");
+  if (!text) return conn.reply(m.chat,"*💚 𝙸𝚗𝚐𝚛𝚎𝚜𝚊 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚜 𝚋𝚞𝚜𝚌𝚊𝚛 𝚎𝚗 𝚂𝚙𝚘𝚝𝚒𝚏𝚢.*", m);
+  let results;
+  try {
+await m.react("✅");
+    results = await fetch(`https://thepapusteamspotify.koyeb.app/api/spotify/search?q=${encodeURIComponent(text)}`).then(res => res.json());
+  } catch (error) {
+    console.error(error);
+    await m.react("❌");
+    return conn.reply(m.chat,"𝙷𝚞𝚋𝚘 𝚞𝚗 𝚎𝚛𝚛𝚘𝚛 𝚊𝚕 𝚌𝚘𝚗𝚜𝚞𝚕𝚝𝚊𝚛 𝚎𝚗 𝚂𝚙𝚘𝚝𝚒𝚏𝚢.", m);
+  }
 
-🔗 *LINK:*
-» ${shortURL}
+  if (!results || !results.data || results.data.tracks.length === 0)
+    return conn.reply(m.chat,"𝙽𝚘 𝚜𝚎 𝚎𝚗𝚌𝚘𝚗𝚝𝚛𝚊𝚛𝚘𝚗 𝚛𝚎𝚜𝚞𝚕𝚝𝚊𝚍𝚘𝚜, 𝚒𝚗𝚝𝚎𝚗𝚝𝚊 𝚌𝚘𝚗 𝚘𝚝𝚛𝚘 𝚝é𝚛𝚖𝚒𝚗𝚘 𝚍𝚎 𝚋ú𝚜𝚚𝚞𝚎𝚍𝚊.", m).then((_) => m.react("❌"));
 
-✨️ *Enviando Canción....*
-${global.wm}`
+  let txt = `*Ｓｐｏｔｉｆｙ-Ｓｅａｒｃｈ \n ⇄ Ⅰ<    ⅠⅠ    >Ⅰ   ↻*`;
+  for (let i = 0; i < (results.data.tracks.length >= 10 ? 10 : results.data.tracks.length); i++) {
+    const track = results.data.tracks[i];
+    txt += `\n\n`;
+    txt += `        ❧  *𝚃𝚒𝚝𝚞𝚕𝚘* : ${track.name}\n`;
+    txt += `        ❧  *𝙰𝚛𝚝𝚒𝚜𝚝𝚊* : ${track.artists}\n`;
+    txt += `        ❧  *Á𝚕𝚋𝚞𝚖* : ${track.album}\n`;
+    txt += `        ❧  *𝙻𝚒𝚗𝚔* : ${track.external_urls.spotify}\n`;
+  }
 
-let resImg = await fetch(res.imagen)
-let thumbb = await resImg.buffer()
-let { videos } = await search(res.name)
-let q = '128kbps'
-let v = videos[0].url
-let yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v))
-let dl_url = await yt.audio[q].download()
-let ttl = await yt.title
-let size = await yt.audio[q].fileSizeH
-let img = await getBuffer(res.imagen)
-conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
-await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: fkontak});
-m.react(done)
-} catch (error) {
-}}
-handler.tags = ['search']
-handler.help = ['spotify']
-handler.command = /^(spotify|music)$/i
-export default handler
+  conn.reply(m.chat, txt, m, rcanal);
+};
+
+handler.help = ["spotifysearch"];
+handler.tags = ["search"];
+handler.command = /^(spotifysearch)$/i;
+
+export default handler;
