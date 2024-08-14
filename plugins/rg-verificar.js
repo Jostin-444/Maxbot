@@ -30,8 +30,14 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       txt += `┊ *☁️ EDAD* \n`
       txt += `┊ ⁘ ${age} años\n`
       txt += `┊\n`
-      txt += `🐈‍⬛ *fecha:* ${fecha}\n`
-      txt += `🐈‍⬛ *codigo verificado:* \`${sn}\`\n`
+      txt += `┊ *☁️ FECHA*\n`
+      txt += `┊ ⁘ ${fecha}\n`
+      txt += `┊\n`
+      txt += `┊ *☁️ N° de serie*`
+      txt += `┊ ⁘ \`${sn}\`\n`
+      txt += `╰┈┈┈┈┈┈┈┈┈┈┈┈•\n\n`
+      txt += `☁️ \```Escriba el siguiente comando para ver el menu completo:```\n`
+      txt += `✪ *.allmenu*`
 await conn.sendLuffy(m.chat, botname, textbot, txt, img, img, canal, m)
 await m.react('✅')
 }
