@@ -397,7 +397,11 @@ default:
 if (!/[01]/.test(command)) return await conn.reply(m.chat, miniopcion, m, rcanal);
 throw false;
 }
-conn.reply(m.chat, `🍟  *La Función ${type} Se Ha ${isEnable ? 'Activado' : 'Desactivado'} En Este ${isAll ? 'Bot' : isUser ? '' : 'Chat.'}*`, m, rcanal, )
+await conn.sendButton(m.chat, `\`❱❱ 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 • 𝗠𝗗 ❰❰\`
+
+*» 𝗢𝗣𝗖𝗜𝗢𝗡 |* ${type.toUpperCase()}
+*» 𝗘𝗦𝗧𝗔𝗗𝗢 |* ${isEnable ? 'ON' : 'OFF'}
+*» 𝗣𝗔𝗥𝗔 |*  ${isAll ? 'ESTE BOT' : isUser ? '' : 'ESTE CHAT'}`, wm, null, [[`${isEnable ? `ᴅᴇꜱᴀᴄᴛɪᴠᴀʀ ☁️` : `ᴀᴄᴛɪᴠᴀʀ ☁️`}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`]], null, null, fakegif3)
 
 }
 handler.help = ['en', 'dis'].map((v) => v + 'able <option>');
