@@ -36,7 +36,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       txt += `┊ *☁️ N° de serie*`
       txt += `┊ ⁘ \`${sn}\`\n`
       txt += `╰┈┈┈┈┈┈┈┈┈┈┈┈•\n\n`
-      txt += `☁️ \```Escriba el siguiente comando para ver el menu completo:```\n`
+      txt += `☁️ \```Escriba el siguiente comando para ver el menu completo:\```\n`
       txt += `✪ *.allmenu*`
 await conn.sendLuffy(m.chat, botname, textbot, txt, img, img, canal, m)
 await m.react('✅')
