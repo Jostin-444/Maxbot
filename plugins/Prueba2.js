@@ -1,13 +1,3 @@
-/*
-𝙆𝙮𝙯𝙍𝙮𝙯𝙯 𝙓𝘿
-𝘊𝘳𝘦𝘢𝘵𝘰𝘳 𝘉𝘰𝘵 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱
-𝘸𝘢: wa.me/6287815560235
-𝘵𝘦𝘭𝘦: t.me/kyzoffc
-𝘸𝘦𝘣: s.id/kyzzxd
-🚨Di Larang Menghapus Wm Ini🚨
-*/
-
-
 import axios from 'axios'
 
 const query = ['story%20wa','story%20sad','video%20fun','story%20wa%20galau','story%20wa%20sindiran','story%20wa%20bahagia','story%20wa%20lirik%20lagu%20overlay','story%20wa%20lirik%20lagu','video%20viral']
