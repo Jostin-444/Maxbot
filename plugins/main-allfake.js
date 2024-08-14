@@ -111,7 +111,6 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 
 global.rfake = { externalAdReply: { showAdAttribution: true, title: packname, body: '🌟 ¡Génesis Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: canal, mediaType: 1, renderLargerThumbnail: false }}, { quoted: m }
 
-
 global.icono = [ 
 'https://qu.ax/hTOQ.jpeg',
 'https://qu.ax/XBJf.jpeg',
