@@ -22,9 +22,14 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)        
   let img = await (await fetch(`https://tinyurl.com/262axvpq`)).buffer()
-  let txt = '*`V E R I F I C A C I O N` ✅*\n\n'
-      txt += `🐈‍⬛ *Nombre:* ${name}\n`
-      txt += `🐈‍⬛ *Edad:* ${age} años\n`
+  let txt = '*`📄 VERIFICACIÓN ACTUAL 📄`*\n'
+      txt += ` *∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷*\n`
+      txt += `┊ *☁️ NOMBRE* ${name}\n`
+      txt += `┊ ⁘ ${name}\n`
+      txt += `┊\n`
+      txt += `┊ *☁️ EDAD* \n`
+      txt += `┊ ⁘ ${age} años\n`
+      txt += `┊\n`
       txt += `🐈‍⬛ *fecha:* ${fecha}\n`
       txt += `🐈‍⬛ *codigo verificado:* \`${sn}\`\n`
 await conn.sendLuffy(m.chat, botname, textbot, txt, img, img, canal, m)
