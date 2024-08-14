@@ -109,6 +109,9 @@ let fgif = {key: {participant : '0@s.whatsapp.net'}, message: {"videoMessage": {
 global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363220939514640@newsletter', newsletterName: "✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯", serverMessageId: -1 }
 }}, { quoted: m }
 
+global.fake = { externalAdReply: { showAdAttribution: true, title: packname, body: '🌟 ¡Génesis Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }}, { quoted: m }
+
+
 global.icono = [ 
 'https://qu.ax/hTOQ.jpeg',
 'https://qu.ax/XBJf.jpeg',
