@@ -81,5 +81,5 @@ let handler = async (_0x486178, {
 };
 handler.help = ["owner *[my owner]*"];
 handler.tags = ["info"];
-handler.command = /^(owner)$/i;
+handler.command = /^(owner5)$/i;
 export default handler;
