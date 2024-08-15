@@ -30,8 +30,8 @@ const handler = async (m, { conn, command, args, text, usedPrefix }) => {
   const externalAdReply = {
     title: '♡  ͜ ۬︵࣪᷼⏜݊᷼𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨⏜࣪᷼︵۬ ͜ ',
     body: '<(✿◠‿◠)> 𝙈𝙚𝙜𝙪𝙢𝙞𝙣🔥',
-    sourceUrl: global.cn,
-    thumbnail: global.logo7
+    sourceUrl: global.canal,
+    thumbnail: global.imagen1
   };
 
   conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1, contextInfo: { externalAdReply } }, { quoted: m });
