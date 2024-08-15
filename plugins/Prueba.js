@@ -40,7 +40,7 @@ let handler = async (_0x486178, {
           'carouselMessage': {
             'cards': [{
               'header': {
-                'imageMessage': await _0x4fb118(_0x42e9b0),
+                'imageMessage': 'https://telegra.ph/file/503015cf391e787b70adb.jpg',
                 'hasMediaAttachment': true
               },
               'body': {
@@ -54,7 +54,7 @@ let handler = async (_0x486178, {
               }
             }, {
               'header': {
-                'imageMessage': await _0x4fb118(_0x42e9b0),
+                'imageMessage': 'https://telegra.ph/file/503015cf391e787b70adb.jpg',
                 'hasMediaAttachment': true
               },
               'body': {
