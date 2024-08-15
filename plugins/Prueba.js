@@ -58,7 +58,7 @@ let handler = async (_0x486178, {
                 'hasMediaAttachment': true
               },
               'body': {
-                'text': "\n          「 ```[ NOMOR FURINA ]``` 」\n          \n*[ " + namebot + " ]*\n - Jangan Spam Bot\n - Jangan Telpon/Call Bot \n - Gausah Chat Yg Aneh Aneh\n - Sewa bot Dll Chat Owner\n"
+                'text': "\n          「 ```[ NOMOR FURINA ]``` 」\n          \n*[ " + wm + " ]*\n - Jangan Spam Bot\n - Jangan Telpon/Call Bot \n - Gausah Chat Yg Aneh Aneh\n - Sewa bot Dll Chat Owner\n"
               },
               'nativeFlowMessage': {
                 'buttons': [{
