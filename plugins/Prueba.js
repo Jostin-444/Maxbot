@@ -33,7 +33,7 @@ let handler = async (_0x486178, {
             'forwardingScore': 0x1869f,
             'forwardedNewsletterMessageInfo': {
               'newsletterJid': "120363247149539361@newsletter",
-              'newsletterName': namebot + " || Powered By " + nameown,
+              'newsletterName': packname + " || Powered By " + nameown,
               'serverMessageId': 0xcb
             }
           },
@@ -44,7 +44,7 @@ let handler = async (_0x486178, {
                 'hasMediaAttachment': true
               },
               'body': {
-                'text': "\n     「 ```[ OWNER FURINA ]``` 」\n     \n*[ " + nameown + " ]*\n - Jangan Chat Yang Aneh Aneh\n - Jangan Telpon/Call Owner \n - Chat Langsung ke intinya aja\n - Ada Fitur Error? Laporin Kesini\n"
+                'text': "\n     「 ```[ OWNER FURINA ]``` 」\n     \n*[ " + packname + " ]*\n - Jangan Chat Yang Aneh Aneh\n - Jangan Telpon/Call Owner \n - Chat Langsung ke intinya aja\n - Ada Fitur Error? Laporin Kesini\n"
               },
               'nativeFlowMessage': {
                 'buttons': [{
