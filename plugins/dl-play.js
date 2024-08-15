@@ -17,7 +17,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     ['💿 𝗠𝗨𝗦𝗜𝗖𝗔', `${usedPrefix}fgmp3 ${url}`],
     ['📀 𝗩𝗜𝗗𝗘𝗢', `${usedPrefix}fgmp4 ${url}`],
 ['🍀 𝗠𝗘𝗡𝗨', `${usedPrefix}allmenu`]
-  ], null, [['🍒 𝗖𝗔𝗡𝗔𝗟', `${fgcanal}`]], m)
+  ], null, [['🍒 𝗖𝗔𝗡𝗔𝗟', `${canal}`]], m)
 }
 handler.help = ['play']
 handler.tags = ['dl']
