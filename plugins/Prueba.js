@@ -5,7 +5,7 @@ let handler = async (_0x486178, {
 }) => {
   let _0x2aa1dd = global.nomorown;
   let _0x49dbad = global.nomorbot;
-  let _0x42f4a2 = "*Halo Kak @" + _0x486178.sender.split`@`[0x0] + "*\n\n*[ BERIKUT OWNER SAYA ]*\n" + _0x2aa1dd + " [ " + nameown + " ]\n";
+  let _0x42f4a2 = "*Halo Kak @" + _0x486178.sender.split`@`[0x0] + "*\n\n*[ BERIKUT OWNER SAYA ]*\n" + _0x2aa1dd + " [ " + packname + " ]\n";
   const _0x42e9b0 = '' + global.thumb;
   async function _0x4fb118(_0x108e21) {
     const {
