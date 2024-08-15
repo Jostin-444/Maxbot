@@ -29,7 +29,7 @@ await conn.sendFile(m.chat, enlace2, null, `${lenguajeGB['smsCont18Porn']()}\n${
 break 
 
 case "pornovidgay": case "nsfwvidgay":       
-await conn.sendFile(m.chat, enlace3, null, `» ${user.premiumTime > 0 ? '✅' : '❌'}`, m, null, {viewOnce: true})
+await conn.sendFile(m.chat, enlace3, null, `» HOLA MIRA`, m, null, {viewOnce: true})
 //await conn.sendButton(m.chat, lenguajeGB.smsCont18PornP(), `*_${lenguajeGB['smsBotonM7']()}_* » ${user.premiumTime > 0 ? '✅' : '❌'}\n` + wm + ` : *${command[0].toUpperCase() + command.substring(1)}*`, enlace3, [[lenguajeGB.smsSigPrem(), `${usedPrefix + command}`]], m, frep)  
 break 
 
