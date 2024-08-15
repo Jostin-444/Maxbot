@@ -1,122 +1,185 @@
-//Codígo creado por David Chian wa.me/5351524614
-import _0x386813 from 'fs';
-import { v4 as _0x598b67 } from 'uuid';
-const obtenerDatos = () => {
-  try {
-    return _0x386813.existsSync("data.json") ? JSON.parse(_0x386813.readFileSync('data.json', "utf-8")) : {
-      'usuarios': {},
-      'personajesReservados': []
-    };
-  } catch (_0x38f935) {
-    console.error("Error al leer data.json:", _0x38f935);
-    return {
-      'usuarios': {},
-      'personajesReservados': []
-    };
+import fetch from 'node-fetch';
+import axios from 'axios';
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper';
+import fs from "fs";
+import yts from 'yt-search';
+import ytmp33 from '../lib/ytmp33.js';
+import ytmp44 from '../lib/ytmp44.js';
+import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
+
+let limit1 = 100;
+let limit2 = 400;
+let limit_a1 = 50;
+let limit_a2 = 400;
+
+const handler = async (m, { conn, command, args, text, usedPrefix }) => {
+  const datas = global;
+
+  if (!text) throw `_* DESCARGAS (￣へ ￣ )*_\n\n*[ ℹ️ ] Hace falta el título o enlace del video de YouTube.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Good Feeling - Flo Rida_`;
+
+  const yt_play = await search(args.join(' '));
+  let additionalText = '';
+  if (command === 'play5') {
+    additionalText = 'audio';
+  } else if (command === 'play6') {
+    additionalText = 'vídeo';
   }
-};
-const guardarDatos = _0x5f4b25 => {
-  try {
-    _0x386813.writeFileSync("data.json", JSON.stringify(_0x5f4b25, null, 0x2));
-  } catch (_0x2ddd22) {
-    console.error("Error al escribir en data.json:", _0x2ddd22);
-  }
-};
-const reservarPersonaje = (_0x317bc3, _0x25a1e6) => {
-  let _0x3bdbed = obtenerDatos();
-  _0x3bdbed.personajesReservados.push({
-    'userId': _0x317bc3,
-    ..._0x25a1e6
-  });
-  guardarDatos(_0x3bdbed);
-};
-const obtenerPersonajes = () => {
-  try {
-    return JSON.parse(_0x386813.readFileSync("./src/JSON/characters.json", "utf-8"));
-  } catch (_0x3f5924) {
-    console.error("Error al leer characters.json:", _0x3f5924);
-    return [];
-  }
-};
-let cooldowns = {};
-let handler = async (_0x2a7621, {
-  conn: _0x1fc67b
-}) => {
-  try {
-    let _0x381c1c = _0x2a7621.sender;
-    let _0x129cfc = new Date().getTime();
-    let _0x1612e1 = cooldowns[_0x381c1c] || 0x0;
-    let _0x2ce617 = _0x129cfc - _0x1612e1;
-    if (_0x2ce617 < 600000) {
-      let _0x196002 = 600000 - _0x2ce617;
-      let _0x1d8861 = Math.floor(_0x196002 / 60000);
-      let _0x54d623 = Math.floor(_0x196002 % 60000 / 0x3e8);
-      let _0x3ba0af = "¡Espera un poco más para poder usar este comando!\n\n*Tiempo restante: " + _0x1d8861 + " Minutos y " + _0x54d623 + " Segundos.*";
-      await _0x1fc67b.sendMessage(_0x2a7621.chat, {
-        'text': _0x3ba0af
-      });
-      return;
-    }
-    const _0x44860 = () => {
-      try {
-        const _0x21acd6 = JSON.parse(_0x386813.readFileSync('./package.json', "utf-8"));
-        if (_0x21acd6.name !== 'YaemoriBot-MD') {
-          return false;
-        }
-        if (_0x21acd6.repository.url !== "git+https://github.com/OfcDiego/YaemoriBot-MD.git") {
-          return false;
-        }
-        return true;
-      } catch (_0x152bb6) {
-        console.error("Error al leer package.json:", _0x152bb6);
-        return false;
+
+  const texto1 = `_*DESCARGAS - MEGUMIN 🔥*_\n╭───────┈♡┈──────\n│𐇵 *𝑻𝒊𝒕𝒖𝒍𝒐:* ${yt_play[0].title}\n│𐇵 *𝑃𝑢𝑏𝑙𝑖𝑐𝑎𝑑𝑜:* ${yt_play[0].ago}\n│𐇵 *𝐷𝑢𝑟𝑎𝑐𝑖𝑜𝑛:* ${secondString(yt_play[0].duration.seconds)}\n│𐇵 *𝑉𝑖𝑠𝑡𝑎𝑠:* ${MilesNumber(yt_play[0].views)}\n│𐇵 *𝐴𝑢𝑡𝑜𝑟:* ${yt_play[0].author.name}\n│𐇵 *𝐼𝐷:* ${yt_play[0].videoId}\n│𐇵 *𝑇𝑖𝑝𝑜:* ${yt_play[0].type}\n│𐇵 *𝐸𝑛𝑙𝑎𝑐𝑒:* ${yt_play[0].url}\n│𐇵 *𝐶𝑎𝑛𝑎𝑙:* ${yt_play[0].author.url}\n╰───────┈♢┈──────\n> *[ ℹ️ ] _𝐒𝐞 𝐞𝐬𝐭𝐚́ 𝐞𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐞𝐥 ${additionalText}. 𝐞𝐬𝐩𝐞𝐫𝐞..._`.trim();
+
+  const externalAdReply = {
+    title: '♡  ͜ ۬︵࣪᷼⏜݊᷼𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨⏜࣪᷼︵۬ ͜ ',
+    body: '<(✿◠‿◠)> 𝙈𝙚𝙜𝙪𝙢𝙞𝙣🔥',
+    sourceUrl: global.cn,
+    thumbnail: global.logo7
+  };
+
+  conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1, contextInfo: { externalAdReply } }, { quoted: m });
+
+  if (command === 'play5') {
+    try {
+      const { status, resultados, error } = await ytmp33(yt_play[0].url);
+      if (!status) throw new Error(error);
+
+      const ttl = resultados.titulo;
+      const buff_aud = await getBuffer(resultados.descargar);
+      const fileSizeInBytes = buff_aud.byteLength;
+      const fileSizeInKB = fileSizeInBytes / 1024;
+      const fileSizeInMB = fileSizeInKB / 1024;
+      const size = fileSizeInMB.toFixed(2);
+
+      if (size >= limit_a2) {
+        await conn.sendMessage(m.chat, { text: `[ ℹ️ ] Descargue su audio en:* _${resultados.descargar}_` }, { quoted: m });
+        return;
       }
-    };
-    if (!_0x44860()) {
-      await _0x1fc67b.reply(_0x2a7621.chat, "🚩 Este comando solo está disponible para AI Yaemori.\n 🌟 https://github.com/OfcDiego/YaemoriBot-MD", _0x2a7621, rcanal);
-      return;
+      if (size >= limit_a1 && size <= limit_a2) {
+        await conn.sendMessage(m.chat, { document: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3` }, { quoted: m });
+        return;
+      } else {
+        await conn.sendMessage(m.chat, { audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3` }, { quoted: m });
+        return;
+      }
+    } catch (error) {
+      console.log('Fallo el 1: ' + error)
+      try {
+        const audio = `${global.MyApiRestBaseUrl}/api/v1/ytmp3?url=${yt_play[0].url}&apikey=${global.MyApiRestApikey}`;
+        const ttl = await yt_play[0].title;
+        const buff_aud = await getBuffer(audio);
+        const fileSizeInBytes = buff_aud.byteLength;
+        const fileSizeInKB = fileSizeInBytes / 1024;
+        const fileSizeInMB = fileSizeInKB / 1024;
+        const size = fileSizeInMB.toFixed(2);
+
+        if (size >= limit_a2) {
+          await conn.sendMessage(m.chat, { text: `[ ℹ️ ] Descargue su audio en:* _${audio}_` }, { quoted: m });
+          return;
+        }
+        if (size >= limit_a1 && size <= limit_a2) {
+          await conn.sendMessage(m.chat, { document: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3` }, { quoted: m });
+          return;
+        } else {
+          await conn.sendMessage(m.chat, { audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3` }, { quoted: m });
+          return;
+        }
+      } catch {
+        throw '*[ ℹ️ ] O̶c̶u̶r̶r̶i̶ó ̶u̶n ̶e̶r̶r̶o̶r. 𝐏𝐨𝐫 𝐟𝐚𝐯𝐨𝐫, 𝐢𝐧𝐭𝐞́𝐧𝐭𝐚𝐥𝐨 𝐝𝐞 𝐧𝐮𝐞𝐯𝐨 𝐦𝐚́𝐬 𝐭𝐚𝐫𝐝𝐞.*';
+      }
     }
-    let _0x486480 = obtenerDatos();
-    let _0x3c11b5 = obtenerPersonajes();
-    let _0x3a4bd8 = _0x3c11b5.filter(_0x2418c8 => !_0x486480.personajesReservados.some(_0xdbd66a => _0xdbd66a.name === _0x2418c8.name));
-    if (_0x3a4bd8.length === 0x0) {
-      await _0x1fc67b.sendMessage(_0x2a7621.chat, {
-        'image': {
-          'url': './src/completado.jpg'
-        },
-        'caption': "Felicidades, todos los personajes han sido obtenidos. ¡Pronto habrá más waifus para recolectar!",
-        'm': _0x2a7621,
-        'rcanal': rcanal
-      });
-      return;
+  }
+
+  if (command === 'play6') {
+    try {
+      const { status, resultados, error } = await ytmp44(yt_play[0].url);
+      if (!status) throw new Error(error);
+
+      const ttl2 = resultados.titulo;
+      const buff_vid = await getBuffer(resultados.descargar);
+      const fileSizeInBytes2 = buff_vid.byteLength;
+      const fileSizeInKB2 = fileSizeInBytes2 / 1024;
+      const fileSizeInMB2 = fileSizeInKB2 / 1024;
+      const size2 = fileSizeInMB2.toFixed(2);
+
+      if (size2 >= limit2) {
+        await conn.sendMessage(m.chat, { text: `*[ ℹ️ ] Descargue su vídeo en:* _${resultados.descargar}_` }, { quoted: m });
+        return;
+      }
+      if (size2 >= limit1 && size2 <= limit2) {
+        await conn.sendMessage(m.chat, { document: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4` }, { quoted: m });
+        return;
+      } else {
+        await conn.sendMessage(m.chat, { video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4` }, { quoted: m });
+        return;
+      }
+    } catch (error) {
+      console.log('Fallo el 1: ' + error);
+      try {
+        const video = `${global.MyApiRestBaseUrl}/api/v1/ytmp4?url=${yt_play[0].url}&apikey=${global.MyApiRestApikey}`;
+        const ttl2 = await yt_play[0].title;
+        const buff_vid = await getBuffer(video);
+        const fileSizeInBytes2 = buff_vid.byteLength;
+        const fileSizeInKB2 = fileSizeInBytes2 / 1024;
+        const fileSizeInMB2 = fileSizeInKB2 / 1024;
+        const size2 = fileSizeInMB2.toFixed(2);
+
+        if (size2 >= limit2) {
+          await conn.sendMessage(m.chat, { text: `*[ ℹ️ ] Descargue su vídeo en:* _${video}_` }, { quoted: m });
+          return;
+        }
+        if (size2 >= limit1 && size2 <= limit2) {
+          await conn.sendMessage(m.chat, { document: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4` }, { quoted: m });
+          return;
+        } else {
+          await conn.sendMessage(m.chat, { video: buff_vid, mimetype: 'video/mp4', fileName: ttl2 + `.mp4` }, { quoted: m });
+          return;
+        }
+      } catch {
+        throw '*[ ℹ️ ] ̶O̶̶c̶̶u̶̶r̶̶r̶̶i̶̶ó ̶̶u̶̶n ̶̶e̶̶r̶̶r̶̶o̶̶r. 𝐏𝐨𝐫 𝐟𝐚𝐯𝐨𝐫, 𝐢𝐧𝐭𝐞́𝐧𝐭𝐚𝐥𝐨 𝐝𝐞 𝐧𝐮𝐞𝐯𝐨 𝐦𝐚́𝐬 𝐭𝐚𝐫𝐝𝐞.*';
+      }
     }
-    const _0x9c7f59 = _0x3a4bd8[Math.floor(Math.random() * _0x3a4bd8.length)];
-    const _0x35d374 = _0x598b67();
-    const _0x3c209a = "╭─────┈ ♡ ┈───────\n│╽𝐅XB╽\n┆ 𝑁𝑜𝑚𝑏𝑟𝑒 𝑑𝑒𝑙 𝑝𝑒𝑟𝑠𝑜𝑛𝑎𝑗𝑒:\n⧁ *" + _0x9c7f59.name + "!*\n┆𝑆𝑢 𝑣𝑎𝑙𝑜𝑟 𝑒𝑠:\n│ " + _0x9c7f59.value + " 𝑊𝐹𝑐𝑜𝑖𝑛𝑠!\n╰─────┈ ◇ ┈───────\n<id:" + _0x35d374 + '>';
-    await _0x1fc67b.sendMessage(_0x2a7621.chat, {
-      'image': {
-        'url': _0x9c7f59.url
-      },
-      'caption': _0x3c209a,
-      'mimetype': "image/jpeg",
-      'm': _0x2a7621,
-      'rcanal': rcanal
-    });
-    reservarPersonaje(_0x381c1c, {
-      ..._0x9c7f59,
-      'id': _0x35d374
-    });
-    cooldowns[_0x381c1c] = _0x129cfc;
-    console.log("Cooldown actualizado para " + _0x381c1c + ": " + cooldowns[_0x381c1c]);
-  } catch (_0x34f97a) {
-    console.error("Error en el handler:", _0x34f97a);
-    await _0x1fc67b.sendMessage(_0x2a7621.chat, {
-      'text': "Ocurrió un error al procesar tu solicitud. Intenta de nuevo más tarde."
-    });
   }
 };
-handler.help = ["roll"];
-handler.tags = ["anime"];
-handler.command = ['roll', 'rw'];
-handler.register = true;
+
+handler.command = ['play5','play6'];
 export default handler;
+
+async function search(query, options = {}) {
+  const search = await yts.search({query, hl: 'es', gl: 'ES', ...options});
+  return search.videos;
+}
+
+function MilesNumber(number) {
+  const exp = /(\d)(?=(\d{3})+(?!\d))/g;
+  const rep = '$1.';
+  const arr = number.toString().split('.');
+  arr[0] = arr[0].replace(exp, rep);
+  return arr[1] ? arr.join('.') : arr[0];
+}
+
+function secondString(seconds) {
+  seconds = Number(seconds);
+  const d = Math.floor(seconds / (3600 * 24));
+  const h = Math.floor((seconds % (3600 * 24)) / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = Math.floor(seconds % 60);
+  const dDisplay = d > 0 ? d + (d == 1 ? 'd ' : 'd ') : '';
+  const hDisplay = h > 0 ? h + (h == 1 ? 'h ' : 'h ') : '';
+  const mDisplay = m > 0 ? m + (m == 1 ? 'm ' : 'm ') : '';
+  const sDisplay = s > 0 ? s + (s == 1 ? 's' : 's') : '';
+  return dDisplay + hDisplay + mDisplay + sDisplay;
+}
+
+function bytesToSize(bytes) {
+  return new Promise((resolve, reject) => {
+    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    if (bytes === 0) return 'n/a';
+    const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
+    if (i === 0) resolve(`${bytes} ${sizes[i]}`);
+    resolve(`${(bytes / (1024 ** i)).toFixed(1)} ${sizes[i]}`);
+  });
+}
+
+const getBuffer = async (url, options) => {
+    options ? options : {};
+    const res = await axios({method: 'get', url, headers: {'DNT': 1, 'Upgrade-Insecure-Request': 1,}, ...options, responseType: 'arraybuffer'});
+    return res.data;
+};
