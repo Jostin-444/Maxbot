@@ -21,12 +21,7 @@ let { thumbnail, url } = vid
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
-await conn.sendMessage(m.chat, {
-        text: `💿 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
-        contextInfo: { 
-          mentionedJid: [m.sender],
-        }
-      }, { quoted: fkontak })
+await m.react('💿')
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
 'isForwarded': true,
@@ -37,7 +32,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-await m.react('✅')
 } catch {
 try {
 let yt = await fg.ytmp3(args[0])
@@ -47,12 +41,7 @@ let { thumbnail, url } = vid
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`,  m, fake,).then(_ => m.react('✖️'))
 
-await conn.sendMessage(m.chat, {
-        text: `💿 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
-        contextInfo: { 
-          mentionedJid: [m.sender],
-        }
-      }, { quoted: fkontak })
+await m.react('💿')
 await conn.sendMessage(m.chat, { audio: { url: dl_url }, mimetype: "audio/mp4", fileName: title + '.mp3', quoted: m, contextInfo: {
 'forwardingScore': 200,
 'isForwarded': true,
@@ -63,7 +52,6 @@ body: `${vid.author.name}`,
 mediaType: 2, 
 sourceUrl: `${url}`,
 thumbnail: await (await fetch(vid.thumbnail)).buffer()}}}, { quoted: m })
-await m.react('✅')
 } catch {
 await conn.reply(m.chat, `*☓ Ocurrió un error inesperado*`,  m, fake,).then(_ => m.react('✖️'))
 console.error(error)
