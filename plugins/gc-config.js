@@ -1,6 +1,6 @@
 var handler = async (m, {conn, args, usedPrefix, command}) => {
 const isClose = { 'open': 'not_announcement', 'close': 'announcement', 'abierto': 'not_announcement', 'cerrado': 'announcement', 'abrir': 'not_announcement', 'cerrar': 'announcement', 'desbloquear': 'unlocked', 'bloquear': 'locked' }[(args[0] || '')]
-if (isClose === undefined) { return await conn.sendButton(m.chat, packname, '• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤𝙣𝙖 𝙡𝙖 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙘𝙞𝙤𝙣.', wm, [
+if (isClose === undefined) { return await conn.sendButton(m.chat, packname, 'HOLA ${nombre}\n• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤𝙣𝙖 𝙡𝙖 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙘𝙞𝙤𝙣.', wm, [
 ['𝘼𝙗𝙧𝙞𝙧 ✅', '.grupo abrir'],
 ['𝘾𝙚𝙧𝙧𝙖𝙧 ❌', '.grupo cerrar']], null, [['🍒 𝗖𝗔𝗡𝗔𝗟', `${canal}`]], null, null, fakegif3)
 }
