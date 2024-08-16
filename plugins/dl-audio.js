@@ -12,7 +12,7 @@ if (!args || !args[0]) conn.reply(m.chat, `*🚩 Escribe la URL de un video de Y
 if (!args[0].match(/youtu/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de YouTube`, m).then(_ => m.react('✖️'))
 let q = '128kbps'
 
-await m.react('💿')
+await m.react('🕒')
 try {
 const yt = await fg.yta(args[0])
 let { title, dl_url, size } = yt
