@@ -14,7 +14,7 @@ const { name, description, author, version } = require(join(__dirname, './packag
 const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
 say('Genesis Bot\nPro', {
-font: 'pallet',
+font: 'chrome',
 align: 'center',
 colors: ['yellow']
 });
@@ -31,7 +31,7 @@ let args = [join(__dirname, file), ...process.argv.slice(2)];
 say([process.argv[0], ...args].join(' '), {
 font: 'console',
 align: 'center',
-colors: ['green']
+colors: ['yellow']
 });
 setupMaster({
 exec: args[0],
