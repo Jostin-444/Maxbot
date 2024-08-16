@@ -9,8 +9,8 @@ setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let grupobot = `Hola ${name}.`
 await conn.sendButton(m.chat, grupobot, '• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤𝙣𝙖 𝙡𝙖 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙘𝙞𝙤𝙣.', pp, [
-['𝘼𝙗𝙧𝙞𝙧 ✅', '.agrupo abrir'],
-['𝘾𝙚𝙧𝙧𝙖𝙧 ❌', '#agrupo cerrar']], null, null, m)
+['𝘼𝙗𝙧𝙞𝙧 ✅', '.grupo abrir'],
+['𝘾𝙚𝙧𝙧𝙖𝙧 ❌', '.grupo cerrar']], null, null, m)
 }
 handler.help = ['grupo']
 handler.tags = ['main']
