@@ -14,7 +14,7 @@ await conn.sendButton(m.chat, grupobot, '• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤�
 }
 handler.help = ['grupo']
 handler.tags = ['main']
-handler.command = /^(grupo|group)$/i
+handler.command = /^(grupo6|group)$/i
 handler.botAdmin = true
 handler.admin = true
 handler.group = true
