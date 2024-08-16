@@ -3,7 +3,7 @@ const isClose = { 'open': 'not_announcement', 'close': 'announcement', 'abierto'
 if (isClose === undefined) { return await conn.sendButton(m.chat, dev, '• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤𝙣𝙖 𝙡𝙖 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙘𝙞𝙤𝙣.', wm, [
 ['𝘼𝙗𝙧𝙞𝙧 ✅', '.grupo abrir'],
 ['𝘾𝙚𝙧𝙧𝙖𝙧 ❌', '.grupo cerrar'],
-['Menu ⭐', '.menu']], null, null, estilo)
+['Menu ⭐', '.menu']], null, null, fakegif3)
 }
 await conn.groupSettingUpdate(m.chat, isClose)
 { 
