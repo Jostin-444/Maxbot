@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
         conn.reply(m.chat, m);
         let data = await chatGpt(text)
   await conn.sendMessage(m.chat, {
-  text: `${gyh.result}`,
+  text: data,
       contextInfo: {
       externalAdReply: {
         title: 'Nezuko - C.ai',
