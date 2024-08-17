@@ -1,6 +1,6 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text) throw(`Contoh:\n${usedPrefix}${command} Halo?`);   
-  let ouh = await fetch(`https://kiicodeofficial.my.id/api/others/cai?query=${text}&apikey=mswreJVZxE`)
+  let ouh = await fetch(`https://api.yanzbotz.my.id/api/ai/characterai?text=${text}&name=nezuko`)
   let gyh = await ouh.json() 
   await conn.sendMessage(m.chat, {
   text: `${gyh.result}`,
