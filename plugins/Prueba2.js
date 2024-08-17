@@ -21,7 +21,6 @@ body: `⚜️ Super Hosting 24/7 ⚜️`,
 thumbnailUrl: 'https://qu.ax/waCu.jpg', 
 sourceUrl: 'https://dash.olympus-host.xyz'}}},
 { quoted: fkontak})
-}
     } catch (err) {
         m.reply('error cik:/ ' + err);
     }
