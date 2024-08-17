@@ -15,7 +15,7 @@ let handler = async (_0x5bd73e, {
     return _0x5bd73e.reply("Kamu pengen tanya apa?");
   }
   let _0x4a3d86 = new Date(new Date() + 0x36ee80);
-  const _0x1aa15d = new Date().toLocaleString("en-US", {
+  const _0x1aa15d = new Date().toLocaleString("es", {
     'timeZone': "Asia/Jakarta"
   });
   let _0x5ae1f8 = _0x4a3d86.toLocaleDateString('id', {
