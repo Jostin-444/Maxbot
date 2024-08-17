@@ -19,6 +19,7 @@ let handler = async (m, { conn, text }) => {
         mediaType: 1,
         renderLargerThumbnail: true, 
         showAdAttribution: true
+      }}
     } catch (err) {
         m.reply('error cik:/ ' + err);
     }
