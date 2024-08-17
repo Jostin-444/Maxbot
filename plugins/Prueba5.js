@@ -21,11 +21,11 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `🔵 O L Y M P U S - H O S T 🔵`,
-body: `⚜️ Super Hosting 24/7 ⚜️`,
+title: `[AI-INKA]`,
+body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://qu.ax/waCu.jpg', 
-sourceUrl: 'https://dash.olympus-host.xyz'}}},
+thumbnailUrl: 'https://tinyurl.com/2bpa44pl', 
+sourceUrl: 'canal'}}},
 { quoted: m})
     } catch (error) {
         await m.react('😅');
