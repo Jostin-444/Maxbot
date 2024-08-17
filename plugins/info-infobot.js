@@ -55,7 +55,7 @@ setTimeout(resolve, 1000)
 }
 let timestamp = speed()
 let latensi = speed() - timestamp
-let yaemori = `╭─⬣「 *Info De Ai Yaemori* 」⬣\n`
+let yaemori = `╭─⬣「 *Info De GenesisBot* 」⬣\n`
 yaemori += `│ 👑 *Creador* : @${owner[0][0].split('@s.whatsapp.net')[0]}\n`
 yaemori += `│ 🍭 *Prefijo* : [  ${usedPrefix}  ]\n`
 yaemori += `│ 📦 *Total Plugins* : ${totalf}\n`
