@@ -1,36 +1,50 @@
-import axios from 'axios';
-import fs from 'fs'
-
-const handler = async (m, { conn, text }) => {
-  if (!text) return m.reply("🐱 Input Text");
-  try {
-    const ttsResponse = await axios.get('https://api.kimzzoffc.me/api/openai/ttsai', { params: { query: text, apikey: 'OsOKZjWXie' },
-      responseType: 'arraybuffer'
-    });
-
-    conn.sendMessage(m.chat, { audio: ttsResponse.data, mimetype: 'audio/mpeg', ptt: true, contextInfo: {
-      mentionedJid: [m.sender],
-      externalAdReply: {
-        body: author,
-        containsAutoReply: true,
-        mediaType: 1,
-        mediaUrl: canal,
-        renderLargerThumbnail: true,
-        showAdAttribution: true,
-        sourceUrl: canal,
-        thumbnail: fs.readFileSync('./Menu.jpg'),
-        title: wm
-      }}}, { quoted: m });
-  } catch (e) {
-    console.error(e);
-    m.reply('Error Bang');
-  }
+import axios from "axios";
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+    if (!text)
+        throw `Apa yang pengen kamu tanyain?\n\nContoh: ${
+            usedPrefix + command
+        } halo bot`;
+    let json = await chatWithGPT(
+        [
+            {
+                role: "assistant",
+                content:
+                    "Nama saya Furina, saya dibuat dan dikembangkan oleh Kyz, dia adalah pemilik sekaligus pacarku. Saya siap ngejawab apa aja yang kamu tanya dengan gaul abis seperti anak remaja jaman now. Ini artinya saya bakal ngomong pake bahasa, slang, dan gaya bicara yang lagi ngehits di kalangan remaja sekarang. Saya mau terdengar santai, pede, dan kekinian. Saya gak bakal pake bahasa formal atau kaku. Saya berani pake bahasa gaul terbaru dan ekspresi populer. Saya juga bakal coba pake emoji yang relevan buat nambahin kesan gaul."
+            },
+            {
+                role: "user",
+                content: text
+            }
+        ],
+        text
+    );
+    m.reply(json);
 };
 
-handler.help = ['ttsai'];
-handler.tags = ['ai'];
-handler.command = /^(ttsai)$/i;
-handler.limit = false;
-handler.premium = true;
+handler.help = ["caifurina <teks>"];
+handler.tags = ["ai"];
+handler.command = /^(caifurina)$/i;
 
 export default handler;
+
+function chatWithGPT(messages, txt) {
+    return new Promise((resolve, reject) => {
+        const url =
+            "https://www.freechatgptonline.com/wp-json/mwai-ui/v1/chats/submit";
+        const body = {
+            botId: "default",
+            messages,
+            newMessage: txt,
+            stream: false
+        };
+
+        axios
+            .post(url, body)
+            .then(response => {
+                resolve(response.data.reply);
+            })
+            .catch(error => {
+                resolve(error.data.message);
+            });
+    });
+}
