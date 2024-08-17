@@ -14,11 +14,11 @@ const handler = async (m, { conn, text }) => {
         body: author,
         containsAutoReply: true,
         mediaType: 1,
-        mediaUrl: sig,
+        mediaUrl: canal,
         renderLargerThumbnail: true,
         showAdAttribution: true,
-        sourceUrl: sig,
-        thumbnail: fs.readFileSync('./thumbnail.jpg'),
+        sourceUrl: canal,
+        thumbnail: fs.readFileSync('./Menu.jpg'),
         title: wm
       }}}, { quoted: m });
   } catch (e) {
