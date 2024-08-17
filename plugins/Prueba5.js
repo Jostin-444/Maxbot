@@ -14,7 +14,7 @@ let handler = async (m, {
     await m.react('🐈‍⬛');
     try {
         const result = await chatAi(text);
-        await m.reply(result);
+        await m.reply(result), fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '🍟 ¡Super Bot De WhatsApp!', sourceUrl: canal, thumbnail: icons }}});
     } catch (error) {
         await m.react('😅');
     }
