@@ -14,7 +14,7 @@ let handler = async (m, {
     await m.react('🤖');
     try {
         const result = await chatAi(text);
-        await m.reply(result), m, rcanal;
+        await conn.reply(m.chat, result, m, rcanal)
     } catch (error) {
         await m.react('😅');
     }
