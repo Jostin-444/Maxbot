@@ -26,7 +26,7 @@ body: `⚜️ Super Hosting 24/7 ⚜️`,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://qu.ax/waCu.jpg', 
 sourceUrl: 'https://dash.olympus-host.xyz'}}},
-{ quoted: fkontak})
+{ quoted: m})
     } catch (error) {
         await m.react('😅');
     }
