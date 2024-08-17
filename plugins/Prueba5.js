@@ -26,7 +26,7 @@ body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/2bpa44pl', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
-{ quoted: m})
+{ quoted: })
     } catch (error) {
         await m.react('😅');
     }
