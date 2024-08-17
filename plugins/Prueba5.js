@@ -18,7 +18,7 @@ let handler = async (m, {
           'text': 'result',
           'contextInfo': {
             'externalAdReply': {
-              'title': Genesis + " - C.ai by ɢᴀʙʀɪᴇʟ-ᴊᴛxꜱ",
+              'title': packname + " - C.ai by ɢᴀʙʀɪᴇʟ-ᴊᴛxꜱ",
               'body': "𝙲 𝙷 𝙰 𝚁 𝙰 𝙲 𝚃 𝙴 𝚁 - 𝙰 𝙸",
               'thumbnailUrl': "https://i.pinimg.com/564x/07/bd/59/07bd5983131fd16de41b8d8c43661512.jpg",
               'sourceUrl': "canal"
