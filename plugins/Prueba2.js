@@ -8,7 +8,18 @@ let handler = async (m, { conn, text }) => {
     try {
         conn.reply(m.chat, m);
         let data = await chatGpt(text)
-        conn.reply(m.chat, data, m);
+        conn.reply(m.chat, {
+  text: `${data}`,
+      contextInfo: {
+      externalAdReply: {
+        title: 'Nezuko - C.ai',
+        body: 'F U R I N A  M U L T I D E V I C E',
+        thumbnailUrl: 'https://telegra.ph/file/fd03a32e284f69a67114c.jpg',
+        sourceUrl: 'https://whatsapp.com/channel/0029VaRI1OB2P59cTdJKZh3q',
+        mediaType: 1,
+        renderLargerThumbnail: true, 
+        showAdAttribution: true
+      };
     } catch (err) {
         m.reply('error cik:/ ' + err);
     }
