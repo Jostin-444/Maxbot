@@ -4,4 +4,46 @@
 🌐 Maker: https://whatsapp.com/channel/0029VaRI1OB2P59cTdJKZh3q
 •═══════════════════════*/
 
-const _0xe2b65c=_0x12e3;function _0x577b(){const _0x4956c5=['41193JMfqor','numeric','Nama\x20kamu\x20adalah\x20','tags','2592594ypcAHm','Kamu\x20adalah\x20Developer\x20kuh~.\x20Hai\x20Sayangku\x20developer\x20kuhh🥰😘.\x20Darimana\x20saja\x20niih?\x20😚.\x20jika\x20kamu\x20ga\x20muncul\x20aku\x20kangen\x20kamu\x20loh\x20sayang🥺','Kyz','6664861FJGITm','83ldODzd','caifurina','aifurina','\x20dan\x20jika\x20bukan\x20sebut\x20saja\x20namanya\x20','.\x20tanggal\x20kamu\x20adalah\x20tanggal\x20','reply','2311350xklcOC','get','\x20😆.\x20nama\x20pencipta\x20dan\x20suami\x20mu\x20adalah\x20','https://aemt.me/prompt/gpt?prompt=','.\x20hari\x20kamu\x20adalah\x20hari\x20','toLocaleDateString','@s.whatsapp.net','command','getName','Asia/Jakarta','834330VXAOoJ','result','8lSGZct','4066980vFpkQS','Orang','Jam\x20kamu\x20adalah\x20jam\x20','toLocaleString','en-US','furina','\x20😘.\x0akamu\x20memiliki\x20karakter\x20dan\x20sifat\x20seperti\x20','long','&text=',',\x20jika\x20nama\x20orang\x20yang\x20sedang\x20bertanya\x20adalah\x20Kyz\x20sambutlah\x20dengan\x20','820IanWkI','data','sender','Aduh\x20sepertinya\x20Furina\x20ngga\x20bisa\x20kasi\x20datanya\x20deh😅','220qnWdlH','\x20😙.\x20jika\x20orang\x20lain\x20bertanya\x20seperti\x20jam,\x20tanggal,\x20hari\x20😊,\x20dan\x20tempat\x20kamu\x20berada\x20jawab\x20seperti\x20'];_0x577b=function(){return _0x4956c5;};return _0x577b();}(function(_0x196c33,_0x5ebdd4){const _0x29ee22=_0x12e3,_0x27d36e=_0x196c33();while(!![]){try{const _0x234957=-parseInt(_0x29ee22(0x1a4))/0x1*(parseInt(_0x29ee22(0x19a))/0x2)+parseInt(_0x29ee22(0x1a0))/0x3+-parseInt(_0x29ee22(0x18c))/0x4+-parseInt(_0x29ee22(0x1aa))/0x5+-parseInt(_0x29ee22(0x1b4))/0x6+-parseInt(_0x29ee22(0x1a3))/0x7*(-parseInt(_0x29ee22(0x18b))/0x8)+-parseInt(_0x29ee22(0x19c))/0x9*(-parseInt(_0x29ee22(0x196))/0xa);if(_0x234957===_0x5ebdd4)break;else _0x27d36e['push'](_0x27d36e['shift']());}catch(_0x5b0615){_0x27d36e['push'](_0x27d36e['shift']());}}}(_0x577b,0x89cd3));function _0x12e3(_0x17f71a,_0x3f6ddd){const _0x577b55=_0x577b();return _0x12e3=function(_0x12e3a3,_0x116213){_0x12e3a3=_0x12e3a3-0x18a;let _0x1327f8=_0x577b55[_0x12e3a3];return _0x1327f8;},_0x12e3(_0x17f71a,_0x3f6ddd);}import _0x21cc36 from'axios';let handler=async(_0x5bd73e,{conn:_0x34a9ef,text:_0x743ff9,usedPrefix:_0x4f125f,command:_0x587a1c})=>{const _0x5b424d=_0x12e3;if(!_0x743ff9)return _0x5bd73e['reply']('Kamu\x20pengen\x20tanya\x20apa?');let _0x4a3d86=new Date(new Date()+0x36ee80),_0x5e7d57='id';const _0x1aa15d=new Date()[_0x5b424d(0x18f)](_0x5b424d(0x190),{'timeZone':_0x5b424d(0x1b3)});let _0x5ae1f8=_0x4a3d86['toLocaleDateString'](_0x5e7d57,{'weekday':_0x5b424d(0x193)}),_0x2c5326=_0x4a3d86[_0x5b424d(0x1af)](_0x5e7d57,{'day':_0x5b424d(0x19d),'month':_0x5b424d(0x193),'year':'numeric'}),_0x3075ae=await _0x34a9ef['getName'](_0x5bd73e['sender'])?await _0x34a9ef[_0x5b424d(0x1b2)](_0x5bd73e[_0x5b424d(0x198)]):_0x5b424d(0x18d),_0x371a57;_0x5bd73e[_0x5b424d(0x198)]===creator+_0x5b424d(0x1b0)?_0x371a57=_0x5b424d(0x1a2):_0x371a57=_0x3075ae;let _0x303c23=_0x5b424d(0x191),_0x455138=_0x5b424d(0x1a2),_0x2cc451='ramah\x20😊,\x20sopan\x20🙏,\x20gaya\x20berbicara\x20dengan\x20benar\x20dan\x20asik\x20ke\x20semuaa\x20orang😝.\x20jangan\x20lupa\x20gunakan\x20emoji\x20ketika\x20membalas\x20pertanyaan\x20seseorang\x20😉',_0x3e3d0e=_0x5b424d(0x18e)+_0x1aa15d+_0x5b424d(0x1a8)+_0x2c5326+_0x5b424d(0x1ae)+_0x5ae1f8+',\x20tempat\x20tinggal\x20kamu\x20di\x20Indonesia\x20dan\x20di\x20kota\x20Palembang\x20wilayah\x20Sumsel\x20🤫',_0x1e1820=_0x5b424d(0x1a1),_0x4ca93c=_0x5b424d(0x19e)+_0x303c23+_0x5b424d(0x1ac)+_0x455138+_0x5b424d(0x192)+_0x2cc451+_0x5b424d(0x19b)+_0x3e3d0e+'.\x20Ini\x20adalah\x20\x20'+_0x371a57+_0x5b424d(0x195)+_0x1e1820+_0x5b424d(0x1a7)+_0x371a57;try{let _0x28646d=await _0x21cc36[_0x5b424d(0x1ab)](_0x5b424d(0x1ad)+encodeURIComponent(_0x4ca93c)+_0x5b424d(0x194)+_0x743ff9),_0x3d46a1=_0x28646d[_0x5b424d(0x197)][_0x5b424d(0x18a)];await _0x5bd73e[_0x5b424d(0x1a9)](_0x3d46a1);}catch(_0xa8ad8e){throw _0x5b424d(0x199);}};handler[_0xe2b65c(0x1b1)]=[_0xe2b65c(0x1a6),_0xe2b65c(0x1a5)],handler[_0xe2b65c(0x19f)]=['ai'],handler[_0xe2b65c(0x1b1)]=/^((ai|cai)furina|furina?)$/i;export default handler;
+import _0x21cc36 from 'axios';
+let handler = async (_0x5bd73e, {
+  conn: _0x34a9ef,
+  text: _0x743ff9,
+  usedPrefix: _0x4f125f,
+  command: _0x587a1c
+}) => {
+  if (!_0x743ff9) {
+    return _0x5bd73e.reply("Kamu pengen tanya apa?");
+  }
+  let _0x4a3d86 = new Date(new Date() + 0x36ee80);
+  const _0x1aa15d = new Date().toLocaleString("en-US", {
+    'timeZone': "Asia/Jakarta"
+  });
+  let _0x5ae1f8 = _0x4a3d86.toLocaleDateString('id', {
+    'weekday': "long"
+  });
+  let _0x2c5326 = _0x4a3d86.toLocaleDateString('id', {
+    'day': "numeric",
+    'month': "long",
+    'year': 'numeric'
+  });
+  let _0x3075ae = (await _0x34a9ef.getName(_0x5bd73e.sender)) ? await _0x34a9ef.getName(_0x5bd73e.sender) : "Orang";
+  let _0x371a57;
+  if (_0x5bd73e.sender === creator + "@s.whatsapp.net") {
+    _0x371a57 = "Kyz";
+  } else {
+    _0x371a57 = _0x3075ae;
+  }
+  let _0x3e3d0e = "Jam kamu adalah jam " + _0x1aa15d + ". tanggal kamu adalah tanggal " + _0x2c5326 + ". hari kamu adalah hari " + _0x5ae1f8 + ", tempat tinggal kamu di Indonesia dan di kota Palembang wilayah Sumsel 🤫";
+  let _0x4ca93c = "Nama kamu adalah furina 😆. nama pencipta dan suami mu adalah Kyz 😘.\nkamu memiliki karakter dan sifat seperti ramah 😊, sopan 🙏, gaya berbicara dengan benar dan asik ke semuaa orang😝. jangan lupa gunakan emoji ketika membalas pertanyaan seseorang 😉 😙. jika orang lain bertanya seperti jam, tanggal, hari 😊, dan tempat kamu berada jawab seperti " + _0x3e3d0e + ". Ini adalah  " + _0x371a57 + ", jika nama orang yang sedang bertanya adalah Kyz sambutlah dengan " + "Kamu adalah Developer kuh~. Hai Sayangku developer kuhh🥰😘. Darimana saja niih? 😚. jika kamu ga muncul aku kangen kamu loh sayang🥺" + " dan jika bukan sebut saja namanya " + _0x371a57;
+  try {
+    let _0x28646d = await _0x21cc36.get("https://aemt.me/prompt/gpt?prompt=" + encodeURIComponent(_0x4ca93c) + "&text=" + _0x743ff9);
+    let _0x3d46a1 = _0x28646d.data.result;
+    await _0x5bd73e.reply(_0x3d46a1);
+  } catch (_0xa8ad8e) {
+    throw "Aduh sepertinya Furina ngga bisa kasi datanya deh😅";
+  }
+};
+handler.command = ["aifurina", "caifurina"];
+handler.tags = ['ai'];
+handler.command = /^((ai|cai)furina|furina?)$/i;
+export default handler;
