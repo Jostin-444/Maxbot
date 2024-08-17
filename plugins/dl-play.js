@@ -10,6 +10,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	//const url = 'https://www.youtube.com/watch?v=' + videoId
 	m.react('💿') 
   let play = `> *\`TÍTULO:\`* ${vid.title}
+> *\`SUBIDO:\`* ${vid.ago}
 > *\`DURACIÓN:\`* ${vid.timestamp}
 > *\`VISTAS:\`* ${vid.views.toLocaleString()}`
  await conn.sendButton(m.chat, play, packname, thumbnail, [
