@@ -18,7 +18,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     ['📀 𝗩 𝗜 𝗗 𝗘 𝗢 ', `${usedPrefix}fgmp4 ${url}`],
 ['📁 𝗩 𝗜 𝗗 𝗘 𝗢  𝗗 𝗢 𝗖', `${usedPrefix}fgmp4 ${url}`],
 ['📁 𝗠 𝗨 𝗦 𝗜 𝗖   𝗗 𝗢 𝗖', `${usedPrefix}fgmp4 ${url}`]
-  ], null, [['🐈‍⬛ 𝗖𝗔𝗡𝗔𝗟', `${canal}`]], m)
+  ], null, [['🐈‍⬛ 𝗖 𝗔 𝗡 𝗔 𝗟', `${canal}`]], m)
 }
 handler.help = ['play']
 handler.tags = ['dl']
