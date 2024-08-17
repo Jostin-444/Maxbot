@@ -9,6 +9,20 @@ let handler = async (m, { conn, text }) => {
         conn.reply(m.chat, m);
         let data = await chatGpt(text)
         conn.reply(m.chat, data, m);
+        await conn.sendMessage(m.chat, { text: data,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `🔵 O L Y M P U S - H O S T 🔵`,
+body: `⚜️ Super Hosting 24/7 ⚜️`,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://qu.ax/waCu.jpg', 
+sourceUrl: 'https://dash.olympus-host.xyz'}}},
+{ quoted: fkontak})
+}
     } catch (err) {
         m.reply('error cik:/ ' + err);
     }
