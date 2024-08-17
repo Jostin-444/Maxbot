@@ -14,7 +14,20 @@ let handler = async (m, {
     await m.react('🐈‍⬛');
     try {
         const result = await chatAi(text);
-        await m.reply(result);
+                await _0x3b62c8.sendMessage(_0x4de82f.chat, {
+          'text': 'result',
+          'contextInfo': {
+            'externalAdReply': {
+              'title': _0x369b54 + " - C.ai by ɢᴀʙʀɪᴇʟ-ᴊᴛxꜱ",
+              'body': "𝙲 𝙷 𝙰 𝚁 𝙰 𝙲 𝚃 𝙴 𝚁 - 𝙰 𝙸",
+              'thumbnailUrl': "https://i.pinimg.com/564x/07/bd/59/07bd5983131fd16de41b8d8c43661512.jpg",
+              'sourceUrl': "canal"
+            }
+          }
+        }, {
+          'quoted': _0x4de82f
+        });
+      }
     } catch (error) {
         await m.react('😅');
     }
