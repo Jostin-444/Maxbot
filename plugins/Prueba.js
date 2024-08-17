@@ -28,7 +28,7 @@ let handler = async (_0x5bd73e, {
   });
   let _0x3075ae = (await _0x34a9ef.getName(_0x5bd73e.sender)) ? await _0x34a9ef.getName(_0x5bd73e.sender) : "Orang";
   let _0x371a57;
-  if (_0x5bd73e.sender === creator + "@s.whatsapp.net") {
+  if (_0x5bd73e.sender === packname + "@s.whatsapp.net") {
     _0x371a57 = "Kyz";
   } else {
     _0x371a57 = _0x3075ae;
