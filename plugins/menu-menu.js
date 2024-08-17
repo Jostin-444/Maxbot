@@ -57,7 +57,7 @@ const defaultMenu = {
   header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
   body: '║✶. %cmd %isdiamond %isPremium\n',
   footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
-  after: `> ${dev}`,
+  after: ``,
 }
 let ppp = 'https://i.ibb.co/yyS7hkT/file.jpg'
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
