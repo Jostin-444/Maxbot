@@ -76,5 +76,5 @@ let handler = async (_0x158ca0, {
 };
 handler.help = ["rem <txt>"];
 handler.tags = ['IA'];
-handler.command = /^(emilia)$/i;
+handler.command = /^(emilia5)$/i;
 export default handler;
