@@ -10,7 +10,7 @@ conn.reply(m.chat, `*┏━_͜͡-͜͡-͜͡-͜͡-͜͡-͜͡-͜͡⚘-͜͡-͜͡-͜͡
 }
 
 handler.help = ['reto']
-handler.tags = ['fun']
+handler.tags = ['game']
 handler.command = /^reto/i
 export default handler
 
