@@ -54,7 +54,7 @@ const defaultMenu = {
 ┊✧ *Premium:* ◜🎫◞
 ╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭🌟୧ ׅ ꒱  ┄  ─ ┄ ⸼\n
 `.trimStart(),
- header: '\n╠ • ˗ˏ✎*ೃ `%category`'
+ header: '\n╠ • ˗ˏ✎*ೃ `%category`',
   body: '║✶. %cmd %isdiamond %isPremium\n',
   footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
   after: `> ${dev}`,
