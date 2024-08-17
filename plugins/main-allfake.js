@@ -105,16 +105,6 @@ global.estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, .
 global.ftroli = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 99, status: 1, surface: 1, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
 let fgif = {key: {participant : '0@s.whatsapp.net'}, message: {"videoMessage": { "title": wm, "h": `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./Menu.jpg')}}}
 
-global.rpl = {
-externalAdReply: {
-mediaUrl: canal,
-mediaType: 'VIDEO',
-description: 'support group',
-title: packname,
-body: '⭐ ¡Génesis Super Bot!',
-thumbnailUrl: icono,
-sourceUrl: canal}}};
-
 global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363220939514640@newsletter', newsletterName: "✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯", serverMessageId: -1 }
 }}, { quoted: m }
 
