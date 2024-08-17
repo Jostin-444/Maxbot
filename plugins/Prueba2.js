@@ -8,7 +8,6 @@ let handler = async (m, { conn, text }) => {
     try {
         conn.reply(m.chat, m);
         let data = await chatGpt(text)
-        conn.reply(m.chat, data, m);
         await conn.sendMessage(m.chat, { text: data,
 contextInfo:{
 forwardingScore: 9999999,
