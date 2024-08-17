@@ -1,45 +1,53 @@
-import axios from 'axios';
+//código modificado por karim-off 
 
-let handler = async (m, { text, command, usedPrefix, conn }) => {
-    if (!text) {
-        throw `Fitur pendeteksi Tulisan yang dibuat oleh AI\nContoh:\n${usedPrefix + command} TextGenerateFromAI`;
-    }
+import { randomBytes } from "crypto"
+import axios from "axios"
 
-    var options = {
-        method: 'POST',
-        url: 'https://tr.deployers.repl.co/zerogpt',
-        headers: {
-            Accept: '*/*',
-            'User-Agent': 'Thunder Client (https://www.thunderclient.com)',
-            'content-type': 'multipart/form-data; boundary=---011000010111000001101001'
-        },
-        data: `-----011000010111000001101001\r\nContent-Disposition: form-data; name="text"\r\n\r\n${text}\r\n-----011000010111000001101001--\r\n`
-    };
-
+let handler = async (m, { conn, text }) => {
+    if (!text) throw '¿Cómo puedo ayudarte hoy?';
     try {
-        const response = await axios.request(options);
-        const aiWords = response.data.data.aiWords;
-        const detectedLanguage = response.data.data.detected_language;
-        const h = response.data.data.h;
-
-        const replyMessage = `
-AI Words: ${aiWords}
-Detected Language: ${detectedLanguage}
-Perkataan AI: ${h}
-
-Support me on https://tr.deployers.repl.co/images
-`;
-
-        conn.reply(m.chat, replyMessage, m);
-    } catch (error) {
-        console.error(error);
-        conn.reply(m.chat, 'An error occurred while processing the request', m);
+        conn.reply(m.chat, m);
+        let data = await chatGpt(text)
+        conn.reply(m.chat, data, m);
+    } catch (err) {
+        m.reply('error cik:/ ' + err);
     }
-};
+}
 
-handler.command = /^zerogpt/i;
-handler.help = ['zerogpt <text>'];
-handler.tags = ['tools'];
+handler.command = handler.help = ['demo'];
+handler.tags = ['ai'];
+handler.limit = 3;
 
 export default handler;
-          
+
+async function chatGpt(query){
+try {
+
+const { id_ }= (await axios.post("https://chat.chatgptdemo.net/new_chat",{user_id: "crqryjoto2h3nlzsg"},{headers:{
+"Content-Type": "application/json",
+
+}})).data
+
+const json = {"question":query,"chat_id": id_,"timestamp":new Date().getTime()}
+
+
+const { data } = await axios.post("https://chat.chatgptdemo.net/chat_api_stream",json,{headers:{
+"Content-Type": "application/json",
+
+}})
+const cek = data.split("data: ")
+
+let res = []
+
+for (let i=1; i < cek.length; i++){
+if (cek[i].trim().length > 0){
+res.push(JSON.parse(cek[i].trim()))
+}}
+
+return res.map((a) => a.choices[0].delta.content).join("")
+
+} catch (error) {
+console.error("Error parsing JSON:",error)
+return 404
+}
+}
