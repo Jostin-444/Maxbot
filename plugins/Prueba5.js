@@ -25,7 +25,7 @@ title: `[AI-INKA]`,
 body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/2bpa44pl', 
-sourceUrl: 'canal'}}},
+sourceUrl: '${canal}'}}},
 { quoted: m})
     } catch (error) {
         await m.react('😅');
