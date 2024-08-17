@@ -11,10 +11,10 @@ let handler = async (m, {
 }) => {
 
  if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .genesis que sos?_';
-    await m.react('🐈‍⬛');
+    await m.react('🤖');
     try {
         const result = await chatAi(text);
-        await m.reply(result,rcanal);
+        await m.reply(result), m, rcanal;
     } catch (error) {
         await m.react('😅');
     }
