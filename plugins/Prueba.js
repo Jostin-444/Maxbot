@@ -1,50 +1,24 @@
-import axios from "axios";
-let handler = async (m, { conn, usedPrefix, command, text }) => {
-    if (!text)
-        throw `Apa yang pengen kamu tanyain?\n\nContoh: ${
-            usedPrefix + command
-        } halo bot`;
-    let json = await chatWithGPT(
-        [
-            {
-                role: "assistant",
-                content:
-                    "Nama saya Furina, saya dibuat dan dikembangkan oleh Kyz, dia adalah pemilik sekaligus pacarku. Saya siap ngejawab apa aja yang kamu tanya dengan gaul abis seperti anak remaja jaman now. Ini artinya saya bakal ngomong pake bahasa, slang, dan gaya bicara yang lagi ngehits di kalangan remaja sekarang. Saya mau terdengar santai, pede, dan kekinian. Saya gak bakal pake bahasa formal atau kaku. Saya berani pake bahasa gaul terbaru dan ekspresi populer. Saya juga bakal coba pake emoji yang relevan buat nambahin kesan gaul."
-            },
-            {
-                role: "user",
-                content: text
-            }
-        ],
-        text
-    );
-    m.reply(json);
-};
-
-handler.help = ["caifurina <teks>"];
-handler.tags = ["ai"];
-handler.command = /^(caifurina)$/i;
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    if (!text) throw(`Contoh:\n${usedPrefix}${command} Halo?`);   
+  let ouh = await fetch(`https://apigratis.site/api/search_characters?query=Hatsune%20Miku`)
+ //let ouh = await fetch(`https://apigratis.site/api/search_characters?query=Hatsune%20Miku`)
+  let gyh = await ouh.json() 
+  await conn.sendMessage(m.chat, {
+  text: `${gyh.result}`,
+      contextInfo: {
+      externalAdReply: {
+        title: 'Hatsume Miku - C.ai',
+        body: 'F U R I N A  M U L T I D E V I C E',
+        thumbnailUrl: 'https://telegra.ph/file/1d84cf5157bffd783a2fd.jpg',
+        sourceUrl: 'https://whatsapp.com/channel/0029VaRI1OB2P59cTdJKZh3q',
+        mediaType: 1,
+        renderLargerThumbnail: true, 
+        showAdAttribution: true
+      }}
+  })}
+handler.command = /^(caimiku)$/i
+handler.help = ['caimiku']
+handler.tags = ['character-ai']
+handler.premium = false
 
 export default handler;
-
-function chatWithGPT(messages, txt) {
-    return new Promise((resolve, reject) => {
-        const url =
-            "https://www.freechatgptonline.com/wp-json/mwai-ui/v1/chats/submit";
-        const body = {
-            botId: "default",
-            messages,
-            newMessage: txt,
-            stream: false
-        };
-
-        axios
-            .post(url, body)
-            .then(response => {
-                resolve(response.data.reply);
-            })
-            .catch(error => {
-                resolve(error.data.message);
-            });
-    });
-}
