@@ -31,7 +31,7 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'fun': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
+'game': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
 }
 let ppp = 'https://i.ibb.co/jrcQCz3/file.jpg'
 
