@@ -14,7 +14,7 @@ let handler = async (m, {
     await m.react('🐈‍⬛');
     try {
         const result = await chatAi(text);
-                await _0x3b62c8.sendMessage(_0x4de82f.chat, {
+        await _0x3b62c8.sendMessage(_0x4de82f.chat, {
           'text': 'result',
           'contextInfo': {
             'externalAdReply': {
