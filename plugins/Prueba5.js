@@ -14,14 +14,19 @@ let handler = async (m, {
     await m.react('🤖');
     try {
         const result = await chatAi(text);
-        await conn.reply(m.chat, {
-          'text': "result",
-          'contextInfo': {
-            'externalAdReply': {
-              'title': packname + " - C.ai",
-              'body': "𝙲 𝙷 𝙰 𝚁 𝙰 𝙲 𝚃 𝙴 𝚁 - 𝙰 𝙸",
-              'thumbnailUrl': "https://i.pinimg.com/564x/b8/9b/3c/b89b3c4140b832cb35832781cd0f3f91.jpg",
-              'sourceUrl': "canal"}
+await conn.sendMessage(m.chat, { text: result,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `🔵 O L Y M P U S - H O S T 🔵`,
+body: `⚜️ Super Hosting 24/7 ⚜️`,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://qu.ax/waCu.jpg', 
+sourceUrl: 'https://dash.olympus-host.xyz'}}},
+{ quoted: fkontak})
     } catch (error) {
         await m.react('😅');
     }
