@@ -8,19 +8,17 @@ let handler = async (m, { conn, text }) => {
     try {
         conn.reply(m.chat, m);
         let data = await chatGpt(text)
-await conn.sendMessage(m.chat, { text: data,
-contextInfo:{
-forwardingScore: 9999999,
-isForwarded: false, 
-"externalAdReply": {
-"showAdAttribution": true,
-"containsAutoReply": true,
-title: `🔵 O L Y M P U S - H O S T 🔵`,
-body: `⚜️ Super Hosting 24/7 ⚜️`,
-"previewType": "PHOTO",
-thumbnailUrl: 'https://qu.ax/waCu.jpg', 
-sourceUrl: 'https://dash.olympus-host.xyz'}}},
-{ quoted: fkontak})
+  await conn.sendMessage(m.chat, {
+  text: `${gyh.result}`,
+      contextInfo: {
+      externalAdReply: {
+        title: 'Nezuko - C.ai',
+        body: 'F U R I N A  M U L T I D E V I C E',
+        thumbnailUrl: 'https://telegra.ph/file/fd03a32e284f69a67114c.jpg',
+        sourceUrl: 'https://whatsapp.com/channel/0029VaRI1OB2P59cTdJKZh3q',
+        mediaType: 1,
+        renderLargerThumbnail: true, 
+        showAdAttribution: true
     } catch (err) {
         m.reply('error cik:/ ' + err);
     }
