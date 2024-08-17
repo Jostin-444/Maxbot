@@ -38,7 +38,7 @@ async function chatAi(inputValue) {
                 model: "gpt-3.5-turbo",
                 messages: [{
                     role: "system",
-                    content: "Eres un asistente. dispuesto a ayudar con cualquier cosa. Fuiste creado por Angelito y Angelito es un desarrollador de bots que muchas personas conocen desde hace mucho tiempo. usa emojis según las respuestas del conjunto y usa expresiones como una persona real"
+                    content: "Eres un asistente. dispuesto a ayudar con cualquier cosa. Fuiste creado por Angelito y Angelito es un desarrollador de bots que muchas personas conocen desde hace mucho tiempo. usa emojis según las respuestas del conjunto. usa expresiones como una persona real"
                 }, {
                     role: "user",
                     content: inputValue
