@@ -10,8 +10,8 @@ let handler = async (m, {
     command
 }) => {
 
- return conn.reply(m.chat, '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iashxx que sos?_', m, fake);
-    await m.react('🤖');
+ if (!text) throw (m.chat, '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iashxx que sos?_', m, fake);
+    await m.react('🪼');
     try {
         const result = await chatAi(text);
 await conn.sendMessage(m.chat, { text: result,
