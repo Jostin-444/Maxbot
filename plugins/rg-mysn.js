@@ -1,9 +1,12 @@
 import { createHash } from 'crypto'
 
-var handler = async function (m, { conn, text, usedPrefix }) {
-let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)
-conn.sendButton(m.chat, `_Copie y pegue para eliminar su registro._`, wm, null, null, [['ℕ𝕦𝕞𝕖𝕣𝕠 𝕕𝕖 𝕤𝕖𝕣𝕚𝕖 🦄', `${usedPrefix}delregistro ` + sn]], null, null, m)  
+let handler = async function (m, { conn, text, usedPrefix }) {
+m.react('✅')
+let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 6)       
+await conn.reply(m.chat, `${sn}`, m, rcanal)
 }
-handler.command = /^(myns|ceksn|ns|numserie)$/i
+handler.help = ['sn']
+handler.tags = ['rg']
+handler.command = ['nserie', 'sn', 'mysn'] 
 handler.register = true
 export default handler
