@@ -34,7 +34,7 @@ const { version } = await fetchLatestBaileysVersion()
 const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ['Yaemori Sub-Bot', 'Edge', '2.0.0'],
+browser: ['Genesis Sub-Bot', 'Edge', '2.0.0'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -58,7 +58,7 @@ if (isNewLogin) {
 conn.isInit = true
 }
 if (qr) {
-let txt = '🚩 S E R B O T - S U B B O T 🚩\n\n*Escanea este QR para ser un Sub Bot*\n\n🍟 Pasos para escanear:\n\n`1` : Haga click en los 3 puntos\n\n`2` : Toque dispositivos vinculados\n\n`3` : Escanea este QR\n\n> *Nota:* Este código QR expira en 30 segundos.'
+let txt = '⭐ S E R B O T - S U B B O T ⭐\n\n*Escanea este QR para ser un Sub Bot*\n\n💫 Pasos para escanear:\n\n`1` : Haga click en los 3 puntos\n\n`2` : Toque dispositivos vinculados\n\n`3` : Escanea este QR\n\n> *Nota:* Este código QR expira en 30 segundos.'
 
 let sendQR = await parentw.sendFile(m.chat, await qrcode.toDataURL(qr, { scale: 8 }), "qrcode.png", txt, m, null, rcanal)
 setTimeout(() => {
@@ -74,7 +74,7 @@ return console.log(await creloadHandler(true).catch(console.error))
 delete global.conns[i]
 global.conns.splice(i, 1)
 if (code !== DisconnectReason.connectionClosed) {
-await parentw.reply(conn.user.jid, "🚩 Conexión perdida con el servidor.", m)
+await parentw.reply(conn.user.jid, "⭐ Conexión perdida con el servidor.", m)
 }
 }
 if (global.db.data == null) {
@@ -83,12 +83,12 @@ loadDatabase()
 if (connection == "open") {
 conn.isInit = true
 global.conns.push(conn)
-await parentw.reply(m.chat, args[0] ? '🐢 Conectado con éxito al WhatsApp.' : '🚩 Vinculaste un Sub-Bot con éxito.', m, rcanal)
+await parentw.reply(m.chat, args[0] ? '🌟 Conectado con éxito al WhatsApp.' : '⭐ Vinculaste un Sub-Bot con éxito.', m, rcanal)
 await sleep(5000)
 if (args[0]) {
 return
 }
-await parentw.reply(conn.user.jid, `🚩 *Para volver a vincular un sub Bot use su token*`, m, rcanal)
+await parentw.reply(conn.user.jid, `⭐ *Para volver a vincular un sub Bot use su token*`, m, rcanal)
 }
 }
 const timeoutId = setTimeout(() => {
