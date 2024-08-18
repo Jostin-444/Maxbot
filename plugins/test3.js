@@ -14,7 +14,7 @@ title: "YT",
 highlight_label: "Popular",
 rows: [{
 header: bestItem.title,
-id: `${usedPrefix}yta ${bestItem.url}`,
+id: `${usedPrefix}fgmp4 ${bestItem.url}`,
 title: wait,
 description: ""
 }]
