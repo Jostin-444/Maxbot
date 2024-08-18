@@ -162,7 +162,7 @@ global.rpg = {
     string = string.toLowerCase();
     const emot = {
       level: '🧬 Nivel',
-      estrellas: '🌟 Estrella',
+      corazones: '🤍 Corazon',
       exp: '⚡ Experiencia',
       bank: '🏦 Banco',
       diamond: '💎 Diamante',
@@ -255,7 +255,7 @@ global.rpgg = { // Solo emojis
     string = string.toLowerCase();
     const emott = {
       level: '🧬',
-      estrellas: '🌟',
+      corazones: '🤍',
       exp: '⚡',
       bank: '🏦',
       diamond: '💎+',
@@ -348,14 +348,14 @@ global.rpgshop = { // Tienda
     string = string.toLowerCase();
     const emottt = {
       exp: '⚡ Experiencia',
-      estrellas: '🌟 Estrella',
+      corazones: '🤍 Corazon',
       diamond: '💎 Diamante',
       joincount: '💰 Token',
       emerald: '💚 Esmeralda',
       berlian: '♦️ Joya',
       kyubi: '🌀 Magia',
       gold: '👑 Oro',
-      money: '👾 MiniCoins',
+      money: '👾 GeneCoins',
       tiketcoin: '🎫 Mini Tickers',
       stamina: '✨ Energía',
       potion: '🥤 Poción',
@@ -425,7 +425,7 @@ global.rpgshopp = { // Tienda
     string = string.toLowerCase();
     const emotttt = {
       exp: '⚡',
-      estrellas: '🌟',
+      corazones: '🤍',
       diamond: '💎+',
       joincount: '💰',
       emerald: '💚',
