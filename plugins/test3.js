@@ -10,16 +10,7 @@ const videoItems = moreItems.filter(item => item.type === 'video')
 const formattedData = {
 title: `\`YOUTUBE SEARCH\`\n\n> Lo más popular de: *${text}*\n*📀Título:* ${bestItem.title}\n*🔗URL:* ${bestItem.url}\n*🕒Duración:* ${bestItem.timestamp}\n\n\`Se muestran más resultados en Ver Lista...\``,
 rows: [{
-title: "YT",
-highlight_label: "Popular",
-rows: [{
-header: bestItem.title,
-id: `${usedPrefix}fgmp4 ${bestItem.url}`,
-title: bestItem.title,
-description: ""
-}]
-}, {
-title: "Más",
+title: "Resultados De la Búsqueda 🔍",
 rows: videoItems.map(({
 title,
 url,
