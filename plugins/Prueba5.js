@@ -24,7 +24,7 @@ isForwarded: false,
 title: `[AI-INKA]`,
 body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://qu.ax/tLrN.jpg', 
+thumbnailUrl: 'https://tinyurl.com/253dnhcr', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
     } catch (error) {
         await m.react('😅');
