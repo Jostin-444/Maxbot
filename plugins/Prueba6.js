@@ -16,7 +16,6 @@ let handler = async (m, {
         const result = await chatAi(text);
 await conn.sendMessage(m.chat, { text: result,
 contextInfo:{
-forwardingScore: 9999999,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
