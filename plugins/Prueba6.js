@@ -1,53 +1,64 @@
-//código modificado por karim-off 
+// créditos para MauroAzcurra
+// codigo adaptado por karim-off
+import fetch from 'node-fetch';
 
-import { randomBytes } from "crypto"
-import axios from "axios"
+let handler = async (m, {
+    conn,
+    args,
+    usedPrefix,
+    text,
+    command
+}) => {
 
-let handler = async (m, { conn, text }) => {
-    if (!text) throw '¿Cómo puedo ayudarte hoy?';
+ if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iaperu que sos?_';
+    await m.react('🤖');
     try {
-        conn.reply(m.chat, m);
-        let data = await chatGpt(text)
-        conn.reply(m.chat, data, m);
-    } catch (err) {
-        m.reply('error cik:/ ' + err);
+        const result = await chatAi(text);
+await conn.sendMessage(m.chat, { text: result,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗔 𝗜 - 𝗣 𝗘 𝗥 𝗨 ]`,
+body: ``,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/253dnhcr', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
+    } catch (error) {
+        await m.react('😅');
     }
+
 }
+handler.help = ["iashxx <text>"]
+handler.tags = ["ai"];
+handler.command = /^(iashxx|shxxia)$/i
+export default handler
 
-handler.command = handler.help = ['demo'];
-handler.tags = ['ai'];
-handler.limit = 3;
-
-export default handler;
-
-async function chatGpt(query){
-try {
-
-const { id_ }= (await axios.post("https://chat.chatgptdemo.net/new_chat",{user_id: "crqryjoto2h3nlzsg"},{headers:{
-"Content-Type": "application/json",
-
-}})).data
-
-const json = {"question":query,"chat_id": id_,"timestamp":new Date().getTime()}
-
-
-const { data } = await axios.post("https://chat.chatgptdemo.net/chat_api_stream",json,{headers:{
-"Content-Type": "application/json",
-
-}})
-const cek = data.split("data: ")
-
-let res = []
-
-for (let i=1; i < cek.length; i++){
-if (cek[i].trim().length > 0){
-res.push(JSON.parse(cek[i].trim()))
-}}
-
-return res.map((a) => a.choices[0].delta.content).join("")
-
-} catch (error) {
-console.error("Error parsing JSON:",error)
-return 404
-}
+async function chatAi(inputValue) {
+    try {
+        const chatApiUrl = 'https://api.chatanywhere.com.cn/v1/chat/completions';
+        const chatResponse = await fetch(chatApiUrl, {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer sk-pu4PasDkEf284PIbVr1r5jn9rlvbAJESZGpPbK7OFYYR6m9g',
+                'Content-Type': 'application/json;charset=UTF-8',
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages: [{
+                    role: "system",
+                    content: "Eres un AI peruano. dispuesto a ayudar y conversar con cualquier cosa. Fuiste creado por Angelito y Angelito es un gran desarrollador de Bots de WhatsApp. Ángel nació el 9 de diciembre de 2007. ángel actualmente cuenta con 16 años. usa emojis según las respuestas del conjunto. muestra emociones como una persona. tu nombre es PERU AI. usaras acento y jergas peruanas como causa,mano,oe,pata,etc. usaras el acento re marcado"
+                }, {
+                    role: "user",
+                    content: inputValue
+                }]
+            }),
+        });
+        const chatData = await chatResponse.json();
+        return chatData.choices[0].message.content;
+    } catch (error) {
+        throw error;
+    }
 }
