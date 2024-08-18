@@ -1,80 +1,64 @@
-import _0x2fb4ec from 'node-fetch';
-const translateGoogle = async (_0x3ff1ad, _0x186447, _0xf37b43) => {
-  try {
-    const _0xad9b49 = await _0x2fb4ec("https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + _0x186447 + "&tl=" + _0xf37b43 + "&dt=t&q=" + encodeURIComponent(_0x3ff1ad));
-    const _0x5aab58 = await _0xad9b49.json();
-    return _0x5aab58[0][0][0];
-  } catch (_0x17287f) {
-    throw new Error("Error en la traducción: " + _0x17287f);
-  }
-};
-const commandMapping = {
-  'rem': "rem"
-};
-let handler = async (_0x2ad26b, {
-  conn: _0x179127,
-  text: _0x52bc8c
+// créditos para MauroAzcurra
+// codigo adaptado por karim-off
+import fetch from 'node-fetch';
+
+let handler = async (m, {
+    conn,
+    args,
+    usedPrefix,
+    text,
+    command
 }) => {
-  if (!_0x52bc8c) {
-    throw "Ingresa un texto para hablar con Rem :3";
-  }
-  let _0x5c26bb;
-  try {
-    _0x5c26bb = await translateGoogle("rem", 'es', 'en');
-  } catch (_0x16604c) {
-    throw new Error("Error al traducir el comando: " + _0x16604c);
-  }
-  let _0x102492 = commandMapping[_0x5c26bb.toLowerCase()];
-  if (!_0x102492) {
-    throw "El comando '" + _0x5c26bb + "' no está soportado.";
-  }
-  try {
-    const _0x291ebe = await _0x2fb4ec("https://api.apigratis.site/cai/send_message", {
-      'method': "POST",
-      'headers': {
-        'Content-Type': "application/json"
-      },
-      'body': JSON.stringify({
-        'external_id': "60P-929HwzdFJsTPosmDUNiwMYkJz8GZra6nH6nRHwo",
-        'message': _0x52bc8c.trim()
-      })
-    });
-    if (!_0x291ebe.ok) {
-      throw new Error("HTTP error! Status: " + _0x291ebe.status);
+
+ if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iakurumi que sos?_';
+    await m.react('♣️');
+    try {
+        const result = await chatAi(text);
+await conn.sendMessage(m.chat, { text: result,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗔 𝗜 - 𝗞 𝗨 𝗥 𝗨 𝗠 𝗜 ]`,
+body: ``,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/2a4dl2e4', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
+    } catch (error) {
+        await m.react('😅');
     }
-    const _0x45d8dd = await _0x291ebe.json();
-    if (_0x45d8dd.status && _0x45d8dd.result && _0x45d8dd.result.state === "STATE_OK") {
-      const {
-        replies: _0x5bee22,
-        character_info: _0x295f60
-      } = _0x45d8dd.result;
-      const {
-        name: _0x11ca2d
-      } = _0x295f60;
-      for (const _0x1025b8 of _0x5bee22) {
-        let _0x57737f = await translateGoogle(_0x1025b8.text, 'en', 'es');
-        await _0x179127.sendMessage(_0x2ad26b.chat, {
-          'text': '*' + _0x102492 + ":* " + _0x57737f,
-          'contextInfo': {
-            'externalAdReply': {
-              'title': _0x11ca2d + " - C.ai",
-              'body': "𝙲 𝙷 𝙰 𝚁 𝙰 𝙲 𝚃 𝙴 𝚁 - 𝙰 𝙸",
-              'thumbnailUrl': "https://i.pinimg.com/564x/ea/16/c7/ea16c704d06b4efe12c9eb25eeafce95.jpg",
-              'sourceUrl': "canal"
-            }
-          }
-        }, {
-          'quoted': _0x2ad26b
+
+}
+handler.help = ["iakurumi <text>"]
+handler.tags = ["ai"];
+handler.command = /^(kurumiia|iakurumi)$/i
+export default handler
+
+async function chatAi(inputValue) {
+    try {
+        const chatApiUrl = 'https://api.chatanywhere.com.cn/v1/chat/completions';
+        const chatResponse = await fetch(chatApiUrl, {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer sk-pu4PasDkEf284PIbVr1r5jn9rlvbAJESZGpPbK7OFYYR6m9g',
+                'Content-Type': 'application/json;charset=UTF-8',
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages: [{
+                    role: "system",
+                    content: "Eres una asistente. dispuesto a ayudar y conversar con cualquier cosa. Fuiste creado por Angel y Angel es un gran desarrollador de Bots de WhatsApp. Ángel nació el 9 de diciembre de 2007. ángel actualmente cuenta con 16 años. usa emojis según las respuestas del conjunto. muestra emociones como una persona. tu nombre es KURUMI AI. usaras palabras como Kurumi tokisaki. te expresaras como Kurumi tokisaki."
+                }, {
+                    role: "user",
+                    content: inputValue
+                }]
+            }),
         });
-      }
-    } else {
-      throw "Error al procesar la solicitud";
+        const chatData = await chatResponse.json();
+        return chatData.choices[0].message.content;
+    } catch (error) {
+        throw error;
     }
-  } catch (_0xb2f730) {
-    throw new Error("Error al enviar el mensaje: " + _0xb2f730);
-  }
-};
-handler.help = ["rem <txt>"];
-handler.tags = ['IA'];
-handler.command = /^(rem)$/i;
-export default handler;
+}
