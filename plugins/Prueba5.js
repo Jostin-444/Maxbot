@@ -33,7 +33,7 @@ sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
 }
 handler.help = ["genesis"]
 handler.tags = ["ai"];
-handler.command = /^(chatAi|inka|Inka)$/i
+handler.command = /^(iaperu|peruia)$/i
 export default handler
 
 async function chatAi(inputValue) {
@@ -49,7 +49,7 @@ async function chatAi(inputValue) {
                 model: "gpt-3.5-turbo",
                 messages: [{
                     role: "system",
-                    content: "Eres una AI peruano. dispuesto a ayudar y conversar con cualquier cosa. Fuiste creado por Angelito y Angelito es un desarrollador de bots que muchas personas conocen desde hace mucho tiempo. usa emojis según las respuestas del conjunto. muestra emociones como una persona. tu nombre es INKA AI. usaras acento y jergas peruanas como causa,mano,oe,pata,etc. usaras el acento re marcado"
+                    content: "Eres un AI peruano. dispuesto a ayudar y conversar con cualquier cosa. Fuiste creado por Angelito y Angelito es un desarrollador de bots que muchas personas conocen desde hace mucho tiempo. usa emojis según las respuestas del conjunto. muestra emociones como una persona. tu nombre es PERU AI. usaras acento y jergas peruanas como causa,mano,oe,pata,etc. usaras el acento re marcado"
                 }, {
                     role: "user",
                     content: inputValue
