@@ -10,7 +10,7 @@ let handler = async (m, {
     command
 }) => {
 
- if (!text) throw '➤ `𝗔 𝗩 𝗜 𝗦 𝗢` 🐈‍⬛\n\n```PARA USAR SHXX IA```\n```Ejemplo: .iashxx que sos?```', m, fake;
+ if (!text) throw '➤ `𝗔 𝗩 𝗜 𝗦 𝗢` 🐈‍⬛\n\n```PARA USAR SHXX IA```\n```Ejemplo: .iashxx que sos?```';
     await m.react('🪼');
     try {
         const result = await chatAi(text);
