@@ -15,7 +15,7 @@ highlight_label: "Popular",
 rows: [{
 header: bestItem.title,
 id: `${usedPrefix}fgmp4 ${bestItem.url}`,
-title: bestItem.title,
+title: ,
 description: ""
 }]
 }, {
@@ -27,7 +27,7 @@ description
 }, index) => ({
 header: `${index + 1}). ${title}`,
 id: `.fgmp4 ${url}`,
-title: ⭐ bestItem.title,
+title: ,
 description: ""
 }))
 }]
