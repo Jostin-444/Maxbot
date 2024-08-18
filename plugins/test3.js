@@ -27,7 +27,7 @@ description
 }, index) => ({
 header: `${index + 1}). ${title}`,
 id: `.fgmp4 ${url}`,
-title: 🕒 timestamp,
+title: ⭐ bestItem.title,
 description: ""
 }))
 }]
