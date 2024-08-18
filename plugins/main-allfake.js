@@ -65,13 +65,11 @@ global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 //Enlaces
 var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'  
 var git = 'https://github.com/Angelito-OFC' 
-var youtube = 'https://www.youtube.com/@OfcDiego' 
 var github = 'https://github.com/Angelito-OFC/Genesis-OFC1' 
-var facebook = 'https://www.facebook.com/diegosaroficial?mibextid=ZbWKwL' 
-let tiktok = 'https://tiktok.com/@theluffybot'
+var instagram = 'https://www.instagram.com/usxr_angelito0' 
 let correo = 'agasistencia2@gmail.com'
 
-global.redes = [canal, git, youtube, github, facebook, tiktok, correo].getRandom()
+global.redes = [canal, git, github, instagram, correo].getRandom()
 
 //Imagen
 let category = "imagen"
@@ -116,6 +114,6 @@ global.icono = [
 'https://qu.ax/sTvd.jpg',
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363220939514640@newsletter", serverMessageId: 100, newsletterName: '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🌟 ¡Génesis Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363220939514640@newsletter", serverMessageId: 100, newsletterName: '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🤍 ¡Génesis Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
