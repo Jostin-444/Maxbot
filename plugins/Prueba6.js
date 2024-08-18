@@ -25,7 +25,8 @@ title: `[ 𝗔 𝗜 - 𝗦 𝗛 𝗫 𝗫 ]`,
 body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/2xsqgpt8', 
-sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
     } catch (error) {
         await m.react('😅');
     }
