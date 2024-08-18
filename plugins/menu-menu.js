@@ -4,6 +4,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 let tags = {
+  'ai': '𝐈𝐀 𝐁𝐎𝐓',
   'main': '𝐈𝐍𝐅𝐎 𝐁𝐎𝐓',
   'search': '𝐒𝐄𝐀𝐑𝐂𝐇',
   'games': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
