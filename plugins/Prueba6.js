@@ -24,7 +24,7 @@ isForwarded: false,
 title: `[ 𝗔 𝗜 - 𝗣 𝗘 𝗥 𝗨 ]`,
 body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://tinyurl.com/253dnhcr', 
+thumbnailUrl: 'https://tinyurl.com/2xsqgpt8', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
     } catch (error) {
         await m.react('😅');
