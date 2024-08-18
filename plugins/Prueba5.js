@@ -24,7 +24,7 @@ isForwarded: false,
 title: `[AI-INKA]`,
 body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://telegra.ph/file/25fa3c8db98c32a4d3b8f.jpg', 
+thumbnailUrl: 'https://tinyurl.com/2yutv234', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
     } catch (error) {
         await m.react('😅');
