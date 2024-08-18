@@ -1,5 +1,7 @@
 let media = 'https://i.ibb.co/41GJX1t/file.jpg'
 let handler = async (m, { conn, command }) => {
+if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
+conn.reply(m.chat, '🌟 Este Comando está deshabilitado por mi creador.', m, rcanal)
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let str = `${wm}`
 await conn.sendButton(m.chat, `᥀·࣭࣪̇˖🪐◗ ¿𝘾𝙊𝙈𝙊 𝘿𝙀𝙎𝙀𝘼 𝙑𝙄𝙉𝘾𝙐𝙇𝘼𝙍?\n\n• 𝙎𝙚𝙡𝙚𝙘𝙘𝙞𝙤𝙣𝙚 𝙨𝙤𝙡𝙤 𝙪𝙣𝙖 𝙤𝙥𝙘𝙞𝙤𝙣.\n`, str, media, [
