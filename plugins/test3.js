@@ -13,9 +13,9 @@ rows: [{
 title: "YT",
 highlight_label: "Popular",
 rows: [{
-header: bestItem.title,
-id: `${usedPrefix}yta ${bestItem.url}`,
-title: wait,
+header: ⭐ 𝗧 𝗜 𝗧 𝗨 𝗟 𝗢:,
+id: `${usedPrefix}fgmp4 ${bestItem.url}`,
+title: bestItem.title,
 description: ""
 }]
 }, {
@@ -25,9 +25,9 @@ title,
 url,
 description
 }, index) => ({
-header: `${index + 1}). ${title}`,
-id: `.yta ${url}`,
-title: description,
+header: `${index + 1}). ⭐ 𝗧 𝗜 𝗧 𝗨 𝗟 𝗢:`,
+id: `.fgmp4 ${url}`,
+title: bestItem.title,
 description: ""
 }))
 }]
