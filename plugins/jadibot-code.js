@@ -22,13 +22,13 @@ return conn.reply(m.chat, `「💭」Solo puedes usar este comando en el bot pri
 }
 async function serbot() {
 let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8);
-if (!fs.existsSync("./MiniJadiBot/" + authFolderB)) {
+if (!fs.existsSync("./GenesisJadiBot/" + authFolderB)) {
 fs.mkdirSync("./MiniJadiBot/" + authFolderB, { recursive: true });
 }
 if (args[0]) {
 fs.writeFileSync(`MiniJadiBot/creds.json`, Buffer.from(args[0], 'base64').toString('utf-8'))
 }
-const { state, saveState, saveCreds } = await useMultiFileAuthState(`./MiniJadiBot/${authFolderB}`);
+const { state, saveState, saveCreds } = await useMultiFileAuthState(`./GenesisJadiBot/${authFolderB}`);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache();
 const { version } = await fetchLatestBaileysVersion();
