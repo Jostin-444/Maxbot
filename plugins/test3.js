@@ -26,7 +26,7 @@ url,
 description
 }, index) => ({
 header: `${index + 1}). ${title}`,
-id: `.yta ${url}`,
+id: `.fgmp4 ${url}`,
 title: description,
 description: ""
 }))
