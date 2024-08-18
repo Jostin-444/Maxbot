@@ -10,24 +10,24 @@ const videoItems = moreItems.filter(item => item.type === 'video')
 const formattedData = {
 title: `\`YOUTUBE SEARCH\`\n\n> Lo más popular de: *${text}*\n*📀Título:* ${bestItem.title}\n*🔗URL:* ${bestItem.url}\n*🕒Duración:* ${bestItem.timestamp}\n\n\`Se muestran más resultados en Ver Lista...\``,
 rows: [{
-title: "RESULTADO MAS VISTO 👀",
+title: "YT",
 highlight_label: "Popular",
 rows: [{
 header: bestItem.title,
-id: `${usedPrefix}fgmp4 ${bestItem.url}`,
-title: ,
+id: `${usedPrefix}yta ${bestItem.url}`,
+title: wait,
 description: ""
 }]
 }, {
-title: "RESULTADOS DE LA BÚSQUEDA 🔍",
+title: "Más",
 rows: videoItems.map(({
 title,
 url,
 description
 }, index) => ({
 header: `${index + 1}). ${title}`,
-id: `.fgmp4 ${url}`,
-title: ,
+id: `.yta ${url}`,
+title: description,
 description: ""
 }))
 }]
@@ -67,5 +67,5 @@ conn.reply(m.chat, `Ocurrió un error.${error}`, m)
 }
 }
 
-handler.command = ['test3']
+handler.command = ['test']
 export default handler
