@@ -17,7 +17,7 @@ let handler = async (m, {
 await conn.sendMessage(m.chat, { text: result,
 contextInfo:{
 forwardingScore: 9999999,
-isForwarded: false, 
+isForwarded: true, 
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
