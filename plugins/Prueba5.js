@@ -38,7 +38,7 @@ export default handler
 
 async function chatAi(inputValue) {
     try {
-        const chatApiUrl = 'https://api.chatanywhere.com.cn/v1/chat/completions';
+        const chatApiUrl = 'https://api.chatanywhere.tech/v1/chat/completions';
         const chatResponse = await fetch(chatApiUrl, {
             method: 'POST',
             headers: {
