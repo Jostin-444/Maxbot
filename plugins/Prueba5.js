@@ -21,7 +21,7 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `[AI-INKA]`,
+title: `𝗔 𝗜 - 𝗣 𝗘 𝗥 𝗨`,
 body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/253dnhcr', 
