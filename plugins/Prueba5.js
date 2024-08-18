@@ -31,7 +31,7 @@ sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
     }
 
 }
-handler.help = ["genesis"]
+handler.help = ["iaperu <text>"]
 handler.tags = ["ai"];
 handler.command = /^(iaperu|peruia)$/i
 export default handler
