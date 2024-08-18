@@ -10,7 +10,7 @@ let handler = async (m, {
     command
 }) => {
 
- if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .genesis que sos?_';
+ if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iaperu que sos?_';
     await m.react('🤖');
     try {
         const result = await chatAi(text);
@@ -24,7 +24,7 @@ isForwarded: false,
 title: `[AI-INKA]`,
 body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://tinyurl.com/2bpa44pl', 
+thumbnailUrl: 'https://tinyurl.com/2ylxxeam', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
     } catch (error) {
         await m.react('😅');
