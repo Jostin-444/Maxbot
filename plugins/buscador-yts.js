@@ -9,7 +9,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttributio
 title: packname,
 body: wm,
 previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
+sourceUrl: canal }}})
 
 let results = await yts(text)
 let tes = results.all
