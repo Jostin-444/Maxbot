@@ -13,9 +13,9 @@ rows: [{
 title: "YT",
 highlight_label: "Popular",
 rows: [{
-header: ⭐ 𝗧 𝗜 𝗧 𝗨 𝗟 𝗢:,
-id: `${usedPrefix}fgmp4 ${bestItem.url}`,
-title: bestItem.title,
+header: bestItem.title,
+id: `${usedPrefix}yta ${bestItem.url}`,
+title: wait,
 description: ""
 }]
 }, {
@@ -25,9 +25,9 @@ title,
 url,
 description
 }, index) => ({
-header: `${index + 1}). ⭐ 𝗧 𝗜 𝗧 𝗨 𝗟 𝗢:`,
-id: `.fgmp4 ${url}`,
-title: ${title},
+header: `${index + 1}). ${title}`,
+id: `.yta ${url}`,
+title: description,
 description: ""
 }))
 }]
@@ -56,7 +56,7 @@ await conn.sendButtonMessages(m.chat, [
 [formattedData.title, packname, bestItem.image || logo, [
 ['video', usedPrefix + `ytv ${bestItem.url}`], ['Doc.mp3', usedPrefix + `ytadoc ${bestItem.url}`], ['Doc.mp4', usedPrefix + `ytdoc ${bestItem.url}`]
 ], null, [
-['Ver Canal', canal]
+['Ver Canal', cn]
 ],
 [["Ver Lista", formattedData.rows]]
 ]], m)
@@ -67,5 +67,5 @@ conn.reply(m.chat, `Ocurrió un error.${error}`, m)
 }
 }
 
-handler.command = ['test']
+handler.command = ['test3']
 export default handler
