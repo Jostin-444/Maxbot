@@ -43,7 +43,7 @@ const handler = async (m, { text, conn, args, usedPrefix, command }) => {
 handler.help = ['fb <link>'];
 handler.tags = ['dl']
 handler.command = /^(fb|facebook|fbdl)$/i;
-handler.estrellas = 1
+handler.corazones = 1
 handler.register = true
 
 export default handler;                                                                                                                                                                                                                                          
