@@ -26,7 +26,7 @@ const defaultMenu = {
 %readmore
 `.trimStart(),
   header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
-  body: '║✶ %cmd %isdiamond %isPremium\n',
+  body: '║✶ %cmd %isPremium\n',
   footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
   after: ``,
 }
