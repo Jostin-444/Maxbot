@@ -6,12 +6,12 @@ let pp = 'https://telegra.ph/file/16ef6893f54e4732ee062.jpg'
 let { premium, level, corazones, exp, lastclaim, registered, regTime, age, role } = global.db.data.users[m.sender]
 let username = conn.getName(who)
 let noprem = `
-🚩 *PERFIL DE USUARIO*
+👤 *PERFIL DE USUARIO*
 ☁️ *Nombre:* ${username}
 💥 *Tag:* @${who.replace(/@.+/, '')}
-🌀 *Registrado:* ${registered ? '✅': '❌'}
+🪼 *Registrado:* ${registered ? '✅': '❌'}
 
-👑 *RECURSOS*
+🧰 *RECURSOS*
 🤍 *Corazones:* ${corazones}
 💥 *Nivel:* ${level}
 💫 *Experiencia:* ${exp}
