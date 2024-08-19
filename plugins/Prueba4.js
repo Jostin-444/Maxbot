@@ -14,7 +14,19 @@ let handler = async (m, {
     await m.react('🐦‍🔥');
     try {
         const result = await chatAi(text);
-        await m.reply(result);
+await conn.sendMessage(m.chat, { text: result,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false,
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗔 𝗜 - 𝗘 𝗟 𝗔 𝗜 𝗡 𝗘 ]`,
+body: `By: Angel-OFC 🐦‍🔥`,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/2xsqgpt8', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
     } catch (error) {
         await m.react('😅');
     }
