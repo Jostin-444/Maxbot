@@ -23,7 +23,7 @@ isForwarded: false,
 title: `[ 𝗔 𝗜 - 𝗘 𝗟 𝗔 𝗜 𝗡 𝗘 ]`,
 body: `By: Angel-OFC 🐦‍🔥`,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://tinyurl.com/2xsqgpt8', 
+thumbnailUrl: 'https://tinyurl.com/22sl49qa', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
 { quoted: m})
     } catch (error) {
