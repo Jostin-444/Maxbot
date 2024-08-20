@@ -10,13 +10,13 @@ let handler = async (m, {
     command
 }) => {
 
- if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .tanjiro que sos?_';
-    await m.react('🐈‍⬛');
+ if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🔥\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .tanjiro que sos?_';
+    await m.react('🔥');
     try {
         const result = await chatAi(text);
         await m.reply(result);
     } catch (error) {
-        await m.react('😅');
+        await m.react('😐');
     }
 
 }
