@@ -78,6 +78,6 @@ this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 
 
 return !0 }
 handler.tags = ['audios']
-handler.help = ['ara ara','fino señores']
+handler.help = ['ara ara','fino señores','bañate','buenos dias','diagnóstico gay','elmo','puto','gemido','pobre perra','manco','miau','traka','turip ip','himno potaxie']
 handler.register = true
 export default handler
