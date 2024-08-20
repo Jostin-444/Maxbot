@@ -16,7 +16,6 @@ let handler = async (m, { conn, text }) => {
 
 handler.command = handler.help = ['demo'];
 handler.tags = ['ai'];
-handler.limit = 3;
 
 export default handler;
 
