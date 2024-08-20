@@ -149,10 +149,10 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://i.ibb.co/gJNrL71/file.jpg";
-    let img = "https://i.ibb.co/gJNrL71/file.jpg";
-    let img2 = "https://i.ibb.co/gJNrL71/file.jpg";
-    let img3 = "https://i.ibb.co/gJNrL71/file.jpg";
+    let vid = "https://i.ibb.co/nsbttwG/file.jpg";
+    let img = "https://i.ibb.co/YyCJCnP/file.jpg";
+    let img2 = "https://i.ibb.co/nsbttwG/file.jpg";
+    let img3 = "https://i.ibb.co/YyCJCnP/file.jpg";
 
     await conn.sendListB(m.chat, menu, txt, `「✶」𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓「✶」`, [vid, img, img2, img3].getRandom(), listSections, estilo);
 };
