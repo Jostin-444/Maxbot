@@ -46,14 +46,10 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let totalreg = Object.keys(global.db.data.users).length;
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
 
-    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
-
     m.react("🐈‍⬛");
     let menu = ``;
 
     let txt = ""
-    txt += ". .╭── ︿︿︿︿︿ .   .   .   .   .   . \n";
-    txt += ". .┊ ✩*⢄⢁✧ *⌜ 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 ⌟* ✧⡈⡠*✩\n";
     txt += '. .┊ ‹‹ `𝘊𝘙𝘌𝘈𝘋𝘖𝘙:` ::  ' + `𝘈𝘯𝘨𝘦𝘭. .\n`;
     txt += '. .┊ ‹‹ `𝘕𝘖𝘔𝘉𝘙𝘌:` ::  ' + `𝘎𝘦𝘯𝘦𝘴𝘪𝘴. .\n`;
     txt += '. .┊ ‹‹ `𝘍𝘌𝘊𝘏𝘈:` ::  ' + `${fecha}. .\n`;
