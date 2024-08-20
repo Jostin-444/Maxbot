@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `ɢᴇɴᴇꜱɪꜱ ʙᴏᴛ`,
+                displayName: `\nɢ ᴇ ɴ ᴇ ꜱ ɪ ꜱ  ʙ ᴏ ᴛ  ᴘ ʀ ᴏ`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -46,102 +46,101 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let totalreg = Object.keys(global.db.data.users).length;
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
 
-    m.react("💫");
+    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
+
+    m.react("🐈‍⬛");
     let menu = ``;
 
     let txt = ""
-    txt += "`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` Ángel-Ofc\n";
-    txt += '`𝐍𝐎𝐌𝐁𝐑𝐄:`' + `Genesis\n`;
-    txt += '`𝐅𝐄𝐂𝐇𝐀:`' + `${fecha}\n`;
-    txt += '`𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + `${vs}\n`;
+    txt += ". .╭── ︿︿︿︿︿ .   .   .   .   .   . \n";
+    txt += ". .┊ ✩*⢄⢁✧ *⌜ 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 ⌟* ✧⡈⡠*✩\n";
+    txt += '. .┊ ‹‹ `𝘊𝘙𝘌𝘈𝘋𝘖𝘙:` ::  ' + `𝘈𝘯𝘨𝘦𝘭. .\n`;
+    txt += '. .┊ ‹‹ `𝘕𝘖𝘔𝘉𝘙𝘌:` ::  ' + `𝘎𝘦𝘯𝘦𝘴𝘪𝘴. .\n`;
+    txt += '. .┊ ‹‹ `𝘍𝘌𝘊𝘏𝘈:` ::  ' + `${fecha}. .\n`;
+    txt += '. .┊ ‹‹ `𝘝𝘌𝘙𝘚𝘐𝘖𝘕:` ::  ' + `${vs}. .\n`;
+    txt += '. .┊ ‹‹ `𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔:` ::  ' + `𝘓𝘪𝘯𝘶𝘹. .\n`;
     txt += `${sbot}\n`;
-    txt += '`𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
-    txt += '`𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + `${totalUsers || '0'}\n`;
-    txt += '`𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + `${totalusr}\n`;
-    txt += '`𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:`' + `${rtotalreg}\n`;
-    txt += '`𝐀𝐂𝐓𝐈𝐕𝐎:`' + `${uptime}\n`;
-    txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` + '#owner';
-    txt += "`𝐂𝐑𝐄𝐀𝐃𝐎𝐑: #owner";
+    txt += '. .┊ ‹‹ `𝘗𝘙𝘌𝘍𝘐𝘑𝘖:` ::  ' + ` [  ${usedPrefix}  ]\n`;
+    txt += '. .┊ ‹‹ `𝘚𝘜𝘉𝘉𝘖𝘛𝘚:` ::  ' + ` _${totalUsers || '0'}_\n`;
+    txt += '. .┊ ‹‹ `𝘜𝘚𝘜𝘈𝘙𝘐𝘖𝘚:` ::  ' + ` _${totalusr}_\n`;
+    txt += '. .┊ ‹‹ `𝘙𝘌𝘎𝘐𝘚𝘛𝘙𝘈𝘋𝘖𝘚:` ::  ' + ` _${rtotalreg}_\n`;
+    txt += '. .┊ ‹‹ `𝘛𝘐𝘌𝘔𝘗𝘖 𝘈𝘊𝘛:` ::  ' + ` _${uptime}_\n`;
+    txt += '. .┊ ‹‹ `𝘖𝘞𝘕𝘌𝘙:` ::  #owner\n';
+    txt += ". .╰─── ︶︶︶︶ ♡⃕  ⌇. . .\n";
 
     let listSections = [];
 
     listSections.push({
-        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular Genesis`,
+        title: `🔖 LISTA MENUS`, highlight_label: `Popular Genesis`,
         rows: [
             {
-                header: "𝗔𝗨𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗜𝗖𝗔𝗥 ✅",
+                header: ". .┊☁️ MENU COMPLETO",
                 title: "",
-                description: `Verificacion Automáticamente`,
-                id: `#reg 食𝐕̲͟ⳤ͢⃝̵̵🧧᭄̯⳱.18`,
+                description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘵𝘰𝘥𝘰 𝘦𝘭 𝘮𝘦𝘯𝘶`,
+                id: `${usedPrefix}allmenu`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 🤍",
-                title: "",
-                description: `MENU COMPLETO`,
-                id: `.allmenu`,
-            },
-            {
-                header: "𝗠𝗘𝗡𝗨 𝗙𝗥𝗘𝗘 𝗙𝗜𝗥𝗘 🗡️",
+                header: ". .┊☁️ MENU FREE FIRE",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘧𝘳𝘦𝘦 𝘧𝘪𝘳𝘦`,
                 id: `${usedPrefix}menuff`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗔𝗨𝗗𝗜𝗢𝗦 🔊",
+                header: ". .┊☁️ MENU AUDIOS",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘢𝘶𝘥𝘪𝘰𝘴`,
                 id: `${usedPrefix}menuaudios`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗡𝗦𝗙𝗪 🔞",
+                header: ". .┊☁️ MENU NSFW",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘤𝘢𝘭𝘪𝘦𝘯𝘵𝘦`,
                 id: `${usedPrefix}labiblia`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗝𝗨𝗘𝗚𝗢𝗦 🎮",
+                header: ". .┊☁️ MENU GAME",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘫𝘶𝘦𝘨𝘰𝘴`,
-                id: `${usedPrefix}gamemenu`,
+                id: `${usedPrefix}menujuegos`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗥𝗔𝗡𝗗𝗢𝗠 🌿",
+                header: ". .┊☁️ MENU RANDOM",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘪𝘮𝘨 𝘳𝘢𝘯𝘥𝘰𝘮`,
                 id: `${usedPrefix}menurandom`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦 📥",
+                header: ". .┊☁️ MENU DESCARGAS",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘥𝘦𝘴𝘤𝘢𝘳𝘨𝘢𝘴`,
                 id: `${usedPrefix}menudl`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗔𝗜 🤖",
+                header: ". .┊☁️ MENU AI",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘐𝘈-𝘉𝘰𝘵`,
                 id: `${usedPrefix}menuai`,
             },
             {
-                header: "𝗥𝗘𝗗𝗘𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 🍄",
+                header: ". .┊☁️ REDES GENESIS",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘢𝘴 𝘳𝘦𝘥𝘦𝘴 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}redes`,
             },
             {
-                header: "𝗚𝗥𝗨𝗣𝗢𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 ☁️",
+                header: ". .┊☁️ GRUPOS GENESIS",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘰𝘴 𝘨𝘳𝘶𝘱𝘰𝘴 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}grupos`,
             },
 {
-                header: "𝗩𝗘𝗟𝗢𝗖𝗜𝗗𝗔𝗗 𝗕𝗢𝗧 ⚡",
+                header: ". .┊☁️ VELOCIDAD GENESIS",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘢 𝘷𝘦𝘭𝘰𝘤𝘪𝘥𝘢𝘥 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}ping`,
             },
 {
-                header: "𝗗𝗢𝗡𝗔𝗖𝗜𝗢𝗡 𝗕𝗢𝗧 ☕",
+                header: ". .┊☁️ DONACION BOT",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘵𝘰𝘥𝘰 𝘥𝘦 𝘥𝘰𝘯𝘢𝘳`,
                 id: `${usedPrefix}donate`,
@@ -149,12 +148,19 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img = "https://i.ibb.co/YyCJCnP/file.jpg";
-    let img2 = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img3 = "https://i.ibb.co/YyCJCnP/file.jpg";
+    let vid = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img2 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img3 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img4 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img5 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img6 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img8 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img9 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img10 = "https://i.ibb.co/WFX3GhG/file.jpg";
+    let img11 = "https://i.ibb.co/WFX3GhG/file.jpg";
 
-    await conn.sendListB(m.chat, menu, txt, `「✶」𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓「✶」`, [vid, img, img2, img3].getRandom(), listSections, estilo);
+    await conn.sendListB(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, fcontact);
 };
 
 handler.command = ["menu", "help", "menú"];
