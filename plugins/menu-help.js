@@ -50,8 +50,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let menu = ``;
 
     let txt = ""
-    txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + `Angel-ofc\n`;
-    txt += '`𝐍𝐎𝐌𝐁𝐑𝐄:`' + `Genesis\n`;
+    txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Angel-ofc\n`;
+    txt += '`𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` Genesis\n`;
     txt += '. .┊ ‹‹ `𝘍𝘌𝘊𝘏𝘈:` ::  ' + `${fecha}. .\n`;
     txt += '. .┊ ‹‹ `𝘝𝘌𝘙𝘚𝘐𝘖𝘕:` ::  ' + `${vs}. .\n`;
     txt += '. .┊ ‹‹ `𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔:` ::  ' + `𝘓𝘪𝘯𝘶𝘹. .\n`;
