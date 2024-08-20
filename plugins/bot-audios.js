@@ -6,7 +6,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let chat = global.db.data.chats[m.chat]
 
 if (/^araara|ara ara|ara$/i.test(m.text) && chat.audios && !chat.isBanned) {
-let vn = './src/mp3/Ara.mp3'
+let vn = './media/audios/Ara.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })}    
 
