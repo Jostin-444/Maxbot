@@ -33,7 +33,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'audios': '𝐀𝐔𝐃𝐈𝐎𝐒',
 }
-let ppp = 'https://i.ibb.co/s996vz0/file.jpg'
+let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
 
   try {
           // DEFAULT MENU
