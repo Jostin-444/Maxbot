@@ -35,7 +35,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 global.creador = 'Wa.me/59897246324'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/59897246324'
-global.namechannel = '『✯ Team Channel Ai Yaemori ✯』'
+global.namechannel = '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯'
 global.namechannel2 = '𝗠𝗼𝗼𝗻𝗹𝗶𝗴𝗵𝘁 - 𝗧𝗲𝗮𝗺'
 global.namegrupo = '𝗚𝗿𝗼𝘂𝗽 𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶'
 global.namecomu = '𝗖𝗼𝗺𝘂𝗻𝗶𝗱𝗮𝗱 𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶'
@@ -50,10 +50,10 @@ global.done = '✅'
 global.error = '✖️'
 
 //Emojis determinado de Ai Genesis
-global.emoji = '🚩'
-global.emoji2 = '🍟'
-global.emoji3 = '✨️'
-global.emoji4 = '🍭'
+global.emoji = '🤍'
+global.emoji2 = '🤍'
+global.emoji3 = '🤍'
+global.emoji4 = '🤍'
 global.emojis = [emoji, emoji2, emoji3, emoji4].getRandom()
 
 //mensaje en espera
@@ -63,13 +63,12 @@ global.waittt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗮 ...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'  
+var canal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'  
 var git = 'https://github.com/Angelito-OFC' 
 var github = 'https://github.com/Angelito-OFC/Genesis-OFC1' 
 var instagram = 'https://www.instagram.com/usxr_angelito0' 
-let correo = 'agasistencia2@gmail.com'
 
-global.redes = [canal, git, github, instagram, correo].getRandom()
+global.redes = [canal, git, github, instagram].getRandom()
 
 //Imagen
 let category = "imagen"
