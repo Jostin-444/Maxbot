@@ -58,7 +58,7 @@ this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 
 if (!chat.isBanned && chat.audios && m.text.match(/(miau|Miau|Gata)/gi)) {    
 let vn = './media/audios/miau.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })}
+this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true })}
 
 if (!chat.isBanned && chat.audios && m.text.match(/(traka|traka traka|Trakaa)/gi)) {    
 let vn = './media/audios/traka.mp3'
