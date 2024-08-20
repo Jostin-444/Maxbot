@@ -30,7 +30,7 @@ const defaultMenu = {
   footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
   after: ``,
 }
-let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
+let handler = async (m, { conn, __dirname, args, command}) => {
 let tags = {
 'audios': '𝐀𝐔𝐃𝐈𝐎𝐒',
 }
