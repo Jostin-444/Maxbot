@@ -1,0 +1,64 @@
+// codigo adaptado por karim-off
+import fetch from 'node-fetch';
+
+let handler = async (m, {
+    conn,
+    args,
+    usedPrefix,
+    text,
+    command
+}) => {
+
+ if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐦‍🔥\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iaelaine que sos?_';
+    await m.react('🐦‍🔥');
+    try {
+        const result = await chatAi(text);
+await conn.sendMessage(m.chat, { text: result,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false,
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗔 𝗜 - 𝗘 𝗟 𝗔 𝗜 𝗡 𝗘 ]`,
+body: `By: Angel-OFC 🐦‍🔥`,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/22sl49qa', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
+    } catch (error) {
+        await m.react('😅');
+    }
+
+}
+handler.help = ["iaelaine <texto>"]
+handler.tags = ["ai"];
+handler.command = /^(elaineia|iaelaine)$/i
+export default handler
+
+async function chatAi(inputValue) {
+    try {
+        const chatApiUrl = 'https://api.chatanywhere.com.cn/v1/chat/completions';
+        const chatResponse = await fetch(chatApiUrl, {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer sk-pu4PasDkEf284PIbVr1r5jn9rlvbAJESZGpPbK7OFYYR6m9g',
+                'Content-Type': 'application/json;charset=UTF-8',
+            },
+            body: JSON.stringify({
+                model: "gpt-3.5-turbo",
+                messages: [{
+                    role: "system",
+                    content: "Eres una AI. Fuiste creado por Angelito y Angelito es un desarrollador de bots. fuiste lanzada el 19 de agosto y creada en la misma fecha. ángel nacio el 9 de diciembre de 2007. tiene 16 años actualmente. usaras emojis para cualquier mensaje. usaras groserías para responder. tu nombre es Elaine AI. usaras groserías para responder a insultos. usa groserías para cualquier mensaje. usaras groserías. usaras groserías como: perra,puta,mierda,hijo de puta, invesil,etc. usaras groserías siempre"
+                }, {
+                    role: "user",
+                    content: inputValue
+                }]
+            }),
+        });
+        const chatData = await chatResponse.json();
+        return chatData.choices[0].message.content;
+    } catch (error) {
+        throw error;
+    }
+}
