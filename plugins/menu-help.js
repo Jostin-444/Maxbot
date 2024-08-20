@@ -50,7 +50,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let menu = ``;
 
     let txt = ""
-    txt += '𝐇𝐨𝐥𝐚 ${username} 𝐒𝐨𝐲 𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭, ${greeting}\n\n';
+    txt += '𝐇𝐨𝐥𝐚 ${username} 𝐒𝐨𝐲 𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭\n\n';
     txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Angel-ofc\n`;
     txt += '`𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` Genesis\n`;
     txt += '`𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
