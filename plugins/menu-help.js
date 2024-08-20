@@ -26,8 +26,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     let sbot =
         conn.user.jid == global.conn.user.jid
-        ? "`𝐁𝐎𝐓:` Principal"
-        : "`𝐁𝐎𝐓:` Sub - Bot de" + `  Wa.me/${global.conn.user.jid.split`@`[0]}`;
+        ? "`~ꦿ͜͡͜͡𝐁𝐎𝐓:` Principal"
+        : "`~ꦿ͜͡͜͡𝐁𝐎𝐓:` Sub - Bot de" + `  Wa.me/${global.conn.user.jid.split`@`[0]}`;
 
     global.fcontact = {
         key: {
@@ -51,18 +51,18 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     let txt = ""
     txt += '𝐇𝐨𝐥𝐚 𝐦𝐮𝐜𝐡𝐨 𝐠𝐮𝐬𝐭𝐨 𝐒𝐨𝐲 𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭\n\n';
-    txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Angel-ofc\n`;
-    txt += '`𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` Genesis\n`;
-    txt += '`𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
-    txt += '`𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + ` ${vs}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Angel-ofc\n`;
+    txt += '`~ꦿ͜͡͜͡𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` Genesis\n`;
+    txt += '`~ꦿ͜͡͜͡𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + ` ${vs}\n`;
     txt += `${sbot}\n`;
-    txt += '`𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
-    txt += '`𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + ` ${totalUsers || '0'}\n`;
-    txt += '`𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + ` ${totalusr}\n`;
-    txt += '`𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:` ::  ' + ` ${rtotalreg}\n`;
-    txt += '`𝐀𝐂𝐓𝐈𝐕𝐎:` ::  ' + ` ${uptime}\n`;
-    txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` #owner';
-    txt += "";
+    txt += '`~ꦿ͜͡͜͡𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
+    txt += '`~ꦿ͜͡͜͡𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + ` ${totalUsers || '0'}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + ` ${totalusr}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:` ::  ' + ` ${rtotalreg}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐀𝐂𝐓𝐈𝐕𝐎:` ::  ' + ` ${uptime}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` #owner';
+    txt += "•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ";
 
     let listSections = [];
 
