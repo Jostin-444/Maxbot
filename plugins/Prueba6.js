@@ -1,4 +1,3 @@
-// créditos para MauroAzcurra
 // codigo adaptado por karim-off
 import fetch from 'node-fetch';
 
