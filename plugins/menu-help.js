@@ -58,8 +58,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     txt += '`~ꦿ͜͡͜͡𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
     txt += '`~ꦿ͜͡͜͡𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + ` ${totalUsers || '0'}\n`;
     txt += '`~ꦿ͜͡͜͡𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + ` ${totalusr}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:` ::  ' + ` ${rtotalreg}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐀𝐂𝐓𝐈𝐕𝐎:` ::  ' + ` ${uptime}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:`' + ` ${rtotalreg}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐀𝐂𝐓𝐈𝐕𝐎:`' + ` ${uptime}\n`;
     txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` #owner\n';
     txt += "•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ";
 
