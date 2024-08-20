@@ -46,23 +46,22 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let totalreg = Object.keys(global.db.data.users).length;
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
 
-    m.react("🐈‍⬛");
+    m.react("🤍");
     let menu = ``;
 
     let txt = ""
     txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Angel-ofc\n`;
     txt += '`𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` Genesis\n`;
-    txt += '. .┊ ‹‹ `𝘍𝘌𝘊𝘏𝘈:` ::  ' + `${fecha}. .\n`;
-    txt += '. .┊ ‹‹ `𝘝𝘌𝘙𝘚𝘐𝘖𝘕:` ::  ' + `${vs}. .\n`;
-    txt += '. .┊ ‹‹ `𝘗𝘓𝘈𝘛𝘍𝘖𝘙𝘔:` ::  ' + `𝘓𝘪𝘯𝘶𝘹. .\n`;
+    txt += '`𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
+    txt += '`𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + ` ${vs}\n`;
     txt += `${sbot}\n`;
-    txt += '. .┊ ‹‹ `𝘗𝘙𝘌𝘍𝘐𝘑𝘖:` ::  ' + ` [  ${usedPrefix}  ]\n`;
-    txt += '. .┊ ‹‹ `𝘚𝘜𝘉𝘉𝘖𝘛𝘚:` ::  ' + ` _${totalUsers || '0'}_\n`;
-    txt += '. .┊ ‹‹ `𝘜𝘚𝘜𝘈𝘙𝘐𝘖𝘚:` ::  ' + ` _${totalusr}_\n`;
-    txt += '. .┊ ‹‹ `𝘙𝘌𝘎𝘐𝘚𝘛𝘙𝘈𝘋𝘖𝘚:` ::  ' + ` _${rtotalreg}_\n`;
-    txt += '. .┊ ‹‹ `𝘛𝘐𝘌𝘔𝘗𝘖 𝘈𝘊𝘛:` ::  ' + ` _${uptime}_\n`;
-    txt += '. .┊ ‹‹ `𝘖𝘞𝘕𝘌𝘙:` ::  #owner\n';
-    txt += ". .╰─── ︶︶︶︶ ♡⃕  ⌇. . .\n";
+    txt += '`𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
+    txt += '`𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + ` ${totalUsers || '0'}\n`;
+    txt += '`𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + ` ${totalusr}\n`;
+    txt += '`𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:` ::  ' + ` ${rtotalreg}\n`;
+    txt += '`𝐀𝐂𝐓𝐈𝐕𝐎:` ::  ' + ` ${uptime}\n`;
+    txt += '`𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` #owner\n';
+    txt += "";
 
     let listSections = [];
 
