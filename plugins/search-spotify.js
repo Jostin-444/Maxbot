@@ -100,7 +100,7 @@ m.react('✅️')
 } catch (error) {
 }}
 handler.help = ['spotify <cancion>']
-handler.corazones = 1
+handler.corazones = 3
 handler.register = true
 handler.tags = ['search','dl']
 handler.command = /^(spotify|music)$/i
