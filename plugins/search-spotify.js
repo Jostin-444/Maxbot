@@ -72,7 +72,7 @@ let songInfo = await spotifyxv(text)
 if (!songInfo.length) throw `*No se encontró una canción.*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
-let shortURL = await getTinyURL(res.url)
+let shortURL = await getTinyURL(${canal})
 const info = `✨ *nombre:*
 _${res.name}_
 
