@@ -2,20 +2,22 @@ var handler  = async (m, { conn }) => {
 
 let texto = `🤍 *Instalación de GenesisBot-MD*
 
-⬡ Dudas: ${creador}
-⬡ Tutoríal: *¡Pronto!*
+☕ Dudas: ${creador}
+☕ Tutoríal: *¡Pronto!*
 
 *Comandos de instalación via Termux ♣️*
 
 termux-setup-storage
 
-apt-get update -y && apt-get upgrade -y
+apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 
-pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
+git clone https://github.com/Angelito-OFC/GenesisBot-Pro && cd GenesisBot-MD
 
-git clone https://github.com/OfcDiego/YaemoriBot-MD && cd YaemoriBot-MD && yarn install && npm install 
+yarn install
 
-ls
+npm install
+
+npm update
 
 npm start
 
@@ -30,19 +32,21 @@ handler.before = async m => {
 if (/^comandos$/i.test(m.text) ) {
 m.reply('termux-setup-storage')
 await delay(1000 * 1)
-m.reply('apt-get update -y && apt-get upgrade -y')
+m.reply('apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn')
 await delay(1000 * 1)
-m.reply('pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn')
+m.reply('git clone https://github.com/Angelito-OFC/GenesisBot-Pro && cd GenesisBot-MD')
 await delay(1000 * 1)
-m.reply('git clone https://github.com/OfcDiego/YaemoriBot-MD && cd YaemoriBot-MD && yarn install && npm install ')
+m.reply('yarn install')
 await delay(1000 * 1)
-m.reply('ls')
+m.reply('npm install')
+await delay(1000 * 1)
+m.reply('npm update')
 await delay(1000 * 1)
 m.reply('npm start')
 }
 
 await delay(2000 * 1)
-conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/975c007a1f3f2757ee123.png'}, caption: ''}, {quoted: fkontak})
+conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/18969886b4317d985c1f3.jpg'}, caption: ''}, {quoted: fkontak})
 await delay(1000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/c24470edcbe5e250b5089.png'}, caption: ''}, {quoted: fkontak})
 }
