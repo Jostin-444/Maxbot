@@ -108,7 +108,6 @@ m.react(done)
 }}
 handler.tags = ['descargas']
 handler.help = ['spotify']
-handler.group = true;
 handler.register = true
 handler.command = ['spotify','music']
 export default handler
