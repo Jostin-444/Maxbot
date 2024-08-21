@@ -29,6 +29,7 @@ try {
   }
 };  
 handler.help = ["x <link>"]
+handler.corazones = 3
 handler.tags = ["dl"]     
 handler.command = /^((x|xdl|dlx|twdl|tw|twt|twitter)(dl)?)$/i;
 handler.diamond = true
