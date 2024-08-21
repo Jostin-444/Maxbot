@@ -86,7 +86,7 @@ _${res.name}_
 
 let resImg = await fetch(res.imagen)
 let thumbb = await resImg.buffer()
-let { videos } = await search(res.packname)
+let { videos } = await search(res.name)
 let q = '128kbps'
 let v = videos[0].url
 let yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v))
@@ -95,7 +95,7 @@ let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
 let img = await getBuffer(res.imagen)
 conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
-await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: m});
+await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.packname, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: m});
 m.react('✅️')
 } catch (error) {
 }}
