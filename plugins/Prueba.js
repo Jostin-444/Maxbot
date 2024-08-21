@@ -1,5 +1,4 @@
-// créditos para MauroAzcurra
-// codigo adaptado por karim-off
+// codigo adaptado por Angel-OFC 
 import fetch from 'node-fetch';
 
 let handler = async (m, {
