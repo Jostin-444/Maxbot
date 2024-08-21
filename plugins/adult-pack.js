@@ -8,7 +8,7 @@ const handler = async (m, {conn, command, usedPrefix}) => {
       break;
     case 'pack2':
       const url2 = await packgirl[Math.floor(Math.random() * packgirl.length)];
-      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendButton(m.chat, '_🥵 aqui tiene mi Pack 😏_', packname, url2, [['🥵 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄 🥵', `.pack`]], null, null, m)
       break;
     case 'pack3':
       const url3 = await packmen[Math.floor(Math.random() * packmen.length)];
