@@ -6,7 +6,6 @@ let haha = await res[Math.floor(res.length * Math.random())]
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `᥀·࣭࣪̇˖🗿◗ 𝙇𝙤𝙨 𝙘𝙤𝙢𝙖𝙣𝙙𝙤𝙨 𝙥𝙖𝙧𝙖 𝙖𝙙𝙪𝙡𝙩𝙤𝙨 𝙚𝙨𝙩𝙖𝙣 𝙙𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙙𝙤𝙨, 𝙪𝙨𝙚 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤: #on modohorny.` 
 conn.sendButton(m.chat, `🔥🐻🍃 _${command}_ 🍃🐻🔥`.trim(), packname, haha, [['🥃 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 🥃', `${usedPrefix + command}`]], null, null, m)    
 }
-handler.help = ['labiblia']
-handler.command = ['takeda', 'asuma', 'endeavor']
+handler.command = handler.help = ['takeda', 'asuma', 'endeavor']
 handler.tags = ['nsfw']
 export default handler
