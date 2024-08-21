@@ -12,7 +12,7 @@ const handler = async (m, {conn, text}) => {
     if (i !== 0) conn.reply(fixedNumber, pesan.trim(), m);
   }
 };
-handler.help = ['spamwa <number>|<mesage>|<no of messages>'];
+handler.help = ['spamwa <number>|<mesage>|'];
 handler.tags = ['tools'];
 handler.command = /^spam(wa)?$/i;
 handler.group = false;
