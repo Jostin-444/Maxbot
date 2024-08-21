@@ -161,11 +161,10 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
   const gif = await response.buffer()
  // const img = imagen1
 
-await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲 𝗹𝗮 𝗕𝗼𝘁...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '🍟 ¡Super Bot De WhatsApp!', sourceUrl: canal, thumbnail: icons }}})
+await m.react('🤍') 
+await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲 𝗹𝗮 𝗕𝗼𝘁...𓏲੭*', fakegif3, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '🤍 ¡Génesis la mejor Bot!', sourceUrl: canal, thumbnail: icons }}})
 
 // await conn.reply(m.chat, '🍟 Enviando el menú.....', m, rcanal)
-
-await m.react('⭐️') 
 
 await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
 
