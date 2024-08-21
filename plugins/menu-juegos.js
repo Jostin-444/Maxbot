@@ -22,8 +22,7 @@ const defaultMenu = {
 ┊┊✶ 𝐍𝐢𝐯𝐞𝐥: %level 
 . .‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙┉ˏ͛ ༝̩̩̥͙　 ҉　
 
-✦•····················•✦•···················•✦
-%readmore
+✦•····················•✦•···················•✦\nᴘᴀʀᴀ ʟᴏꜱ ᴀᴜᴅɪᴏꜱ ɴᴏ ꜱᴇ ɴᴇᴄᴇꜱɪᴛᴀ ᴇʟ ᴘʀᴇꜰɪᴊᴏ ( . )
 `.trimStart(),
   header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
   body: '║✶ %cmd %isPremium\n',
@@ -32,9 +31,9 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'game': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
+'game': '𝐀𝐔𝐃𝐈𝐎𝐒',
 }
-let ppp = 'https://i.ibb.co/s996vz0/file.jpg'
+let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
 
   try {
           // DEFAULT MENU
@@ -185,7 +184,7 @@ let ppp = 'https://i.ibb.co/s996vz0/file.jpg'
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-await m.react('🎮') 
+await m.react('🎶') 
 
 await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
 
@@ -194,9 +193,9 @@ await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
     throw e
   }
 }
-handler.help = ['gamemenu']
-handler.tags = ['hutaomenu']
-handler.command = /^(gamemenu\?)$/i
+handler.help = ['menugame']
+handler.tags = ['main']
+handler.command = /^(menugame|gamemenu|\?)$/i
 
 handler.register = false
 handler.exp = 3
