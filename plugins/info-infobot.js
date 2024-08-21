@@ -65,8 +65,8 @@ yaemori += `│ 🚀 *RAM* : ${format(totalmem() - freemem())} / ${format(totalm
 yaemori += `│ 🌟 *FreeRAM* : ${format(freemem())}\n`
 yaemori += `│ ✨️ *Speed* : ${latensi.toFixed(4)} ms\n`
 yaemori += `│ 🕗 *Uptime* : ${uptime}\n`
-yaemori += `│ 🍟 *Modo* : ${bot.public ? 'Privado' : 'Publico'}\n`
-yaemori += `│ 🚩 *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )\n`
+yaemori += `│ ☁️ *Modo* : ${bot.public ? 'Privado' : 'Publico'}\n`
+yaemori += `│ 🤍 *Comandos Ejecutados* : ${toNum(totalStats)} ( *${totalStats}* )\n`
 yaemori += `│ 🐢 *Grupos Registrados* : ${toNum(totalchats)} ( *${totalchats}* )\n`
 yaemori += `│ 🍧 *Registrados* : ${toNum(totalreg)} ( *${totalreg}* ) Usuarios\n`
 yaemori += `╰─⬣\n\n`
@@ -81,7 +81,7 @@ yaemori += `╭─⬣「 *NodeJS Uso de memoria* 」⬣\n`
 yaemori += `${'```' + Object.keys(used).map((key, _, arr) => `│ ${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}\n`
 yaemori += `╰─⬣`
 
-await conn.reply(m.chat, yaemori, fkontak, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎🚩˖ ⸙',body: packname, previewType: 0, thumbnail: icons, sourceUrl: redes}}})
+await conn.reply(m.chat, yaemori, fkontak, { contextInfo: { mentionedJid: [owner[0][0] + '@s.whatsapp.net'], externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: '↷✦╎Info - Bot╎🤍˖ ⸙',body: packname, previewType: 0, thumbnail: icons, sourceUrl: redes}}})
 // await conn.sendFile(m.chat, imagen1, 'luffy.jpg', luffy, fkontak, null, rcanal)
 }
 handler.help = ['infobot']
