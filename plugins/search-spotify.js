@@ -99,5 +99,9 @@ await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 99999
 m.react('✅️')
 } catch (error) {
 }}
+handler.help = ['spotify <cancion>']
+handler.estrellas = 1
+handler.register = true
+handler.tags = ['search','dl']
 handler.command = /^(spotify|music)$/i
 export default handler
