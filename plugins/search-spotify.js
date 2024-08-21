@@ -80,13 +80,13 @@ _${res.name}_
 » _${res.artista.join(', ')}_
 
 ☁️ *LINK*:
-» _${shortURL}_
+» ${shortURL}
 
 🤍 *Enviando su canción*`
 
 let resImg = await fetch(res.imagen)
 let thumbb = await resImg.buffer()
-let { videos } = await search(res.name)
+let { videos } = await search(res.packname)
 let q = '128kbps'
 let v = videos[0].url
 let yt = await youtubedl(v).catch(async (_) => await youtubedlv2(v))
