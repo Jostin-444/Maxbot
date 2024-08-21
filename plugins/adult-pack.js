@@ -24,8 +24,10 @@ const handler = async (m, {conn, command, usedPrefix}) => {
       break;
   }
 };
+handler.help = /^(pack|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
 handler.command = /^(pack|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
 export default handler;
+handler.tags = ['nsfw'];
 
 global.pack = [
   'https://telegra.ph/file/957fe4031132ef90b66ec.jpg',
