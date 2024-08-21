@@ -30,5 +30,7 @@ fs.unlinkSync(`./tmp/${m.sender}.${ext}`)
 m.reply(txt)
 } else throw '💭 Responda A Un Audio O Video'
 }
+handler.help = ["whatmusic"];
+handler.tags = ["fun"];
 handler.command = /^quemusica|quemusicaes|whatmusic$/i
 export default handler
