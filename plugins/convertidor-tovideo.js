@@ -26,6 +26,6 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   await conn.sendFile(m.chat, out, 'error.mp4', '*🌳 Su Video*', m, 0, {thumbnail: out});
 };
 handler.help = ['tovideo'];
-handler.tags = ['transformador'];
+handler.tags = ['convertir'];
 handler.command = ['tovideo', 'tomp4', 'mp4', 'togif'];
 export default handler;
