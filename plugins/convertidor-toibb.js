@@ -40,8 +40,8 @@ let handler = async (m, { conn }) => {
     await m.react('✅')
   }
 }
-handler.tags = ['convertir']
-handler.help = ['ibb']
+handler.tags = ['fun']
+handler.help = ['toibb']
 handler.command = /^(tourl2|toibb)$/i
 handler.register = true 
 export default handler
