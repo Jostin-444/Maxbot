@@ -13,7 +13,7 @@ const handler = async (m, {conn, text}) => {
   }
 };
 handler.help = ['spamwa <num>|<msj>|'];
-handler.tags = ['tools'];
+handler.tags = ['fun'];
 handler.command = /^spam(wa)?$/i;
 handler.group = false;
 handler.premium = true;
