@@ -32,7 +32,7 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'game': '𝐀𝐔𝐃𝐈𝐎𝐒',
+'game': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
 }
 let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
 
