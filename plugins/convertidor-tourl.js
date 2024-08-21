@@ -25,7 +25,7 @@ await m.react('✅')
 await m.react('✖️')
 }}
 handler.help = ['tourl']
-handler.tags = ['tools']
+handler.tags = ['convertir']
 handler.command = /^(tourl|upload)$/i
 export default handler
 
