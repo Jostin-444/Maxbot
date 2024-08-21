@@ -26,7 +26,7 @@ let tags = {
   'mods': '𝐒𝐓𝐀𝐅𝐅',
   'audio': '𝐀𝐔𝐃𝐈𝐎𝐒', 
   'ai': '𝐀𝐈 𝐁𝐎𝐓',
-  'transformador': '𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒',
+  'convertir': '𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒',
 }
 
 const defaultMenu = {
