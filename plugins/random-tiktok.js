@@ -18,7 +18,7 @@ m.reply(eror)
 })
 }
 handler.help = ['tiktokrandom']
-handler.tags = ['downloader']
+handler.tags = ['dl']
 handler.command = /^(tiktokrandom|ttrandom)$/i
 handler.limit = true 
 handler.register = true
