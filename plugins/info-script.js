@@ -17,7 +17,7 @@ let txt = `*乂  S C R I P T  -  M A I N  乂*\n\n`
 
 let img = imagen1
 
-await conn.sendMini(m.chat, packname, wm, txt, img, img, redes, fkontak)
+await conn.sendluffy(m.chat, packname, wm, txt, img, img, redes, fkontak)
 } catch {
 await m.react(error)
 }}
