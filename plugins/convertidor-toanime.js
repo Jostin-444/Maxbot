@@ -24,6 +24,6 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   }
 };
 handler.help = ['toanime'];
-handler.tags = ['tools'];
+handler.tags = ['convertir'];
 handler.command = /^(jadianime|toanime)$/i;
 export default handler;
