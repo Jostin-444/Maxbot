@@ -37,5 +37,7 @@ const handler = async (m, {args, usedPrefix, command}) => {
     }
   }
 };
+handler.help = ["translate"];
+handler.tags = ["fun"];
 handler.command = /^(translate|traducir|trad)$/i;
 export default handler;
