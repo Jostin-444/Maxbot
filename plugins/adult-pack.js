@@ -1,24 +1,18 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, command, usedPrefix}) => {
-  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '🚩 *¡Estos comandos están desactivados!*';
-conn.reply(m.chat, `🚩 Enviando el *${command}*`, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-title: packname,
-body: wm,
-previewType: 0, thumbnail: icons,
-sourceUrl: canal }}})
-   switch (command) {
+  if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '🔮 𝙇𝙤𝙨 𝙘𝙤𝙢𝙖𝙣𝙙𝙤𝙨 +18 𝙚𝙨𝙩𝙖𝙣 𝙙𝙚𝙨𝙖𝙘𝙩𝙞𝙫𝙖𝙙𝙤𝙨 𝙚𝙣 𝙚𝙨𝙩𝙚 𝙜𝙧𝙪𝙥𝙤, 𝙨𝙞 𝙚𝙨 𝙖𝙙𝙢𝙞𝙣 𝙮 𝙙𝙚𝙨𝙚𝙖 𝙖𝙘𝙩𝙞𝙫𝙖𝙧𝙡𝙤𝙨 𝙪𝙨𝙚 .𝘦𝘯𝘢𝘣𝘭𝘦 𝘮𝘰𝘥𝘰𝘩𝘰𝘳𝘯𝘺';
+  switch (command) {
     case 'pack':
       const url = await pack[Math.floor(Math.random() * pack.length)];
-      conn.sendMessage(m.chat, {image: {url: url}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
+      conn.sendButton(m.chat, '_🥵 aqui tiene mi Pack 😏_', packname, url, [['🥵 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄 🥵', `.pack`]], null, null, m)
       break;
     case 'pack2':
       const url2 = await packgirl[Math.floor(Math.random() * packgirl.length)];
-      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 2 🥵_`}, {quoted: m});
+      conn.sendMessage(m.chat, {image: {url: url2}, caption: `_🥵 Pack 🥵_`}, {quoted: m});
       break;
     case 'pack3':
       const url3 = await packmen[Math.floor(Math.random() * packmen.length)];
-      conn.sendMessage(m.chat, {image: {url: url3}, caption: `_🥵 Pack 3 🥵_`}, {quoted: m});
+      conn.sendButton(m.chat, '_🥵 PACK 3 😏_', packname, url3, [['🥵 𝐒𝐈𝐆𝐔𝐈𝐄𝐍𝐓𝐄 🥵', `.pack3`]], null, null, m)
       break;
     case 'videoxxx': case 'vídeoxxx':
       const url4 = await videosxxxc[Math.floor(Math.random() * videosxxxc.length)];
@@ -31,7 +25,6 @@ sourceUrl: canal }}})
   }
 };
 handler.command = /^(pack|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
-handler.tags = ['nsfw'];
 export default handler;
 
 global.pack = [
