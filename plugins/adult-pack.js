@@ -30,7 +30,7 @@ sourceUrl: canal }}})
       break;
   }
 };
-handler.command = handler.help = /^(pack|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
+handler.command = /^(pack|pack2|pack3|videoxxx|vídeoxxx|videoxxxlesbi|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i;
 handler.tags = ['nsfw'];
 export default handler;
 
