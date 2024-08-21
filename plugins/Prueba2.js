@@ -10,19 +10,31 @@ let handler = async (m, {
     command
 }) => {
 
- if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🔥\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .tanjiro que sos?_';
+ if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🔥\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .iagara para que sirves?_';
     await m.react('🔥');
     try {
         const result = await chatAi(text);
-        await m.reply(result);
+ await conn.sendMessage(m.chat, { text: result,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗔 𝗜 - 𝗚 𝗔 𝗥 𝗔 ]`,
+body: ``,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/26k45wt4', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
     } catch (error) {
         await m.react('😐');
     }
 
 }
-handler.help = ["genesis"]
+handler.help = ["iagara <texto>"]
 handler.tags = ["ai"];
-handler.command = /^(chatAi|gara|Gara)$/i
+handler.command = /^(iagara|garaia|Gara)$/i
 export default handler
 
 async function chatAi(inputValue) {
