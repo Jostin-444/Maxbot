@@ -194,9 +194,9 @@ await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
     throw e
   }
 }
-handler.help = ['game']
+handler.help = ['gamemenu']
 handler.tags = ['hutaomenu']
-handler.command = /^(gamemenu|gamehelp|\?)$/i
+handler.command = /^(gamemenu\?)$/i
 
 handler.register = false
 handler.exp = 3
