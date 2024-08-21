@@ -34,7 +34,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'game': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
 }
-let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
+let ppp = 'https://i.ibb.co/8g5yZr5/file.jpg'
 
   try {
           // DEFAULT MENU
@@ -185,7 +185,7 @@ let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-await m.react('🎶') 
+await m.react('🎮') 
 
 await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
 
