@@ -25,7 +25,8 @@ title: `[ 𝗔 𝗜 - 𝗞 𝗨 𝗥 𝗨 𝗠 𝗜 ]`,
 body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/2a4dl2e4', 
-sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}})
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
     } catch (error) {
         await m.react('😅');
     }
