@@ -65,25 +65,31 @@ return response.data;
 return text;
 }}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw ` ⊱ *${usedPrefix + command} Bellyache*`
+if (!text) throw `╰⊱❗️⊱ *ACCIÓN MAL USADA* ⊱❗️⊱╮\n\n🤍 *DEBE DE USAR EL COMANDO COMO EN ESTE EJEMPLO:*\n${usedPrefix + command} *tu foto*`
 try {
-m.react('⌛️')
+conn.reply(m.chat, '🤍 *Enviando su música de Spotify*', m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+title: packname,
+body: wm,
+previewType: 0, thumbnail: icons,
+sourceUrl: channel }}})
+m.react(rwait)
 let songInfo = await spotifyxv(text)
-if (!songInfo.length) throw `*No se encontró una canción.*`
+if (!songInfo.length) throw `*No se encontró la canción*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
-let shortURL = await getTinyURL(${canal})
-const info = `✨ *nombre:*
+let shortURL = await getTinyURL(res.url)
+const info = `☁️ *TITULO:*
 _${res.name}_
 
-🗣️ *nombre:*
-» _${res.artista.join(', ')}_
+☕ *ARTISTA:*
+» ${res.artista.join(', ')}
 
-🌐 *url*:
-» _${shortURL}_
+🔗 *LINK:*
+» ${shortURL}
 
-🎶 *Cancion*
-${wm}`
+✨️ *Enviando Canción....*
+${global.wm}`
 
 let resImg = await fetch(res.imagen)
 let thumbb = await resImg.buffer()
@@ -96,9 +102,13 @@ let ttl = await yt.title
 let size = await yt.audio[q].fileSizeH
 let img = await getBuffer(res.imagen)
 conn.sendMessage(m.chat, { audio: { url: dl_url }, fileName: `${ttl}.mp3`, mimetype: 'audio/mpeg' }, { quoted: m })
-await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: m});
-m.react('✅️')
+await conn.sendMessage(m.chat, {text: info, contextInfo: {forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": img, "thumbnailUrl": img, "mediaUrl": shortURL, "sourceUrl": shortURL}}}, {quoted: fkontak});
+m.react(done)
 } catch (error) {
 }}
-handler.command = /^(spotify|music)$/i
+handler.tags = ['descargas']
+handler.help = ['spotify']
+handler.group = true;
+handler.register = true
+handler.command = ['spotify','music']
 export default handler
