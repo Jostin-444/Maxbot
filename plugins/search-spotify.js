@@ -65,7 +65,7 @@ return response.data;
 return text;
 }}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${lenguajeGB.smsMalused2()} ⊱ *${usedPrefix + command} Bellyache*`
+if (!text) throw ` ⊱ *${usedPrefix + command} Bellyache*`
 try {
 m.react('⌛️')
 let songInfo = await spotifyxv(text)
@@ -73,16 +73,16 @@ if (!songInfo.length) throw `*No se encontró una canción.*`
 let res = songInfo[0]
 let fileSizeInMB = (await getBuffer(res.url)).length / (1024 * 1024)
 let shortURL = await getTinyURL(res.url)
-const info = `✨ *${mid.smsYT1}:*
+const info = `✨ *nombre:*
 _${res.name}_
 
-🗣️ *${mid.smsYT13}:*
+🗣️ *nombre:*
 » _${res.artista.join(', ')}_
 
-🌐 *${mid.smsYT4}*:
+🌐 *url*:
 » _${shortURL}_
 
-🎶 *${mid.smsSpoti}*
+🎶 *Cancion*
 ${wm}`
 
 let resImg = await fetch(res.imagen)
