@@ -15,17 +15,17 @@ let staff = `☁️ *EQUIPO DE AYUDANTES*
 • Maxz XB
 ☁️ *Rol:* Colab
 ☁️ *Número:* Wa.me/5215610314499
-☁️ *GitHub:* https://github.com/ArizzVal
+☁️ *GitHub:* https://github.com/Maxz-on
 
 • Alermz XB
 ☁️ *Rol:* Colab
 ☁️ *Número:* Wa.me/573147616444
-☁️ *GitHub:* https://github.com/elrebelde21
+☁️ *GitHub:* https://github.com/ale-rmz
 
 • Sebas XB
 ☁️ *Rol:* Colab
 ☁️ *Número:* Wa.me/5214434703586
-☁️ *GitHub:* https://github.com/AzamiJs`
+☁️ *GitHub:* https://github.com/sebas-mod`
 await conn.sendFile(m.chat, icons, 'yaemori.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
