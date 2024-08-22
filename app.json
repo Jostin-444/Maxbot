@@ -1,10 +1,10 @@
 {
-"name": "YaemoriBot-MD",
+"name": "GenesisBot-MD",
 "website": "https://github.com/OfcDiego",
 "description": "Super Bot De WhatsApp",
-"repository": "https://github.com/OfcDiego/YaemoriBot-MD",
+"repository": "https://github.com/Angelito-OFC/GenesisBot-MD",
 "logo": "https://telegra.ph/file/a342be45ef1a7243da9b2.jpg",
-"success_url": "https://github.com/OfcDiego/YaemoriBot-MD",
+"success_url": "https://github.com/Angelito-OFC/GenesisBot-MD",
 "keywords": [
 "nodejs", "heroku", "bot", "spanish", "english", "indonesian", "arab", "portuguese", "italian", "french", "whatsapp",
 "termux", "superbot", "multi-device", "md", "official", "javascript", "ai-yaemori", "yaemori-ai", "ai"],
