@@ -8,33 +8,29 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“𝐇𝐨𝐥𝐚 *%name* 𝐒𝐨𝐲 𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭, ${saludo}"
+  before: `
+⌬〡 *Nombre del bot:* %me
+⌬〡 *Nombre:*  %name 
+⌬〡︎ *Premium:* %prems Ⓟ
+⌬〡︎ *Limites:* %limit Ⓛ
+⌬〡︎ *Rol:* %role
+⌬〡︎︎ *Nivel:* %level
+⌬〡︎︎ *Xp:* %exp / %maxexp
+⌬〡︎︎ *Total Xp:* %totalexp
 
-✧ ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬ ✧ 
-
- '︶꒦꒷♡꒷꒦︶.
-┊✶ 𝐂𝐥𝐢𝐞𝐧𝐭𝐞: %name
-┊┊✶ 𝐁𝐨𝐭: Génesis Bot
-┊┊✶ 𝐌𝐨𝐝𝐨: Público
-┊┊✶ 𝐅𝐞𝐜𝐡𝐚: ${fecha}
-┊┊✶ 𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭: %muptime
-┊┊✶ 𝐔𝐬𝐞𝐫𝐬: %totalreg
-┊┊✶ 𝐍𝐢𝐯𝐞𝐥: %level 
-. .‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙┉ˏ͛ ༝̩̩̥͙　 ҉　
-
-✦•····················•✦•···················•✦
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+Las siguientes son las características de juego.
 %readmore
 `.trimStart(),
-  header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
-  body: '║✶ %cmd %isPremium\n',
-  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
-  after: ``,
+  header: '╭─────≼ %category ≽',
+  body: '╎❖ %cmd %isPremium %islimit',
+  footer: '╰┄┄┄┄┄┄┄┄┄┄┄┄┄〢',
+  after: global.wm,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'ai': '𝐀𝐈 𝐁𝐎𝐓',
+'game': 'Menu Juegos',
 }
-let ppp = 'https://i.ibb.co/rmb1p1Y/file.jpg'
 
   try {
           // DEFAULT MENU
@@ -185,30 +181,28 @@ let ppp = 'https://i.ibb.co/rmb1p1Y/file.jpg'
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-await m.react('🗂️') 
 
-await conn.sendMessage(m.chat, {
-text: text.trim(),
-contextInfo: { 
-mentionedJid: [m.sender],
-forwardingScore: 9, 
-externalAdReply: {
-title: '❑— IGNA - BOT - MD —❑\nWʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
-//body: 'Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ - Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ',
-thumbnail: ppp,
-sourceUrl: 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv',
-mediaType: 1,
-renderLargerThumbnail: true
-}}}, { quoted: m})
+ conn.sendMessage(m.chat, {
+        text: text,
+        contextInfo: {
+        externalAdReply: {
+        title: global.namebot,
+        body: global.author,
+        thumbnailUrl: global.thumb,
+        sourceUrl: global.myweb,
+        mediaType: 1,
+        renderLargerThumbnail: true
+        }}})
 
   } catch (e) {
     conn.reply(m.chat, 'Lo siento, el menú tiene un error.', m)
     throw e
   }
 }
-handler.help = ['menuai']
-handler.tags = ['main']
-handler.command = ['menuai','aimenu']
+handler.help = ['gamemenu']
+handler.tags = ['hutaomenu']
+handler.command = /^(menuia|aimenu|\?)$/i
+
 handler.register = false
 handler.exp = 3
 
