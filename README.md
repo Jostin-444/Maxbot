@@ -42,7 +42,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/Angelito-OFC/Genesis-OFC && cd Genesis-OFC
+git clone https://github.com/Angelito-OFC/GenesisBot-MD && cd GenesisBot-MD
 ```
 ```bash
 yarn install && npm install
@@ -55,24 +55,24 @@ npm start
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd YaemoriBot-MD
+> cd GenesisBot-MD
 > npm start
 ```
 
 🍄 **`OBTENER OTRO CODIGO QR`**
 ```bash
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd YaemoriBot-MD
-> rm -rf MiniSession
+> cd GenesisBot-MD
+> rm -rf GenesisSession
 > npm start
 ```
 
-🍁 **`YAEMORI 24/7 (TERMUX)`**
+🍁 **`GENESIS 24/7 (TERMUX)`**
 ```bash
 > termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ```
 
-🌻 **`ACTUALIZAR YAEMORI`**
+🌻 **`ACTUALIZAR GENESIS`**
 > Note Comandos para actualizar Ai Yaemori  de forma automática
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/YaemoriBot-MD/master/update.sh | bash
@@ -89,7 +89,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
 
-<a href="https://wa.me/573218138672?text=!menu"><img alt="Bot Oficial ☄️" src="https://img.shields.io/badge/Bot - Oficial-00FFFF?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+<a href="https://wa.me/59160262132?text=!menu"><img alt="Bot Oficial ☄️" src="https://img.shields.io/badge/Bot - Oficial-00FFFF?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 > No Spam A La Bot!
 
