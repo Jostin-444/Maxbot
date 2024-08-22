@@ -165,9 +165,9 @@ if (!('sPromote' in chat)) chat.sPromote = ''
 if (!('sDemote' in chat)) chat.sDemote = '' 
 if (!('sCondition' in chat)) chat.sCondition = JSON.stringify([{ grupo: { usuario: [], condicion: [], admin: '' }, prefijos: []}])
 if (!('delete' in chat)) chat.delete = false                   
-if (!('modohorny' in chat)) chat.modohorny = false                   
+if (!('modohorny' in chat)) chat.modohorny = true                   
 if (!('autosticker' in chat)) chat.autosticker = false      
-if (!('audios' in chat)) chat.audios = false               
+if (!('audios' in chat)) chat.audios = true               
 if (!('antiver' in chat)) chat.antiver = false 
 if (!('antiPorn' in chat)) chat.antiPorn = false     
 if (!('antiLink' in chat)) chat.antiLink = true     
@@ -201,9 +201,9 @@ sPromote: '',
 sDemote: '', 
 sCondition: JSON.stringify([{ grupo: { usuario: [], condicion: [], admin: '' }, prefijos: []}]), 
 delete: false,
-modohorny: false,
+modohorny: true,
 autosticker: false,
-audios: false,
+audios: true,
 antiver: false,
 antiPorn: false,
 antiLink: true,
@@ -249,7 +249,7 @@ antiPrivate: false,
 antiCall: true,
 antiSpam: true,
 modoia: false, 
-jadibotmd: true,
+jadibotmd: false,
 autobio: false,
 }} catch (e) {
 console.error(e)
