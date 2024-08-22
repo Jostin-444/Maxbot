@@ -153,7 +153,7 @@ let img = 'https://i.ibb.co/YcdFyft/file.jpg'
         return header.replace(/%category/g, tags[tag]) + '\n' + [
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
-              return body.replace(/%cmd/g, menu.prefix ? help : '%_p' + help)
+              return body.replace(/%cmd/g, menu.prefix ? help : '' + help)
                 .replace(/%islimit/g, menu.limit ? llim : '')
                 .replace(/%isPremium/g, menu.premium ? lprem : '')
                 .trim()
