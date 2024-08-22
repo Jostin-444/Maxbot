@@ -196,8 +196,7 @@ await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
 }
 handler.help = ['menugame']
 handler.tags = ['main']
-handler.command = /^(menugame|gamemenu|\?)$/i
-
+handler.command = ['menugame','gamemenu']
 handler.register = false
 handler.exp = 3
 
