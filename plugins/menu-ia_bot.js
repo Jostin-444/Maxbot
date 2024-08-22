@@ -187,10 +187,10 @@ let img = 'https://i.ibb.co/8g5yZr5/file.jpg'
         text: text,
         contextInfo: {
         externalAdReply: {
-        title: global.namebot,
-        body: global.author,
+        title: '𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭-𝐌𝐃',
+        body: '©𝟐𝟎𝟐𝟒 𝐀𝐧𝐠𝐞𝐥𝐢𝐭𝐨-𝐎𝐅𝐂',
         thumbnailUrl: img,
-        sourceUrl: global.myweb,
+        sourceUrl: global.canal,
         mediaType: 1,
         renderLargerThumbnail: true
         }}})
