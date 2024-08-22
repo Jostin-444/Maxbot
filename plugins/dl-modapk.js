@@ -25,7 +25,7 @@ await conn.sendMessage(m.chat, {document: {url: data5.dllink}, mimetype: 'applic
 } catch {
 return conn.reply(m.chat, '🛑 *Ocurrió un fallo*', m, rcanal )}}
 
-handler.tags = ['descargas']
+handler.tags = ['dl']
 handler.corazones = 7
 handler.help = ['apkmod']
 handler.command = /^(apkmod|apk|dapk2|aptoide|aptoidedl)$/i
