@@ -27,7 +27,7 @@ const defaultMenu = {
 `.trimStart(),
   header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
   body: '║✶ %cmd %isPremium\n',
-  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
+  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
