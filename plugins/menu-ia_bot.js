@@ -204,9 +204,9 @@ await m.react('☕')
     throw e
   }
 }
-handler.help = ['gamemenu']
-handler.tags = ['hutaomenu']
-handler.command = /^(menuia|aimenu|\?)$/i
+handler.help = ['menuai']
+handler.tags = ['main']
+handler.command = /^(menuai|aimenu|\?)$/i
 
 handler.register = false
 handler.exp = 3
