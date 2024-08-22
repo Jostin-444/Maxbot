@@ -19,6 +19,7 @@ const defaultMenu = {
 ┊┊✶ 𝐅𝐞𝐜𝐡𝐚: ${fecha}
 ┊┊✶ 𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭: %muptime
 ┊┊✶ 𝐔𝐬𝐞𝐫𝐬: %totalreg
+┊┊✶ 𝐂𝐨𝐫𝐚𝐳𝐨𝐧𝐞𝐬: %corazones
 ┊┊✶ 𝐍𝐢𝐯𝐞𝐥: %level 
 . .‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙┉ˏ͛ ༝̩̩̥͙　 ҉　
 
@@ -131,6 +132,7 @@ let img = 'https://i.ibb.co/8g5yZr5/file.jpg'
         tags: Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
         prefix: 'customPrefix' in plugin,
         limit: plugin.limit,
+        corazones: plugin.corazones,
         premium: plugin.premium,
         enabled: !plugin.disabled,
       }
