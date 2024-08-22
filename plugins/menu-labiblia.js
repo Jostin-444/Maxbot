@@ -31,7 +31,7 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
-'nsfw': '𝐀𝐈 𝐁𝐎𝐓',
+'nsfw': '𝐍𝐒𝐅𝐖',
 }
 let img = 'https://i.ibb.co/T1mmpgL/file.jpg'
 
