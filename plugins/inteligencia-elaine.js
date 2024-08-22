@@ -1,4 +1,5 @@
 // codigo adaptado por karim-off
+//si vas a tomarlo no modifíques nada 
 import fetch from 'node-fetch';
 
 let handler = async (m, {
