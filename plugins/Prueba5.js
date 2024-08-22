@@ -6,8 +6,8 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
-if (!text) return m.reply(`🍟 Ingrse su petición`) 
-let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Runa-Bot y parece haber sido creado por Daniel.`
+if (!text) return m.reply(`🤍 Ingrse su petición`) 
+let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Genesis-Bot y parece haber sido creado por Angel-OFC.`
 
 if (command == 'ia' || command == 'chatgpt') {
 try {      
@@ -21,13 +21,6 @@ let res = await gpt.json()
 await m.reply(res.data)
 } catch {
 }}}
-
-if (command == 'openai' || command == 'ia2' || command == 'chatgpt2') {
-conn.sendPresenceUpdate('composing', m.chat);
-let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}`)
-let res = await gpt.json()
-await m.reply(res.gpt)
-}
 
 if (command == 'gemini') {
 let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
