@@ -136,7 +136,20 @@ sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
 if (command == 'copilot' || command == 'bing') {
 let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/bingia?query=${text}`)
 let res = await gpt.json()
-await m.reply(res.message)
+await m.react('😼');
+await conn.sendMessage(m.chat, { text: res.message,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗖 𝗢 𝗣 𝗜 𝗟 𝗢 𝗧 ]`,
+body: ``,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/26butm5t', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
 }}
 handler.help = ["chagpt", "ia", "openai", "gemini", "copilot"]
 handler.tags = ["buscadores"]
