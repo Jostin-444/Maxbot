@@ -17,23 +17,23 @@ const defaultMenu = {
 ┊┊✶ 𝐁𝐨𝐭: Génesis Bot
 ┊┊✶ 𝐌𝐨𝐝𝐨: Público
 ┊┊✶ 𝐅𝐞𝐜𝐡𝐚: ${fecha}
-┊┊✶ 𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭: %muptime
 ┊┊✶ 𝐔𝐬𝐞𝐫𝐬: %totalreg
 ┊┊✶ 𝐍𝐢𝐯𝐞𝐥: %level 
 . .‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙┉ˏ͛ ༝̩̩̥͙　 ҉　
 
 ✦•····················•✦•···················•✦\nᴘᴀʀᴀ ʟᴏꜱ ᴀᴜᴅɪᴏꜱ ɴᴏ ꜱᴇ ɴᴇᴄᴇꜱɪᴛᴀ ᴇʟ ᴘʀᴇꜰɪᴊᴏ ( . )
+%readmore
 `.trimStart(),
   header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
   body: '║✶ %cmd %isPremium\n',
-  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
+  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'audios': '𝐀𝐔𝐃𝐈𝐎𝐒',
 }
-let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
+let img = 'https://i.ibb.co/YcdFyft/file.jpg'
 
   try {
           // DEFAULT MENU
@@ -153,7 +153,7 @@ let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
         return header.replace(/%category/g, tags[tag]) + '\n' + [
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
-              return body.replace(/%cmd/g, menu.prefix ? help : '' + help)
+              return body.replace(/%cmd/g, menu.prefix ? help : '%_p' + help)
                 .replace(/%islimit/g, menu.limit ? llim : '')
                 .replace(/%isPremium/g, menu.premium ? lprem : '')
                 .trim()
@@ -186,7 +186,18 @@ let ppp = 'https://i.ibb.co/YcdFyft/file.jpg'
  let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
 await m.react('🎶') 
 
-await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
+ conn.sendMessage(m.chat, {
+        text: text,
+        contextInfo: {
+        externalAdReply: {
+        title: '𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭-𝐌𝐃',
+        body: '©𝟐𝟎𝟐𝟒 𝐀𝐧𝐠𝐞𝐥𝐢𝐭𝐨-𝐎𝐅𝐂',
+        thumbnailUrl: img,
+        sourceUrl: global.canal,
+        mediaType: 1,
+        renderLargerThumbnail: true
+        }}},
+        { quoted: estilo})
 
   } catch (e) {
     conn.reply(m.chat, 'Lo siento, el menú tiene un error.', m)
@@ -195,7 +206,8 @@ await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
 }
 handler.help = ['menuaudios']
 handler.tags = ['main']
-handler.command = ['menuaudios','audiosmenu']
+handler.command = /^(menuaudios|audiosmenu|\?)$/i
+
 handler.register = false
 handler.exp = 3
 
