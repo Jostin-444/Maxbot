@@ -181,7 +181,7 @@ let img = 'https://i.ibb.co/8g5yZr5/file.jpg'
       xp4levelup: max - exp,
       github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
       tag, dash,m1,m2,m3,m4,cc, c1, c2, c3, c4,lprem,llim,
-      ucpn,platform, wib, mode, _p, eris, age, tag, name, prems, level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+      ucpn,platform, wib, mode, _p, eris, age, tag, name, prems, level, corazones, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
