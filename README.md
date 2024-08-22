@@ -1,6 +1,6 @@
 > 🐈‍⬛ Versión Actual: 1.4.0
 
-## ⭐ **`G E N E S I S - B O T`**
+## 🤍 **`G E N E S I S - B O T`**
 
 ![Genesis](https://telegra.ph/file/d583ed593e71dc82e29e6.jpg)
 <div align="center">
