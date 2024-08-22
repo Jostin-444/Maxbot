@@ -12,7 +12,19 @@ let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Genesis-Bot y parece
 if (command == 'gemini') {
 let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
 let res = await gpt.json()
-await m.reply(res.message)
+await conn.sendMessage(m.chat, { text: res.message,
+contextInfo:{
+forwardingScore: 9999999,
+isForwarded: false, 
+"externalAdReply": {
+"showAdAttribution": true,
+"containsAutoReply": true,
+title: `[ 𝗔 𝗜 - 𝗣 𝗘 𝗥 𝗨 ]`,
+body: ``,
+"previewType": "PHOTO",
+thumbnailUrl: 'https://tinyurl.com/253dnhcr', 
+sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+{ quoted: m})
 }
 
 if (command == 'copilot' || command == 'bing') {
