@@ -151,7 +151,7 @@ thumbnailUrl: 'https://tinyurl.com/26butm5t',
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
 { quoted: m})
 }}
-handler.help = ["chagpt", "ia", "openai", "gemini", "copilot"]
-handler.tags = ["buscadores"]
-handler.command = /^(openai|chatgpt|ia|ai|openai2|chatgpt2|ia2|gemini|copilot|bing)$/i;
+handler.help = ["chagpt", "ia", "gemini", "copilot"]
+handler.tags = ["ai"]
+handler.command = /^(chatgpt|ia|ai|chatgpt2|ia2|gemini|copilot|bing)$/i;
 export default handler;
