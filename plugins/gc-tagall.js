@@ -15,7 +15,7 @@ const oi = `*» INFO :* ${pesan}`;
   teks += `╰⸼ ┄ ┄ ┄ ─  ꒰  ׅ୭ *${vs}* ୧ ׅ ꒱  ┄  ─ ┄ ⸼`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
-handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
+handler.help = ['todos <mesaje>', 'invocar <mesaje>'];
 handler.tags = ['grupo'];
 handler.command = /^(tagall|invocar|marcar|todos|invocación)$/i;
 handler.admin = true;
