@@ -14,14 +14,14 @@ const { name, description, author, version } = require(join(__dirname, './packag
 const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
 say('Genesis-MD', {
-font: 'chrome',
+font: 'block',
 align: 'center',
-colors: ['yellow']
+colors: ['white']
 });
 say(`By • Angel-OFC y Titanium Team`, {
 font: 'console',
 align: 'center',
-colors: ['yellow']
+colors: ['white']
 });
 var isRunning = false;
 function start(file) {
@@ -31,7 +31,7 @@ let args = [join(__dirname, file), ...process.argv.slice(2)];
 say([process.argv[0], ...args].join(' '), {
 font: 'console',
 align: 'center',
-colors: ['yellow']
+colors: ['white']
 });
 setupMaster({
 exec: args[0],
@@ -52,7 +52,7 @@ break;
 });
 p.on('exit', (_, code) => {
 isRunning = false;
-console.error('🚩 Error:\n', code);
+console.error('🤍 Error:\n', code);
 process.exit();
 if (code === 0) return;
 watchFile(args[0], () => {
@@ -68,7 +68,7 @@ p.emit('message', line.trim());
 }
 process.on('warning', (warning) => {
 if (warning.name === 'MaxListenersExceededWarning') {
-console.warn('🚩 Se excedió el límite de Listeners en:');
+console.warn('🤍 Se excedió el límite de Listeners en:');
 console.warn(warning.stack);
 }
 });
