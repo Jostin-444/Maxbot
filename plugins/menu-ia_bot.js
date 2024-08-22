@@ -194,7 +194,7 @@ let img = 'https://i.ibb.co/8g5yZr5/file.jpg'
         mediaType: 1,
         renderLargerThumbnail: true
         }}},
-        { quoted: m})
+        { quoted: estilo})
 
   } catch (e) {
     conn.reply(m.chat, 'Lo siento, el menú tiene un error.', m)
