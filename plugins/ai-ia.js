@@ -117,6 +117,7 @@ await m.reply(res.gpt)
 if (command == 'gemini') {
 let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
 let res = await gpt.json()
+await m.react('🐻‍❄️');
 await conn.sendMessage(m.chat, { text: res.message,
 contextInfo:{
 forwardingScore: 9999999,
