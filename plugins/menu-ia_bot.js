@@ -31,6 +31,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'ai': 'AI BOT',
 }
+let img = 'https://i.ibb.co/8g5yZr5/file.jpg'
 
   try {
           // DEFAULT MENU
@@ -188,7 +189,7 @@ let tags = {
         externalAdReply: {
         title: global.namebot,
         body: global.author,
-        thumbnailUrl: global.thumb,
+        thumbnailUrl: img,
         sourceUrl: global.myweb,
         mediaType: 1,
         renderLargerThumbnail: true
