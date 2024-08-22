@@ -34,7 +34,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'ai': '𝐀𝐈 𝐁𝐎𝐓',
 }
-let ppp = 'https://i.ibb.co/ZWrFXrh/file.jpg'
+let ppp = 'https://i.ibb.co/rmb1p1Y/file.jpg'
 
   try {
           // DEFAULT MENU
