@@ -9,7 +9,7 @@ if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) return m.reply(`🤍 Ingrse su petición`) 
 let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Genesis-Bot y parece haber sido creado por Angel-OFC.`
 
-if (command == 'gemini') {
+if (command == 'gemini2') {
 let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
 let res = await gpt.json()
 await conn.sendMessage(m.chat, { text: res.message,
