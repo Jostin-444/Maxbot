@@ -17,16 +17,16 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
 
-"homepage": "https://github.com/OfcDiego/YaemoriBot-MD",
+"homepage": "https://github.com/Angelito-OFC/GenesisBot-MD",
 "author": {
-"name": "Dɪᴇɢᴏ.Oғᴄ" },
+"name": "Angelito-OFC" },
 
 "repository": {
 "type": "git",
-"url": "git+https://github.com/OfcDiego/YaemoriBot-MD.git" },
+"url": "git+https://github.com/Angelito-OFC/GenesisBot-MD.git" },
 
 "bugs": {
-"url": "https://github.com/OfcDiego/YaemoriBot-MD/issues" },
+"url": "https://github.com/Angelito-OFC/GenesisBot-MD/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@adiwajshing/keyed-db": "^0.2.4",
