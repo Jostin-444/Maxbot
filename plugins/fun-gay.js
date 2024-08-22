@@ -1,5 +1,5 @@
 const handler = async (m, {conn}) => {
-  const vn = './src/mp3/gay2.mp3';
+  const vn = './media/audios/gay2.mp3';
   const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
 m.react('🏳️‍🌈')
   await conn.sendFile(m.chat, global.API('https://some-random-api.com', '/canvas/gay', {
