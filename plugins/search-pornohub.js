@@ -21,7 +21,7 @@ teks = '*Sin resultados*';
 m.reply(teks);
 } catch (e) {
 }};
-handler.help = ['xnxxsearch <búsqueda>'];
+handler.help = ['pornhubsearch <búsqueda>'];
 handler.tags = ['search'];
 handler.command = /^(phsearch|pornhubsearch)$/i;
 export default handler;
