@@ -81,12 +81,6 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 id: `.allmenu`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗙𝗥𝗘𝗘 𝗙𝗜𝗥𝗘 🗡️",
-                title: "",
-                description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘧𝘳𝘦𝘦 𝘧𝘪𝘳𝘦`,
-                id: `${usedPrefix}menuff`,
-            },
-            {
                 header: "𝗠𝗘𝗡𝗨 𝗔𝗨𝗗𝗜𝗢𝗦 🔊",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘢𝘶𝘥𝘪𝘰𝘴`,
@@ -103,12 +97,6 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘫𝘶𝘦𝘨𝘰𝘴`,
                 id: `${usedPrefix}gamemenu`,
-            },
-            {
-                header: "𝗠𝗘𝗡𝗨 𝗥𝗔𝗡𝗗𝗢𝗠 🌿",
-                title: "",
-                description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘦𝘭 𝘮𝘦𝘯𝘶 𝘥𝘦 𝘪𝘮𝘨 𝘳𝘢𝘯𝘥𝘰𝘮`,
-                id: `${usedPrefix}menurandom`,
             },
             {
                 header: "𝗠𝗘𝗡𝗨 𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦 📥",
