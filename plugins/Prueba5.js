@@ -1,92 +1,46 @@
-import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from '@whiskeysockets/baileys'
-import yts from 'yt-search';
-import fs from 'fs';
+import fetch from 'node-fetch';
+import axios from 'axios';
+import translate from '@vitalets/google-translate-api';
+import {Configuration, OpenAIApi} from 'openai';
+const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
+const openaiii = new OpenAIApi(configuration);
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
+if (!text) return m.reply(`🍟 Ingrse su petición`) 
+let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Runa-Bot y parece haber sido creado por Daniel.`
 
-const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
-    const datas = global;
-    const idioma = datas.db.data.users[m.sender].language;
-    const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
-    const traductor = _translate.plugins.buscador_yts;
-    const device = await getDevice(m.key.id);
+if (command == 'ia' || command == 'chatgpt') {
+try {      
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gptweb?text=${text}`) 
+let res = await gpt.json()
+await m.reply(res.gpt)
+} catch {
+try {
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/chatgpt?q=${text}`)
+let res = await gpt.json()
+await m.reply(res.data)
+} catch {
+}}}
 
-  if (!text) throw `⚠️ ingresa lo que desea buscar*`;
+if (command == 'openai' || command == 'ia2' || command == 'chatgpt2') {
+conn.sendPresenceUpdate('composing', m.chat);
+let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}`)
+let res = await gpt.json()
+await m.reply(res.gpt)
+}
 
-  if (device !== 'desktop' || device !== 'web') {      
+if (command == 'gemini') {
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
+let res = await gpt.json()
+await m.reply(res.message)
+}
 
-  const results = await yts(text);
-  const videos = results.videos.slice(0, 20);
-  const randomIndex = Math.floor(Math.random() * videos.length);
-  const randomVideo = videos[randomIndex];
-
-  var messa = await prepareWAMessageMedia({ image: {url: randomVideo.thumbnail}}, { upload: conn.waUploadToServer })
-  const interactiveMessage = {
-    body: { text: `*—◉ Resultados obtenidos:* ${results.videos.length}\n*—◉ Video aleatorio:*\n*-› Title:* ${randomVideo.title}\n*-› Author:* ${randomVideo.author.name}\n*-› Views:* ${randomVideo.views}\n*-› ${traductor.texto2[0]}:* ${randomVideo.url}\n*-› Imagen:* ${randomVideo.thumbnail}`.trim() },
-    footer: { text: `${global.wm}`.trim() },  
-      header: {
-          title: `*< YouTube Search />*\n`,
-          hasMediaAttachment: true,
-          imageMessage: messa.imageMessage,
-      },
-    nativeFlowMessage: {
-      buttons: [
-        {
-          name: 'single_select',
-          buttonParamsJson: JSON.stringify({
-            title: 'OPCIONES DISPONIBLES',
-            sections: videos.map((video) => ({
-              title: video.title,
-              rows: [
-                {
-                  header: video.title,
-                  title: video.author.name,
-                  description: 'Descargar MP3',
-                  id: `${prefijo}play.1 ${video.url}`
-                },
-                {
-                  header: video.title,
-                  title: video.author.name,
-                  description: 'Descargar MP4',
-                  id: `${prefijo}play.2 ${video.url}`
-                }
-              ]
-            }))
-          })
-        }
-      ],
-      messageParamsJson: ''
-    }
-  };        
-
-        let msg = generateWAMessageFromContent(m.chat, {
-            viewOnceMessage: {
-                message: {
-                    interactiveMessage,
-                },
-            },
-        }, { userJid: conn.user.jid, quoted: m })
-      conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id});
-
-  } else {
-  const datas = global;
-  const idioma = datas.db.data.users[m.sender].language;
-  const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
-  const traductor = _translate.plugins.buscador_yts;      
-  const results = await yts(text);
-  const tes = results.all;
-  const teks = results.all.map((v) => {
-    switch (v.type) {
-      case 'video': return `
-° *_${v.title}_*
-↳ 🫐 *_${traductor.texto2[0]}_* ${v.url}
-↳ 🕒 *_${traductor.texto2[1]}_* ${v.timestamp}
-↳ 📥 *_${traductor.texto2[2]}_* ${v.ago}
-↳ 👁 *_${traductor.texto2[3]}_* ${v.views}`;
-    }
-  }).filter((v) => v).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n');
-  conn.sendFile(m.chat, tes[0].thumbnail, 'error.jpg', teks.trim(), m);      
-  }    
-};
-handler.help = ['ytsearch <texto>'];
-handler.tags = ['search'];
-handler.command = /^(ytsearch|yts|searchyt|buscaryt|videosearch|audiosearch)$/i;
+if (command == 'copilot' || command == 'bing') {
+let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/bingia?query=${text}`)
+let res = await gpt.json()
+await m.reply(res.message)
+}}
+handler.help = ["chagpt", "ia", "openai", "gemini", "copilot"]
+handler.tags = ["buscadores"]
+handler.command = /^(openai|chatgpt|ia|ai|openai2|chatgpt2|ia2|gemini|copilot|bing)$/i;
 export default handler;
