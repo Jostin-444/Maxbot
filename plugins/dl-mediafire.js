@@ -24,7 +24,7 @@ await m.react(error)
 }}
 handler.help = ['mediafire']
 handler.corazones = 5
-handler.tags = ['descargas']
+handler.tags = ['dl']
 handler.command = ['mediafire', 'mdfire', 'mf']
 handler.premium = false
 
