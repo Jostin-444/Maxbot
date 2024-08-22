@@ -188,7 +188,7 @@ let ppp = 'https://i.ibb.co/rmb1p1Y/file.jpg'
 await m.react('🗂️') 
 
 await conn.sendMessage(m.chat, {
-text: trim(),
+text: text.trim(),
 contextInfo: { 
 mentionedJid: [m.sender],
 forwardingScore: 9, 
