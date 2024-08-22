@@ -124,10 +124,10 @@ isForwarded: false,
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `[ 𝗔 𝗜 - 𝗣 𝗘 𝗥 𝗨 ]`,
+title: `[ 𝗚 𝗘 𝗠 𝗜 𝗡 𝗜 ]`,
 body: ``,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://tinyurl.com/253dnhcr', 
+thumbnailUrl: 'https://tinyurl.com/2ahs5j6f', 
 sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
 { quoted: m})
 }
