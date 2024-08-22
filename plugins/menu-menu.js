@@ -27,6 +27,7 @@ let tags = {
   'audio': '𝐀𝐔𝐃𝐈𝐎𝐒', 
   'ai': '𝐀𝐈 𝐁𝐎𝐓',
   'convertir': '𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐈𝐃𝐎𝐑𝐄𝐒',
+  'audios': '𝐀𝐔𝐃𝐈𝐎𝐒',
 }
 
 const defaultMenu = {
