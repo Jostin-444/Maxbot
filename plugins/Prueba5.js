@@ -9,19 +9,6 @@ if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) return m.reply(`🤍 Ingrse su petición`) 
 let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Genesis-Bot y parece haber sido creado por Angel-OFC.`
 
-if (command == 'ia2' || command == 'chatgpt') {
-try {      
-let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gptweb?text=${text}`) 
-let res = await gpt.json()
-await m.reply(res.gpt)
-} catch {
-try {
-let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/chatgpt?q=${text}`)
-let res = await gpt.json()
-await m.reply(res.data)
-} catch {
-}}}
-
 if (command == 'gemini') {
 let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gemini?query=${text}`)
 let res = await gpt.json()
