@@ -207,8 +207,6 @@ await m.react('🎮')
 handler.help = ['menugame']
 handler.tags = ['main']
 handler.command = ['menugame']
-handler.register = false
-handler.exp = 3
 
 export default handler
 
