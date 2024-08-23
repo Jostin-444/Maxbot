@@ -207,8 +207,6 @@ await m.react('🔞')
 handler.help = ['labiblia']
 handler.tags = ['main']
 handler.command = ['labiblia']
-handler.register = false
-handler.exp = 3
 
 export default handler
 
