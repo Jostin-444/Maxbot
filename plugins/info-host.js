@@ -47,5 +47,5 @@ sourceUrl: 'https://dash.corinplus.com'}}},
 }
 handler.tags =['main'] 
 handler.help = ['host', 'hosting'] 
-handler.command = ['host', 'olympus', 'olympushost', 'hosting']
+handler.command = ['host', 'corinplus', 'corinplushost', 'hosting']
 export default handler
