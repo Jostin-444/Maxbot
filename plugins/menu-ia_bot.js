@@ -206,8 +206,7 @@ await m.react('☕')
 }
 handler.help = ['menuai']
 handler.tags = ['main']
-handler.command = /^(menuai|aimenu|\?)$/i
-
+handler.command = ['menuai']
 handler.register = false
 handler.exp = 3
 
