@@ -205,10 +205,7 @@ await m.react('🎶')
 }
 handler.help = ['menuaudios']
 handler.tags = ['main']
-handler.command = /^(menuaudios|audiosmenu|\?)$/i
-
-handler.register = false
-handler.exp = 3
+handler.command = ['menuaudios']
 
 export default handler
 
