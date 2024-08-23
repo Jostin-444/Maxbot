@@ -26,15 +26,15 @@ global.prems = []
 global.mods = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
-global.packname = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀 𝗕𝗼𝘁 𝗣𝗿𝗼'
-global.author = '@usxr_angelito0'
-global.wm = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀 𝗣𝗿𝗼'
-global.titulowm = 'GenesisBot-Pro 🤍'
-global.titulowm2 = 'Angelito-OFC'
-global.igfg = '@usxr_angelito0'
-global.botname = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀𝗕𝗼𝘁 🤍'
-global.dev = '`𝗚𝗲𝗻𝗲𝘀𝗶𝘀𝗕𝗼𝘁 🤍`\n*By • Titanium Team 💥*'
-global.textbot = '𝗚𝗲𝗻𝗲𝘀𝗶𝘀𝗕𝗼𝘁 : 𝗔𝗻𝗴𝗲𝗹𝗶𝘁𝗼 🤍'
+global.packname = '𝐌𝐀𝐗 𝐁𝐎𝐓'
+global.author = '@jostin_dzn'
+global.wm = '𝐌𝐚𝐱 𝐏𝐫𝐨'
+global.titulowm = 'MaxBot-Pro 💙'
+global.titulowm2 = 'Jostin-OFC'
+global.igfg = '@jostin_dzn'
+global.botname = '𝐌𝐚𝐱𝐁𝐨𝐭 💙'
+global.dev = '`𝐌𝐚𝐱𝐁𝐨𝐭 💙`\n*By • 𝑱𝑶𝑺𝑻𝑰𝑵 🔥*'
+global.textbot = '𝐌𝐚𝐱 𝐁𝐨𝐭 : 𝗝𝗼𝘀𝘁𝗶𝗻 💙'
 global.vs = '1.4.0'
 
 //• ↳ ◜𝑰𝑴𝑨́𝑮𝑬𝑵𝑬𝑺◞ • 🌇
