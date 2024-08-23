@@ -43,7 +43,7 @@ body: `✅ Hosting de Calidad`,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://telegra.ph/file/551d3d544d7bc607fd337.jpg', 
 sourceUrl: 'https://dash.corinplus.com'}}},
-{ quoted: fakegif2})
+{ quoted: fakegif3})
 }
 handler.tags =['main'] 
 handler.help = ['host', 'hosting'] 
