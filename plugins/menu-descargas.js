@@ -206,10 +206,7 @@ await m.react('📥')
 }
 handler.help = ['menudl']
 handler.tags = ['main']
-handler.command = /^(menudl|dlmenu|\?)$/i
-
-handler.register = false
-handler.exp = 3
+handler.command = ['menudl']
 
 export default handler
 
