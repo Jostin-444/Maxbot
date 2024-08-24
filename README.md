@@ -1,13 +1,13 @@
 > 🐈‍⬛ Versión Actual: 1.4.0
 
-## 🤍 **`G E N E S I S - B O T`**
+## 💙 **`M A X - B O T`**
 
 ![Genesis](https://telegra.ph/file/d583ed593e71dc82e29e6.jpg)
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=300&size=37&duration=3000&pause=100&color=000000&background=601D6E00&center=true&vCenter=true&repeat=true&random=FALSO&width=660&height=90&lines=Angel-OFC+lanzó;Nueva+versión+Genesis Bot - 1.4.0;BY:+Titanium+Team+y+Angel-OFC." alt="Typing SVG"/></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=300&size=37&duration=3000&pause=100&color=000000&background=601D6E00&center=true&vCenter=true&repeat=true&random=FALSO&width=660&height=90&lines=Angel-OFC+lanzó;Nueva+versión+Genesis Bot - 1.4.0;BY:+Titanium+Team+y+Jostin-OFC." alt="Typing SVG"/></a>
 </div>
 
-#### Creador: Angelito 🫅
+#### Creador: Jostin 😉
 #### Realizado con: Titanium Team 🐈‍⬛
 
 ### CONTACTOS 💻
@@ -55,24 +55,24 @@ npm start
 ```bash
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
-> cd GenesisBot-MD
+> cd MaxBot-MD
 > npm start
 ```
 
 🍄 **`OBTENER OTRO CODIGO QR`**
 ```bash
 > ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd GenesisBot-MD
+> cd MaxBot-MD
 > rm -rf GenesisSession
 > npm start
 ```
 
-🍁 **`GENESIS 24/7 (TERMUX)`**
+🍁 **`Max-bot 24/7 (TERMUX)`**
 ```bash
 > termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ```
 
-🌻 **`ACTUALIZAR GENESIS`**
+🌻 **`ACTUALIZAR MAX`**
 > Note Comandos para actualizar Ai Yaemori  de forma automática
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/OfcDiego/YaemoriBot-MD/master/update.sh | bash
