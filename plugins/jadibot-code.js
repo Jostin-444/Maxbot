@@ -28,7 +28,7 @@ fs.mkdirSync("./GenesisJadiBot/" + authFolderB, { recursive: true });
 if (args[0]) {
 fs.writeFileSync(`MaxJadiBot/creds.json`, Buffer.from(args[0], 'base64').toString('utf-8'))
 }
-const { state, saveState, saveCreds } = await useMultiFileAuthState(`./GenesisJadiBot/${authFolderB}`);
+const { state, saveState, saveCreds } = await useMultiFileAuthState(`./MaxJadiBot/${authFolderB}`);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache();
 const { version } = await fetchLatestBaileysVersion();
