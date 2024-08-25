@@ -15,7 +15,7 @@
 
 
 
-<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Max Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
+<a href="https://api.whatsapp.com/send/?phone=+50587043137&text=Hola 👋 soporte de Max Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
  <a href="https://www.instagram.com/jostin_max.bot?igsh=MW1jcDBtMWN2dm9qeQ=="><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
 <a href="https://www.threads.net/@usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Threads-30302f?style=flat&logo=threads" /></a>
 <a href="https://x.com/usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Twitter-30302f?style=flat&logo=x" /></a>
@@ -106,6 +106,6 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 <a
 href="https://github.com/Jostin-444"><img src="https://https://github.com/Jostin-444.png" width="130" height="130" alt="Angelito"/></a>
 
-> Copyright (c) 2024 **[Angelito-OFC](https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y)**.
+> Copyright (c) 2024 **[Jostin-444](https://wa.me/qr/UBNVKDPVCDVNK1)**.
 
 **`¡GRACIAS POR PREFERIRNOS!` 🍟**
