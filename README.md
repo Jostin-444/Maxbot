@@ -2,7 +2,7 @@
 
 ## 💙 **`M A X - B O T`**
 
-![Genesis](https://telegra.ph/file/d583ed593e71dc82e29e6.jpg)
+![Max-bot](https://telegra.ph/file/d583ed593e71dc82e29e6.jpg)
 <div align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=300&size=37&duration=3000&pause=100&color=000000&background=601D6E00&center=true&vCenter=true&repeat=true&random=FALSO&width=660&height=90&lines=Jostin-OFC+lanzó;Nueva+versión+Max Bot - 1.4.0;BY:+Titanium+Team+y+Jostin-OFC." alt="Typing SVG"/></a>
 </div>
@@ -15,7 +15,7 @@
 
 
 
-<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Génesis Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
+<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Max Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
  <a href="http://www.instagram.com/usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
 <a href="https://www.threads.net/@usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Threads-30302f?style=flat&logo=threads" /></a>
 <a href="https://x.com/usxr_angelito0" target="blank"><img src="https://img.shields.io/badge/Twitter-30302f?style=flat&logo=x" /></a>
@@ -42,7 +42,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/Angelito-OFC/GenesisBot-MD && cd GenesisBot-MD
+git clone https://github.com/Jostin-444/MaxBot-MD && cd MaxBot-MD
 ```
 ```bash
 yarn install && npm install
@@ -89,7 +89,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ## <img src="https://static.wikia.nocookie.net/nyancat/images/d/d3/Nyan-cat.gif/revision/latest/scale-to-width-down/400?cb=20131231222500&path-prefix=es" alt="Grupo" width="45" height="43"> Bot Oficial ☄️
 
-<a href="https://wa.me/59160262132?text=!menu"><img alt="Bot Oficial ☄️" src="https://img.shields.io/badge/Bot - Oficial-00FFFF?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+<a href="https://wa.me/50587043137?text=!menu"><img alt="Bot Oficial ☄️" src="https://img.shields.io/badge/Bot - Oficial-00FFFF?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 > No Spam A La Bot!
 
@@ -104,7 +104,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ### ✨ CREADOR 
 <a
-href="https://github.com/Angelito-OFC"><img src="https://github.com/Angelito-OFC.png" width="130" height="130" alt="Angelito"/></a>
+href="https://github.com/Jostin-444"><img src="https://https://github.com/Jostin-444.png" width="130" height="130" alt="Angelito"/></a>
 
 > Copyright (c) 2024 **[Angelito-OFC](https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y)**.
 
