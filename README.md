@@ -22,7 +22,7 @@
 
 ### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba La Bot Aqui" width="42" height="42"> Prueba La Bot Aqui
 
-> Si Deseas Probar La Bot Antes De Instalarlo, Click Abajo.🟢
+> Si Deseas Probar El Bot Antes De Instalarlo, Click Abajo.🟢
 
 [![Click Aquí](https://img.shields.io/badge/Grupo-Genesis-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a)
 
