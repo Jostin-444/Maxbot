@@ -137,17 +137,17 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img = "https://i.ibb.co/YyCJCnP/file.jpg";
-    let img2 = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img3 = "https://i.ibb.co/YyCJCnP/file.jpg";
-    let img4 = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img5 = "https://i.ibb.co/YyCJCnP/file.jpg";
-    let img6 = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img8 = "https://i.ibb.co/YyCJCnP/file.jpg";
-    let img9 = "https://i.ibb.co/nsbttwG/file.jpg";
-    let img10 = "https://i.ibb.co/YyCJCnP/file.jpg";
-    let img11 = "https://i.ibb.co/nsbttwG/file.jpg";
+    let vid = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img2 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img3 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img4 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img5 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img6 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img8 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img9 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img10 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let img11 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
 
     await conn.sendListB(m.chat, menu, txt, `「✶」𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓「✶」`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, estilo);
 };
