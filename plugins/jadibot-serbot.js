@@ -102,7 +102,7 @@ if (i >= 0) {
 delete global.conns[i]
 global.conns.splice(i, 1)
 }
-fs.rmdirSync(`./GenesisJadiBot/${serbotFolder}`, { recursive: true })
+fs.rmdirSync(`./MaxJadiBot/${serbotFolder}`, { recursive: true })
 }
 }, 30000)
 let handler = await import("../handler.js")
