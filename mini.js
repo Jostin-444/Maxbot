@@ -279,9 +279,9 @@ process.on('uncaughtException', console.error)
 /* Echo por: https://github.com/elrebelde21 */
 
 /*async function connectSubBots() {
-const subBotDirectory = './GenesisJadiBot';
+const subBotDirectory = './MaxJadiBot';
 if (!existsSync(subBotDirectory)) {
-console.log('🌟 GenesisBot-MD no tiene Sub-Bots vinculados.');
+console.log('🌟 MaxBot-MD no tiene Sub-Bots vinculados.');
 return;
 }
 
@@ -304,7 +304,7 @@ console.log(chalk.bold.greenBright(`🍟 Todos los Sub-Bots se conectaron con é
 (async () => {
 global.conns = [];
 
-const mainBotAuthFile = 'GenesisSession';
+const mainBotAuthFile = 'MaxSession';
 try {
 const mainBot = await connectionUpdate(mainBotAuthFile);
 global.conns.push(mainBot);
