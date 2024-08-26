@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) return conn.reply(m.chat, `🤍 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, ${usedPrefix + command} Ai-Yaemori`, m, rcanal)
+if (!text) return conn.reply(m.chat, `🩵 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, ${usedPrefix + command} Ai-Yaemori`, m, rcanal)
 try {
 await m.react(rwait)
 const res = await fetch(global.API('https://api.github.com', '/search/repositories', {
@@ -25,11 +25,11 @@ return `
 `.trim()}).join('\n\n─────────────────\n\n') 
 // await m.react(done)
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
-await conn.sendMini(m.chat, '🤍 G I T H U B - S E A R C H 🤍', dev, str, img, img, redes, estilo)
+await conn.sendMini(m.chat, '🩵 G I T H U B - S E A R C H 🩵', dev, str, img, img, redes, estilo)
 await m.react(done)
 } catch {
 await m.react(error)
-conn.reply(m.chat, '🤍 *No se encontró resultados de:* ' + text, m, fake)}}
+conn.reply(m.chat, '🩵 *No se encontró resultados de:* ' + text, m, fake)}}
 handler.help = ['githubsearch']
 handler.tags = ['buscador']
 handler.command = /^(githubsearch)$/i
@@ -48,7 +48,7 @@ import fs from 'fs'
 
 var handler = async (m, { conn, text, usedPrefix, command }) => {
 
-if (!text) return conn.reply(m.chat, `🤍 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, ${usedPrefix + command} Ai-Yaemori`, m, rcanal)
+if (!text) return conn.reply(m.chat, `🩵 *Ingrese el nombre de un repositorio de github*\n\nEjemplo, ${usedPrefix + command} Ai-Yaemori`, m, rcanal)
 
 try {
 
@@ -77,7 +77,7 @@ await conn.sendUrl(m.chat, str, m, { externalAdReply: { mediaType: 1, renderLarg
 })
 
 } catch {
-conn.reply(m.chat, '🤍 *Ocurrió un fallo*', m, fake)
+conn.reply(m.chat, '🩵 *Ocurrió un fallo*', m, fake)
 }
 
 }
