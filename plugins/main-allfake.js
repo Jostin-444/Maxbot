@@ -49,7 +49,7 @@ global.rwait = '🕒'
 global.done = '✅'
 global.error = '✖️'
 
-//Emojis determinado de Ai Genesis
+//Emojis determinado de Ai Max
 global.emoji = '💙'
 global.emoji2 = '💙'
 global.emoji3 = '💙'
