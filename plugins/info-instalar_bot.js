@@ -1,6 +1,6 @@
 var handler  = async (m, { conn }) => {
 
-let texto = `🤍 *Instalación de GenesisBot-MD*
+let texto = `💙 *Instalación de MaxBot-MD*
 
 ☕ Dudas: ${creador}
 ☕ Tutoríal: *¡Pronto!*
@@ -21,9 +21,9 @@ npm update
 
 npm start
 
-_Utilice "comandos" para enviarle los comandos uno por uno 🤍_
+_Utilice "comandos" para enviarle los comandos uno por uno 💙_
 
-_Utilice ".olympus o .corinplus" para enviarle la instalación por cualquiera de los 2 *Hosting* 🤍_`
+_Utilice ".olympus o .corinplus" para enviarle la instalación por cualquiera de los 2 *Hosting* 💙_`
 
 conn.reply(m.chat, texto, m, rcanal )
 
@@ -34,7 +34,7 @@ m.reply('termux-setup-storage')
 await delay(1000 * 1)
 m.reply('apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn')
 await delay(1000 * 1)
-m.reply('git clone https://github.com/Angelito-OFC/GenesisBot-Pro && cd GenesisBot-MD')
+m.reply('git clone https://github.com/Angelito-OFC/GenesisBot-Pro && cd MaxBot-MD')
 await delay(1000 * 1)
 m.reply('yarn install')
 await delay(1000 * 1)
