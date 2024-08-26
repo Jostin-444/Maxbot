@@ -112,8 +112,8 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `GenesisSession`
-global.authFileJB = `GenesisJadiBot`
+global.authFile = `MaxSession`
+global.authFileJB = `MaxJadiBot`
 
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = (MessageRetryMap) => { }
