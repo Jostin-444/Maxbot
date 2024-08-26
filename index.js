@@ -18,7 +18,7 @@ font: 'block',
 align: 'center',
 colors: ['white']
 });
-say(`By • Angel-OFC y Titanium Team`, {
+say(`By • Jostin-444 y Titanium Team`, {
 font: 'console',
 align: 'center',
 colors: ['white']
