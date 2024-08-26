@@ -25,7 +25,7 @@ if (args.length < 1) return conn.reply(m.chat, '💙 Ingresa la cantidad de ' + 
 if (user.corazones >= count * 1) {
 user.corazones -= count * 1
 if (Aku > Kamu) {
-conn.reply(m.chat, '`💙 Veamos que numeros tienen!`\n\n'+ `➠ *GenesisBot* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *PERDISTE* ${formatNumber(count)} 💙 Corazones.`.trim(), m, rcanal)
+conn.reply(m.chat, '`💙 Veamos que numeros tienen!`\n\n'+ `➠ *MaxBot* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *PERDISTE* ${formatNumber(count)} 💙 Corazones.`.trim(), m, rcanal)
 } else if (Aku < Kamu) {
 user.corazones += count * 2
 conn.reply(m.chat, '`💙 Veamos que numeros tienen!`\n\n'+ `➠ *MaxBot* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *GANASTE* ${formatNumber(count * 2)} 💙 Corazones.`.trim(), m, rcanal)
