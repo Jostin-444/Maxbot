@@ -35,7 +35,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 global.creador = 'Wa.me/59897246324'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/59897246324'
-global.namechannel = '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯'
+global.namechannel = '✯ 𝗠𝗮𝘅 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯'
 global.namechannel2 = '𝗠𝗼𝗼𝗻𝗹𝗶𝗴𝗵𝘁 - 𝗧𝗲𝗮𝗺'
 global.namegrupo = '𝗚𝗿𝗼𝘂𝗽 𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶'
 global.namecomu = '𝗖𝗼𝗺𝘂𝗻𝗶𝗱𝗮𝗱 𝗔𝗶 𝗬𝗮𝗲𝗺𝗼𝗿𝗶'
@@ -50,10 +50,10 @@ global.done = '✅'
 global.error = '✖️'
 
 //Emojis determinado de Ai Genesis
-global.emoji = '🤍'
-global.emoji2 = '🤍'
-global.emoji3 = '🤍'
-global.emoji4 = '🤍'
+global.emoji = '💙'
+global.emoji2 = '💙'
+global.emoji3 = '💙'
+global.emoji4 = '💙'
 global.emojis = [emoji, emoji2, emoji3, emoji4].getRandom()
 
 //mensaje en espera
@@ -63,10 +63,10 @@ global.waittt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗮 ...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'  
-var git = 'https://github.com/Angelito-OFC' 
-var github = 'https://github.com/Angelito-OFC/Genesis-OFC1' 
-var instagram = 'https://www.instagram.com/usxr_angelito0' 
+var canal = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h'  
+var git = 'https://github.com/Jostin-444/Maxbot' 
+var github = 'https://github.com/Jostin-444' 
+var instagram = 'https://www.instagram.com/jostin_max.bot?igsh=MW1jcDBtMWN2dm9qeQ==' 
 
 global.redes = [canal, git, github, instagram].getRandom()
 
@@ -113,6 +113,6 @@ global.icono = [
 'https://qu.ax/sTvd.jpg',
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363220939514640@newsletter", serverMessageId: 100, newsletterName: '✯ 𝐆𝐞𝐧𝐞𝐬𝐢𝐬 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯', }, externalAdReply: { showAdAttribution: true, title: packname, body: '🤍 ¡Génesis Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363220939514640@newsletter", serverMessageId: 100, newsletterName: '✯ 𝗠𝗮𝘅 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯', }, externalAdReply: { showAdAttribution: true, title: packname, body: '💙 ¡𝗠𝗮𝘅 Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
