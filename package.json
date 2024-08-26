@@ -17,13 +17,13 @@
 "test": "node test.js",
 "test2": "nodemon index.js" },
 
-"homepage": "https://github.com/Angelito-OFC/GenesisBot-MD",
+"homepage": "https://github.com/Jostin-444/Maxbot",
 "author": {
 "name": "Angelito-OFC" },
 
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Jostin-444/MaxBot-MD.git" },
+"url": "https://github.com/Jostin-444/MaxBot-MD.git" },
 
 "bugs": {
 "url": "https://github.com/Jostin-444/MaxBot-MD/issues" },
