@@ -308,11 +308,11 @@ const mainBotAuthFile = 'MaxSession';
 try {
 const mainBot = await connectionUpdate(mainBotAuthFile);
 global.conns.push(mainBot);
-console.log(chalk.bold.greenBright(`⭐ GenesisBot-MD conectado correctamente.`))
+console.log(chalk.bold.greenBright(`⭐ MacBot-MD conectado correctamente.`))
 
 await connectSubBots();
 } catch (error) {
-console.error(chalk.bold.cyanBright(`⭐ Error al iniciar GenesisBot-MD: `, error))
+console.error(chalk.bold.cyanBright(`⭐ Error al iniciar Max-Bot: `, error))
 }
 })();*/
 
