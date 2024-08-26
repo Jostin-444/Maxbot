@@ -7,10 +7,10 @@ let name = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]
 if (!canLevelUp(user.level, user.exp, global.multiplier)) {
 let { min, xp, max } = xpRange(user.level, global.multiplier)
-let txt = `🤍 *Nombre* ${name}\n\n`
-txt += `🤍 *Nivel* ${user.level}\n`
-txt += `🤍 *XP* ${user.exp - min} / ${xp}\n\n`
-txt += `🤍 No es suficiente XP *${max - user.exp}* ¡De nuevo! ✨`
+let txt = `❤️ *Nombre* ${name}\n\n`
+txt += `💙 *Nivel* ${user.level}\n`
+txt += `🩵 *XP* ${user.exp - min} / ${xp}\n\n`
+txt += `❤️ No es suficiente XP *${max - user.exp}* ¡De nuevo! ✨`
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)}
 let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
@@ -20,7 +20,7 @@ txt += `*${before}* ➔ *${user.level}* [ ${user.role} ]\n\n`
 txt += `• 🧬 Nivel anterior : ${before}\n`
 txt += `• 🧬 Nuevos niveles : ${user.level}\n`
 txt += `• 📅 Fecha : ${new Date().toLocaleString('id-ID')}\n\n`
-txt += `🤍 *Nota:* _Cuanto más a menudo interactúes con *Génesis Bot*, mayor será tu nivel_`
+txt += `💙 *Nota:* _Cuanto más a menudo interactúes con *Génesis Bot*, mayor será tu nivel_`
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)}}
 
 handler.help = ['levelup']
