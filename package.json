@@ -1,5 +1,5 @@
 {
-"name": "Genesis-OFC",
+"name": "Max-OFC",
 "version": "1.4.0", 
 "description": "Super Bot De WhatsApp",
 "main": "index.js",
@@ -23,10 +23,10 @@
 
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Angelito-OFC/GenesisBot-MD.git" },
+"url": "git+https://github.com/Jostin-444/MaxBot-MD.git" },
 
 "bugs": {
-"url": "https://github.com/Angelito-OFC/GenesisBot-MD/issues" },
+"url": "https://github.com/Jostin-444/MaxBot-MD/issues" },
 "license": "GPL-3.0-or-later",
 "dependencies": {
 "@adiwajshing/keyed-db": "^0.2.4",
