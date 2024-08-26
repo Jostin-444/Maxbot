@@ -1,10 +1,10 @@
 import { search, download } from 'aptoide-scraper'
 
 var handler = async (m, {conn, usedPrefix, command, text}) => {
-if (!text) return conn.reply(m.chat, '🤍 *Ingrese el nombre de la apk para descargarlo.*', m, rcanal)
+if (!text) return conn.reply(m.chat, '❤️ *Ingrese el nombre de la apk para descargarlo.*', m, rcanal)
 try {
 await m.react(rwait)
-conn.reply(m.chat, '🤍 *Descargando su aplicación...*', m, {
+conn.reply(m.chat, '💙 *Descargando su aplicación...*', m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
