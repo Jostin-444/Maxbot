@@ -3,14 +3,14 @@ let staff = `☁️ *EQUIPO DE AYUDANTES*
 ☕ *Bot:* ${global.botname}
 ☕ *Versión:* ${global.vs}
 
-🤍 *Propietario:* 🤍
+🩵 *Propietario:* 🩵
 
-• Angel-OFC
+• Jostin-444
 ☁️ *Rol:* Propietario
 ☁️ *Número:* ${creador}
-☁️ *GitHub:* https://github.com/Angelito-OFC
+☁️ *GitHub:* https://github.com/Jostin-444
 
-🤍 *Colaboradores:* 🤍
+🩵 *Colaboradores:* 🩵
 
 • Maxz XB
 ☁️ *Rol:* Colab
