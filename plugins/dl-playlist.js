@@ -30,7 +30,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         });
     }
 
-    await conn.sendListB(m.chat, '*GENESIS BOT*🔎', `\n 📀 Resultados de:\n *${text}*`, `OPCIONES`, ytres[0].image, listSections, m);
+    await conn.sendListB(m.chat, '*MAX BOT*🔎', `\n 📀 Resultados de:\n *${text}*`, `OPCIONES`, ytres[0].image, listSections, m);
 };
 
 handler.help = ['play2']
