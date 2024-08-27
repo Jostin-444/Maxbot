@@ -104,7 +104,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 ### ✨ CREADOR 
 <a
-href="https://github.com/Jostin-444"><img src="https://https://github.com/Jostin-444.png" width="130" height="130" alt="Angelito"/></a>
+href="https://github.com/Jostin-444"><img src="https://https://github.com/Jostin-444.png" width="130" height="130" alt="Jostin-444"/></a>
 
 > Copyright (c) 2024 **[Jostin-444](https://wa.me/qr/UBNVKDPVCDVNK1)**.
 
