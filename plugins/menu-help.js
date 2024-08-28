@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `\ᴍ ᴀ x ʙ ᴏ ᴛ  ᴘ ʀ ᴏ`,
+                displayName: `\nC  R O W B O T  P R O`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -50,23 +50,23 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let menu = ``;
 
     let txt = ""
-    txt += '⠕⃞❨ः亹⠿☛𝑪𝑹𝑬𝑨𝑫𝑶𝑹 :' + ` Jostin-444\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑵𝑰𝑪𝑲𝑩𝑶𝑻 :' + ` Max-Bot\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑭𝑬𝑪𝑯𝑨 :' + ` ${fecha}\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑽𝑬𝑹𝑪𝑰𝑶𝑵 :' + ` ${vs}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Niño Piña\n`;
+    txt += '`~ꦿ͜͡͜͡𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` CrowBot\n`;
+    txt += '`~ꦿ͜͡͜͡𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + ` ${vs}\n`;
     txt += `${sbot}\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑷𝑹𝑬𝑭𝑰𝑱𝑶 :' + ` [  ${usedPrefix}  ]\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑺𝑼𝑩𝑩𝑶𝑻𝑺 :' + ` ${totalUsers || '0'}\n`;
-    txt += '' + ` ${totalusr}\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶𝑺 :' + ` ${rtotalreg}\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑨𝑪𝑻𝑰𝑽𝑶 :' + ` ${uptime}\n`;
-    txt += '⠕⃞❨ः亹⠿☛𝑪𝑹𝑬𝑨𝑫𝑶𝑹 : #owner\n';
-    txt += ᳝'꩖͜͡•꙰──────▧⃟╳⃟ೇ───────𖡜ꦽ̸ོ˚￫ ݈݇─' 
+    txt += '`~ꦿ͜͡͜͡𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
+    txt += '`~ꦿ͜͡͜͡𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + ` ${totalUsers || '0'}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + ` ${totalusr}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:`' + ` ${rtotalreg}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐀𝐂𝐓𝐈𝐕𝐎:`' + ` ${uptime}\n`;
+    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` #owner\n';
+    txt += "•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ";
 
     let listSections = [];
 
         listSections.push({
-        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular Max-bot`,
+        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular CrowBot`,
         rows: [
             {
                 header: "𝗔𝗨𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗜𝗖𝗔𝗥 ✅",
@@ -75,7 +75,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 id: `#reg 食𝐕̲͟ⳤ͢⃝̵̵🧧᭄̯⳱.18`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💙",
+                header: "𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 🤍",
                 title: "",
                 description: `MENU COMPLETO`,
                 id: `.allmenu`,
@@ -111,13 +111,13 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 id: `${usedPrefix}menuai`,
             },
             {
-                header: "𝗥𝗘𝗗𝗘𝗦 𝗠𝗔𝗫-𝗕𝗢𝗧 🍄",
+                header: "𝗥𝗘𝗗𝗘𝗦 CrowBot 🍄",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘢𝘴 𝘳𝘦𝘥𝘦𝘴 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}redes`,
             },
             {
-                header: "𝗚𝗥𝗨𝗣𝗢𝗦 𝗠𝗔𝗫-𝗕𝗢𝗧 ☁️",
+                header: "𝗚𝗥𝗨𝗣𝗢𝗦 CrowBot ☁️",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘰𝘴 𝘨𝘳𝘶𝘱𝘰𝘴 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}grupos`,
@@ -137,17 +137,17 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img2 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img3 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img4 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img5 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img6 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img8 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img9 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img10 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
-    let img11 = "https://telegra.ph/file/6b473c2bfe8f3ab807b98.jpg";
+    let vid = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img2 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img3 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img4 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img5 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img6 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img8 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img9 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img10 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
+    let img11 = "https://telegra.ph/file/6baee91f21201192b6c8a.jpg";
 
     await conn.sendListB(m.chat, menu, txt, `「✶」𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓「✶」`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, estilo);
 };
