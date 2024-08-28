@@ -148,7 +148,7 @@ title: `[ 𝗖 𝗢 𝗣 𝗜 𝗟 𝗢 𝗧 ]`,
 body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/26butm5t', 
-sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+sourceUrl: 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h'}}},
 { quoted: m})
 }}
 handler.help = ["chagpt", "ia", "gemini", "copilot"]
