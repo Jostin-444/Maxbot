@@ -17,17 +17,17 @@ https://dash.corinplus.com
 https://panel.corinplus.com
 
 💥 *Comunidad de WhatsApp:*
-https://chat.whatsapp.com/HR3OLhsuZPqCMImzuHcuON
+https://chat.whatsapp.com/CRIhRGP6fTp78OGWCUKQVm
 
 *🟣 Discord:*
 https://discord.com/invite/bjKpRBtkHv
 
 🧡 *Canal de WhatsApp:*
-https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g
+https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h
 
 🗣📲 *Contacto:*
-• wa.me/5214531287294
-• wa.me/573147616444
+• wa.me/50242073893
+• wa.me/50587043137
 • https://www.facebook.com/elrebelde21
 
 No esperes más y lleva tu bot al siguiente nivel con nuestro servicio de alojamiento. ¡Es fácil, rápido y económico! 💪🚀` 
