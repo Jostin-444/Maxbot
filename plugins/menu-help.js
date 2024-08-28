@@ -137,7 +137,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
+    let vid = "https://telegra.ph/file/2ffa6fa3ac83ffb013369.mp4";
     let img = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
     let img2 = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
     let img3 = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
