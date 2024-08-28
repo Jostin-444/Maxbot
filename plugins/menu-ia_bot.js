@@ -8,7 +8,7 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“𝐇𝐨𝐥𝐚 *%name* 𝐒𝐨𝐲 𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭, ${saludo}"
+  before: `“𝐇𝐨𝐥𝐚 *%name* 𝐒𝐨𝐲 𝐌𝐚𝐱-𝐁𝐨𝐭, ${saludo}"
 
 ✧ ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬ ✧ 
 
@@ -190,8 +190,8 @@ await m.react('☕')
         text: text,
         contextInfo: {
         externalAdReply: {
-        title: '𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭-𝐌𝐃',
-        body: '©𝟐𝟎𝟐𝟒 𝐀𝐧𝐠𝐞𝐥𝐢𝐭𝐨-𝐎𝐅𝐂',
+        title: '𝐌𝐚𝐱-𝐁𝐨𝐭',
+        body: '©𝟐𝟎𝟐𝟒 𝐉𝐨𝐬𝐭𝐢𝐧-444',
         thumbnailUrl: img,
         sourceUrl: global.canal,
         mediaType: 1,
