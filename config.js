@@ -57,14 +57,14 @@ global.estilox = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(f
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
 global.id_canal = '120363220939514640@newsletter' //-ID de canal de WhatsApp
 global.canal = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h' //CANAL MAX
-global.canal2 = 'https://whatsapp.com/channel/0029VafjvaaEgGfOe5KdmX1n' //CANAL TITANIUM TEAM
+global.canal2 = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h' //CANAL MAX-BOT
 global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6' //GRUPO DE AVISOS
 global.bgp2 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a' //GRUPO GLOBAL 1
-global.bgp3 = 'https://chat.whatsapp.com/DVt1mhZ6H7EIpt4lmjURwq' //GRUPO GLOBAL 2
-global.bgp4 = 'https://chat.whatsapp.com/Fn5Ipyxu6mE6qEQlwWZTwU' //GRUPO NSFW
+global.bgp3 = 'https://chat.whatsapp.com/CRIhRGP6fTp78OGWCUKQVm' //GRUPO GLOBAL 2
+global.bgp4 = 'https://chat.whatsapp.com/C2at9CUaxBn80MFj2UOfU9' //GRUPO NSFW
 global.md = 'https://github.com/Jostin-444/Maxbot' //Github Oficial
 global.ig = 'https://www.instagram.com/jostin_max.bot?igsh=MW1jcDBtMWN2dm9qeQ==' //Ig Oficial
-global.correo = 'agasistencia2@gmail.com'
+global.correo = 'cuenta.0.110.1001@gmail.com'
 
 //• ↳ ◜𝑻𝑰𝑬𝑴𝑷𝑶◞ • 🕒
 global.d = new Date(new Date + 3600000);
