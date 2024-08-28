@@ -18,7 +18,7 @@ title: `[ 𝗖𝗛𝗔𝗧𝗚𝗣𝗧 - 𝗗𝗘𝗠𝗢 ]`,
 body: ``,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://tinyurl.com/2awg2bch', 
-sourceUrl: 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'}}},
+sourceUrl: 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h'}}},
 { quoted: m})
     } catch (err) {
         m.reply('error cik:/ ' + err);
