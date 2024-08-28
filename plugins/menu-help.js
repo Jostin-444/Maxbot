@@ -66,7 +66,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let listSections = [];
 
         listSections.push({
-        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular CrowBot`,
+        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular Max-Bot`,
         rows: [
             {
                 header: "𝗔𝗨𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗜𝗖𝗔𝗥 ✅",
