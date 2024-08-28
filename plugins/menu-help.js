@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `\nM A X B O T  P R O`,
+                displayName: `\n𝗠 𝗔 𝗫 𝗕 𝗢 𝗧 𝗣 𝗥 𝗢`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -66,7 +66,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let listSections = [];
 
         listSections.push({
-        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular Max-Bot`,
+        title: `🔖 SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular 𝗠𝗔𝗫-𝗕𝗢𝗧`,
         rows: [
             {
                 header: "𝗔𝗨𝗧𝗢 𝗩𝗘𝗥𝗜𝗙𝗜𝗖𝗔𝗥 ✅",
@@ -117,7 +117,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 id: `${usedPrefix}redes`,
             },
             {
-                header: "𝗚𝗥𝗨𝗣𝗢𝗦 CrowBot ☁️",
+                header: "𝗚𝗥𝗨𝗣𝗢𝗦 𝗠𝗮𝘅-𝗕𝗼𝘁 ☁️",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘰𝘴 𝘨𝘳𝘶𝘱𝘰𝘴 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}grupos`,
@@ -137,7 +137,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         ],
     });
 
-    let vid = "https://telegra.ph/file/2ffa6fa3ac83ffb013369.mp4";
+    let vid = "https://telegra.ph/file/1cf7cec1bba1dd12e5723.mp4";
     let img = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
     let img2 = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
     let img3 = "https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg";
