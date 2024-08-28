@@ -14,7 +14,7 @@ if (apuesta < 10) throw '🚩 Lo Mínimo Para Apostar Es 100 *XP*'
 if (users.exp < apuesta) {
 throw `🚩 No Tienes Sufuciente *XP*`
 }
-let emojis = ['✨️', '💖', '🤍', '☁️', '🐶']
+let emojis = ['✨️', '💖', '💙', '☁️', '🐶']
 let a = Math.floor(Math.random() * emojis.length)
 let b = Math.floor(Math.random() * emojis.length)
 let c = Math.floor(Math.random() * emojis.length)
