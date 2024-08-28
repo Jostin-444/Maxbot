@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `\nɢ ᴇ ɴ ᴇ ꜱ ɪ ꜱ  ʙ ᴏ ᴛ  ᴘ ʀ ᴏ`,
+                displayName: `\ᴍ ᴀ x ʙ ᴏ ᴛ  ᴘ ʀ ᴏ`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -50,17 +50,17 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let menu = ``;
 
     let txt = ""
-    txt += '⠕⃞❨ः亹⠿☛ *𝑪𝑹𝑬𝑨𝑫𝑶𝑹* :' + ` 𝙅𝙤𝙨𝙩𝙞𝙣-444\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑵𝑰𝑪𝑲𝑩𝑶𝑻* :' + ` 𝙈𝙖𝙭-𝘽𝙤𝙩\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑭𝑬𝑪𝑯𝑨* :' + ` ${fecha}\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑽𝑬𝑹𝑪𝑰𝑶𝑵* :' + ` ${vs}\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑪𝑹𝑬𝑨𝑫𝑶𝑹 :' + ` Jostin-444\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑵𝑰𝑪𝑲𝑩𝑶𝑻 :' + ` Max-Bot\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑭𝑬𝑪𝑯𝑨 :' + ` ${fecha}\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑽𝑬𝑹𝑪𝑰𝑶𝑵 :' + ` ${vs}\n`;
     txt += `${sbot}\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑷𝑹𝑬𝑭𝑰𝑱𝑶* :' + ` [  ${usedPrefix}  ]\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑺𝑼𝑩𝑩𝑶𝑻𝑺* : ' + ` ${totalUsers || '0'}\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑷𝑹𝑬𝑭𝑰𝑱𝑶 :' + ` [  ${usedPrefix}  ]\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑺𝑼𝑩𝑩𝑶𝑻𝑺 : ' + ` ${totalUsers || '0'}\n`;
     txt += '' + ` ${totalusr}\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶𝑺* :' + ` ${rtotalreg}\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑨𝑪𝑻𝑰𝑽𝑶* :' + ` ${uptime}\n`;
-    txt += '⠕⃞❨ः亹⠿☛ *𝑪𝑹𝑬𝑨𝑫𝑶𝑹* : #owner\n';
+    txt += '⠕⃞❨ः亹⠿☛𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶𝑺 :' + ` ${rtotalreg}\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑨𝑪𝑻𝑰𝑽𝑶 :' + ` ${uptime}\n`;
+    txt += '⠕⃞❨ः亹⠿☛𝑪𝑹𝑬𝑨𝑫𝑶𝑹 : #owner\n';
     txt += ᳝'꩖͜͡•꙰──────▧⃟╳⃟ೇ───────𖡜ꦽ̸ོ˚￫ ݈݇─' 
 
     let listSections = [];
