@@ -1,5 +1,5 @@
-// Creditos del codigo a @usxr_angelito //
-/* GitHub: https://github.com/Angelito-OFC*/
+// Creditos del codigo a @jostin_dzn //
+/* GitHub:https://github.com/Jostin-444*/
 import {WAMessageStubType} from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 
