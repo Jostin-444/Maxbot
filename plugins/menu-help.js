@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `\nC  R O W B O T  P R O`,
+                displayName: `\nM A X B O T  P R O`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -50,8 +50,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let menu = ``;
 
     let txt = ""
-    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Niño Piña\n`;
-    txt += '`~ꦿ͜͡͜͡𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` CrowBot\n`;
+    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` Jostin-444\n`;
+    txt += '`~ꦿ͜͡͜͡𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` MaxBot\n`;
     txt += '`~ꦿ͜͡͜͡𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
     txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + ` ${vs}\n`;
     txt += `${sbot}\n`;
@@ -75,7 +75,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 id: `#reg 食𝐕̲͟ⳤ͢⃝̵̵🧧᭄̯⳱.18`,
             },
             {
-                header: "𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 🤍",
+                header: "𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢 💙",
                 title: "",
                 description: `MENU COMPLETO`,
                 id: `.allmenu`,
@@ -111,7 +111,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 id: `${usedPrefix}menuai`,
             },
             {
-                header: "𝗥𝗘𝗗𝗘𝗦 CrowBot 🍄",
+                header: "𝗥𝗘𝗗𝗘𝗦 𝗠𝗮𝘅-𝗕𝗼𝘁 🍄",
                 title: "",
                 description: `𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘭𝘢𝘴 𝘳𝘦𝘥𝘦𝘴 𝘥𝘦𝘭 𝘣𝘰𝘵`,
                 id: `${usedPrefix}redes`,
