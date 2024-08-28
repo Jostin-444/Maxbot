@@ -28,7 +28,7 @@ let estado = `᥀·࣭࣪̇˖☁️◗ 𝘊𝘈𝘕𝘈𝘓:
 • ${bgp4}
 `
 await conn.sendButton(m.chat, estado, '@jostin_max.bot', pp, [
-['DUEÑO 🤍', '.owner'], ['DONAR 🫧', '.donate']], null, [['CANAL 🐈‍⬛', `${canal}`]], m)
+['DUEÑO 💙', '.owner'], ['DONAR 🫧', '.donate']], null, [['CANAL 🐈‍⬛', `${canal}`]], m)
 }
 handler.help = ['grupos']
 handler.tags = ['info']
