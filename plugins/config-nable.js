@@ -397,7 +397,7 @@ default:
 if (!/[01]/.test(command)) return await conn.reply(m.chat, miniopcion, m, rcanal);
 throw false;
 }
-await conn.sendButton(m.chat, `\`❱❱ 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 • 𝗠𝗗 ❰❰\`
+await conn.sendButton(m.chat, `\`❱❱ 𝗠𝗔𝗫 • 𝗠𝗗 ❰❰\`
 
 *» 𝗢𝗣𝗖𝗜𝗢𝗡 |* ${type.toUpperCase()}
 *» 𝗘𝗦𝗧𝗔𝗗𝗢 |* ${isEnable ? 'ON' : 'OFF'}
