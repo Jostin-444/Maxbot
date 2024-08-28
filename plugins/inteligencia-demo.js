@@ -1,4 +1,4 @@
-//código modificado por Angel-OFC 
+//código modificado por Jostin-444 
 import { randomBytes } from "crypto"
 import axios from "axios"
 
