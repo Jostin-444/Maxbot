@@ -46,22 +46,22 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let totalreg = Object.keys(global.db.data.users).length;
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length;
 
-    m.react("🤍");
+    m.react("💙");
     let menu = ``;
 
     let txt = ""
-    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:`' + ` jostin-ofc\n`;
-    txt += '`~ꦿ͜͡͜͡𝐍𝐎𝐌𝐁𝐑𝐄:`' + ` Max-bot\n`;
-    txt += '`~ꦿ͜͡͜͡𝐅𝐄𝐂𝐇𝐀:`' + ` ${fecha}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐒𝐈𝐎𝐍:`' + ` ${vs}\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑪𝑹𝑬𝑨𝑫𝑶𝑹* :' + ` 𝙅𝙤𝙨𝙩𝙞𝙣-444\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑵𝑰𝑪𝑲𝑩𝑶𝑻* :' + ` 𝙈𝙖𝙭-𝘽𝙤𝙩\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑭𝑬𝑪𝑯𝑨* :' + ` ${fecha}\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑽𝑬𝑹𝑪𝑰𝑶𝑵* :' + ` ${vs}\n`;
     txt += `${sbot}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐏𝐑𝐄𝐅𝐈𝐉𝐎:`' + ` [  ${usedPrefix}  ]\n`;
-    txt += '`~ꦿ͜͡͜͡𝐒𝐔𝐁𝐁𝐎𝐓𝐒:`' + ` ${totalUsers || '0'}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒:`' + ` ${totalusr}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐕𝐄𝐑𝐈𝐅𝐈𝐂𝐀𝐃𝐎𝐒:`' + ` ${rtotalreg}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐀𝐂𝐓𝐈𝐕𝐎:`' + ` ${uptime}\n`;
-    txt += '`~ꦿ͜͡͜͡𝐂𝐑𝐄𝐀𝐃𝐎𝐑:` #owner\n';
-    txt += "•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ•*¨*•.¸¸☆*･ﾟ";
+    txt += '⠕⃞❨ः亹⠿☛ *𝑷𝑹𝑬𝑭𝑰𝑱𝑶* :' + ` [  ${usedPrefix}  ]\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑺𝑼𝑩𝑩𝑶𝑻𝑺* : ' + ` ${totalUsers || '0'}\n`;
+    txt += '' + ` ${totalusr}\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶𝑺* :' + ` ${rtotalreg}\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑨𝑪𝑻𝑰𝑽𝑶* :' + ` ${uptime}\n`;
+    txt += '⠕⃞❨ः亹⠿☛ *𝑪𝑹𝑬𝑨𝑫𝑶𝑹* : #owner\n';
+    txt += ᳝'꩖͜͡•꙰──────▧⃟╳⃟ೇ───────𖡜ꦽ̸ོ˚￫ ݈݇─
 
     let listSections = [];
 
