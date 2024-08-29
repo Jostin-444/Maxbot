@@ -55,7 +55,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     txt += '`⠕⃞❨ः亹⠿☛ 𝑽𝑬𝑹𝑪𝑰𝑶𝑵 :`' + ` ${fecha}\n`;
     txt += '`⠕⃞❨ः亹⠿☛ 𝑽𝑬𝑹𝑪𝑰𝑶𝑵 :`' + ` ${vs}\n`;
     txt += `${sbot}\n`;
-    txt += '`⠕⃞❨ः亹⠿☛ *𝑷𝑹𝑬𝑭𝑰𝑱𝑶* :`' + ` [  ${usedPrefix}  ]\n`;
+    txt += '`⠕⃞❨ः亹⠿☛ 𝑷𝑹𝑬𝑭𝑰𝑱𝑶 :`' + ` [  ${usedPrefix}  ]\n`;
     txt += '``' + ` ${totalUsers || '0'}\n`;
     txt += '`⠕⃞❨ः亹⠿☛ 𝑼𝑺𝑼𝑨𝑹𝑰𝑶𝑺 :`' + ` ${totalusr}\n`;
     txt += '`⠕⃞❨ः亹⠿☛ 𝑽𝑬𝑹𝑰𝑭𝑰𝑪𝑨𝑫𝑶𝑺 :`' + ` ${rtotalreg}\n`;
