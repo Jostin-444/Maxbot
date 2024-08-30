@@ -7,7 +7,7 @@ let staff = `☁️ *EQUIPO DE AYUDANTES*
 
 • Jostin-444
 ☁️ *Rol:* Propietario
-☁️ *Número:* ${creador} 50242073893
+☁️ *Número:* ${creador}
 ☁️ *GitHub:* https://github.com/Jostin-444
 
 🩵 *Colaboradores:* 🩵
