@@ -33,7 +33,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'game': '𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍',
 }
-let img = 'https://i.ibb.co/8g5yZr5/file.jpg'
+let img = 'https://i.ibb.co/qkSttKQ/file.jpg'
 
   try {
           // DEFAULT MENU
