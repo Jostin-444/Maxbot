@@ -8,7 +8,7 @@
 </div>
 
 #### Creador: Jostin-444 🔥
-#### Realizado con: Team Gastin
+#### Realizado con: Titanium team
 
 ### CONTACTOS 💻
 <p>
