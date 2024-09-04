@@ -150,7 +150,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/429597bbfaef0479d7ca1.jpg')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/018f0da83f1d19376b9a2.jpg')
 
   let category = "video"
   const db = './media/database/db.json'
