@@ -113,6 +113,6 @@ global.icono = [
 'https://i.ibb.co/5RpBMz2/file.jpg',
 ].getRandom()
 
-global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363220939514640@newsletter", serverMessageId: 100, newsletterName: '✯ 𝗠𝗮𝘅 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯', }, externalAdReply: { showAdAttribution: true, title: packname, body: '💙 ¡𝗠𝗮𝘅 Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
+global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: "120363310471144301@newsletter", serverMessageId: 100, newsletterName: '✯ 𝗠𝗮𝘅 - 𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯', }, externalAdReply: { showAdAttribution: true, title: packname, body: '💙 ¡𝗠𝗮𝘅 Super Bot!', mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
 
 export default handler
