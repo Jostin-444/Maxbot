@@ -27,11 +27,11 @@ global.mods = []
 
 //• ↳ ◜𝑴𝑨𝑹𝑪𝑨𝑺 𝑫𝑬 𝑨𝑮𝑼𝑨◞ • 💌
 global.packname = '𝐌𝐀𝐗 𝐁𝐎𝐓'
-global.author = '@jostin_dzn'
+global.author = '@jostin_max.bot'
 global.wm = '𝐌𝐚𝐱 𝐏𝐫𝐨'
 global.titulowm = 'MaxBot-Pro 💙'
 global.titulowm2 = 'Jostin-444'
-global.igfg = '@jostin_dzn'
+global.igfg = '@jostin_max.bot'
 global.botname = '𝐌𝐚𝐱𝐁𝐨𝐭 💙'
 global.dev = '`𝐌𝐚𝐱𝐁𝐨𝐭 💙`\n*By • 𝑱𝑶𝑺𝑻𝑰𝑵 🔥*'
 global.textbot = '𝐌𝐚𝐱 𝐁𝐨𝐭 : 𝗝𝗼𝘀𝘁𝗶𝗻 💙'
