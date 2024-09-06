@@ -10,7 +10,7 @@ const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/b
 const defaultMenu = {
   before: `“𝐇𝐨𝐥𝐚 *%name* 𝐒𝐨𝐲 𝐌𝐚𝐱-𝐁𝐨𝐭"
 
-✧ ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬ ✧ 
+✧ ≪━─━─━─━─𖣔─━─━─━─━≫ ✧
 
  '︶꒦꒷♡꒷꒦︶.
 ┊✶ 𝐂𝐥𝐢𝐞𝐧𝐭𝐞: %name
