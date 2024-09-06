@@ -55,7 +55,7 @@ global.fakegif4 = { key: { participant: `0@s.whatsapp.net`, ...(false ? { remote
 global.estilox = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '⏤͟͞ू⃪ ፝͜⁞M͢ᴇɢ፝֟ᴜᴍ⃨ɪɴ⃜✰⃔࿐', orderTitle: 'packname', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
-global.id_canal = '120363220939514640@newsletter' //-ID de canal de WhatsApp
+global.id_canal = '120363310471144301@newsletter' //-ID de canal de WhatsApp
 global.canal = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h' //CANAL MAX
 global.canal2 = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h' //CANAL MAX-BOT
 global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6' //GRUPO DE AVISOS
