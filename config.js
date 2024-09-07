@@ -56,7 +56,7 @@ global.estilox = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(f
 
 //• ↳ ◜𝑳𝑰𝑵𝑲𝑺◞ • 🌿
 global.id_canal = '120363310471144301@newsletter' //-ID de canal de WhatsApp
-global.canal = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h' //CANAL MAX
+global.canal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y' //CANAL GENESIS
 global.canal2 = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h' //CANAL MAX-BOT
 global.bgp = 'https://chat.whatsapp.com/KC6Ye8u87vE0E2Lrm5cZfk' //GRUPO DE AVISOS
 global.bgp2 = 'https://chat.whatsapp.com/CRIhRGP6fTp78OGWCUKQVm' //GRUPO GLOBAL 1
