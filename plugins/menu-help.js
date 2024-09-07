@@ -138,8 +138,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     });
 
     let vid = "https://telegra.ph/file/1cf7cec1bba1dd12e5723.mp4";
-    let img = "https://telegra.ph/file/1cf7cec1bba1dd12e5723.mp4";
-    let img2 = "https://telegra.ph/file/1cf7cec1bba1dd12e5723.mp4";
+    let img = "https://i.ibb.co/G5WJFPk/file.jpg";
+    let img2 = "https://i.ibb.co/L5GFfq2/file.jpg";
     let img3 = "https://telegra.ph/file/e91640f6a39f1c3c61481.jpg";
     let img4 = "https://telegra.ph/file/e91640f6a39f1c3c61481.jpg";
     let img5 = "https://telegra.ph/file/e91640f6a39f1c3c61481.jpg";
