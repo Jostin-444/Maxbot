@@ -20,9 +20,9 @@ let staff = `☁️ *EQUIPO DE AYUDANTES*
 ☁️ *Rol:* Colab
 ☁️ *GitHub:* https://github.com/ale-rmz
 
-• Sebas XB
+• Angel XB
 ☁️ *Rol:* Colab
-☁️ *GitHub:* https://github.com/sebas-mod`
+☁️ *GitHub:* https://github.com/Angelito-OFC`
 await conn.sendFile(m.chat, icons, 'yaemori.jpg', staff.trim(), fkontak, true, {
 contextInfo: {
 'forwardingScore': 200,
