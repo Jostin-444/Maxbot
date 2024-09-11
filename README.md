@@ -102,7 +102,7 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 
 </details>
 ------------------
-> No Spam A La Bot!
+> No Spam Al Bot!
 
 ---
 
