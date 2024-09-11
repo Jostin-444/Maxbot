@@ -190,8 +190,8 @@ await m.react('📥')
         text: text,
         contextInfo: {
         externalAdReply: {
-        title: '𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭-𝐌𝐃',
-        body: '©𝟐𝟎𝟐𝟒 𝐀𝐧𝐠𝐞𝐥𝐢𝐭𝐨-𝐎𝐅𝐂',
+        title: '𝐌𝐚𝐱𝐁𝐨𝐭-𝐌𝐃',
+        body: '©𝟐𝟎𝟐𝟒 𝐉𝐨𝐬𝐭𝐢𝐧-444',
         thumbnailUrl: img,
         sourceUrl: global.canal,
         mediaType: 1,
