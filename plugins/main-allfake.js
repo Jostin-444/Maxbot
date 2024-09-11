@@ -63,7 +63,7 @@ global.waittt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻�
 global.waitttt = '🕒 *𝗘𝘀𝗽𝗲𝗿𝗮 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗮 ...*';
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h'  
+var canal2 = 'https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h'  
 var git = 'https://github.com/Jostin-444/Maxbot' 
 var github = 'https://github.com/Jostin-444' 
 var instagram = 'https://www.instagram.com/jostin_max.bot?igsh=MW1jcDBtMWN2dm9qeQ==' 
