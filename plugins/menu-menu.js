@@ -3,6 +3,25 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
+let Styles = (text, style = 1) => {
+  var xStr = 'abcdefghijklmnopqrstuvwxyz1234567890'.split('');
+  var yStr = Object.freeze({
+    1: 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘqʀꜱᴛᴜᴠᴡxʏᴢ1234567890'
+  });
+  var replacer = [];
+  xStr.map((v, i) => replacer.push({
+    original: v,
+    convert: yStr[style].split('')[i]
+  }));
+  var str = text.toLowerCase().split('');
+  var output = [];
+  str.map(v => {
+    const find = replacer.find(x => x.original == v);
+    find ? output.push(find.convert) : output.push(v);
+  });
+  return output.join('');
+};
+
 let tags = {
   'main': '𝐈𝐍𝐅𝐎 𝐁𝐎𝐓',
   'buscador': '𝐁𝐔𝐒𝐐𝐔𝐄𝐃𝐀𝐒',
@@ -31,28 +50,48 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `“𝐇𝐨𝐥𝐚 *%name* 𝐒𝐨𝐲 𝐌𝐚𝐱𝐁𝐨𝐭, %greeting"
+  before: `
+*︵̩̥̩̥̩̥̩̥̩̥̩̥.ֹ̥︵̩̥̩̥̩̥̩⏜⌣𓆩♥️𓆪⌣⏜︵̩̥̩̥̩̥̩̥⌣ֹ̥*
+ *╔═𓆗═ͭ═ͪ═ͤ═✧☠️✧═ͨ═ᷞ═ͣ═ᷠ𓆗═╗*
+> `+'_*`'+`⁖ฺ۟̇࣪·֗٬̤⃟🌹hola %name, %greeting 𖠵ฺ໋۟݊`+'`*_'+`
+*╚═𓆗════✧🧧✧════𓆗═╝*
+꒷︶꒷꒥꒷‧₊˚꒷︶꒷꒥꒷‧₊˚꒷︶꒷꒥꒷‧₊˚꒷︶꒷
+  ╵︳╵︳╵│︱╵︳│╵│︳╵╵︳
+       .•*•.•*•.•*•.•*•.•*•.•*•.•*•.
+       `+'_*`𖤍 𝐀 𝐍 𝐘 𝐄 𝐋 𝐈 𝐓 𖤍`*_ '+`
+        •*•.•*•.•*•.•*•.•*•.•*•.•*•.
+        
+.・。.・゜✭・🐼・✫・゜・。.
+𓍢ִ:𓂃⊹ *🄽🄾🄼🄱🅁🄴* :  ִֶָ🥀𓍢ִ໋ 
+⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
+> %name
+𓍢ִ:𓂃⊹ *🄱🄾🅃* :  ִֶָ🥀𓍢ִ໋ 
+> Anyelita Bot
+⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
+𓍢ִ:𓂃⊹ *🄼🄾🄳🄾* :  ִֶָ🥀𓍢ִ໋ 
+> Público
+⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
+𓍢ִ:𓂃⊹ *🅁🅄🅃🄸🄽🄰* :  ִֶָ🥀𓍢ִ໋ 
+> %muptime
+⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
+𓍢ִ:𓂃⊹ *🅄🅂🄴🅁🅂* :  ִֶָ🥀𓍢ִ໋ 
+> %totalreg
+⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
+𓍢ִ:𓂃⊹ *🄲🄾🅁🄰🅉🄾🄽🄴🅂* :  ִֶָ🥀𓍢ִ໋ 
+> %corazones
+⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
+𓍢ִ:𓂃⊹ *🄽🄸🅅🄴🄻* :  ִֶָ🥀𓍢ִ໋ 
+> %level 
+✿°•∘ɷ∘•°✿ ... ✿°•∘ɷ∘•°✿.
 
-◆ ▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬ ◆
-
- '︶꒦꒷♡꒷꒦︶.
-┊𖣘 𝐂𝐥𝐢𝐞𝐧𝐭𝐞: %name
-┊┊𖣘 𝐁𝐨𝐭: Max bot
-┊┊𖣘 𝐌𝐨𝐝𝐨: Público
-┊┊𖣘 𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭: %muptime
-┊┊𖣘 𝐔𝐬𝐞𝐫𝐬: %totalreg
-┊┊𖣘 𝐂𝐨𝐫𝐚𝐳𝐨𝐧𝐞𝐬: %corazones
-┊┊𖣘 𝐍𝐢𝐯𝐞𝐥: %level 
-. .‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙┉ˏ͛ ༝̩̩̥͙　 ҉　
-
-༺═──ꔺ─✿━━•───ꕀ༒ꕀ───•━━✿─ꔺ──═༻
+✦•····················•✦•···················•✦
 `.trimStart(),
-  header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
-  body: '║✶ %cmd %isdiamond %isPremium\n',
-  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
+  header: 'li.╔╦══••✠•❀🌹❀•✠••══╦╗.il\n> ○⵿ͦꦽ͚┈➤̽ `%category`\nli.╚╩══••✠•❀🌹❀•✠••══╩╝.il\n▄︻🧧┻┳═ 🌹●○•♦️°♦️•○● 🌹═┳┻🧧︻▄',
+  body: '> _*`🎀⃟᷼ᮬᩙ⃪➤ %cmd %isdiamond %isPremium`*_\n',
+  footer: 'li.┗━━━━━°♤•♧°🌹°♧•♤°━━━━━┛.il\n\n',
   after: ``,
 }
-let ppp = 'https://i.ibb.co/yf3qmqy/file.jpg'
+let ppp = 'https://qu.ax/ZlNo.jpg'
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -150,7 +189,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/018f0da83f1d19376b9a2.jpg')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/ZlNo.jpg')
 
   let category = "video"
   const db = './media/database/db.json'
@@ -160,14 +199,14 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegr
   global.vid = rlink
   const response = await fetch(vid)
   const gif = await response.buffer()
- // const img = imagen1
+ // const img = { url: "https://qu.ax/ZlNo.jpg"} 
 
-await m.react('💙') 
-await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲𝗹 𝗕𝗼𝘁...𓏲੭*', fakegif3, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '💙 ¡Max el mejor Bot!', sourceUrl: canal, thumbnail: icons }}})
+await m.react('🩷') 
+await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲 𝗹𝗮 𝗕𝗼𝘁...𓏲੭*', fakegif3, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '🩷 ¡Anyelita la mejor Bot!', sourceUrl: "https://wa.me/0", thumbnail: icons }}})
 
 // await conn.reply(m.chat, '🍟 Enviando el menú.....', m, rcanal)
 
-await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
+await conn.sendFile(m.chat, "https://qu.ax/ZlNo.jpg", 'menu.jpg', Styles(text.trim()), fakegif3, null, fake)
 
   } catch (e) {
     conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, rcanal, )
