@@ -91,7 +91,7 @@ const defaultMenu = {
   footer: 'li.┗━━━━━°♤•♧°🔥°♧•♤°━━━━━┛.il\n\n',
   after: ``,
 }
-let ppp = 'https://qu.ax/ZlNo.jpg'
+let ppp = 'https://i.ibb.co/tmvP0G8/file.jpg'
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
