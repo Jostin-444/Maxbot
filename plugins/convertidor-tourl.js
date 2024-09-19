@@ -1,8 +1,3 @@
-/*
-   - torul by kenisawadev (no borrar creditos)
-   - api uguu.se upload video and photos
-   - limite de subida (1GB)
-*/
 import fs from "fs"
 import fetch from "node-fetch"
 import FormData from "form-data"
@@ -13,21 +8,21 @@ let handler = async m => {
     const mime = q.mediaType || ""    
     if (!/image|video|audio|sticker|document/.test(mime)) 
       throw "¡No se proporcionan medios!"
-    const medio = await q.download(true)
-    const PesoEnByte = fs.statSync(medio).size    
-    if (PesoEnByte === 0) {
+    const media = await q.download(true)
+    const fileSizeInBytes = fs.statSync(media).size    
+    if (fileSizeInBytes === 0) {
       await m.reply("archivo vacio")
-      await fs.promises.unlink(medio)
+      await fs.promises.unlink(media)
       return
     }   
-    if (PesoEnByte > 1073741824) {
+    if (fileSizeInBytes > 1073741824) {
       await m.reply("El archivo es demasiado grande, el tamaño máximo es 1 GB")
-      await fs.promises.unlink(medio)
+      await fs.promises.unlink(media)
       return
     }    
-    const { archivo } = await uploadUguu(medio)
-    const txt = `*Link:*\n${archivo[0]?.url}`
-    await m.reply(txt)
+    const { files } = await uploadUguu(media)
+    const caption = `*Link:*\n${files[0]?.url}`
+    await m.reply(caption)
   } catch (e) {
     await m.reply(`${e}`)
   }
@@ -52,6 +47,6 @@ async function uploadUguu(path) {
     return json
   } catch (e) {
     await fs.promises.unlink(path)
-    throw "Subida fallida"
+    throw "Upload failed"
   }
 }
