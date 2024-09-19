@@ -47,12 +47,10 @@ let handler = async(m, { conn, usedPrefix, command, text }) => {
         videoMessage: await createVideo(lucuy.play)
       }),
       nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.fromObject({
-        buttons: [
-          {
-            "name": "quick_reply",
-            "buttonParamsJson": `{"display_text":"Buscar De Nuevo ","id":".ttsearchslide ${text}"}`
-          }
-        ]
+        buttons: [{
+							"name": "cta_url",
+							"buttonParamsJson": `{"display_text":"Channel WhatsApp","url":"https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h","merchant_url":"https://whatsapp.com/channel/0029Vai2U3MAu3aRB0NYFT3h"}`
+						}]
       })
     });
   }
