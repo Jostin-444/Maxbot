@@ -1,4 +1,4 @@
-D> 🐈‍⬛ Versión Actual: 1.4.0
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=falso&vCenter=falso&lines=֎+VERCION+1.4.0+֎"> 
 
 ## 💙 **`M A X - B O T`**
 
