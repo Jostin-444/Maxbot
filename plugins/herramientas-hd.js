@@ -1,22 +1,24 @@
 import FormData from "form-data";
 import Jimp from "jimp";
+
+
 const handler = async (m, {conn, usedPrefix, command}) => {
+  const datas = global
+  const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
+  const tradutor = _translate.plugins.herramientas_hd
+
  try {    
   let q = m.quoted ? m.quoted : m;
   let mime = (q.msg || q).mimetype || q.mediaType || "";
-  if (!mime) return m.reply(`🚩 Envie una imagen o responda a la imagen utilizando el comando: ${usedPrefix + command}`);
-  if (!/image\/(jpe?g|png)/.test(mime)) return m.reply(`🍂 El formato del archivo (${mime}) no es compatible, envía o responda a una imagen`);
-  conn.reply(m.chat, '🚩 Mejorando la calidad de la imagen....', m, {
-  contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-  title: packname,
-  body: wm,
-  previewType: 0, thumbnail: icons,
-  sourceUrl: channel }}})
+  if (!mime) throw `${tradutor.texto1} ${usedPrefix + command}*`;
+  if (!/image\/(jpe?g|png)/.test(mime)) throw `${tradutor.texto2[0]} (${mime}) ${tradutor.texto2[1]}`;
+  m.reply(tradutor.texto3);
   let img = await q.download?.();
   let pr = await remini(img, "enhance");
-  conn.sendMessage(m.chat, {image: pr}, {quoted: fkontak});
+  conn.sendMessage(m.chat, {image: pr}, {quoted: m});
  } catch {
- return m.reply("🚩 Ocurrió un error");
+  throw tradutor.texto4;
  }
 };
 handler.help = ["remini", "hd", "enhance"];
