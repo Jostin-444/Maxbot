@@ -215,7 +215,7 @@ await conn.sendFile(m.chat, "https://i.ibb.co/tmvP0G8/file.jpg", 'menu.jpg', Sty
 }
 handler.help = ['menucompleto']
 handler.tags = ['main']
-handler.command = ['menucompleto', 'allmenú', 'allmenu'] 
+handler.command = ['menucompleto', 'allmenú', 'allmenu', 'menü'] 
 handler.register = true
 
 export default handler
