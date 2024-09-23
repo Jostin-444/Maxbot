@@ -3,25 +3,6 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
-let Styles = (text, style = 1) => {
-  var xStr = 'abcdefghijklmnopqrstuvwxyz1234567890'.split('');
-  var yStr = Object.freeze({
-    1: 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘqʀꜱᴛᴜᴠᴡxʏᴢ1234567890'
-  });
-  var replacer = [];
-  xStr.map((v, i) => replacer.push({
-    original: v,
-    convert: yStr[style].split('')[i]
-  }));
-  var str = text.toLowerCase().split('');
-  var output = [];
-  str.map(v => {
-    const find = replacer.find(x => x.original == v);
-    find ? output.push(find.convert) : output.push(v);
-  });
-  return output.join('');
-};
-
 let tags = {
   'main': '𝐈𝐍𝐅𝐎 𝐁𝐎𝐓',
   'buscador': '𝐁𝐔𝐒𝐐𝐔𝐄𝐃𝐀𝐒',
@@ -50,48 +31,28 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `
-*︵̩̥̩̥̩̥̩̥̩̥̩̥.ֹ̥︵̩̥̩̥̩̥̩⏜⌣𓆩💙𓆪⌣⏜︵̩̥̩̥̩̥̩̥⌣ֹ̥*
- *╔═𓆗═ͭ═ͪ═ͤ═✧☠️✧═ͨ═ᷞ═ͣ═ᷠ𓆗═╗*
-> `+'_*`'+`⁖ฺ۟̇࣪·֗٬̤⃟🪽hola %name, %greeting 𖠵ฺ໋۟݊`+'`*_'+`
-*╚═♛════☆🔥☆════♛═╝*
-꒷︶꒷꒥꒷‧₊˚꒷︶꒷꒥꒷‧₊˚꒷︶꒷꒥꒷‧₊˚꒷︶꒷
-  ╵︳╵︳╵│︱╵︳│╵│︳╵╵︳
-       .•*•.•*•.•*•.•*•.•*•.•*•.•*•.
-       `+'_*`♠ 𝐌 𝐀 𝐗 - 𝐁 𝐎 𝐓 ♠`*_ '+`
-        •*•.•*•.•*•.•*•.•*•.•*•.•*•.
-        
-.・。.・゜✭・🐼・✫・゜・。.
-𓍢ִ:𓂃⊹ *🄽🄾🄼🄱🅁🄴* :  ִֶָ🥀𓍢ִ໋ 
-⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
-> %name
-𓍢ִ:𓂃⊹ *🄱🄾🅃* :  ִֶָ🥀𓍢ִ໋ 
-> Max Bot
-⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
-𓍢ִ:𓂃⊹ *🄼🄾🄳🄾* :  ִֶָ🥀𓍢ִ໋ 
-> Público
-⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
-𓍢ִ:𓂃⊹ *🅁🅄🅃🄸🄽🄰* :  ִֶָ🥀𓍢ִ໋ 
-> %muptime
-⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
-𓍢ִ:𓂃⊹ *🅄🅂🄴🅁🅂* :  ִֶָ🥀𓍢ִ໋ 
-> %totalreg
-⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
-𓍢ִ:𓂃⊹ *🄲🄾🅁🄰🅉🄾🄽🄴🅂* :  ִֶָ🥀𓍢ִ໋ 
-> %corazones
-⭒─ׅ─ׂ─ׅ─ׂ─ׂ ⋆ ✧ ⋆ ─ׅ─ׂ─ׅ─ׂ─ׂ⭒
-𓍢ִ:𓂃⊹ *🄽🄸🅅🄴🄻* :  ִֶָ🥀𓍢ִ໋ 
-> %level 
-✿°•∘ɷ∘•°✿ ... ✿°•∘ɷ∘•°✿.
+  before: `“𝐇𝐨𝐥𝐚 *%name* 𝐒𝐨𝐲 𝐆𝐞𝐧𝐞𝐬𝐢𝐬𝐁𝐨𝐭, %greeting"
+
+✧ ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬ ✧ 
+
+ '︶꒦꒷♡꒷꒦︶.
+┊✶ 𝐂𝐥𝐢𝐞𝐧𝐭𝐞: %name
+┊┊✶ 𝐁𝐨𝐭: Génesis Bot
+┊┊✶ 𝐌𝐨𝐝𝐨: Público
+┊┊✶ 𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭: %muptime
+┊┊✶ 𝐔𝐬𝐞𝐫𝐬: %totalreg
+┊┊✶ 𝐂𝐨𝐫𝐚𝐳𝐨𝐧𝐞𝐬: %corazones
+┊┊✶ 𝐍𝐢𝐯𝐞𝐥: %level 
+. .‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙‿̩͙‿̩̩̥͙̽‿̩͙┉ˏ͛ ༝̩̩̥͙　 ҉　
 
 ✦•····················•✦•···················•✦
 `.trimStart(),
-  header: 'li.╔╦══••✠•❀✦❀•✠••══╦╗.il\n> ○⵿ͦꦽ͚┈➤̽ `%category`\nli.╚╩══••✠•❀✦❀•✠••══╩╝.il\n▄︻🧧┻┳═ 🌹●○•♦️°♦️•○● 🌹═┳┻🧧︻▄',
-  body: '> _*`💧➤ %cmd %isdiamond %isPremium`*_\n',
-  footer: 'li.┗━━━━━°♤•♧°🔥°♧•♤°━━━━━┛.il\n\n',
+  header: '✞͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭*•̩̩͙✩•̩̩͙*˚୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞✞͙͙͙͙͙͙͙͙͙͙\n╠ • ˗ˏ✎*ೃ `%category`\n╠ ┈──✦﹀﹀|﹀﹀﹕₊˚ ✧. *. ⋆\n╠ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈',
+  body: '║✶ %cmd %isdiamond %isPremium\n',
+  footer: '╚════•.·:·.✧ ✦ ✧.·:·.*•════╝\n\n',
   after: ``,
 }
-let ppp = 'https://f.uguu.se/ABFoOsvf.mp4'
+let ppp = 'https://i.ibb.co/48TMftG/file.jpg'
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -189,7 +150,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/ZlNo.jpg')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/327f6ad853cb4f405aa80.jpg')
 
   let category = "video"
   const db = './media/database/db.json'
@@ -199,14 +160,14 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/
   global.vid = rlink
   const response = await fetch(vid)
   const gif = await response.buffer()
- // const img = { url: "https://qu.ax/ZlNo.jpg"} 
+ // const img = imagen1
 
-await m.react('💙') 
-await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲𝗹 𝗕𝗼𝘁...𓏲੭*', fakegif3, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '💙 ¡Anyelita la mejor Bot!', sourceUrl: "https://wa.me/0", thumbnail: icons }}})
+await m.react('🤍') 
+await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲 𝗹𝗮 𝗕𝗼𝘁...𓏲੭*', fakegif3, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: '🤍 ¡Génesis la mejor Bot!', sourceUrl: canal, thumbnail: icons }}})
 
 // await conn.reply(m.chat, '🍟 Enviando el menú.....', m, rcanal)
 
-await conn.sendFile(m.chat, "https://f.uguu.se/ABFoOsvf.mp4", 'menu.jpg', Styles(text.trim()), fakegif3, null, fake)
+await conn.sendFile(m.chat, ppp, 'menu.jpg', text.trim(), fakegif3, null, fake)
 
   } catch (e) {
     conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, rcanal, )
@@ -215,7 +176,7 @@ await conn.sendFile(m.chat, "https://f.uguu.se/ABFoOsvf.mp4", 'menu.jpg', Styles
 }
 handler.help = ['menucompleto']
 handler.tags = ['main']
-handler.command = ['menucompleto', 'allmenú', 'allmenu', 'menü'] 
+handler.command = ['menucompleto', 'allmenú', 'allmenu'] 
 handler.register = true
 
 export default handler
