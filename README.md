@@ -93,8 +93,22 @@ Para que no pierda su progreso en Yaemori, estos comandos realizarán un respald
 ### **`Superiority Pro Hosting 🤖`**
 <a href="https://dash.superiority.pro/login"><img src="https://qu.ax/TiBm.jpg" height="125px"></a>
 
+</details>
+
+### **`AZURA ULTRA HOSTING 👾`**
+<a href="https://store.azuraultra-host.pro/login"><img src="https://qu.ax/lgUn.jpg" height="125px"></a>
+
 <details>
  <summary><b>:paperclip: Enlaces Importantes</b></summary>
+
+- **Dashboard:** [`Aquí`](https://control.azuraultra-host.pro/)
+- **Panel:** [`Aquí`](https://control.azuraultra-host.pro/)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaWABAMG8l5K8K9PAB3v)
+
+<a href="https://store.azuraultra-host.pro/login"><img src="https://i.ibb.co/MS4dCJy/File.jpg" height="200px"></a>
+<details>
+ 
+<summary><b>:paperclip: Enlaces Importantes</b></summary>
 
 - **Dashboard:** [`Aquí`](https://dash.superiority.pro/register?ref=Jostin)
 - **Grupo - Soporte:** [`Aquí`](https://chat.whatsapp.com/LbjpDV0KmZ48iHFSy6n1Gz)
