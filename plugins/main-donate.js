@@ -17,7 +17,7 @@ https://github.com/Jostin-444/Maxbot
 
 > WIERBOT: Jostin-444
 `
-let img = 'https://telegra.ph/file/2ddbd1e18add8f9598edb.jpg'
+let img = 'https://i.ibb.co/ggDzWmx/file.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rcanal)
 //conn.sendPayment(m.chat, '2000', 'USD', don, m.sender, m)
 }
