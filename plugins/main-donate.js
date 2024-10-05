@@ -7,7 +7,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 wa.me/50242073893 
 
 » 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈
-https://www.instagram.com/max_xitado.pe
+https://www.instagram.com/jostin_max.bot
 
 _Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
 
