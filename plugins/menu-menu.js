@@ -63,7 +63,7 @@ const defaultMenu = {
 │ ◦ *Rutina:* %muptime 
 └ ◦ *Database:*  %totalreg
 
-▣╾───────🧡───────╼▣
+▣╾───────💙───────╼▣
  %readmore
 \t\t\t_*LISTA DE MENÚS*_
 `.trimStart(),
@@ -190,9 +190,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp11 = 'https://telegra.ph/file/81da492e08bfdb4fda695.mp4'
     let pp12 = 'https://telegra.ph/file/ec8393df422d40f923e00.mp4'
     let pp13 = 'https://telegra.ph/file/ba7c4a3eb7bf3d892b0c8.mp4'
-    let pp14 = 'https://tinyurl.com/ymlqb6ml'
-    let pp15 = 'https://tinyurl.com/ykv7g4zy'
-    let img = 'https://iili.io/dtLoqzb.md.jpg'
+    let pp14 = ''
+    let pp15 = ''
+    let img = ''
     await m.react('✨')
    // await conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, pp11, pp12, pp13, pp14, pp15].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: estilo })
     await conn.sendFile(m.chat, img, 'thumbnail.jpg', text.trim(), m, null, rcanal)
