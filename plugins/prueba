@@ -1,0 +1,7 @@
+let handler = async (m) => {
+await m.reply("¿Que tal tu día amigo? ")
+m.react("👋")
+} 
+handler.customPrefix = ['hola', 'hello']
+handler.command = New RegExp
+export default handler
