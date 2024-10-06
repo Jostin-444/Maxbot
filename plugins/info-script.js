@@ -10,7 +10,7 @@ setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado = `\`乂 S C R I P T  -  B O T\`
 
-> 😼 *Te gusta nuestro Bot te invito a dejarnos una estrella a nuestro repositorio para seguir mejorando nuestro Bot* ☕
+> 🥷 *Te gusta nuestro Bot te invito a dejarnos una estrella a nuestro repositorio para seguir mejorando nuestro Bot* ✨
 `
 await conn.sendButton(m.chat, estado, '@jostin_max.bot', pp, [
 ['DUEÑO 💙', '.owner']], null, [['GIT HUB 💙', `https://github.com/Jostin-444/Maxbot`]], estilo)
