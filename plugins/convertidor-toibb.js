@@ -41,7 +41,7 @@ let handler = async (m, { conn }) => {
   }
 }
 handler.tags = ['convertir']
-handler.help = ['toibb']
+handler.help = ['toibb', 'tourl']
 handler.command = /^(tourl2|toibb)$/i
 handler.register = true 
 export default handler
