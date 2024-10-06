@@ -34,14 +34,14 @@ let handler = async (m, { conn }) => {
         txt += `*🔖 File* : ${q.filename || 'x.jpg'}\n`
         txt += `*🔖 Extension* : ${api.data.data.image.extension}\n`
         txt += `*🔖 Delete* : ${api.data.data.delete_url}\n\n`
-        txt += `© By: Max and Jostin-444`
+        txt += `© By: Max`
     await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, fake)
   } else {
     await m.react('✅')
   }
 }
 handler.tags = ['convertir']
-handler.help = ['toibb', 'tourl']
+handler.help = ['toibb']
 handler.command = /^(tourl2|toibb)$/i
 handler.register = true 
 export default handler
